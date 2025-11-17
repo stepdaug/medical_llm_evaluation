@@ -1,0 +1,273 @@
+{
+  "case_id": "case_0023",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 53.89,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right optic nerve (cranial nerve II).\n  \nThe suggested lesion in left cerebellar hemisphere not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "cerebellar hemisphere",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "left cerebellar hemisphere"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 1.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- MOG antibody-associated disease; Neuromyelitis optica spectrum disorder (AQP4-IgG positive); Ischaemic optic neuropathy with left cerebellar infarct; Neurosarcoidosis; Syphilitic optic neuritis",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis",
+          "MOG antibody-associated disease",
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "Ischaemic optic neuropathy with left cerebellar infarct",
+          "Neurosarcoidosis",
+          "Syphilitic optic neuritis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Osteopenia": "comorbidity",
+          "Solar keratosis": "comorbidity",
+          "Appendicectomy": "comorbidity",
+          "Diverticular disease": "comorbidity",
+          "Erectile dysfunction": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Osteopenia",
+          "Solar keratosis",
+          "Appendicectomy",
+          "Diverticular disease",
+          "Erectile dysfunction"
+        ],
+        "additional_diagnoses": [
+          "MOG antibody-associated disease",
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "Ischaemic optic neuropathy with left cerebellar infarct",
+          "Neurosarcoidosis",
+          "Syphilitic optic neuritis"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, orbits and cervical spine with gadolinium",
+          "Visual evoked potentials",
+          "Optical coherence tomography (retinal nerve fibre layer)",
+          "Humphrey visual field testing",
+          "Color vision (Ishihara) testing",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands, IgG index and viral PCR",
+          "Serum AQP4-IgG",
+          "Serum MOG-IgG",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Antinuclear antibody",
+          "Serum ACE",
+          "HIV 1/2 antigen/antibody",
+          "Syphilis serology (treponemal EIA and RPR)",
+          "Borrelia serology (if exposure risk)",
+          "MR angiography of head and neck"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 2,
+        "found_tests_count": 2,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Inappropriate decision to suggest treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154).",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute optic neuritis with RAPD and reduced acuity",
+              "Early steroids hasten visual recovery",
+              "First-line for MS/MOGAD/NMOSD relapses once infection is excluded"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastric protection during high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Blood glucose monitoring with correctional insulin if needed",
+            "timing": "Start Now",
+            "reasons": [
+              "Steroid-induced hyperglycaemia risk"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 exchanges)",
+            "timing": "Delay",
+            "reasons": [
+              "Escalation if severe deficit or no improvement within 5\u20137 days of steroids",
+              "Indicated in AQP4-IgG positive attacks or steroid-refractory optic neuritis"
+            ]
+          },
+          {
+            "treatment": "Disease-modifying therapy for MS (e.g., ocrelizumab) or NMOSD-directed therapy (e.g., rituximab/satralizumab) based on results",
+            "timing": "Delay",
+            "reasons": [
+              "Initiate only after diagnostic confirmation",
+              "Choice depends on antibody status and MRI/CSF findings"
+            ]
+          },
+          {
+            "treatment": "Aspirin and vascular risk management",
+            "timing": "Delay",
+            "reasons": [
+              "Only if imaging confirms ischaemic aetiology"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute optic neuritis with RAPD and reduced acuity",
+              "Early steroids hasten visual recovery",
+              "First-line for MS/MOGAD/NMOSD relapses once infection is excluded"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 154)."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-modifying therapy for MS (e.g., ocrelizumab) or NMOSD-directed therapy (e.g., rituximab/satralizumab) based on results",
+            "timing": "Delay",
+            "reasons": [
+              "Initiate only after diagnostic confirmation",
+              "Choice depends on antibody status and MRI/CSF findings"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 154)."
+              ]
+            }
+          },
+          "evaluation_summary": "Inappropriate decision to suggest treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154)."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.5,
+          "proportion_reasons_missed": 0.5
+        }
+      }
+    }
+  }
+}

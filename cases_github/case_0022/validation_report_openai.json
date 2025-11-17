@@ -1,0 +1,293 @@
+{
+  "case_id": "case_0022",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 27.83,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left pons and left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)",
+          "left pons"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "pons",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left pons",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nOther considerations not mentioned:\n\n- The presenting complaint could be due to issues such as Hypothyroidism, with neurological signs being unrelated and chronic.\n  \nThese suggested differentials are reasonable:\n\n- MOG antibody\u2013associated disease; Aquaporin-4 neuromyelitis optica spectrum disorder; Ischaemic pontine stroke; Neurosarcoidosis; Primary CNS vasculitis; Brainstem glioma",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis",
+          "MOG antibody\u2013associated disease",
+          "Aquaporin-4 neuromyelitis optica spectrum disorder",
+          "Ischaemic pontine stroke",
+          "Neurosarcoidosis",
+          "Primary CNS vasculitis",
+          "Brainstem glioma"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Hypothyroidism": "incidental_cause",
+          "Unspecified headaches": "comorbidity",
+          "Nightmares": "comorbidity",
+          "Coeliac disease": "comorbidity",
+          "Obstructive sleep apnoea": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Hypothyroidism",
+          "Unspecified headaches",
+          "Nightmares",
+          "Coeliac disease",
+          "Obstructive sleep apnoea"
+        ],
+        "additional_diagnoses": [
+          "MOG antibody\u2013associated disease",
+          "Aquaporin-4 neuromyelitis optica spectrum disorder",
+          "Ischaemic pontine stroke",
+          "Neurosarcoidosis",
+          "Primary CNS vasculitis",
+          "Brainstem glioma"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 1,
+        "incidental_missing_count": 1,
+        "incidental_missing_proportion": 1.0,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Brain and Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium",
+          "MRI of cervical and thoracic spinal cord with gadolinium",
+          "MR angiogram of head and neck",
+          "Lumbar puncture",
+          "CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands with paired serum",
+          "Serum aquaporin-4 IgG",
+          "Serum MOG IgG",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid-stimulating hormone",
+          "Vitamin B12",
+          "Folate",
+          "25-hydroxyvitamin D",
+          "HIV antigen/antibody",
+          "Syphilis serology",
+          "Serum ACE",
+          "Antinuclear antibody",
+          "Visual evoked potentials",
+          "Optical coherence tomography",
+          "Baseline pregnancy test (if applicable)"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute disabling relapse with brainstem involvement",
+              "Improves speed of recovery in optic neuritis/demyelination",
+              "Low risk after screening for infection"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor while on high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastroprotection during corticosteroid course"
+            ]
+          },
+          {
+            "treatment": "Eye protection for left facial palsy (lubricating drops and eyelid taping at night)",
+            "timing": "Start Now",
+            "reasons": [
+              "Incomplete eyelid closure risks exposure keratopathy"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis and early physiotherapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility from hemiparesis increases VTE risk",
+              "Prevents deconditioning and aids recovery"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange",
+            "timing": "Delay",
+            "reasons": [
+              "Reserve for poor response to steroids within 5\u20137 days",
+              "Indicated early if NMOSD strongly suspected or severe deficits persist"
+            ]
+          },
+          {
+            "treatment": "Initiate disease-modifying therapy for MS (agent per risk profile)",
+            "timing": "Delay",
+            "reasons": [
+              "Start after diagnostic confirmation and serology (AQP4/MOG) to choose appropriate therapy",
+              "Need MRI/CSF to stratify disease activity and safety"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute disabling relapse with brainstem involvement",
+              "Improves speed of recovery in optic neuritis/demyelination",
+              "Low risk after screening for infection"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiate disease-modifying therapy for MS (agent per risk profile)",
+            "timing": "Delay",
+            "reasons": [
+              "Start after diagnostic confirmation and serology (AQP4/MOG) to choose appropriate therapy",
+              "Need MRI/CSF to stratify disease activity and safety"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.5,
+          "proportion_reasons_missed": 0.5
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 2,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.6666666666666666,
+          "proportion_reasons_missed": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "case_id": "case_0021",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 49.35,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right midbrain.\n  \nAdditional signs indicate potential further lesion in:\n- right optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain tegmentum",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Right paramedian midbrain infarction (PCA perforator; Weber/Benedikt spectrum); Midbrain hemorrhage or cavernous malformation; Posterior communicating artery aneurysm causing compressive third nerve palsy; Intrinsic midbrain tumor (glioma)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Right paramedian midbrain infarction (PCA perforator; Weber/Benedikt spectrum)",
+          "Midbrain hemorrhage or cavernous malformation",
+          "Brainstem demyelination (multiple sclerosis)",
+          "Posterior communicating artery aneurysm causing compressive third nerve palsy",
+          "Intrinsic midbrain tumor (glioma)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Osteophyte (bone spur)": "comorbidity",
+          "Metatarsalgia": "comorbidity",
+          "Medically unexplained symptoms": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Osteophyte (bone spur)",
+          "Metatarsalgia",
+          "Medically unexplained symptoms"
+        ],
+        "additional_diagnoses": [
+          "Right paramedian midbrain infarction (PCA perforator; Weber/Benedikt spectrum)",
+          "Midbrain hemorrhage or cavernous malformation",
+          "Posterior communicating artery aneurysm causing compressive third nerve palsy",
+          "Intrinsic midbrain tumor (glioma)"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with MRI including the Brain - would potetially inform a diagnosis/details of multiple sclerosis.\n\n- But incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Non-contrast CT Brain",
+          "CT Angiogram of Head and Neck",
+          "MRI Brain with diffusion- and susceptibility-weighted sequences",
+          "MR Angiography of Head and Neck",
+          "ECG",
+          "Inpatient cardiac telemetry",
+          "Transthoracic echocardiogram (with bubble study if cryptogenic)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Coagulation screen",
+          "Blood glucose",
+          "HbA1c",
+          "Lipid profile",
+          "High-sensitivity troponin",
+          "ESR",
+          "CRP",
+          "Comprehensive ophthalmic assessment including visual fields and dilated fundus examination",
+          "Digital subtraction angiography (if aneurysm suspected or for endovascular therapy)"
+        ],
+        "found_tests": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ]
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 1,
+        "missing_tests_count": 2,
+        "proportion_found": 0.3333333333333333,
+        "proportion_missing": 0.6666666666666666
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous thrombolysis (alteplase)",
+            "timing": "Start Now",
+            "reasons": [
+              "If presentation within 4.5 hours",
+              "No haemorrhage on CT",
+              "Disabling brainstem deficits present"
+            ]
+          },
+          {
+            "treatment": "Mechanical thrombectomy",
+            "timing": "Start Now",
+            "reasons": [
+              "If CT angiography shows basilar or proximal PCA occlusion",
+              "Eligible by imaging/time criteria (up to 24 hours)"
+            ]
+          },
+          {
+            "treatment": "Aspirin 300 mg then 75\u2013100 mg daily",
+            "timing": "Delay",
+            "reasons": [
+              "If thrombolysis given, start after 24 hours and repeat imaging excludes haemorrhage",
+              "If thrombolysis not given, start once haemorrhage excluded on initial imaging"
+            ]
+          },
+          {
+            "treatment": "High-intensity statin (e.g., atorvastatin 80 mg)",
+            "timing": "Start Now",
+            "reasons": [
+              "Secondary prevention after ischaemic stroke suspected",
+              "Safe to start once swallowing assessed"
+            ]
+          },
+          {
+            "treatment": "Blood pressure optimisation per stroke protocol",
+            "timing": "Start Now",
+            "reasons": [
+              "Maintain permissive hypertension unless exceeding thresholds",
+              "Reduces risk of extension or haemorrhagic transformation"
+            ]
+          },
+          {
+            "treatment": "Intermittent pneumatic compression for DVT prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Immobility with hemiparesis increases VTE risk",
+              "Safe before antithrombotic decisions"
+            ]
+          },
+          {
+            "treatment": "Endovascular treatment of posterior communicating artery aneurysm (coiling/clipping)",
+            "timing": "Delay",
+            "reasons": [
+              "Proceed if CTA/MRA confirms aneurysm causing pupil-involving III palsy",
+              "Requires multidisciplinary planning"
+            ]
+          },
+          {
+            "treatment": "Eye care for ophthalmoplegia (lubrication, occlusion for diplopia)",
+            "timing": "Start Now",
+            "reasons": [
+              "Prevents exposure keratopathy",
+              "Improves comfort while awaiting recovery"
+            ]
+          },
+          {
+            "treatment": "Early multidisciplinary stroke rehabilitation (physiotherapy, OT, speech/swallow)",
+            "timing": "Start Now",
+            "reasons": [
+              "Enhances functional recovery",
+              "Addresses gait ataxia and left-sided spastic weakness"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 3,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        }
+      }
+    }
+  }
+}

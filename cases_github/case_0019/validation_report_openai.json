@@ -1,0 +1,278 @@
+{
+  "case_id": "case_0019",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 44.13,
+    "sex": "Male",
+    "genderIdentity": "Non-binary",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- MOG-IgG\u2013associated optic neuritis; AQP4-IgG neuromyelitis optica spectrum disorder (optic neuritis); Non-arteritic anterior ischemic optic neuropathy (NAION); Compressive optic neuropathy (e.g., optic nerve sheath meningioma); Sarcoid-related optic neuritis; Syphilitic optic neuritis; Toxic/nutritional optic neuropathy; Leber hereditary optic neuropathy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Demyelinating optic neuritis (MS-associated)",
+          "MOG-IgG\u2013associated optic neuritis",
+          "AQP4-IgG neuromyelitis optica spectrum disorder (optic neuritis)",
+          "Non-arteritic anterior ischemic optic neuropathy (NAION)",
+          "Compressive optic neuropathy (e.g., optic nerve sheath meningioma)",
+          "Sarcoid-related optic neuritis",
+          "Syphilitic optic neuritis",
+          "Toxic/nutritional optic neuropathy",
+          "Leber hereditary optic neuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Allergic rhinitis": "comorbidity",
+          "Hyperglycaemia": "comorbidity",
+          "Gastro-oesophageal reflux disease (GORD)": "comorbidity",
+          "Migraine": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Allergic rhinitis",
+          "Hyperglycaemia",
+          "Gastro-oesophageal reflux disease (GORD)",
+          "Migraine"
+        ],
+        "additional_diagnoses": [
+          "MOG-IgG\u2013associated optic neuritis",
+          "AQP4-IgG neuromyelitis optica spectrum disorder (optic neuritis)",
+          "Non-arteritic anterior ischemic optic neuropathy (NAION)",
+          "Compressive optic neuropathy (e.g., optic nerve sheath meningioma)",
+          "Sarcoid-related optic neuritis",
+          "Syphilitic optic neuritis",
+          "Toxic/nutritional optic neuropathy",
+          "Leber hereditary optic neuropathy"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium and fat-suppressed sequences",
+          "MRI of entire spine with gadolinium",
+          "Automated perimetry (Humphrey visual fields)",
+          "Optical coherence tomography (OCT)",
+          "Visual evoked potentials",
+          "Serum aquaporin-4 IgG (cell-based assay)",
+          "Serum MOG IgG (cell-based assay)",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands and IgG index",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Vitamin B12",
+          "Folate",
+          "Thyroid-stimulating hormone",
+          "Treponemal serology (EIA/TPPA) and RPR",
+          "HIV antigen/antibody test",
+          "Serum ACE level",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 2,
+        "found_tests_count": 2,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe visual acuity loss (6/60) in suspected optic neuritis",
+              "Accelerates visual recovery",
+              "First-line for NMOSD/MOG while awaiting antibodies"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor while on high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastric protection during IV corticosteroids"
+            ]
+          },
+          {
+            "treatment": "Blood glucose monitoring with insulin protocol if needed",
+            "timing": "Start Now",
+            "reasons": [
+              "Steroid-induced hyperglycaemia risk",
+              "History of hyperglycaemia"
+            ]
+          },
+          {
+            "treatment": "Urgent neuro-ophthalmology/ophthalmology co-management and visual safety advice",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe visual impairment requires joint care",
+              "Driving/occupational safety"
+            ]
+          },
+          {
+            "treatment": "Therapeutic plasma exchange (5 exchanges over 7\u201310 days)",
+            "timing": "Delay",
+            "reasons": [
+              "Escalate if no meaningful improvement within 48\u201372 hours of steroids",
+              "Indicated if AQP4/MOG positive or profound deficit"
+            ]
+          },
+          {
+            "treatment": "Long-term immunotherapy for NMOSD (e.g., rituximab/inebilizumab/satralizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Begin after confirmation of AQP4-IgG disease",
+              "Initiate once acute attack stabilises"
+            ]
+          },
+          {
+            "treatment": "Multiple sclerosis disease-modifying therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Start only if MS diagnosis established by MRI/CSF demonstrating dissemination in time and space"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe visual acuity loss (6/60) in suspected optic neuritis",
+              "Accelerates visual recovery",
+              "First-line for NMOSD/MOG while awaiting antibodies"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Long-term immunotherapy for NMOSD (e.g., rituximab/inebilizumab/satralizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Begin after confirmation of AQP4-IgG disease",
+              "Initiate once acute attack stabilises"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 1,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 1,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 0,
+          "proportion_reasons_acknowledged": 1.0,
+          "proportion_reasons_missed": 0.0
+        }
+      }
+    }
+  }
+}

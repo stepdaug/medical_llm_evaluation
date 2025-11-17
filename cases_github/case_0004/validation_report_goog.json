@@ -1,0 +1,250 @@
+{
+  "case_id": "case_0004",
+  "provider": "goog",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 20.9,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nMore precision is possible than: 'bilateral Medulla Oblongata'.  \nNamely: right medulla.\n  \nAdditional signs indicate potential further lesion in:\n- right C5 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right C5 myelopathy",
+          "right medulla"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Medulla Oblongata",
+            "side": "bilateral",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [
+          [
+            "bilateral Medulla Oblongata",
+            "right medulla"
+          ]
+        ],
+        "missing_lesions_from_ft": [
+          "right C5 myelopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 0.5,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Brainstem Encephalitis (Rhombencephalitis); Brainstem Glioma; Vertebral Artery Dissection with Medullary Infarction; Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Encephalitis (Rhombencephalitis)",
+          "Multiple Sclerosis",
+          "Brainstem Glioma",
+          "Vertebral Artery Dissection with Medullary Infarction",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Attention deficit hyperactivity disorder (ADHD)": "comorbidity",
+          "Roundworm": "comorbidity",
+          "Hyperhidrosis": "comorbidity",
+          "Keratosis pilaris": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Attention deficit hyperactivity disorder (ADHD)",
+          "Roundworm",
+          "Hyperhidrosis",
+          "Keratosis pilaris"
+        ],
+        "additional_diagnoses": [
+          "Brainstem Encephalitis (Rhombencephalitis)",
+          "Brainstem Glioma",
+          "Vertebral Artery Dissection with Medullary Infarction",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Brain and Cervical Spine and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and cervical spine with gadolinium contrast",
+          "Lumbar Puncture for Cerebrospinal Fluid analysis",
+          "Full Blood Count",
+          "C-Reactive Protein",
+          "Blood Cultures",
+          "Urea and Electrolytes",
+          "Liver Function Tests",
+          "Aquaporin-4 (AQP4) antibody test",
+          "Myelin Oligodendrocyte Glycoprotein (MOG) antibody test",
+          "Listeria monocytogenes PCR (from CSF and blood)",
+          "Herpes Simplex Virus (HSV) PCR (from CSF)",
+          "CT Angiography of head and neck vessels"
+        ],
+        "found_tests": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C).\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\nDMTs: Appropriate and safe decision to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Empirical Intravenous Antibiotics (Ampicillin and Gentamicin)",
+            "timing": "Start Now",
+            "reasons": [
+              "High suspicion for bacterial rhombencephalitis (e.g., Listeria), which is life-threatening.",
+              "Delaying antibiotics in bacterial CNS infections significantly increases morbidity and mortality."
+            ]
+          },
+          {
+            "treatment": "Empirical Intravenous Antivirals (Aciclovir)",
+            "timing": "Start Now",
+            "reasons": [
+              "To provide coverage for treatable viral causes of encephalitis (e.g., HSV).",
+              "The severity of the clinical presentation justifies broad empirical antimicrobial coverage."
+            ]
+          },
+          {
+            "treatment": "High-Dose Intravenous Corticosteroids (Methylprednisolone)",
+            "timing": "Start Now",
+            "reasons": [
+              "To treat a potential primary inflammatory/demyelinating condition (e.g., MS, NMOSD).",
+              "To reduce life-threatening brainstem edema and prevent neurological deterioration due to mass effect."
+            ]
+          },
+          {
+            "treatment": "Admission for close neurological and cardiorespiratory monitoring",
+            "timing": "Start Now",
+            "reasons": [
+              "High risk of acute respiratory failure and cardiovascular collapse due to the medullary lesion.",
+              "Allows for early detection and management of potentially fatal complications."
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-Dose Intravenous Corticosteroids (Methylprednisolone)",
+            "timing": "Start Now",
+            "reasons": [
+              "To treat a potential primary inflammatory/demyelinating condition (e.g., MS, NMOSD).",
+              "To reduce life-threatening brainstem edema and prevent neurological deterioration due to mass effect."
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C)."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C).\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate and safe decision to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Temp: 38.1\u00b0C).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.3333333333333333,
+          "proportion_reasons_missed": 0.6666666666666666
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        }
+      }
+    }
+  }
+}

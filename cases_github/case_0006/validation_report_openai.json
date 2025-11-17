@@ -1,0 +1,350 @@
+{
+  "case_id": "case_0006",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 40.22,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve (cranial nerve II) and right cerebellum.\n  \nMore precision is possible than: 'left thoracic spinal cord'.  \nNamely: left T4 spinal cord.\n  \nAdditional signs indicate potential further lesion in:\n- right L5 nerve root.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T4 myelopathy",
+          "right L5 radiculopathy",
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "cerebellar hemisphere",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "thoracic spinal cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "imprecise_matches": [
+          [
+            "left thoracic spinal cord",
+            "left T4 myelopathy"
+          ]
+        ],
+        "missing_lesions_from_ft": [
+          "right L5 radiculopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 4,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.25,
+        "proportion_missed": 0.25,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nOther considerations not mentioned:\n\n- Their comorbidity degenerative intervertebral disc disease could account for parts of the examination, e.g. with a lesion affecting right L5 nerve root.\n  \nThese suggested differentials are reasonable:\n\n- Neuromyelitis optica spectrum disorder (AQP4-IgG positive); MOG antibody-associated disease; Neurosarcoidosis; Systemic autoimmune disease with CNS involvement (e.g., SLE/Sj\u00f6gren\u2019s); CNS vasculitis; Infectious mimics (HIV, syphilis, Lyme); Spinal cord compression (thoracic)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing\u2013remitting multiple sclerosis",
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "MOG antibody-associated disease",
+          "Neurosarcoidosis",
+          "Systemic autoimmune disease with CNS involvement (e.g., SLE/Sj\u00f6gren\u2019s)",
+          "CNS vasculitis",
+          "Infectious mimics (HIV, syphilis, Lyme)",
+          "Spinal cord compression (thoracic)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Halitosis": "comorbidity",
+          "Caesarean section": "comorbidity",
+          "Vulvodynia": "comorbidity",
+          "Hypnogogic jerks": "comorbidity",
+          "Degenerative intervertebral disc disease": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Halitosis",
+          "Caesarean section",
+          "Vulvodynia",
+          "Hypnogogic jerks",
+          "Degenerative intervertebral disc disease"
+        ],
+        "additional_diagnoses": [
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "MOG antibody-associated disease",
+          "Neurosarcoidosis",
+          "Systemic autoimmune disease with CNS involvement (e.g., SLE/Sj\u00f6gren\u2019s)",
+          "CNS vasculitis",
+          "Infectious mimics (HIV, syphilis, Lyme)",
+          "Spinal cord compression (thoracic)"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 1,
+        "comorbidity_missing_count": 1,
+        "comorbidity_missing_proportion": 1.0
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Brain; Thoracic Spine, and Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.\n\n- MRI including the Lumbosacral Spine would potentially inform a diagnosis of degenerative intervertebral disc disease.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI brain, orbits and whole spine with gadolinium",
+          "Lumbar puncture for CSF analysis including cell count, protein, glucose, oligoclonal bands and IgG index",
+          "Visual evoked potentials",
+          "Optical coherence tomography",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid function tests",
+          "Vitamin B12",
+          "Serum folate",
+          "Serum copper and ceruloplasmin",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel (including anti-SSA/SSB)",
+          "Double-stranded DNA antibody",
+          "Serum ACE",
+          "Aquaporin-4 IgG (cell-based assay)",
+          "MOG-IgG (cell-based assay)",
+          "HIV antigen/antibody",
+          "Syphilis serology (RPR/TPPA)",
+          "Lyme disease serology",
+          "Hepatitis B surface antigen and core antibody",
+          "Hepatitis C antibody",
+          "Quantiferon-TB Gold",
+          "JC virus antibody index",
+          "25-hydroxy vitamin D",
+          "Serum pregnancy test (if applicable)"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 5,
+        "found_tests_count": 5,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days (or oral equivalent 500\u20131250 mg)",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute disabling relapse with optic/cerebellar signs",
+              "Improves speed of recovery",
+              "Vitals stable and no sepsis features; infection screen to proceed in parallel"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor while on high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "GI protection during pulse steroids",
+              "Reduces risk of steroid-induced gastritis/ulcer"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Gait ataxia and left-leg spasticity causing functional impairment",
+              "Prevents deconditioning and falls"
+            ]
+          },
+          {
+            "treatment": "Baclofen for spasticity (titrate)",
+            "timing": "Start Now",
+            "reasons": [
+              "Objective left lower-limb spasticity with clonus",
+              "Improves mobility and comfort"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 exchanges) if steroid-refractory",
+            "timing": "Delay",
+            "reasons": [
+              "Second-line for severe relapse not improving within 2 weeks",
+              "More invasive therapy reserved for nonresponse"
+            ]
+          },
+          {
+            "treatment": "Initiate high-efficacy disease-modifying therapy (e.g., ocrelizumab or natalizumab depending on JCV status)",
+            "timing": "Delay",
+            "reasons": [
+              "Start after diagnostic confirmation and baseline screening",
+              "Vaccination optimisation and risk stratification required"
+            ]
+          },
+          {
+            "treatment": "Vaccination updates (VZV, influenza, COVID-19, HBV as indicated)",
+            "timing": "Delay",
+            "reasons": [
+              "Reduce infection risk before immunotherapy",
+              "Live vaccines contraindicated after immunosuppression"
+            ]
+          },
+          {
+            "treatment": "Vitamin D supplementation (e.g., cholecalciferol 1000\u20132000 IU daily)",
+            "timing": "Start Now",
+            "reasons": [
+              "Low vitamin D is associated with MS activity",
+              "Safe and may reduce relapse risk"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days (or oral equivalent 500\u20131250 mg)",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute disabling relapse with optic/cerebellar signs",
+              "Improves speed of recovery",
+              "Vitals stable and no sepsis features; infection screen to proceed in parallel"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiate high-efficacy disease-modifying therapy (e.g., ocrelizumab or natalizumab depending on JCV status)",
+            "timing": "Delay",
+            "reasons": [
+              "Start after diagnostic confirmation and baseline screening",
+              "Vaccination optimisation and risk stratification required"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.3333333333333333,
+          "proportion_reasons_missed": 0.6666666666666666
+        }
+      }
+    }
+  }
+}

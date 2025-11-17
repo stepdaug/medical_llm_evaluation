@@ -1,0 +1,319 @@
+{
+  "case_id": "case_0005",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 41.05,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right cerebellum and left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Cerebellar Hemisphere",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Myelin Oligodendrocyte Glycoprotein Antibody-Associated Disease (MOGAD); Aquaporin-4 Antibody Positive Neuromyelitis Optica Spectrum Disorder (AQP4-NMOSD); Neurosarcoidosis; Autoimmune/Paraneoplastic Cerebellar Degeneration; Cerebellar Infarction with unrelated Optic Neuritis; Vitamin B12 Deficiency",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting Multiple Sclerosis",
+          "Myelin Oligodendrocyte Glycoprotein Antibody-Associated Disease (MOGAD)",
+          "Aquaporin-4 Antibody Positive Neuromyelitis Optica Spectrum Disorder (AQP4-NMOSD)",
+          "Neurosarcoidosis",
+          "Autoimmune/Paraneoplastic Cerebellar Degeneration",
+          "Cerebellar Infarction with unrelated Optic Neuritis",
+          "Vitamin B12 Deficiency"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Pelvic pain": "comorbidity",
+          "Nightmares": "comorbidity",
+          "Hypercholesterolaemia": "comorbidity",
+          "Rosacea": "comorbidity",
+          "Fibroids": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Pelvic pain",
+          "Nightmares",
+          "Hypercholesterolaemia",
+          "Rosacea",
+          "Fibroids"
+        ],
+        "additional_diagnoses": [
+          "Myelin Oligodendrocyte Glycoprotein Antibody-Associated Disease (MOGAD)",
+          "Aquaporin-4 Antibody Positive Neuromyelitis Optica Spectrum Disorder (AQP4-NMOSD)",
+          "Neurosarcoidosis",
+          "Autoimmune/Paraneoplastic Cerebellar Degeneration",
+          "Cerebellar Infarction with unrelated Optic Neuritis",
+          "Vitamin B12 Deficiency"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Brain and Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium (including DWI and dedicated optic nerve sequences)",
+          "MRI of cervical and thoracic spine with gadolinium",
+          "Visual evoked potentials",
+          "Optical coherence tomography of retinal nerve fibre layer",
+          "Lumbar puncture: CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands",
+          "CSF IgG index",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid function tests",
+          "Vitamin B12",
+          "Folate",
+          "25-hydroxy vitamin D",
+          "Serum ACE",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Double-stranded DNA antibody",
+          "ANCA",
+          "HIV serology",
+          "Syphilis serology (RPR/TPPA)",
+          "Lyme serology",
+          "Aquaporin-4 IgG (serum cell-based assay)",
+          "MOG IgG (serum cell-based assay)",
+          "Urinalysis and urine culture (exclude infection before steroids)",
+          "Pregnancy test",
+          "Hepatitis B surface antigen",
+          "Hepatitis B core antibody",
+          "Hepatitis C antibody",
+          "QuantiFERON-TB Gold"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days (or oral equivalent 1 g)",
+            "timing": "Start Now",
+            "reasons": [
+              "Functionally significant acute relapse (optic neuritis with ataxia)",
+              "Early steroids shorten time to neurological recovery",
+              "Low risk when infection is excluded"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor and capillary glucose monitoring during steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastroprotection and metabolic safety with high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and falls-prevention gait training",
+            "timing": "Start Now",
+            "reasons": [
+              "Cerebellar ataxia increases fall risk",
+              "Early rehab improves function"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 exchanges) if poor response to steroids",
+            "timing": "Delay",
+            "reasons": [
+              "Second-line for steroid-refractory optic neuritis/cerebellar relapse",
+              "Initiate if no improvement within 5\u20137 days"
+            ]
+          },
+          {
+            "treatment": "Initiate disease-modifying therapy for multiple sclerosis (e.g., ocrelizumab) after confirmation",
+            "timing": "Delay",
+            "reasons": [
+              "Requires diagnostic confirmation and safety screening",
+              "Prevents future relapses and disability accrual"
+            ]
+          },
+          {
+            "treatment": "Long-term immunotherapy for AQP4-positive NMOSD (e.g., rituximab or satralizumab) if confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Choice depends on antibody status",
+              "Start after results and counselling"
+            ]
+          },
+          {
+            "treatment": "Vitamin D supplementation",
+            "timing": "Delay",
+            "reasons": [
+              "Begin if level is low",
+              "Potential disease-modifying benefit in demyelination"
+            ]
+          },
+          {
+            "treatment": "Vaccination review and avoidance of live vaccines before immunotherapy",
+            "timing": "Delay",
+            "reasons": [
+              "Immunisation optimisation reduces infection risk with future DMTs"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days (or oral equivalent 1 g)",
+            "timing": "Start Now",
+            "reasons": [
+              "Functionally significant acute relapse (optic neuritis with ataxia)",
+              "Early steroids shorten time to neurological recovery",
+              "Low risk when infection is excluded"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiate disease-modifying therapy for multiple sclerosis (e.g., ocrelizumab) after confirmation",
+            "timing": "Delay",
+            "reasons": [
+              "Requires diagnostic confirmation and safety screening",
+              "Prevents future relapses and disability accrual"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 4,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 3,
+          "proportion_reasons_acknowledged": 0.25,
+          "proportion_reasons_missed": 0.75
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 4,
+          "acknowledged_reasons_count": 3,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.75,
+          "proportion_reasons_missed": 0.25
+        }
+      }
+    }
+  }
+}

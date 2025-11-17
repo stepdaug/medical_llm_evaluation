@@ -1,0 +1,313 @@
+{
+  "case_id": "case_0010",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 48.89,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right optic nerve (cranial nerve II).\n  \nMore precision is possible than: 'right thoracic spinal cord'.  \nNamely: right T2 spinal cord.\n  \nAdditional signs indicate potential further lesion in:\n- left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right T2 myelopathy",
+          "left optic nerve (cranial nerve II)",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "thoracic spinal cord",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [
+          [
+            "right thoracic spinal cord",
+            "right T2 myelopathy"
+          ]
+        ],
+        "missing_lesions_from_ft": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.3333333333333333,
+        "proportion_imprecise": 0.3333333333333333,
+        "proportion_missed": 0.3333333333333333,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Neuromyelitis Optica Spectrum Disorder (AQP4-IgG positive); MOG Antibody-Associated Disease; Compressive right thoracic hemicord lesion (e.g., extramedullary tumor/disc); Neurosarcoidosis; Infectious myelitis/optic neuropathy (HIV, Syphilis, Lyme)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis (relapse)",
+          "Neuromyelitis Optica Spectrum Disorder (AQP4-IgG positive)",
+          "MOG Antibody-Associated Disease",
+          "Compressive right thoracic hemicord lesion (e.g., extramedullary tumor/disc)",
+          "Neurosarcoidosis",
+          "Infectious myelitis/optic neuropathy (HIV, Syphilis, Lyme)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Contact dermatitis": "comorbidity",
+          "Type 2 diabetes mellitus": "comorbidity",
+          "Cataract": "comorbidity",
+          "Unspecified headaches": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Contact dermatitis",
+          "Type 2 diabetes mellitus",
+          "Cataract",
+          "Unspecified headaches"
+        ],
+        "additional_diagnoses": [
+          "Neuromyelitis Optica Spectrum Disorder (AQP4-IgG positive)",
+          "MOG Antibody-Associated Disease",
+          "Compressive right thoracic hemicord lesion (e.g., extramedullary tumor/disc)",
+          "Neurosarcoidosis",
+          "Infectious myelitis/optic neuropathy (HIV, Syphilis, Lyme)"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and Thoracic Spine and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, orbits, and entire spine with gadolinium",
+          "Visual evoked potentials",
+          "Optical coherence tomography (retinal nerve fibre layer)",
+          "Lumbar puncture",
+          "CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands and IgG index",
+          "Serum aquaporin-4 IgG",
+          "Serum MOG IgG",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid-stimulating hormone",
+          "Vitamin B12",
+          "Folate",
+          "Serum copper",
+          "HIV Ag/Ab test",
+          "Syphilis serology (RPR/TPPA)",
+          "Lyme serology",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Serum ACE",
+          "Chest CT if sarcoidosis suspected",
+          "Urine pregnancy test if relevant to therapy"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Steroids potentially inappropriate due to comorbidity Type 2 diabetes mellitus.\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute optic neuritis/myelitis within 2 weeks",
+              "Speeds neurological recovery",
+              "No systemic infection or contraindication evident"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor for gastroprotection",
+            "timing": "Start Now",
+            "reasons": [
+              "High-dose corticosteroid use",
+              "Prevention of steroid-related gastritis/ulcer"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis (LMWH and mechanical)",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility from myelopathy",
+              "Prevent hospital-acquired VTE"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and gait/balance rehabilitation",
+            "timing": "Start Now",
+            "reasons": [
+              "Improve mobility and reduce falls risk",
+              "Address spasticity and proprioceptive deficit"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 sessions)",
+            "timing": "Delay",
+            "reasons": [
+              "Reserve for poor response to steroids or strong suspicion of NMOSD/MOGAD",
+              "Initiate within 7\u201314 days if inadequate improvement"
+            ]
+          },
+          {
+            "treatment": "Disease-modifying therapy for MS (e.g., ocrelizumab/natalizumab per JCV status)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation and risk stratification",
+              "Requires discussion of options and monitoring plan"
+            ]
+          },
+          {
+            "treatment": "Rituximab (if NMOSD confirmed)",
+            "timing": "Delay",
+            "reasons": [
+              "Indicated for AQP4-IgG NMOSD prevention",
+              "Begin after antibody confirmation and vaccination review"
+            ]
+          },
+          {
+            "treatment": "Urgent neurosurgical decompression",
+            "timing": "Delay",
+            "reasons": [
+              "Only if MRI shows compressive thoracic cord lesion",
+              "Surgical indication contingent on imaging"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute optic neuritis/myelitis within 2 weeks",
+              "Speeds neurological recovery",
+              "No systemic infection or contraindication evident"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+              ],
+              "contraindications": [
+                "Steroids potentially inappropriate due to comorbidity Type 2 diabetes mellitus."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Steroids potentially inappropriate due to comorbidity Type 2 diabetes mellitus.\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-modifying therapy for MS (e.g., ocrelizumab/natalizumab per JCV status)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation and risk stratification",
+              "Requires discussion of options and monitoring plan"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 1,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 0,
+          "proportion_reasons_acknowledged": 1.0,
+          "proportion_reasons_missed": 0.0
+        }
+      }
+    }
+  }
+}

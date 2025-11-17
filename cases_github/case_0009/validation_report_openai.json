@@ -1,0 +1,285 @@
+{
+  "case_id": "case_0009",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 37.07,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- MOG-antibody\u2013associated optic neuritis; Aquaporin-4 neuromyelitis optica spectrum disorder; Non-arteritic anterior ischemic optic neuropathy; Compressive optic neuropathy (optic nerve sheath meningioma or orbital mass); Sarcoid optic neuritis; Syphilitic optic neuritis; Lyme neuroborreliosis\u2013related optic neuropathy; Tuberculous optic neuropathy; Toxic/nutritional optic neuropathy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple sclerosis\u2013associated optic neuritis",
+          "MOG-antibody\u2013associated optic neuritis",
+          "Aquaporin-4 neuromyelitis optica spectrum disorder",
+          "Non-arteritic anterior ischemic optic neuropathy",
+          "Compressive optic neuropathy (optic nerve sheath meningioma or orbital mass)",
+          "Sarcoid optic neuritis",
+          "Syphilitic optic neuritis",
+          "Lyme neuroborreliosis\u2013related optic neuropathy",
+          "Tuberculous optic neuropathy",
+          "Toxic/nutritional optic neuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Visual impairment": "comorbidity",
+          "Raynaud's syndrome": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Visual impairment",
+          "Raynaud's syndrome"
+        ],
+        "additional_diagnoses": [
+          "MOG-antibody\u2013associated optic neuritis",
+          "Aquaporin-4 neuromyelitis optica spectrum disorder",
+          "Non-arteritic anterior ischemic optic neuropathy",
+          "Compressive optic neuropathy (optic nerve sheath meningioma or orbital mass)",
+          "Sarcoid optic neuritis",
+          "Syphilitic optic neuritis",
+          "Lyme neuroborreliosis\u2013related optic neuropathy",
+          "Tuberculous optic neuropathy",
+          "Toxic/nutritional optic neuropathy"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium and fat-suppressed sequences",
+          "MRI of cervical and thoracic spine with gadolinium",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands, Gram stain and culture",
+          "Automated perimetry (Humphrey visual field)",
+          "Optical coherence tomography (RNFL/GCL analysis)",
+          "Visual evoked potentials",
+          "AQP4-IgG (cell-based assay)",
+          "MOG-IgG (cell-based assay)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Erythrocyte sedimentation rate",
+          "C-reactive protein",
+          "Blood glucose",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Anti-dsDNA antibody",
+          "Serum ACE level",
+          "Serum calcium",
+          "Vitamin B12",
+          "Thyroid-stimulating hormone",
+          "HIV antigen/antibody test",
+          "Syphilis serology (treponemal and non-treponemal)",
+          "Lyme serology",
+          "Quantiferon-TB Gold or T-Spot",
+          "High-resolution CT chest (if sarcoidosis or TB suspected)"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 2,
+        "found_tests_count": 2,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute unilateral optic neuritis within treatment window",
+              "Speeds visual recovery",
+              "Standard first-line therapy for inflammatory optic neuritis"
+            ]
+          },
+          {
+            "treatment": "Oral prednisolone taper (e.g., 60 mg reducing over 11\u201314 days) after IV course",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduces early relapse risk after IV steroids",
+              "Bridges steroid withdrawal following pulse therapy"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor and glucose/BP monitoring during steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Mitigate gastrointestinal and metabolic adverse effects of high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 exchanges)",
+            "timing": "Delay",
+            "reasons": [
+              "Reserve for steroid-refractory or severe vision loss",
+              "Initiate if no improvement within 3\u20135 days post-steroids or AQP4-positive severe attack"
+            ]
+          },
+          {
+            "treatment": "Multiple sclerosis disease-modifying therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Start only if MRI/CSF support MS diagnosis or high-risk clinically isolated syndrome",
+              "Choice depends on lesion burden and patient factors"
+            ]
+          },
+          {
+            "treatment": "Rituximab or other NMOSD-directed immunotherapy",
+            "timing": "Delay",
+            "reasons": [
+              "Indicated if AQP4-IgG positive or high clinical suspicion",
+              "Requires serologic confirmation and specialist planning"
+            ]
+          },
+          {
+            "treatment": "Targeted antimicrobial therapy (e.g., for syphilis, TB, Lyme) if confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Treat only if infectious cause identified",
+              "Avoid unnecessary antibiotics without evidence"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute unilateral optic neuritis within treatment window",
+              "Speeds visual recovery",
+              "Standard first-line therapy for inflammatory optic neuritis"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Multiple sclerosis disease-modifying therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Start only if MRI/CSF support MS diagnosis or high-risk clinically isolated syndrome",
+              "Choice depends on lesion burden and patient factors"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.)."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.5,
+          "proportion_reasons_missed": 0.5
+        }
+      }
+    }
+  }
+}

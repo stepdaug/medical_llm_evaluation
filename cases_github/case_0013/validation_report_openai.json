@@ -1,0 +1,304 @@
+{
+  "case_id": "case_0013",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 27.79,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve (cranial nerve II).\n  \nMore precision is possible than: 'left thoracic spinal cord'.  \nNamely: left T8 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T8 myelopathy",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "thoracic spinal cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [
+          [
+            "left thoracic spinal cord",
+            "left T8 myelopathy"
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.5,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Neuromyelitis optica spectrum disorder (AQP4-IgG positive); MOG antibody\u2013associated disease; Compressive thoracic myelopathy (e.g., meningioma); Neurosarcoidosis; Autoimmune myelitis secondary to SLE/Sj\u00f6gren; Vitamin B12 deficiency (subacute combined degeneration); Syphilis-related myelitis/optic neuropathy; HTLV-1\u2013associated myelopathy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing\u2013remitting multiple sclerosis",
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "MOG antibody\u2013associated disease",
+          "Compressive thoracic myelopathy (e.g., meningioma)",
+          "Neurosarcoidosis",
+          "Autoimmune myelitis secondary to SLE/Sj\u00f6gren",
+          "Vitamin B12 deficiency (subacute combined degeneration)",
+          "Syphilis-related myelitis/optic neuropathy",
+          "HTLV-1\u2013associated myelopathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Allergic rhinitis": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Allergic rhinitis"
+        ],
+        "additional_diagnoses": [
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG positive)",
+          "MOG antibody\u2013associated disease",
+          "Compressive thoracic myelopathy (e.g., meningioma)",
+          "Neurosarcoidosis",
+          "Autoimmune myelitis secondary to SLE/Sj\u00f6gren",
+          "Vitamin B12 deficiency (subacute combined degeneration)",
+          "Syphilis-related myelitis/optic neuropathy",
+          "HTLV-1\u2013associated myelopathy"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and Thoracic Spine and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, orbits, and entire spinal cord with gadolinium",
+          "Visual evoked potentials",
+          "Optical coherence tomography",
+          "CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands and IgG index",
+          "Serum aquaporin-4 IgG",
+          "Serum MOG IgG",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Vitamin B12",
+          "Folate",
+          "Thyroid-stimulating hormone",
+          "Serum ACE",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "SSA/Ro antibody",
+          "SSB/La antibody",
+          "HIV antigen/antibody",
+          "Syphilis serology (treponemal test and RPR)",
+          "HTLV-1/2 antibodies",
+          "Chest X-ray"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute severe optic neuritis and myelitis",
+              "Improves speed of neurological recovery",
+              "Standard first-line therapy for inflammatory demyelinating relapse"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor during high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastric protection with corticosteroids",
+              "Reduces risk of steroid-related dyspepsia/ulcer"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis and early physiotherapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility from spastic paraparesis",
+              "Prevents deconditioning and DVT"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (5\u20137 exchanges)",
+            "timing": "Delay",
+            "reasons": [
+              "Escalate if poor response to steroids within 48\u201372 hours",
+              "Indicated early if AQP4-IgG positive or vision remains hand movements only"
+            ]
+          },
+          {
+            "treatment": "High-efficacy MS disease-modifying therapy (e.g., ocrelizumab) or NMOSD-directed therapy if indicated",
+            "timing": "Delay",
+            "reasons": [
+              "Initiate after diagnostic confirmation and serology results",
+              "Requires infection screening and vaccination review"
+            ]
+          },
+          {
+            "treatment": "Baclofen for spasticity as needed",
+            "timing": "Delay",
+            "reasons": [
+              "Introduce after acute phase if persistent spasticity limits function",
+              "Dose titration guided by response and side effects"
+            ]
+          },
+          {
+            "treatment": "Urgent neurosurgical consultation for decompression if MRI shows cord compression",
+            "timing": "Delay",
+            "reasons": [
+              "Definitive treatment for compressive myelopathy",
+              "Only indicated if imaging identifies a structural lesion"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute severe optic neuritis and myelitis",
+              "Improves speed of neurological recovery",
+              "Standard first-line therapy for inflammatory demyelinating relapse"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "High-efficacy MS disease-modifying therapy (e.g., ocrelizumab) or NMOSD-directed therapy if indicated",
+            "timing": "Delay",
+            "reasons": [
+              "Initiate after diagnostic confirmation and serology results",
+              "Requires infection screening and vaccination review"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 3,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 2,
+          "missed_reasons_count": 1,
+          "proportion_reasons_acknowledged": 0.6666666666666666,
+          "proportion_reasons_missed": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

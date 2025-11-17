@@ -1,0 +1,7 @@
+{
+  "case_id": "case_0017",
+  "provider": "openai",
+  "status": "error",
+  "error_message": "patient_profile_output.json not found in D:\\projects\\medical_llm_validator\\cases\\case_0017",
+  "marking_output": {}
+}

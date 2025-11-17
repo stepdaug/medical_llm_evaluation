@@ -1,0 +1,329 @@
+{
+  "case_id": "case_0011",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 32.47,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left midbrain and left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)",
+          "left midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left midbrain",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Paramedian midbrain infarct (Weber/Claude/Benedikt pattern); Midbrain cavernous malformation with recent haemorrhage; Neuromyelitis optica spectrum disorder; MOG-antibody\u2013associated disease; Intrinsic brainstem glioma; Posterior communicating artery aneurysm causing third nerve palsy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple sclerosis relapse (midbrain plaque with left optic neuritis)",
+          "Paramedian midbrain infarct (Weber/Claude/Benedikt pattern)",
+          "Midbrain cavernous malformation with recent haemorrhage",
+          "Neuromyelitis optica spectrum disorder",
+          "MOG-antibody\u2013associated disease",
+          "Intrinsic brainstem glioma",
+          "Posterior communicating artery aneurysm causing third nerve palsy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Lactose intolerance": "comorbidity",
+          "Palpitations": "comorbidity",
+          "Goitre": "comorbidity",
+          "Kyphosis": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Lactose intolerance",
+          "Palpitations",
+          "Goitre",
+          "Kyphosis"
+        ],
+        "additional_diagnoses": [
+          "Paramedian midbrain infarct (Weber/Claude/Benedikt pattern)",
+          "Midbrain cavernous malformation with recent haemorrhage",
+          "Neuromyelitis optica spectrum disorder",
+          "MOG-antibody\u2013associated disease",
+          "Intrinsic brainstem glioma",
+          "Posterior communicating artery aneurysm causing third nerve palsy"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Brain and Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI brain and orbits with and without gadolinium (including DWI)",
+          "MRI cervical spine with and without gadolinium",
+          "CT angiogram of head and neck",
+          "Non-contrast CT head",
+          "Lumbar puncture: CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands",
+          "CSF IgG index",
+          "CSF viral PCR (HSV/VZV) if encephalitis suspected",
+          "Aquaporin-4 IgG (serum)",
+          "MOG-IgG (serum)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid function tests",
+          "Vitamin B12",
+          "Folate",
+          "HbA1c",
+          "Lipid profile",
+          "Coagulation screen",
+          "HIV serology",
+          "Syphilis serology (RPR/TPPA)",
+          "Hepatitis B surface antigen",
+          "Hepatitis C antibody",
+          "Serum ACE",
+          "ANA",
+          "ENA panel",
+          "ANCA",
+          "Quantiferon-TB Gold",
+          "Serum beta-hCG (pregnancy test)",
+          "ECG",
+          "Transthoracic echocardiogram",
+          "Optical coherence tomography",
+          "Visual evoked potentials",
+          "Chest X-ray"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe brainstem relapse with optic neuritis",
+              "Improves speed of recovery",
+              "Presentation is subacute and outside thrombolysis window"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor and glucose monitoring while on high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastroprotection and metabolic safety during corticosteroid therapy"
+            ]
+          },
+          {
+            "treatment": "Therapeutic plasma exchange (5\u20137 exchanges)",
+            "timing": "Delay",
+            "reasons": [
+              "Reserve for steroid-refractory relapse",
+              "Initiate if no meaningful improvement within 5\u20137 days or if steroids contraindicated"
+            ]
+          },
+          {
+            "treatment": "Disease-modifying therapy for multiple sclerosis (agent per phenotype and screening results)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation",
+              "Requires infection screening and counselling"
+            ]
+          },
+          {
+            "treatment": "Low molecular weight heparin for venous thromboembolism prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility with right hemiparesis",
+              "No intracranial haemorrhage on imaging"
+            ]
+          },
+          {
+            "treatment": "Eye care (occlusive patch/lubricants) and diplopia management",
+            "timing": "Start Now",
+            "reasons": [
+              "Symptomatic relief from ophthalmoplegia",
+              "Prevents corneal exposure complications"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Rehabilitation for hemiparesis and ataxia",
+              "Fall risk reduction and gait retraining"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Not indicated unless imaging confirms ischaemic stroke",
+              "Avoid if demyelination or cavernoma haemorrhage"
+            ]
+          },
+          {
+            "treatment": "Endovascular coiling/clipping of posterior communicating artery aneurysm",
+            "timing": "Delay",
+            "reasons": [
+              "Only if CTA/MRA confirms aneurysm",
+              "Addresses pupil-involving third nerve palsy aetiology if present"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe brainstem relapse with optic neuritis",
+              "Improves speed of recovery",
+              "Presentation is subacute and outside thrombolysis window"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-modifying therapy for multiple sclerosis (agent per phenotype and screening results)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation",
+              "Requires infection screening and counselling"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 3,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 4,
+          "acknowledged_reasons_count": 2,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.5,
+          "proportion_reasons_missed": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Google Sheets API client
+gspread==5.12.4
+
+# Recommended for Google API authentication
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0

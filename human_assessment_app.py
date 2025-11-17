@@ -13,7 +13,10 @@ import ast
 
 # --- CONFIGURATION ---
 # BASE_PATH = Path(r"D:\projects\medical_llm_validator\cases") # full data from harddrive
-BASE_PATH = Path(r"D:\projects\medical_llm_validator\human_validation_of_evaluator\cases_github") # for github upload
+# PATH TO CAES FOR GITHUB UPLOAD
+script_dir = Path(__file__).parent 
+BASE_PATH = script_dir / "cases_github"
+
 REVIEWERS = ["", "JV", "MH", "SA"] # Add initials of your reviewers. "" is for the placeholder.
 SECTIONS = {
     "Localisation": "localisation",

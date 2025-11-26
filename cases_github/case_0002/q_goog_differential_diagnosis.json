@@ -1,5 +1,0 @@
-{
-    "response": "The clinical presentation is that of a 27-year-old woman with evidence of at least three distinct lesions within the central nervous system (CNS), indicating a process that is multifocal or disseminated in space. The specific combination of a left optic neuritis (reduced acuity, RAPD), a right cerebellar syndrome (ipsilateral ataxia, nystagmus), and a focal left cerebral hemisphere lesion affecting the right leg (UMN signs and sensory loss consistent with a paracentral lobule location) is highly characteristic of an inflammatory demyelinating disease. The patient's age and sex are the classic demographic for multiple sclerosis. Therefore, the differential diagnosis is prioritized towards conditions that cause multifocal CNS inflammation, with multiple sclerosis being the leading consideration. Other demyelinating disorders and systemic inflammatory conditions that can mimic this presentation are also included.\n\ndifferential_diagnosis = [\"Multiple Sclerosis\", \"Neuromyelitis Optica Spectrum Disorder\", \"Anti-MOG Antibody Disease\", \"Neurosarcoidosis\", \"CNS Vasculitis\"]",
-    "prompt_tokens": 970,
-    "output_tokens": 210
-}

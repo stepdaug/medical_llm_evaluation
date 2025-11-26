@@ -92,19 +92,28 @@ def write_to_gsheet(data: dict):
         return False
 
 def reset_feedback_state():
-    """Clears all feedback-related keys from session_state."""
-    # This is the primary dictionary holding feedback
+    """Clears all feedback-related keys from session_state to ensure a blank slate."""
+    # 1. Clear the dictionary that gathers the results
     if 'feedback' in st.session_state:
         st.session_state.feedback = {}
     
-    # Also, explicitly delete widget keys to be certain they reset
-    keys_to_delete = []
-    for key in st.session_state.keys():
-        if key.endswith('_feedback') or key.endswith('_comment') or key.startswith('case_'):
-            keys_to_delete.append(key)
+    # 2. List all specific keys used in the widgets
+    keys_to_clear = [
+        "case_feasibility",
+        "case_feasibility_comment",
+        "other_inaccuracies",           # This was missing in the previous logic
+        "other_inaccuracies_comment"
+    ]
     
-    for key in keys_to_delete:
-        del st.session_state[key]
+    # 3. Add the dynamic keys from your SECTIONS dictionary
+    for _, file_key in SECTIONS.items():
+        keys_to_clear.append(f"{file_key}_feedback")
+        keys_to_clear.append(f"{file_key}_comment")
+
+    # 4. Delete these keys from session_state so widgets reset to index=None
+    for key in keys_to_clear:
+        if key in st.session_state:
+            del st.session_state[key]
 
 # --- DATA LOADING FUNCTIONS ---
 def get_available_cases(base_path: Path) -> list:
@@ -541,35 +550,36 @@ if case_number and reviewer_initials and provider: # Added provider check
                     if write_to_gsheet(submission_data):
                         st.success("Feedback submitted successfully! Thank you.")
                         
-                        # # --- AUTO-ADVANCE LOGIC ---
-                        # try:
-                        #     # 1. Find where we are currently in the list
-                        #     current_idx = available_cases_display.index(case_number)
-                        #     next_idx = current_idx + 1
+                        # --- AUTO-ADVANCE LOGIC ---
+                        try:
+                            # 1. Find where we are currently in the list
+                            current_idx = available_cases_display.index(case_number)
+                            next_idx = current_idx + 1
                             
-                        #     # 2. Check if there is a next case
-                        #     if next_idx < len(available_cases_display):
-                        #         next_case_val = available_cases_display[next_idx]
+                            # 2. Check if there is a next case
+                            if next_idx < len(available_cases_display):
+                                next_case_val = available_cases_display[next_idx]
                                 
-                        #         # 3. SAFETY CHECK: Ensure the next value is actually in the valid options
-                        #         # This prevents the StreamlitAPIException crash
-                        #         if next_case_val in available_cases_display:
-                        #             reset_feedback_state()
-                        #             st.session_state.sb_case_selector = next_case_val
-                        #             st.rerun()
-                        #         else:
-                        #             st.warning(f"Could not auto-advance: '{next_case_val}' is not in the list.")
-                        #     else:
-                        #         st.balloons()
-                        #         st.info("You have reached the end of your assigned cases!")
+                                # 3. SAFETY CHECK: Ensure the next value is actually in the valid options
+                                # This prevents the StreamlitAPIException crash
+                                if next_case_val in available_cases_display:
+                                    reset_feedback_state()
+                                    st.session_state.sb_case_selector = next_case_val
+                                    st.rerun()
+                                else:
+                                    st.warning(f"Could not auto-advance: '{next_case_val}' is not in the list.")
+                            else:
+                                st.balloons()
+                                st.info("You have reached the end of your assigned cases!")
                                 
-                        # except ValueError:
-                        #     # This happens if 'case_number' isn't found in the list for some reason
-                        #     st.warning("Please select the next case manually.")
-                        # except Exception as e:
-                        #     st.warning(f"Auto-advance error: {e}")
+                        except ValueError:
+                            # This happens if 'case_number' isn't found in the list for some reason
+                            st.warning("Please select the next case manually.")
+                        except Exception as e:
+                            st.warning(f"Auto-advance error: {e}")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+
 
 
 

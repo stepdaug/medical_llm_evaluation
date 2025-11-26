@@ -14,15 +14,21 @@ import ast
 # --- CONFIGURATION ---
 # BASE_PATH = Path(r"D:\projects\medical_llm_validator\cases") # full data from harddrive
 # PATH TO CAES FOR GITHUB UPLOAD
-script_dir = Path(__file__).parent 
-BASE_PATH = script_dir / "cases_github"
+BASE_PATH = Path(__file__).parent / "cases_github"
 
-REVIEWERS = ["", "JV", "MH", "SA"] # Add initials of your reviewers. "" is for the placeholder.
+REVIEWERS = ["", "JV", "MH","test1","test2", "SA"] # Add initials of your reviewers. "" is for the placeholder.
 SECTIONS = {
     "Localisation": "localisation",
     "Differential diagnosis": "differential_diagnosis",
     "Investigations": "investigations",
     "Management": "management"
+}
+
+# Define the specific model identifiers and their display names for SA
+MODEL_OPTIONS = {
+    "GPT-5.1 (OpenAI)": "openai_gpt-5-1",
+    "Gemini 3 Pro (Google)": "google_gemini-3-pro-preview",
+    "GPT-5 (OpenAI)": "openai"
 }
 
 # --- GOOGLE SHEETS CONNECTION ---
@@ -107,12 +113,15 @@ def get_available_cases(base_path: Path) -> list:
     return sorted(cases)
 
 @st.cache_data(show_spinner="Loading case data...")
-def load_case_data(case_number: str, provider: str) -> dict:
-    """Loads all necessary data for a given case and provider."""
+def load_case_data(case_number: str, model_id: str) -> dict:
+    """
+    Loads data based on the specific model identifier.
+    model_id examples: 'openai', 'openai_gpt-5-1', 'google_gemini-3-pro-preview'
+    """
     case_path = BASE_PATH / f"case_{case_number}"
     data = {"valid": True, "errors": []}
 
-    # Load image (FIXED: Load as bytes, not a path string)
+    # 1. Load Image
     image_path = case_path / "combined_examination_summary.png"
     if image_path.exists():
         with open(image_path, 'rb') as f:
@@ -121,27 +130,43 @@ def load_case_data(case_number: str, provider: str) -> dict:
         data["errors"].append("Image file not found.")
         data["valid"] = False
 
-    # Load LLM answers
+    # 2. Determine Filenames based on Model ID
+    # Logic: 
+    # - 'openai' -> q_openai_{section}.json / validation_report_openai.json
+    # - 'openai_gpt-5-1' -> q_openai_gpt-5-1_{section}.json / validation_report_openai_gpt-5-1.json
+    # - 'google...' -> q_google_gemini..._{section}.json / validation_report_google_gemini... .json
+    
+    if model_id == "openai":
+        file_prefix = "openai"
+        report_filename = "validation_report_openai.json"
+    else:
+        # For gpt-5-1 and gemini, the prefix is usually the full ID
+        file_prefix = model_id 
+        report_filename = f"validation_report_{model_id}.json"
+
+    # 3. Load LLM Answers
     data["llm_answers"] = {}
-    for display_name, file_key in SECTIONS.items():
-        answer_file = case_path / f"q_{provider}_{file_key}.json"
+    for display_name, section_key in SECTIONS.items():
+        # Construct filename: e.g., q_openai_gpt-5-1_differential_diagnosis.json
+        answer_file = case_path / f"q_{file_prefix}_{section_key}.json"
+        
         if answer_file.exists():
             try:
                 with open(answer_file, 'r', encoding='utf-8') as f:
                     content = json.load(f)
                     data["llm_answers"][display_name] = content.get("response", "Error: 'response' key not found.")
             except json.JSONDecodeError:
-                data["llm_answers"][display_name] = f"Error: Could not decode JSON from {answer_file.name}."
+                data["llm_answers"][display_name] = f"Error: JSON Decode Error in {answer_file.name}."
         else:
-            data["llm_answers"][display_name] = "Answer file not found."
+            data["llm_answers"][display_name] = f"File not found: {answer_file.name}"
     
-    # Load validation report
-    report_file = case_path / f"validation_report_{provider}.json"
+    # 4. Load Validation Report
+    report_file = case_path / report_filename
     if report_file.exists():
         with open(report_file, 'r', encoding='utf-8') as f:
             data["report"] = json.load(f)
     else:
-        data["errors"].append(f"validation_report_{provider}.json not found.")
+        data["errors"].append(f"Report file not found: {report_filename}")
         data["valid"] = False
 
     return data
@@ -149,51 +174,145 @@ def load_case_data(case_number: str, provider: str) -> dict:
 # --- MAIN APP LAYOUT ---
 st.set_page_config(layout="wide", page_title="Clinical Case Evaluator Review")
 # st.title("Human Validation of Automated Evaluator")
+available_cases_display = [] # Initialise list to empty to prevent NameErrors if no user selected
+
+def get_reviewer_assignment(reviewer, completion_df):
+    """
+    Returns:
+    1. valid_cases (list): List of case numbers this reviewer should see.
+    2. case_model_map (dict): Mapping of case_number -> model_id to load (BLINDED).
+    """
+    all_cases = get_available_cases(BASE_PATH)
+    
+    # Create Lookup Map: Integer -> String (e.g., 2 -> "0002")
+    # This allows us to use math (1-70) but load the correct file names
+    id_map = {int(c): c for c in all_cases if c.isdigit()}
+    
+    valid_cases = []
+    case_model_map = {}
+
+    # --- 1. PROTOCOL ASSIGNMENT (Hardcoded Study Design) ---
+    # Model IDs
+    m_gpt = "openai_gpt-5-1"
+    m_gem = "google_gemini-3-pro-preview"
+
+    def add_case(i, force_model=None):
+        """Helper to add case if it exists on disk."""
+        if i in id_map:
+            c_str = id_map[i]
+            # Protocol: Odd=GPT, Even=Gemini (Unless forced by adjudication)
+            model = force_model if force_model else (m_gpt if i % 2 != 0 else m_gem)
+            
+            if c_str not in valid_cases: 
+                valid_cases.append(c_str)
+            case_model_map[c_str] = model
+
+    if reviewer in ["JV", "MH","test1","test2"]:
+        # Phase 1: Calibration (Cases 1-10)
+        for i in range(1, 11): add_case(i)
+
+        # Phase 2: Split Stream
+        if reviewer == "JV" or reviewer == "test1":
+            for i in range(11, 41): add_case(i)
+        elif reviewer == "MH" or reviewer == "test2":
+            for i in range(41, 71): add_case(i)
+    
+    # # --- 2. ADJUDICATION LOGIC ---
+    # # Look for cases where the OTHER reviewer marked "Some statements are inaccurate"
+    # if not completion_df.empty and reviewer in ["JV", "MH","test1","test2"]:
+        
+    #     if reviewer == "JV":
+    #         other_reviewer = "MH"
+    #     if reviewer == "MH":
+    #         other_reviewer = "JV" 
+    #     if reviewer == "test1":
+    #         other_reviewer = "test2"
+    #     if reviewer == "test2":
+    #         other_reviewer = "test1" 
+        
+    #     # Filter for the other reviewer's work
+    #     peer_work = completion_df[completion_df['reviewer_initials'] == other_reviewer]
+        
+    #     # Columns to check for inaccuracy flags
+    #     feedback_cols = [
+    #         "localisation_feedback", "ddx_feedback", 
+    #         "investigations_feedback", "management_feedback"
+    #     ]
+        
+    #     for _, row in peer_work.iterrows():
+    #         if any(row.get(c) == "Some statements are inaccurate" for c in feedback_cols):
+    #             try:
+    #                 # Force the reviewer to see the exact model the peer saw
+    #                 add_case(int(row['case_number']), force_model=str(row['provider']))
+    #             except (ValueError, KeyError): 
+    #                 continue
+
+    # Sort numerically so "0002" comes before "0010"
+    return sorted(valid_cases, key=lambda x: int(x)), case_model_map
 
 # --- SIDEBAR FOR SELECTIONS ---
 with st.sidebar:
     st.header("Reviewer Details")
     reviewer_initials = st.selectbox("Select Your Initials", options=REVIEWERS, index=0)
     
-    st.header("Case Selection")
-    available_cases = get_available_cases(BASE_PATH)
+    # Initialize variables
     case_number = None
+    provider = None 
+    
     if reviewer_initials:
         completion_df = get_completion_status()
         completed_cases = set()
 
         if not completion_df.empty:
-            # Ensure case_number is treated as a string for consistent comparison
             completion_df['case_number'] = completion_df['case_number'].astype(str)
-            user_completed = completion_df[completion_df['reviewer_initials'] == reviewer_initials]
+            if reviewer_initials == "SA":
+                user_completed = completion_df[completion_df['reviewer_initials'] == "SA"]
+            else:
+                user_completed = completion_df[completion_df['reviewer_initials'] == reviewer_initials]
+            
             completed_cases = set(user_completed['case_number'])
 
+        # --- CASE SELECTION LOGIC ---
+        if reviewer_initials == "SA":
+            # Super Admin: Sees ALL cases
+            available_cases_display = get_available_cases(BASE_PATH)
+        else:
+            # Experts: See only Assigned + Adjudication cases
+            assigned_cases, case_model_map = get_reviewer_assignment(reviewer_initials, completion_df)
+            available_cases_display = assigned_cases
+            # st.write(assigned_cases)
+            # st.write(case_model_map )
+
         def format_case_number(case_num):
-            """Formats the case number with a color emoji based on completion status."""
             if case_num in completed_cases:
-                return f"{case_num}  ✅"  # Green for completed
+                return f"{case_num}  ✅"
             else:
-                return f"{case_num}  🔴"  # Red for incomplete
+                return f"{case_num}  🔴"
         
         case_number_formatted = st.selectbox(
             "Select Case Number", 
-            options=available_cases,
+            options=available_cases_display, # Uses the specific list for this user
             format_func=format_case_number,
-            on_change=reset_feedback_state
+            on_change=reset_feedback_state,
+            key="sb_case_selector"
         )
-        # We still need the raw case number for file loading
         case_number = case_number_formatted.split(" ")[0] if case_number_formatted else None
 
+        # --- MODEL SELECTION LOGIC ---
+        if reviewer_initials == "SA":
+            model_display_name = st.selectbox(
+                "Select Model (Admin View)",
+                options=list(MODEL_OPTIONS.keys()),
+                on_change=reset_feedback_state
+            )
+            provider = MODEL_OPTIONS[model_display_name]
+        elif case_number:
+            # Experts have model auto-selected (Blinded)
+            provider = case_model_map.get(case_number)
+
     else:
-        # Default display if no reviewer is selected
-        case_number = st.selectbox("Select Case Number", options=available_cases)
-
-
-    provider = st.selectbox("Select Model",
-                            options=["openai", "goog"],
-                            on_change=reset_feedback_state
-                            )
-
+        st.info("Select initials to begin.")
+        
     st.header("Display Options")
     image_size_multiplier = st.slider(
         "Adjust Image Size", 
@@ -204,7 +323,7 @@ with st.sidebar:
     )
 
 # --- MAIN CONTENT AREA ---
-if case_number and reviewer_initials:
+if case_number and reviewer_initials and provider: # Added provider check
     case_data = load_case_data(case_number, provider)
 
     if not case_data["valid"]:
@@ -329,7 +448,7 @@ if case_number and reviewer_initials:
         st.subheader("General Questions on the Case")
         
         st.session_state.feedback["case_feasibility"] = st.radio(
-            "Is this case feasibly reflective of a patient with MS (either recent relapse or chronic)?",
+            "Is this case feasibly reflective of a patient with deficits related to MS (either recent relapse or chronic)?",
             ("Yes", "No"), key="case_feasibility", index=None, horizontal=True
         )
         # Conditional text area based on the radio button's state
@@ -421,7 +540,20 @@ if case_number and reviewer_initials:
                     }
                     if write_to_gsheet(submission_data):
                         st.success("Feedback submitted successfully! Thank you.")
-                        st.balloons()
+                        try: 
+                            # FIX: Use available_cases_display instead of available_cases
+                            current_idx = available_cases_display.index(case_number)
+                            next_idx = current_idx + 1
+                            
+                            if next_idx < len(available_cases_display):
+                                reset_feedback_state() 
+                                # Update the widget to the next item in THEIR specific list
+                                st.session_state.sb_case_selector = available_cases_display[next_idx] 
+                                st.rerun() 
+                            else:
+                                st.info("You have reached the end of the case list.")
+                        except ValueError:
+                            pass
                     else:
                         st.error("Submission failed. Please check the logs or contact Stephen.")
 else:

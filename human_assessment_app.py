@@ -540,22 +540,35 @@ if case_number and reviewer_initials and provider: # Added provider check
                     }
                     if write_to_gsheet(submission_data):
                         st.success("Feedback submitted successfully! Thank you.")
-                        try: 
-                            # FIX: Use available_cases_display instead of available_cases
+                        
+                        # --- AUTO-ADVANCE LOGIC ---
+                        try:
+                            # 1. Find where we are currently in the list
                             current_idx = available_cases_display.index(case_number)
                             next_idx = current_idx + 1
                             
+                            # 2. Check if there is a next case
                             if next_idx < len(available_cases_display):
-                                reset_feedback_state() 
-                                # Update the widget to the next item in THEIR specific list
-                                st.session_state.sb_case_selector = available_cases_display[next_idx] 
-                                st.rerun() 
+                                next_case_val = available_cases_display[next_idx]
+                                
+                                # 3. SAFETY CHECK: Ensure the next value is actually in the valid options
+                                # This prevents the StreamlitAPIException crash
+                                if next_case_val in available_cases_display:
+                                    reset_feedback_state()
+                                    st.session_state.sb_case_selector = next_case_val
+                                    st.rerun()
+                                else:
+                                    st.warning(f"Could not auto-advance: '{next_case_val}' is not in the list.")
                             else:
-                                st.info("You have reached the end of the case list.")
+                                st.balloons()
+                                st.info("You have reached the end of your assigned cases!")
+                                
                         except ValueError:
-                            pass
-                    else:
-                        st.error("Submission failed. Please check the logs or contact Stephen.")
+                            # This happens if 'case_number' isn't found in the list for some reason
+                            st.warning("Please select the next case manually.")
+                        except Exception as e:
+                            st.warning(f"Auto-advance error: {e}")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+
 

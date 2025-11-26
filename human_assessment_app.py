@@ -31,6 +31,14 @@ MODEL_OPTIONS = {
     "GPT-5 (OpenAI)": "openai"
 }
 
+# --- INITIAL SETUP & NAVIGATION HANDLER ---
+# This must run before any widgets are instantiated to avoid the StreamlitAPIException
+if "pending_case_update" in st.session_state:
+    # Apply the pending update to the selector widget
+    st.session_state.sb_case_selector = st.session_state.pending_case_update
+    # Clear the pending state so it doesn't loop
+    del st.session_state.pending_case_update
+
 # --- GOOGLE SHEETS CONNECTION ---
 def init_gspread_connection():
     """Initialises a connection to Google Sheets using Streamlit's secrets."""
@@ -552,7 +560,7 @@ if case_number and reviewer_initials and provider: # Added provider check
                         
                         # --- AUTO-ADVANCE LOGIC ---
                         try:
-                            # 1. Find where we are currently in the list
+                            # 1. Find where we are currently
                             current_idx = available_cases_display.index(case_number)
                             next_idx = current_idx + 1
                             
@@ -560,11 +568,14 @@ if case_number and reviewer_initials and provider: # Added provider check
                             if next_idx < len(available_cases_display):
                                 next_case_val = available_cases_display[next_idx]
                                 
-                                # 3. SAFETY CHECK: Ensure the next value is actually in the valid options
-                                # This prevents the StreamlitAPIException crash
+                                # 3. SAFETY CHECK
                                 if next_case_val in available_cases_display:
                                     reset_feedback_state()
-                                    st.session_state.sb_case_selector = next_case_val
+                                    
+                                    # --- THE FIX ---
+                                    # Don't update the widget directly here. 
+                                    # Set a flag for the NEXT run to pick up at the top of the file.
+                                    st.session_state.pending_case_update = next_case_val
                                     st.rerun()
                                 else:
                                     st.warning(f"Could not auto-advance: '{next_case_val}' is not in the list.")
@@ -573,12 +584,12 @@ if case_number and reviewer_initials and provider: # Added provider check
                                 st.info("You have reached the end of your assigned cases!")
                                 
                         except ValueError:
-                            # This happens if 'case_number' isn't found in the list for some reason
                             st.warning("Please select the next case manually.")
                         except Exception as e:
                             st.warning(f"Auto-advance error: {e}")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+
 
 
 

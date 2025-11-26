@@ -264,7 +264,7 @@ with st.sidebar:
         completed_cases = set()
 
         if not completion_df.empty:
-            completion_df['case_number'] = completion_df['case_number'].astype(str)
+            completion_df['case_number'] = completion_df['case_number'].astype(str).str.strip().str.zfill(4)
             if reviewer_initials == "SA":
                 user_completed = completion_df[completion_df['reviewer_initials'] == "SA"]
             else:
@@ -558,3 +558,4 @@ if case_number and reviewer_initials and provider: # Added provider check
                         st.error("Submission failed. Please check the logs or contact Stephen.")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+

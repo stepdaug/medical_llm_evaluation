@@ -31,12 +31,41 @@ MODEL_OPTIONS = {
     "GPT-5 (OpenAI)": "openai"
 }
 
-# --- INITIAL SETUP & NAVIGATION HANDLER ---
-# This must run before any widgets are instantiated to avoid the StreamlitAPIException
+def reset_feedback_state():
+    """Clears all feedback-related keys from session_state."""
+    # 1. Clear the dictionary used for storage
+    if 'feedback' in st.session_state:
+        st.session_state.feedback = {}
+    
+    # 2. Identify all keys to delete
+    keys_to_delete = [
+        "case_feasibility", 
+        "case_feasibility_comment",
+        "other_inaccuracies", 
+        "other_inaccuracies_comment"
+    ]
+    
+    # Add dynamic keys from sections
+    for _, file_key in SECTIONS.items():
+        keys_to_delete.append(f"{file_key}_feedback")
+        keys_to_delete.append(f"{file_key}_comment")
+    
+    # 3. Delete them if they exist
+    for key in keys_to_delete:
+        if key in st.session_state:
+            del st.session_state[key]
+
+# --- NAVIGATION HANDLER ---
+# This runs at the top of the script. If a pending update exists,
+# we apply it AND force a reset of the feedback forms immediately.
 if "pending_case_update" in st.session_state:
-    # Apply the pending update to the selector widget
+    # 1. Update the selector widget
     st.session_state.sb_case_selector = st.session_state.pending_case_update
-    # Clear the pending state so it doesn't loop
+    
+    # 2. NUCLEAR RESET: Wipe the answers for the new case
+    reset_feedback_state()
+    
+    # 3. Clean up
     del st.session_state.pending_case_update
 
 # --- GOOGLE SHEETS CONNECTION ---
@@ -98,30 +127,6 @@ def write_to_gsheet(data: dict):
     except Exception as e:
         st.error(f"Failed to write to Google Sheet. Error: {e}")
         return False
-
-def reset_feedback_state():
-    """Clears all feedback-related keys from session_state to ensure a blank slate."""
-    # 1. Clear the dictionary that gathers the results
-    if 'feedback' in st.session_state:
-        st.session_state.feedback = {}
-    
-    # 2. List all specific keys used in the widgets
-    keys_to_clear = [
-        "case_feasibility",
-        "case_feasibility_comment",
-        "other_inaccuracies",           # This was missing in the previous logic
-        "other_inaccuracies_comment"
-    ]
-    
-    # 3. Add the dynamic keys from your SECTIONS dictionary
-    for _, file_key in SECTIONS.items():
-        keys_to_clear.append(f"{file_key}_feedback")
-        keys_to_clear.append(f"{file_key}_comment")
-
-    # 4. Delete these keys from session_state so widgets reset to index=None
-    for key in keys_to_clear:
-        if key in st.session_state:
-            del st.session_state[key]
 
 # --- DATA LOADING FUNCTIONS ---
 def get_available_cases(base_path: Path) -> list:
@@ -589,6 +594,7 @@ if case_number and reviewer_initials and provider: # Added provider check
                             st.warning(f"Auto-advance error: {e}")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+
 
 
 

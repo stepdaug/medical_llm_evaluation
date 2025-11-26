@@ -1,0 +1,285 @@
+{
+  "case_id": "case_0008",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 48.93,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- length-dependent peripheral polyneuropathy.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "length-dependent peripheral polyneuropathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Length-dependent Peripheral Polyneuropathy",
+            "side": "bilateral",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "length-dependent peripheral polyneuropathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Guillain-Barre Syndrome, Paraproteinemic Neuropathy, CIDP, Vitamin B12 Deficiency and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Diabetes-related Neuropathy, Alcohol-related Neuropathy, Hypothyroid Neuropathy, Uraemic Neuropathy and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Congestive heart failure, Chronic venous insufficiency or Kidney disease, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Acute Inflammatory Demyelinating Polyneuropathy (Guillain-Barr\u00e9 Syndrome)",
+          "Vasculitic Neuropathy",
+          "Nutritional Polyneuropathy (e.g., Thiamine or B12 deficiency)",
+          "Paraproteinemic Neuropathy",
+          "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+          "Toxic Polyneuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Peripheral neuropathy": "evaluation",
+          "Congestive heart failure": "incidental_cause",
+          "Kidney disease": "incidental_cause",
+          "Chronic venous insufficiency": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Peripheral neuropathy"
+        ],
+        "missing_original_gt": [
+          "Congestive heart failure",
+          "Kidney disease",
+          "Chronic venous insufficiency"
+        ],
+        "matched_lesion_dx_keys": [
+          "Guillain_Barre_Syndrome",
+          "Paraproteinemic_Neuropathy",
+          "CIDP",
+          "Vitamin_B12_Deficiency",
+          "Vasculitic_Neuropathy"
+        ],
+        "missing_lesion_dx_keys": [
+          "Diabetic_Neuropathy",
+          "Alcoholic_Neuropathy",
+          "Hypothyroidism_Neuropathy",
+          "Uraemic_Neuropathy",
+          "HIV_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Diabetes-related Neuropathy",
+          "Alcohol-related Neuropathy",
+          "Hypothyroid Neuropathy",
+          "Uraemic Neuropathy",
+          "HIV Neuropathy"
+        ],
+        "missing_low_prob_names": [],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Peripheral neuropathy",
+        "gt_total_count": 4,
+        "gt_matched_count": 1,
+        "gt_missed_count": 3,
+        "gt_coverage_percentage": 0.25,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 3,
+        "lesion_ddx_total_count": 10,
+        "lesion_ddx_matched_count": 5,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 0,
+        "lesion_ddx_coverage_percentage": 0.5
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: TFT, ANCA, LFT, folate, Nerve conduction studies and EMG, vitamin B12, FBC, Glucose / HbA1c, protein electrophoresis, U&E, CSF (Analysis (Protein/Cell Count)).\n- Could also consider testing: ESR, methylmalonic acid, HIV, CRP, Spirometry / FVC.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "peripheral_polyneuropathy_length_dependent.bilateral",
+            "condition": "Peripheral neuropathy"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Nerve Conduction Studies and EMG",
+          "Lumbar Puncture",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "HbA1c",
+          "Vitamin B12 and Folate",
+          "Serum Protein Electrophoresis",
+          "Thyroid Function Tests",
+          "Antinuclear Antibody (ANA)",
+          "ANCA screen",
+          "Anti-ganglioside antibodies"
+        ],
+        "all_identified_ft_keys": [
+          "TFT",
+          "ANA",
+          "ANCA",
+          "LFT",
+          "Folate",
+          "NCS_EMG",
+          "Vitamin_B12",
+          "FBC",
+          "Anti_GQ1b_Antibodies",
+          "CSF_General",
+          "Glucose_HbA1c",
+          "Anti_Ganglioside_Antibodies",
+          "Serum_Protein_Electrophoresis",
+          "U_and_E"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "peripheral_polyneuropathy_length_dependent.bilateral",
+            "condition": "Peripheral neuropathy"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "TFT",
+          "ESR",
+          "ANCA",
+          "LFT",
+          "Folate",
+          "Methylmalonic_Acid",
+          "HIV_Test",
+          "NCS_EMG",
+          "Vitamin_B12",
+          "CRP",
+          "FBC",
+          "CSF_General",
+          "Glucose_HbA1c",
+          "Spirometry",
+          "Serum_Protein_Electrophoresis",
+          "U_and_E"
+        ],
+        "found_inv_keys_ddx": [
+          "TFT",
+          "ANCA",
+          "LFT",
+          "Folate",
+          "NCS_EMG",
+          "Vitamin_B12",
+          "FBC",
+          "CSF_General",
+          "Glucose_HbA1c",
+          "Serum_Protein_Electrophoresis",
+          "U_and_E"
+        ],
+        "missing_inv_keys_ddx": [
+          "ESR",
+          "Methylmalonic_Acid",
+          "HIV_Test",
+          "CRP",
+          "Spirometry"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 1,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 11,
+        "ddx_tests_coverage_percentage": 0.6875
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Immunoglobulin (IVIG)",
+            "timing": "Delay",
+            "reasons": [
+              "Patient is ambulant with normal gait",
+              "Respiratory function is currently stable",
+              "Diagnosis (e.g., GBS vs. other neuropathy) requires confirmation via NCS and LP"
+            ]
+          },
+          {
+            "treatment": "Thiamine and Vitamin B Complex supplementation",
+            "timing": "Start Now",
+            "reasons": [
+              "Low-risk intervention for potential nutritional etiology",
+              "Patient has risk factors (Obesity)"
+            ]
+          },
+          {
+            "treatment": "Compression Stockings",
+            "timing": "Start Now",
+            "reasons": [
+              "Symptomatic relief of dependent ankle edema",
+              "Assist with venous return"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

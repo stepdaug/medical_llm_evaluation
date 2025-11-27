@@ -49,7 +49,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis, Sjogren's and Lyme.\n\nOther possible differentials:\n- Feasible but low probability: Beh\u00e7et's, ADEM, TB and Lymphoma.\n\nLess plausible as unifying explanation for the full clinical presentation:\n- Cervical spinal cord tumour (intramedullary astrocytoma or ependymoma) (plausible for unilateral spinal cord, but atypical for unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis, Sjogren's and Lyme.\n\nOther possible differentials:\n- Feasible but low probability: Beh\u00e7et's, ADEM, TB and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Cervical spinal cord tumour (intramedullary astrocytoma or ependymoma) (plausible for unilateral spinal cord, but atypical for unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Relapsing-remitting multiple sclerosis presenting with left optic neuritis and right cervical partial transverse myelitis",

@@ -49,7 +49,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, CNS Vasculitis and ADEM.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, Lymphoma, Susac Syndrome and Sjogren's.\n\nLess plausible as unifying explanation for the full clinical presentation:\n- Paraneoplastic cerebellar degeneration with optic neuropathy (Technically feasible explanation for all signs, but proposes multiple separate pathologies; less parsimonious than a unifying diagnosis)\n- Vitamin B12 deficiency (subacute combined degeneration) (plausible for unilateral cerebellum, but atypical for unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, CNS Vasculitis and ADEM.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, Lymphoma, Susac Syndrome and Sjogren's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Paraneoplastic cerebellar degeneration with optic neuropathy (Technically feasible explanation for all signs, but proposes multiple separate pathologies; less parsimonious than a unifying diagnosis)\n- Vitamin B12 deficiency (subacute combined degeneration) (plausible for unilateral cerebellum, but atypical for unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Relapsing\u2013remitting multiple sclerosis",

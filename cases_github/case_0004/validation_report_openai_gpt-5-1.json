@@ -46,7 +46,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and TB.\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, ADEM, Lymphoma and Sjogren's.\n\nLess plausible as unifying explanation for the full clinical presentation:\n- Chiari I malformation with cervicomedullary crowding and syringobulbia (atypical for unilateral optic nerve and unilateral spinal cord involvement)\n- Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)\n- Foramen magnum meningioma causing right cervicomedullary compression",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and TB.\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, ADEM, Lymphoma and Sjogren's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Chiari I malformation with cervicomedullary crowding and syringobulbia (atypical for unilateral optic nerve and unilateral spinal cord involvement)\n- Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)\n- Foramen magnum meningioma causing right cervicomedullary compression",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)",

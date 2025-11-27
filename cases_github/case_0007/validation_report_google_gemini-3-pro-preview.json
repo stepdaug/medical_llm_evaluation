@@ -52,7 +52,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Lymphoma and Beh\u00e7et's.\n\nOther possible differentials:\n- SLE, Neurosyphilis and CNS Vasculitis.\n- Also feasible but low probability: Lyme, ADEM and Sjogren's.\n\nLess plausible as unifying explanation for the full clinical presentation:\n- Brainstem Glioma (plausible for unilateral brainstem, but atypical for unilateral cerebellum, unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Lymphoma and Beh\u00e7et's.\n\nOther possible differentials:\n- SLE, Neurosyphilis and CNS Vasculitis.\n- Also feasible but low probability: Lyme, ADEM and Sjogren's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Glioma (plausible for unilateral brainstem, but atypical for unilateral cerebellum, unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Multiple Sclerosis",

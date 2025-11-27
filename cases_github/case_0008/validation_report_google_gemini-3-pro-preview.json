@@ -205,80 +205,15 @@
       }
     },
     "Management": {
-      "report_string": "--- Management ---\nSteroids: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "report_string": "Nothing to add to management.",
       "structured_data": {
-        "ft_full_plan_parsed": [
-          {
-            "treatment": "Intravenous Immunoglobulin (IVIG)",
-            "timing": "Delay",
-            "reasons": [
-              "Patient is ambulant with normal gait",
-              "Respiratory function is currently stable",
-              "Diagnosis (e.g., GBS vs. other neuropathy) requires confirmation via NCS and LP"
-            ]
-          },
-          {
-            "treatment": "Thiamine and Vitamin B Complex supplementation",
-            "timing": "Start Now",
-            "reasons": [
-              "Low-risk intervention for potential nutritional etiology",
-              "Patient has risk factors (Obesity)"
-            ]
-          },
-          {
-            "treatment": "Compression Stockings",
-            "timing": "Start Now",
-            "reasons": [
-              "Symptomatic relief of dependent ankle edema",
-              "Assist with venous return"
-            ]
-          }
-        ],
-        "steroids_evaluation": {
-          "ft_plan": null,
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [],
-              "contraindications": [
-                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-              ]
-            }
-          },
-          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-        },
-        "dmt_evaluation": {
-          "ft_plan": null,
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [
-                "Need confirmation of MS diagnosis.",
-                "Need a pregnancy test result."
-              ],
-              "contraindications": []
-            }
-          },
-          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
-        }
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
       },
       "scoring": {
-        "steroids": {
-          "decision_category": "appropriate_omission",
-          "is_unsafe": 0,
-          "reasons_total": 1,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 1,
-          "reasons_coverage_percentage": 0.0
-        },
-        "dmt": {
-          "decision_category": "inappropriate_omission",
-          "is_unsafe": 1,
-          "reasons_total": 2,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 2,
-          "reasons_coverage_percentage": 0.0
-        }
+        "steroids": {},
+        "dmt": {}
       }
     }
   }

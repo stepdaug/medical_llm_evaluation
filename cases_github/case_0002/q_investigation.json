@@ -1,0 +1,88 @@
+Here is a prioritised list of investigations to work up this patient's presentation, along with the rationale for each. The priorities are structured to first confirm the presence of CNS inflammation and then to differentiate between the most likely causes.
+Priority 1: Urgent Investigations (To Confirm a Demyelinating Process and Rule Out Structural Mimics)
+
+    MRI of the Brain, Orbits, and entire Spinal Cord with and without Gadolinium Contrast:
+
+        Rationale: This is the single most important investigation. It is essential to confirm the presence of multifocal inflammatory lesions consistent with demyelination and to rule out alternative pathologies like tumours, stroke, or structural compression.
+
+        Expected Findings:
+
+            Brain/Orbits: We would look for T2/FLAIR hyperintense lesions in characteristic locations for MS (e.g., periventricular, juxtacortical, infratentorial) and enhancement of the left optic nerve. The presence of both enhancing (active) and non-enhancing (chronic) lesions would satisfy the MRI criteria for "dissemination in time."
+
+            Spinal Cord: A lesion in the posterior (dorsal) columns of the cervical or thoracic cord would explain the sensory ataxia. The morphology of the lesion (short-segment vs. longitudinally extensive) is critical for differentiating MS from NMOSD.
+
+Priority 2: Specific Investigations (To Differentiate Between Demyelinating Syndromes)
+
+    Lumbar Puncture (LP) for Cerebrospinal Fluid (CSF) Analysis:
+
+        Rationale: CSF analysis is crucial for confirming intrathecal inflammation and is a key part of the diagnostic criteria for MS. This should be performed once an MRI has ruled out a space-occupying lesion with significant mass effect.
+
+        Tests to Request:
+
+            Oligoclonal Bands (OCBs): The presence of OCBs unique to the CSF (not present in a paired serum sample) is highly supportive of an MS diagnosis.
+
+            IgG Index: An elevated index also indicates intrathecal IgG production.
+
+            Cell Count & Differential (Microscopy, Culture & Sensitivity): To look for a mild lymphocytic pleocytosis (common in MS) and to rule out infection.
+
+            Protein: Usually mildly elevated in demyelinating conditions.
+
+    Blood Tests for MS Mimics:
+
+        Rationale: Serological testing is essential to rule out key mimics of MS, particularly NMOSD, which has different treatment and prognosis.
+
+        Specific Tests:
+
+            Aquaporin-4 (AQP4) Antibody Titer: A positive result is diagnostic for NMOSD.
+
+            Myelin Oligodendrocyte Glycoprotein (MOG) Antibody Titer: A positive result is diagnostic for MOG-Antibody Disease (MOGAD), another important inflammatory demyelinating condition.
+
+Priority 3: Investigations for Other Systemic Causes & Baseline Health
+
+    Investigations for Neurosarcoidosis:
+
+        Rationale: The presenting complaint of breathlessness makes sarcoidosis a critical differential to exclude.
+
+        Tests to Request:
+
+            High-Resolution CT (HRCT) of the Chest: To look for bilateral hilar lymphadenopathy and/or interstitial lung disease, which are classic signs of pulmonary sarcoidosis.
+
+            Serum Angiotensin-Converting Enzyme (ACE) Level: Often elevated in sarcoidosis, though its specificity is limited.
+
+            Serum Calcium: To check for hypercalcemia associated with sarcoidosis.
+
+    General Inflammatory and Infectious Screen:
+
+        Rationale: To screen for other systemic autoimmune or infectious conditions that can present with multifocal neurological deficits.
+
+        Tests to Request:
+
+            Erythrocyte Sedimentation Rate (ESR) and C-Reactive Protein (CRP)
+
+            Antinuclear Antibody (ANA), Extractable Nuclear Antigen (ENA), ANCA (for systemic vasculitis)
+
+            Syphilis Serology (e.g., VDRL/RPR)
+
+            Lyme Serology (if geographically relevant)
+
+    Baseline Blood Tests:
+
+        Rationale: To assess general health, rule out metabolic causes, and establish a baseline before initiating potential immunomodulatory therapies.
+
+        Tests to Request:
+
+            Full Blood Count (FBC)
+
+            Urea & Electrolytes (U&E)
+
+            Liver Function Tests (LFTs)
+
+            Vitamin B12 Level: Deficiency can cause a subacute combined degeneration of the spinal cord (UMN signs + dorsal column sensory loss), which is part of this patient's presentation.
+
+Ancillary Investigation (If Diagnosis Remains Unclear)
+
+    Visual Evoked Potentials (VEPs):
+
+        Rationale: VEPs measure the speed of nerve conduction along the visual pathway. They are very sensitive for detecting demyelination. This could provide objective evidence of the left optic neuritis (prolonged P100 latency) and potentially uncover a clinically silent lesion in the "unaffected" right eye, further supporting dissemination in space.
+
+investigations = ["MRI of the Brain, Orbits, and entire Spinal Cord with and without Gadolinium Contrast", "Lumbar Puncture for CSF analysis (including Oligoclonal Bands, IgG Index, cell count, and protein)", "Aquaporin-4 (AQP4) antibody titer", "Myelin Oligodendrocyte Glycoprotein (MOG) antibody titer", "High-Resolution CT (HRCT) of the Chest", "Serum Angiotensin-Converting Enzyme (ACE) level", "Serum Calcium", "Full blood count", "Urea and electrolytes", "Liver function tests", "Vitamin B12 level", "Erythrocyte Sedimentation Rate (ESR)", "C-Reactive Protein (CRP)", "Antinuclear Antibody (ANA)", "Extractable Nuclear Antigen (ENA)", "ANCA", "Syphilis serology", "Lyme serology", "Visual Evoked Potentials (VEPs)"]

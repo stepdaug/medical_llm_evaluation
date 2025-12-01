@@ -49,7 +49,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis, Sjogren's and Lyme.\n\nOther possible differentials:\n- Feasible but low probability: Beh\u00e7et's, ADEM, TB and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Cervical spinal cord tumour (intramedullary astrocytoma or ependymoma) (plausible for unilateral spinal cord, but atypical for unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis, Sjogren's and Lyme.\n\nOther possible differentials:\n- Feasible but of low probability: TB, Vasculitis, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Cervical spinal cord tumour (intramedullary astrocytoma or ependymoma) (plausible for unilateral spinal cord; but atypical for unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Relapsing-remitting multiple sclerosis presenting with left optic neuritis and right cervical partial transverse myelitis",
@@ -67,26 +67,28 @@
         ],
         "missing_original_gt": [],
         "matched_lesion_dx_keys": [
-          "Infection_Lyme",
-          "Neurosarcoidosis",
-          "Autoimmune_Myelitis_SLE",
           "MOGAD",
           "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
           "Autoimmune_Myelitis_Sjogren",
           "MS",
-          "AQP4_NMOSD"
+          "Autoimmune_Myelitis_SLE",
+          "Infection_Lyme"
         ],
         "missing_lesion_dx_keys": [
-          "Behcet_Disease",
-          "ADEM",
           "CNS_Tuberculosis",
+          "CNS_Vasculitis",
+          "ADEM",
+          "Behcet_Disease",
           "CNS_Lymphoma"
         ],
         "missing_common_names": [],
         "missing_low_prob_names": [
-          "Beh\u00e7et's",
-          "ADEM",
           "TB",
+          "Vasculitis",
+          "ADEM",
+          "Beh\u00e7et's",
           "Lymphoma"
         ],
         "additional_diagnoses": [
@@ -103,25 +105,20 @@
         "additional_less_plausible_count": 1,
         "comorbidity_missing_count": 0,
         "other_considerations_missed_count": 0,
-        "lesion_ddx_total_count": 12,
+        "lesion_ddx_total_count": 13,
         "lesion_ddx_matched_count": 8,
         "lesion_ddx_missed_common_count": 0,
-        "lesion_ddx_missed_low_prob_count": 4,
-        "lesion_ddx_coverage_percentage": 0.6666666666666666
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.6153846153846154
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Orbits; Brain, and Cervical Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, HIV, syphilis, anti-MOG, ACE, anti-dsDNA, anti-AQP4.\n- Could also consider testing: TB quantiferon / IGRA, CRP, ENA, lyme, CSF (cytology and flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: CRP, TB, ENA, ANCA, lyme, CSF (flow cytometry and cytology).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
             "type": "CSF",
             "detail": "Oligoclonal Bands",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
-            "region": "Brain",
             "condition": "Multiple sclerosis"
           },
           {
@@ -132,6 +129,11 @@
           {
             "type": "MRI",
             "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
             "condition": "Multiple sclerosis"
           }
         ],
@@ -159,40 +161,35 @@
           "Serum pregnancy test (beta-hCG)"
         ],
         "all_identified_ft_keys": [
-          "ANA",
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "TFT",
+          "CSF_Viral_PCR",
+          "MRI_Orbits",
           "LFT",
           "Vitamin_B12",
-          "MRI_Whole_Spine",
-          "MOG_Antibodies",
-          "VEP",
-          "MRI_Lumbosacral_Spine",
-          "FBC",
-          "CSF_General",
-          "Anti_dsDNA",
           "Serum_ACE",
-          "Serum_Copper",
-          "MRI_Cervical_Spine",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "TFT",
-          "Serum_Immunoglobulins",
-          "Beta_hCG",
-          "CSF_Oligoclonal_Bands",
-          "HIV_Test",
-          "MRI_Thoracic_Spine",
-          "Syphilis_Serology",
           "Glucose_HbA1c",
-          "CSF_Viral_PCR",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
           "AQP4_Antibodies",
-          "MRI_Orbits"
+          "Syphilis_Serology",
+          "Beta_hCG",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Serum_Copper",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
         ],
         "found_tests_primary": [
-          {
-            "type": "MRI",
-            "region": "Brain",
-            "condition": "Multiple sclerosis"
-          },
           {
             "type": "MRI",
             "region": "Cervical Spine",
@@ -204,6 +201,11 @@
             "condition": "Multiple sclerosis"
           },
           {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
             "type": "CSF",
             "detail": "Oligoclonal Bands",
             "condition": "Multiple sclerosis"
@@ -211,38 +213,40 @@
         ],
         "missing_tests_primary": [],
         "expected_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "HIV_Test",
-          "TB_Screen",
-          "CSF_Cytology",
-          "CRP",
-          "MOG_Antibodies",
-          "Syphilis_Serology",
-          "Serum_ACE",
-          "ENA_Panel",
-          "Lyme_Serology",
           "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
           "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "HIV_Test",
-          "Syphilis_Serology",
-          "MOG_Antibodies",
-          "Serum_ACE",
           "Anti_dsDNA",
-          "AQP4_Antibodies"
+          "MOG_Antibodies",
+          "ANA",
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
-          "TB_Screen",
-          "CSF_Cytology",
           "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
           "ENA_Panel",
-          "Lyme_Serology",
-          "CSF_Flow_Cytometry"
+          "ANCA",
+          "CSF_Cytology",
+          "Lyme_Serology"
         ]
       },
       "scoring": {
@@ -250,9 +254,9 @@
         "primary_tests_found_count": 4,
         "primary_tests_missed_count": 0,
         "primary_tests_coverage_percentage": 1.0,
-        "ddx_tests_expected_count": 14,
+        "ddx_tests_expected_count": 15,
         "ddx_tests_found_count": 8,
-        "ddx_tests_coverage_percentage": 0.5714285714285714
+        "ddx_tests_coverage_percentage": 0.5333333333333333
       }
     },
     "Management": {

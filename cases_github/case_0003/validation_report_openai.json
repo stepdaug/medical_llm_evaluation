@@ -1,0 +1,350 @@
+{
+  "case_id": "case_0003",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 41.24,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve (cranial nerve II) and left midbrain.\n  \nRemaining signs are better explained by:\n- right medulla lesion\n\nThan the suggested:\n- cervical spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain",
+          "right medulla",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Midbrain",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Cervical Spinal Cord",
+            "side": null,
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)",
+          "left midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "right medulla"
+        ],
+        "additional_lesions_in_ft": [
+          "Cervical Spinal Cord"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 1,
+        "proportion_correct": 0.6666666666666666,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.3333333333333333,
+        "proportion_additional": 0.3333333333333333
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\n- Agree with considering other possibilities such as MOG Antibody-Associated Disease, Neuromyelitis Optica Spectrum Disorder (AQP4+), Neurosarcoidosis and Neurosyphilis.\n\n- Other differentials to consider based on the clinical presentation include: Beh\u00e7et's Disease.\n\nThese suggested differentials are much less likely to explain the full clinical picture than those above:\n- Posterior Communicating Artery Aneurysm causing left CN III palsy; Orbital Apex/Cavernous Sinus Syndrome (e.g., Tolosa\u2013Hunt, cavernous sinus thrombosis); Degenerative Cervical Myelopathy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis (relapsing\u2013remitting)",
+          "Posterior Communicating Artery Aneurysm causing left CN III palsy",
+          "Neuromyelitis Optica Spectrum Disorder",
+          "MOG Antibody\u2013Associated Disease",
+          "Orbital Apex/Cavernous Sinus Syndrome (e.g., Tolosa\u2013Hunt, cavernous sinus thrombosis)",
+          "Neurosarcoidosis",
+          "Primary CNS Vasculitis (including SLE/ANCA-associated)",
+          "Degenerative Cervical Myelopathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Neurosarcoidosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "MS",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Behcet_Disease"
+        ],
+        "additional_diagnoses": [
+          "Posterior Communicating Artery Aneurysm causing left CN III palsy",
+          "Orbital Apex/Cavernous Sinus Syndrome (e.g., Tolosa\u2013Hunt, cavernous sinus thrombosis)",
+          "Degenerative Cervical Myelopathy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_inappropriate_count": 3,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: serum AQP4 Ab, serum MOG Ab, serum ACE, syphilis.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "CT Angiogram Head (Circle of Willis) \u2013 urgent",
+          "MRI Brain and Orbits with gadolinium",
+          "MRI Cervical Spine with gadolinium",
+          "Visual evoked potentials",
+          "Optical coherence tomography (OCT)",
+          "CSF opening pressure",
+          "CSF cell count and differential",
+          "CSF protein",
+          "CSF glucose",
+          "CSF oligoclonal bands with paired serum",
+          "CSF culture and viral PCR panel",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid-stimulating hormone",
+          "Vitamin B12",
+          "Folate",
+          "HbA1c",
+          "Serum ACE",
+          "ANA",
+          "ENA panel",
+          "Anti-dsDNA antibodies",
+          "ANCA",
+          "Aquaporin-4 IgG (serum)",
+          "MOG IgG (serum)",
+          "HIV serology",
+          "Syphilis serology (RPR/TPPA)"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "AQP4_Antibodies",
+          "MOG_Antibodies",
+          "Serum_ACE",
+          "Syphilis_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Serum_ACE",
+          "AQP4_Antibodies",
+          "MOG_Antibodies",
+          "Syphilis_Serology"
+        ],
+        "missing_inv_keys_ddx": []
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 4,
+        "ddx_tests_found_count": 4,
+        "ddx_tests_coverage_percentage": 1.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\nDMTs: Not appropriate to suggest treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Hospital admission with frequent neurological observations and fall precautions",
+            "timing": "Start Now",
+            "reasons": [
+              "Risk of neurological deterioration",
+              "Unsteady gait with spasticity",
+              "Facilitates urgent imaging and multidisciplinary input"
+            ]
+          },
+          {
+            "treatment": "Corneal protection (lubricating drops/ointment; eye patch if exposure)",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe left ptosis/ophthalmoplegia risks exposure keratopathy",
+              "Symptomatic relief of diplopia if present"
+            ]
+          },
+          {
+            "treatment": "Mechanical venous thromboembolism prophylaxis (intermittent pneumatic compression)",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility from spastic paraparesis",
+              "Avoids anticoagulation before excluding aneurysm"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Delay",
+            "reasons": [
+              "Start after CTA/MRA excludes aneurysm and infection",
+              "Treats suspected inflammatory demyelinating relapse",
+              "Best efficacy when started within 14 days of relapse"
+            ]
+          },
+          {
+            "treatment": "Endovascular coiling or surgical clipping of a posterior communicating artery aneurysm (if confirmed)",
+            "timing": "Delay",
+            "reasons": [
+              "Initiate immediately once aneurysm is identified on urgent angiography",
+              "Prevents rupture and treats compressive third-nerve palsy"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and gait/balance rehabilitation",
+            "timing": "Start Now",
+            "reasons": [
+              "Improves mobility and reduces falls",
+              "Addresses spasticity and ataxic gait early"
+            ]
+          },
+          {
+            "treatment": "Oral baclofen titration for spasticity",
+            "timing": "Delay",
+            "reasons": [
+              "Introduce after acute diagnostic phase",
+              "Adjust based on response and side effects"
+            ]
+          },
+          {
+            "treatment": "Long-term disease-modifying therapy for MS (agent based on MRI/CSF and risk profile, e.g., ocrelizumab or natalizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation and exclusion of mimics",
+              "Requires baseline screening and counselling"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor and bone protection while on high-dose steroids",
+            "timing": "Delay",
+            "reasons": [
+              "Begin when steroids are initiated",
+              "Reduces gastrointestinal and bone-related adverse effects"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Delay",
+            "reasons": [
+              "Start after CTA/MRA excludes aneurysm and infection",
+              "Treats suspected inflammatory demyelinating relapse",
+              "Best efficacy when started within 14 days of relapse"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Long-term disease-modifying therapy for MS (agent based on MRI/CSF and risk profile, e.g., ocrelizumab or natalizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Start only after diagnostic confirmation and exclusion of mimics",
+              "Requires baseline screening and counselling"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

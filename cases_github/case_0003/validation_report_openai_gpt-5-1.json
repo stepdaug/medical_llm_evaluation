@@ -56,7 +56,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, CNS Vasculitis, Sjogren's and Beh\u00e7et's.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but low probability: Lyme, ADEM, Leptomeningeal carcinomatosis and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem or cervicomedullary tumour (e.g. glioma, meningioma) with coexisting optic neuropathy (Technically feasible explanation for all signs, but proposes multiple separate pathologies; less parsimonious than a unifying diagnosis)\n- Vitamin B12 deficiency with subacute combined degeneration of the cord (atypical for bilateral brainstem and unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Vasculitis, Sjogren's and Beh\u00e7et's.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but of low probability: Leptomeningeal carcinomatosis, ADEM, Lymphoma and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem or cervicomedullary tumour (e.g. glioma, meningioma) with coexisting optic neuropathy (plausible for bilateral brainstem; but atypical for unilateral optic nerve involvement)\n- Vitamin B12 deficiency with subacute combined degeneration of the cord (atypical for bilateral brainstem and strictly unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Relapsing-remitting multiple sclerosis",
@@ -75,30 +75,30 @@
         ],
         "missing_original_gt": [],
         "matched_lesion_dx_keys": [
-          "Neurosarcoidosis",
-          "Behcet_Disease",
           "CNS_Vasculitis",
-          "MOGAD",
           "AQP4_NMOSD",
+          "Neurosarcoidosis",
           "Autoimmune_Myelitis_Sjogren",
           "MS",
-          "Autoimmune_Myelitis_SLE"
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "MOGAD"
         ],
         "missing_lesion_dx_keys": [
-          "Infection_Lyme",
-          "ADEM",
           "Leptomeningeal_Carcinomatosis",
+          "Syphilis",
+          "ADEM",
           "CNS_Lymphoma",
-          "Syphilis"
+          "Infection_Lyme"
         ],
         "missing_common_names": [
           "Neurosyphilis"
         ],
         "missing_low_prob_names": [
-          "Lyme",
-          "ADEM",
           "Leptomeningeal carcinomatosis",
-          "Lymphoma"
+          "ADEM",
+          "Lymphoma",
+          "Lyme"
         ],
         "additional_diagnoses": [
           "Brainstem or cervicomedullary tumour (e.g. glioma, meningioma) with coexisting optic neuropathy",
@@ -123,7 +123,7 @@
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Orbits and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, ANCA, HIV, CRP, anti-MOG, syphilis, ENA, ACE, lyme, anti-dsDNA, anti-AQP4.\n- Could also consider testing: CSF (cytology and flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ACE, ANCA, HIV, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: CSF (flow cytometry and cytology).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -181,47 +181,47 @@
           "Urine culture and sensitivity"
         ],
         "all_identified_ft_keys": [
-          "LFT",
-          "Vitamin_B12",
-          "MRI_Whole_Spine",
-          "MRI_Lumbosacral_Spine",
-          "FBC",
-          "Hepatitis_Screen",
-          "Serum_Copper",
-          "Chest_XRay",
-          "MRI_Cervical_Spine",
-          "Serum_Protein_Electrophoresis",
-          "Serum_Immunoglobulins",
-          "Beta_hCG",
-          "OCT",
-          "CSF_Opening_Pressure",
-          "CSF_Oligoclonal_Bands",
-          "Folate",
-          "HIV_Test",
-          "CRP",
-          "MRI_Thoracic_Spine",
-          "Glucose_HbA1c",
-          "CSF_Viral_PCR",
-          "ECG",
-          "ANA",
-          "ANCA",
-          "MOG_Antibodies",
-          "VEP",
-          "ENA_Panel",
-          "Serum_ACE",
-          "CSF_General",
           "Anti_dsDNA",
-          "Lyme_Serology",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "TFT",
+          "CRP",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "CSF_Opening_Pressure",
+          "Serum_ACE",
           "TB_Screen",
-          "Chest_CT",
-          "Syphilis_Serology",
-          "Blood_Cultures",
+          "Glucose_HbA1c",
+          "Beta_hCG",
+          "U_and_E",
           "AQP4_Antibodies",
-          "MRI_Orbits"
+          "ECG",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "MRI_Whole_Spine",
+          "Serum_Copper",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "ANCA",
+          "ESR",
+          "MOG_Antibodies",
+          "TFT",
+          "Hepatitis_Screen",
+          "CSF_Viral_PCR",
+          "Vitamin_B12",
+          "CSF_Oligoclonal_Bands",
+          "Syphilis_Serology",
+          "Lyme_Serology",
+          "ANA",
+          "Chest_CT",
+          "Serum_Protein_Electrophoresis",
+          "OCT",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain"
         ],
         "found_tests_primary": [
           {
@@ -242,38 +242,38 @@
         ],
         "missing_tests_primary": [],
         "expected_inv_keys_ddx": [
-          "ESR",
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
           "ANA",
+          "ENA_Panel",
+          "Serum_ACE",
           "ANCA",
           "HIV_Test",
           "CSF_Cytology",
-          "CRP",
-          "MOG_Antibodies",
-          "Syphilis_Serology",
-          "ENA_Panel",
-          "Serum_ACE",
-          "Lyme_Serology",
-          "Anti_dsDNA",
           "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "ANCA",
-          "HIV_Test",
-          "CRP",
+          "Anti_dsDNA",
           "MOG_Antibodies",
-          "Syphilis_Serology",
+          "ANA",
+          "CRP",
           "ENA_Panel",
           "Serum_ACE",
-          "Lyme_Serology",
-          "Anti_dsDNA",
-          "AQP4_Antibodies"
+          "ANCA",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "missing_inv_keys_ddx": [
-          "CSF_Cytology",
-          "CSF_Flow_Cytometry"
+          "CSF_Flow_Cytometry",
+          "CSF_Cytology"
         ]
       },
       "scoring": {

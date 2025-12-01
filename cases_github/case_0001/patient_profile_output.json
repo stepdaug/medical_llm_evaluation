@@ -1,0 +1,3326 @@
+{
+  "current_age": 20.13,
+  "general_background_features": [
+    {
+      "target_field": "demographics.age",
+      "value": 20.13
+    },
+    {
+      "target_field": "demographics.sex",
+      "value": "Female"
+    },
+    {
+      "target_field": "demographics.ancestry",
+      "value": "Middle Eastern / North African"
+    }
+  ],
+  "additional_lists": {
+    "appearance": [],
+    "SHx": [],
+    "FHx": []
+  },
+  "disease_specific_features": [
+    "specific_questioning"
+  ],
+  "general_lesion_features": [
+    "focal_deficit_related_to_lesion_location"
+  ],
+  "examination_json": {
+    "examination": {
+      "appearance": {
+        "general_observations": [
+          "Cooperative with the examination",
+          "Maintains good eye contact"
+        ],
+        "height_cm": 157,
+        "weight_kg": 56.0,
+        "bmi": 22.7,
+        "head_circumference_percentile": 32.5,
+        "dysmorphic_features": [
+          "No dysmorphic features noted"
+        ],
+        "skin_and_mucosal_changes": [
+          "Scattered seborrheic keratoses on the back"
+        ]
+      },
+      "higher_mental_functions": {
+        "alertness_and_attention": {
+          "level_of_consciousness": "Alert",
+          "gcs": {
+            "eye_response": 4,
+            "verbal_response": 5,
+            "motor_response": 6,
+            "total_score": 15
+          },
+          "attention_and_concentration": {
+            "digit_span_forwards": 7,
+            "digit_span_backwards": 6,
+            "serial_sevens": "Completed without error",
+            "vigilance_test": "Intact"
+          }
+        },
+        "orientation": {
+          "orientation_person": "Oriented",
+          "orientation_place": "Oriented",
+          "orientation_time": "Oriented",
+          "orientation_situation": "Oriented"
+        },
+        "memory": {
+          "immediate_recall": "3/3 words immediately",
+          "recent_memory_delayed_recall": "3/3 words after 5 minutes",
+          "cued_recall": "Not required",
+          "remote_memory": "Intact",
+          "anterograde_memory": "Intact",
+          "retrograde_memory": "Intact"
+        },
+        "language": {
+          "spontaneous_speech_fluency": "Fluent",
+          "comprehension": "Intact",
+          "repetition": "Intact",
+          "naming_anomia": "Intact",
+          "reading_alexia": "Intact",
+          "writing_agraphia": "Intact"
+        },
+        "visuospatial_and_perceptual_function": {
+          "visual_neglect": "Absent",
+          "constructional_ability": {
+            "clock_drawing": "Normal",
+            "intersecting_pentagons": "Normal"
+          },
+          "object_recognition_gnosis": "Intact",
+          "facial_recognition_prosopagnosia": "Intact"
+        },
+        "executive_functions": {
+          "verbal_fluency": {
+            "f_a_s_test_score": 40,
+            "category_fluency_score": 28
+          },
+          "abstract_reasoning": {
+            "proverb_interpretation": "Normal",
+            "similarities": "Normal"
+          },
+          "cognitive_flexibility": {
+            "trail_making_test_b_performance": "Normal"
+          },
+          "inhibition_and_impulse_control": {
+            "go_no_go_task": "Intact",
+            "luria_sequences": "Intact"
+          },
+          "judgment_and_problem_solving": "Intact"
+        },
+        "praxis": {
+          "ideomotor_praxis": "Intact",
+          "ideational_praxis": "Intact"
+        },
+        "calculation": {
+          "acalculia": "Absent"
+        }
+      },
+      "ace_iii": {
+        "attention_and_orientation": {
+          "orientation_time": 5,
+          "orientation_place": 5,
+          "serial_sevens": 4,
+          "three_word_registration": 3,
+          "attention_total": 17
+        },
+        "memory": {
+          "three_word_recall": 3,
+          "address_recall_anterograde_immediate": 7,
+          "address_recall_anterograde_delayed": 7,
+          "address_recognition_anterograde": 5,
+          "famous_people_retrograde": 4,
+          "memory_total": 26
+        },
+        "verbal_fluency": {
+          "letter_p_fluency": 7,
+          "animal_fluency": 6,
+          "fluency_total": 13
+        },
+        "language": {
+          "naming_objects": 12,
+          "comprehension": 8,
+          "repetition": 4,
+          "reading": 1,
+          "writing_sentence": 1,
+          "language_total": 26
+        },
+        "visuospatial": {
+          "intersecting_pentagons": 1,
+          "cube_copy": 1,
+          "clock_drawing": 5,
+          "dot_counting": 4,
+          "shape_recognition": 4,
+          "visuospatial_total": 15
+        },
+        "total_score": 97
+      },
+      "cranial_nerves": {
+        "I_olfactory": "Intact",
+        "II_optic": {
+          "visual_acuity_left": "6/24",
+          "visual_acuity_right": "6/6",
+          "color_vision_ishihara": "Intact",
+          "visual_fields_left": {
+            "superior_temporal": "Intact",
+            "inferior_temporal": "Intact",
+            "superior_nasal": "Intact",
+            "inferior_nasal": "Intact",
+            "other_findings": "Central Scotoma"
+          },
+          "visual_fields_right": {
+            "superior_temporal": "Intact",
+            "inferior_temporal": "Intact",
+            "superior_nasal": "Intact",
+            "inferior_nasal": "Intact",
+            "other_findings": "None"
+          },
+          "pupil_light_reflex_direct_left": "Brisk",
+          "pupil_light_reflex_direct_right": "Brisk",
+          "pupil_light_reflex_consensual_left": "Brisk",
+          "pupil_light_reflex_consensual_right": "Brisk",
+          "rapd": "Present (Left)",
+          "fundoscopy": [
+            "Left optic atrophy"
+          ]
+        },
+        "III_oculomotor_IV_trochlear_VI_abducens": {
+          "left_eye": {
+            "ptosis": "Absent",
+            "pupil_size_mm": 4,
+            "primary_position": "Central",
+            "movements": {
+              "abduction": "Full",
+              "adduction": "Full",
+              "elevation": "Full",
+              "depression": "Full",
+              "elevation_in_adduction": "Full",
+              "depression_in_adduction": "Full"
+            }
+          },
+          "right_eye": {
+            "ptosis": "Absent",
+            "pupil_size_mm": 3,
+            "primary_position": "Central",
+            "movements": {
+              "abduction": "Full",
+              "adduction": "Full",
+              "elevation": "Full",
+              "depression": "Full",
+              "elevation_in_adduction": "Full",
+              "depression_in_adduction": "Full"
+            }
+          },
+          "binocular_findings": {
+            "nystagmus": "Absent",
+            "saccades": "Normometric",
+            "smooth_pursuit": "Smooth",
+            "internuclear_ophthalmoplegia_ino": "Absent"
+          }
+        },
+        "V_trigeminal": {
+          "sensation_v1_left": "Intact",
+          "sensation_v1_right": "Intact",
+          "sensation_v2_left": "Intact",
+          "sensation_v2_right": "Intact",
+          "sensation_v3_left": "Intact",
+          "sensation_v3_right": "Intact",
+          "corneal_reflex_left": "Present",
+          "corneal_reflex_right": "Present",
+          "motor_power_left": "Normal",
+          "motor_power_right": "Normal",
+          "jaw_jerk": "Normal"
+        },
+        "VII_facial": {
+          "facial_symmetry_at_rest": "Symmetrical",
+          "motor_power_upper_left": "Normal",
+          "motor_power_upper_right": "Normal",
+          "motor_power_lower_left": "Normal",
+          "motor_power_lower_right": "Normal"
+        },
+        "VIII_vestibulocochlear": {
+          "hearing": "Intact",
+          "rinne_test": "AC > BC",
+          "weber_test": "Central",
+          "head_impulse_test": "Normal (negative)"
+        },
+        "IX_glossopharyngeal_X_vagus": {
+          "palate_elevation": "Symmetrical",
+          "gag_reflex": "Present",
+          "voice": "Normal"
+        },
+        "XI_accessory": {
+          "shoulder_shrug_left": "Normal",
+          "shoulder_shrug_right": "Normal",
+          "head_turn_left": "Normal",
+          "head_turn_right": "Normal"
+        },
+        "XII_hypoglossal": {
+          "tongue_protrusion": "Midline",
+          "tongue_fasciculations": "Absent",
+          "tongue_wasting": "Absent"
+        }
+      },
+      "motor_system": {
+        "inspection": {
+          "wasting": [],
+          "fasciculations": []
+        },
+        "tone": {
+          "upper_limb_left": "Normal",
+          "upper_limb_right": "Hypotonia",
+          "lower_limb_left": "Normal",
+          "lower_limb_right": "Spasticity"
+        },
+        "power_mrc": {
+          "upper_limb_left": {
+            "shoulder_abduction_c5": "5/5",
+            "elbow_flexion_c5_c6": "5/5",
+            "elbow_extension_c7": "5/5",
+            "wrist_extension_c6": "5/5",
+            "wrist_flexion_c7": "5/5",
+            "finger_extension_c7": "5/5",
+            "finger_flexion_c8": "5/5",
+            "abductor_pollicis_brevis_c8_t1": "5/5",
+            "first_dorsal_interosseous_c8_t1": "5/5",
+            "abductor_digiti_minimi_c8_t1": "5/5"
+          },
+          "upper_limb_right": {
+            "shoulder_abduction_c5": "4+/5",
+            "elbow_flexion_c5_c6": "4+/5",
+            "elbow_extension_c7": "4+/5",
+            "wrist_extension_c6": "5/5",
+            "wrist_flexion_c7": "4+/5",
+            "finger_extension_c7": "5/5",
+            "finger_flexion_c8": "5/5",
+            "abductor_pollicis_brevis_c8_t1": "5/5",
+            "first_dorsal_interosseous_c8_t1": "5/5",
+            "abductor_digiti_minimi_c8_t1": "4+/5"
+          },
+          "lower_limb_left": {
+            "hip_flexion_l2_l3": "5/5",
+            "hip_extension_l5_s1": "5/5",
+            "knee_extension_l3_l4": "5/5",
+            "knee_flexion_l5_s1": "5/5",
+            "ankle_dorsiflexion_l4_l5": "5/5",
+            "ankle_plantarflexion_s1_s2": "5/5",
+            "great_toe_extension_l5": "5/5",
+            "ankle_inversion_l4_l5": "5/5",
+            "ankle_eversion_l5_s1": "5/5"
+          },
+          "lower_limb_right": {
+            "hip_flexion_l2_l3": "4+/5",
+            "hip_extension_l5_s1": "4+/5",
+            "knee_extension_l3_l4": "5/5",
+            "knee_flexion_l5_s1": "4+/5",
+            "ankle_dorsiflexion_l4_l5": "5/5",
+            "ankle_plantarflexion_s1_s2": "4+/5",
+            "great_toe_extension_l5": "4+/5",
+            "ankle_inversion_l4_l5": "4+/5",
+            "ankle_eversion_l5_s1": "5/5"
+          }
+        },
+        "reflexes": {
+          "biceps_c5_c6_left": "2+ (Normal)",
+          "biceps_c5_c6_right": "1+ (Hypoactive)",
+          "triceps_c7_left": "2+ (Normal)",
+          "triceps_c7_right": "3+ (Brisk)",
+          "supinator_c5_c6_left": "2+ (Normal)",
+          "supinator_c5_c6_right": "0 (Absent)",
+          "knee_l3_l4_left": "2+ (Normal)",
+          "knee_l3_l4_right": "3+ (Brisk)",
+          "ankle_s1_left": "2+ (Normal)",
+          "ankle_s1_right": "4+ (Clonus)",
+          "plantar_left": "Downgoing",
+          "plantar_right": "Upgoing",
+          "hoffmanns_sign_left": "Absent",
+          "hoffmanns_sign_right": "Present",
+          "crossed_adductor_reflex": "Absent"
+        },
+        "coordination": {
+          "finger_nose_left": "Normal",
+          "finger_nose_right": "Normal",
+          "heel_shin_left": "Normal",
+          "heel_shin_right": "Normal",
+          "dysdiadochokinesia": "Absent"
+        },
+        "special_tests": {
+          "upper_limb_left": "",
+          "upper_limb_right": "",
+          "lower_limb_left": "",
+          "lower_limb_right": ""
+        }
+      },
+      "sensory_system": {
+        "pinprick": {
+          "neck": {
+            "left": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            },
+            "right": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            }
+          },
+          "torso_anterior": {
+            "left": {
+              "t2_clavicle": "Reduced",
+              "t4_nipple_line": "Reduced",
+              "t6_xiphoid": "Absent",
+              "t8_costal_margin": "Reduced",
+              "t10_umbilicus": "Reduced",
+              "t12_inguinal": "Reduced",
+              "l1_upper_inguinal": "Reduced"
+            },
+            "right": {
+              "t2_clavicle": "Normal",
+              "t4_nipple_line": "Normal",
+              "t6_xiphoid": "Normal",
+              "t8_costal_margin": "Normal",
+              "t10_umbilicus": "Normal",
+              "t12_inguinal": "Normal",
+              "l1_upper_inguinal": "Normal"
+            }
+          },
+          "torso_posterior": {
+            "left": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Reduced",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Reduced",
+              "l2_mid_buttock": "Reduced",
+              "l3_lower_buttock": "Reduced",
+              "s2_buttock_crease": "Reduced",
+              "s3_ischial_tuberosity": "Reduced",
+              "s4_s5_perianal": "Reduced"
+            },
+            "right": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Normal",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Normal",
+              "l2_mid_buttock": "Normal",
+              "l3_lower_buttock": "Normal",
+              "s2_buttock_crease": "Normal",
+              "s3_ischial_tuberosity": "Normal",
+              "s4_s5_perianal": "Normal"
+            }
+          },
+          "right_upper_limb": {
+            "shoulder_c5_regimental_badge": "Normal",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "wrist_anterior": "Normal",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Normal",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Normal",
+            "finger_1_thumb_posterior": "Normal",
+            "finger_2_index_anterior": "Normal",
+            "finger_2_index_posterior": "Normal",
+            "finger_3_middle_anterior": "Normal",
+            "finger_3_middle_posterior": "Normal",
+            "finger_4_ring_anterior": "Normal",
+            "finger_4_ring_posterior": "Normal",
+            "finger_5_little_anterior": "Normal",
+            "finger_5_little_posterior": "Normal"
+          },
+          "left_upper_limb": {
+            "shoulder_c5_regimental_badge": "Reduced",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Absent"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Absent",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "wrist_anterior": "Reduced",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Reduced",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Reduced",
+            "finger_1_thumb_posterior": "Reduced",
+            "finger_2_index_anterior": "Reduced",
+            "finger_2_index_posterior": "Reduced",
+            "finger_3_middle_anterior": "Reduced",
+            "finger_3_middle_posterior": "Reduced",
+            "finger_4_ring_anterior": "Reduced",
+            "finger_4_ring_posterior": "Reduced",
+            "finger_5_little_anterior": "Reduced",
+            "finger_5_little_posterior": "Reduced"
+          },
+          "right_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "knee_anterior_l4": "Normal",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "ankle_medial_malleolus": "Normal",
+            "ankle_lateral_malleolus_s1": "Normal",
+            "foot_dorsum": "Normal",
+            "foot_sole": "Normal",
+            "toe_1_great_anterior": "Normal",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Normal",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Normal",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Normal",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Normal",
+            "toe_5_little_posterior": "Normal"
+          },
+          "left_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Absent",
+                "distal_third": "Reduced"
+              },
+              "posterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "knee_anterior_l4": "Reduced",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Absent",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Absent",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "ankle_medial_malleolus": "Reduced",
+            "ankle_lateral_malleolus_s1": "Reduced",
+            "foot_dorsum": "Reduced",
+            "foot_sole": "Reduced",
+            "toe_1_great_anterior": "Absent",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Reduced",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Reduced",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Reduced",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Reduced",
+            "toe_5_little_posterior": "Normal"
+          }
+        },
+        "light_touch": {
+          "neck": {
+            "left": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            },
+            "right": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            }
+          },
+          "torso_anterior": {
+            "left": {
+              "t2_clavicle": "Reduced",
+              "t4_nipple_line": "Absent",
+              "t6_xiphoid": "Reduced",
+              "t8_costal_margin": "Absent",
+              "t10_umbilicus": "Reduced",
+              "t12_inguinal": "Absent",
+              "l1_upper_inguinal": "Reduced"
+            },
+            "right": {
+              "t2_clavicle": "Normal",
+              "t4_nipple_line": "Normal",
+              "t6_xiphoid": "Normal",
+              "t8_costal_margin": "Normal",
+              "t10_umbilicus": "Normal",
+              "t12_inguinal": "Normal",
+              "l1_upper_inguinal": "Normal"
+            }
+          },
+          "torso_posterior": {
+            "left": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Reduced",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Reduced",
+              "l2_mid_buttock": "Reduced",
+              "l3_lower_buttock": "Absent",
+              "s2_buttock_crease": "Reduced",
+              "s3_ischial_tuberosity": "Absent",
+              "s4_s5_perianal": "Reduced"
+            },
+            "right": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Normal",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Normal",
+              "l2_mid_buttock": "Normal",
+              "l3_lower_buttock": "Normal",
+              "s2_buttock_crease": "Normal",
+              "s3_ischial_tuberosity": "Normal",
+              "s4_s5_perianal": "Normal"
+            }
+          },
+          "right_upper_limb": {
+            "shoulder_c5_regimental_badge": "Normal",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "wrist_anterior": "Normal",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Normal",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Normal",
+            "finger_1_thumb_posterior": "Normal",
+            "finger_2_index_anterior": "Normal",
+            "finger_2_index_posterior": "Normal",
+            "finger_3_middle_anterior": "Normal",
+            "finger_3_middle_posterior": "Normal",
+            "finger_4_ring_anterior": "Normal",
+            "finger_4_ring_posterior": "Normal",
+            "finger_5_little_anterior": "Normal",
+            "finger_5_little_posterior": "Normal"
+          },
+          "left_upper_limb": {
+            "shoulder_c5_regimental_badge": "Reduced",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "wrist_anterior": "Absent",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Reduced",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Reduced",
+            "finger_1_thumb_posterior": "Reduced",
+            "finger_2_index_anterior": "Reduced",
+            "finger_2_index_posterior": "Reduced",
+            "finger_3_middle_anterior": "Reduced",
+            "finger_3_middle_posterior": "Reduced",
+            "finger_4_ring_anterior": "Reduced",
+            "finger_4_ring_posterior": "Reduced",
+            "finger_5_little_anterior": "Reduced",
+            "finger_5_little_posterior": "Reduced"
+          },
+          "right_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "knee_anterior_l4": "Normal",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "ankle_medial_malleolus": "Normal",
+            "ankle_lateral_malleolus_s1": "Normal",
+            "foot_dorsum": "Normal",
+            "foot_sole": "Normal",
+            "toe_1_great_anterior": "Normal",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Normal",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Normal",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Normal",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Normal",
+            "toe_5_little_posterior": "Normal"
+          },
+          "left_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "posterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Absent"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "knee_anterior_l4": "Reduced",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "ankle_medial_malleolus": "Reduced",
+            "ankle_lateral_malleolus_s1": "Reduced",
+            "foot_dorsum": "Reduced",
+            "foot_sole": "Reduced",
+            "toe_1_great_anterior": "Reduced",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Reduced",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Reduced",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Reduced",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Reduced",
+            "toe_5_little_posterior": "Normal"
+          }
+        },
+        "temperature": {
+          "neck": {
+            "left": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            },
+            "right": {
+              "anterior_c3": "Normal",
+              "anterior_c4": "Normal",
+              "posterior_c2": "Normal",
+              "posterior_c3": "Normal",
+              "lateral_c3": "Normal",
+              "lateral_c4": "Normal"
+            }
+          },
+          "torso_anterior": {
+            "left": {
+              "t2_clavicle": "Reduced",
+              "t4_nipple_line": "Reduced",
+              "t6_xiphoid": "Reduced",
+              "t8_costal_margin": "Reduced",
+              "t10_umbilicus": "Reduced",
+              "t12_inguinal": "Absent",
+              "l1_upper_inguinal": "Reduced"
+            },
+            "right": {
+              "t2_clavicle": "Normal",
+              "t4_nipple_line": "Normal",
+              "t6_xiphoid": "Normal",
+              "t8_costal_margin": "Normal",
+              "t10_umbilicus": "Normal",
+              "t12_inguinal": "Normal",
+              "l1_upper_inguinal": "Normal"
+            }
+          },
+          "torso_posterior": {
+            "left": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Absent",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Reduced",
+              "l2_mid_buttock": "Reduced",
+              "l3_lower_buttock": "Reduced",
+              "s2_buttock_crease": "Reduced",
+              "s3_ischial_tuberosity": "Reduced",
+              "s4_s5_perianal": "Reduced"
+            },
+            "right": {
+              "c4_shoulder_upper_scapular": "Normal",
+              "t2_upper_back": "Normal",
+              "t6_mid_back": "Normal",
+              "t12_lower_back": "Normal",
+              "l1_upper_buttock": "Normal",
+              "l2_mid_buttock": "Normal",
+              "l3_lower_buttock": "Normal",
+              "s2_buttock_crease": "Normal",
+              "s3_ischial_tuberosity": "Normal",
+              "s4_s5_perianal": "Normal"
+            }
+          },
+          "right_upper_limb": {
+            "shoulder_c5_regimental_badge": "Normal",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "wrist_anterior": "Normal",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Normal",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Normal",
+            "finger_1_thumb_posterior": "Normal",
+            "finger_2_index_anterior": "Normal",
+            "finger_2_index_posterior": "Normal",
+            "finger_3_middle_anterior": "Normal",
+            "finger_3_middle_posterior": "Normal",
+            "finger_4_ring_anterior": "Normal",
+            "finger_4_ring_posterior": "Normal",
+            "finger_5_little_anterior": "Normal",
+            "finger_5_little_posterior": "Normal"
+          },
+          "left_upper_limb": {
+            "shoulder_c5_regimental_badge": "Reduced",
+            "upper_arm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Absent"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "forearm": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "wrist_anterior": "Reduced",
+            "wrist_posterior": "Normal",
+            "hand_palm": "Reduced",
+            "hand_dorsum": "Normal",
+            "finger_1_thumb_anterior": "Reduced",
+            "finger_1_thumb_posterior": "Reduced",
+            "finger_2_index_anterior": "Reduced",
+            "finger_2_index_posterior": "Reduced",
+            "finger_3_middle_anterior": "Reduced",
+            "finger_3_middle_posterior": "Reduced",
+            "finger_4_ring_anterior": "Reduced",
+            "finger_4_ring_posterior": "Reduced",
+            "finger_5_little_anterior": "Reduced",
+            "finger_5_little_posterior": "Reduced"
+          },
+          "right_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "knee_anterior_l4": "Normal",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "lateral": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              }
+            },
+            "ankle_medial_malleolus": "Normal",
+            "ankle_lateral_malleolus_s1": "Normal",
+            "foot_dorsum": "Normal",
+            "foot_sole": "Normal",
+            "toe_1_great_anterior": "Normal",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Normal",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Normal",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Normal",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Normal",
+            "toe_5_little_posterior": "Normal"
+          },
+          "left_lower_limb": {
+            "thigh": {
+              "anterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "posterior": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              }
+            },
+            "knee_anterior_l4": "Reduced",
+            "lower_leg": {
+              "anterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "posterior": {
+                "proximal_third": "Normal",
+                "mid_third": "Normal",
+                "distal_third": "Normal"
+              },
+              "medial": {
+                "proximal_third": "Reduced",
+                "mid_third": "Reduced",
+                "distal_third": "Reduced"
+              },
+              "lateral": {
+                "proximal_third": "Reduced",
+                "mid_third": "Absent",
+                "distal_third": "Reduced"
+              }
+            },
+            "ankle_medial_malleolus": "Absent",
+            "ankle_lateral_malleolus_s1": "Reduced",
+            "foot_dorsum": "Reduced",
+            "foot_sole": "Reduced",
+            "toe_1_great_anterior": "Reduced",
+            "toe_1_great_posterior": "Normal",
+            "toe_2_anterior": "Reduced",
+            "toe_2_posterior": "Normal",
+            "toe_3_anterior": "Reduced",
+            "toe_3_posterior": "Normal",
+            "toe_4_anterior": "Reduced",
+            "toe_4_posterior": "Normal",
+            "toe_5_little_anterior": "Reduced",
+            "toe_5_little_posterior": "Normal"
+          }
+        },
+        "vibration": {
+          "right_upper_limb": {
+            "index_finger_dip_joint": "Reduced",
+            "wrist_styloid_process": "Reduced",
+            "elbow_olecranon": "Absent",
+            "shoulder_acromion": "Reduced"
+          },
+          "left_upper_limb": {
+            "index_finger_dip_joint": "Normal",
+            "wrist_styloid_process": "Normal",
+            "elbow_olecranon": "Normal",
+            "shoulder_acromion": "Normal"
+          },
+          "right_lower_limb": {
+            "great_toe_ip_joint": "Reduced",
+            "ankle_medial_malleolus": "Absent",
+            "knee_tibial_tuberosity": "Reduced",
+            "hip_as_is": "Reduced"
+          },
+          "left_lower_limb": {
+            "great_toe_ip_joint": "Normal",
+            "ankle_medial_malleolus": "Normal",
+            "knee_tibial_tuberosity": "Normal",
+            "hip_as_is": "Normal"
+          },
+          "sternum": "Reduced"
+        },
+        "proprioception": {
+          "right_upper_limb": {
+            "index_finger_dip_joint": "Impaired",
+            "thumb_ip_joint": "Impaired",
+            "wrist_styloid_process": "Impaired",
+            "elbow_olecranon": "Absent"
+          },
+          "left_upper_limb": {
+            "index_finger_dip_joint": "Normal",
+            "thumb_ip_joint": "Normal",
+            "wrist_styloid_process": "Normal",
+            "elbow_olecranon": "Normal"
+          },
+          "right_lower_limb": {
+            "great_toe_ip_joint": "Impaired",
+            "ankle_medial_malleolus": "Impaired",
+            "knee_tibial_tuberosity": "Impaired",
+            "hip_as_is": "Impaired"
+          },
+          "left_lower_limb": {
+            "great_toe_ip_joint": "Normal",
+            "ankle_medial_malleolus": "Normal",
+            "knee_tibial_tuberosity": "Normal"
+          }
+        },
+        "cortical_sensation": {
+          "stereognosis_left_hand": "Intact",
+          "stereognosis_right_hand": "Intact",
+          "graphesthesia_left_hand": "Intact",
+          "graphesthesia_right_hand": "Intact",
+          "two_point_discrimination": "Normal at 5mm on finger pads bilaterally",
+          "sensory_inattention_extinction": "Absent"
+        }
+      },
+      "gait_and_balance": {
+        "gait_character": [
+          "Unsteady"
+        ],
+        "tandem_gait": "Unstable",
+        "arising_from_chair": "Stands easily without using arms",
+        "rombergs_test": "Positive",
+        "pull_test": "Normal (recovers in 1-2 steps)"
+      },
+      "extrapyramidal_signs": {
+        "tremor": {
+          "rest_tremor": {
+            "present": "Absent",
+            "location": [],
+            "characteristics": ""
+          },
+          "postural_tremor": {
+            "present": "Absent",
+            "location": [],
+            "characteristics": ""
+          },
+          "action_tremor": {
+            "present": "Absent"
+          }
+        },
+        "bradykinesia_akinesia": {
+          "finger_tapping_left": "Normal",
+          "finger_tapping_right": "Normal",
+          "hand_opening_closing_left": "Normal",
+          "hand_opening_closing_right": "Normal",
+          "foot_tapping_left": "Normal",
+          "foot_tapping_right": "Normal",
+          "facial_expression": "Normal"
+        },
+        "other_involuntary_movements": {
+          "chorea": "Absent",
+          "athetosis": "Absent",
+          "dystonia": {
+            "present": "Absent",
+            "location": []
+          },
+          "myoclonus": "Absent",
+          "tics": "Absent"
+        },
+        "perseveration": {
+          "motor_perseveration": "Absent"
+        }
+      },
+      "primitive_reflexes_frontal_release": {
+        "glabellar_tap": "Absent (habituates)",
+        "snout_reflex": "Absent",
+        "palmomental_reflex": "Absent"
+      },
+      "autonomic_examination": {
+        "orthostatic_blood_pressure": "No postural drop",
+        "other": []
+      }
+    },
+    "symptoms_reported": {
+      "II_optic_nerve.left": {
+        "general_patient_description": [
+          "Vision feeling foggy in the left eye."
+        ],
+        "specific_questioning": {
+          "Changes in colour vision": [
+            "No specific issues."
+          ],
+          "Changes in central vision": [
+            "Dark spot in the centre of vision in the left eye."
+          ],
+          "Severity of vision loss": [
+            "Vision being very poor in the left eye."
+          ],
+          "eye_movement_pain": [
+            "Pain worse on looking from side to side",
+            "Dull, aching pain behind the eye"
+          ]
+        }
+      },
+      "c5_spine.right": {
+        "general_patient_description": [
+          "Weakness in the right arm, especially when lifting."
+        ],
+        "specific_questioning": {
+          "Details of arm weakness": [
+            "No specific issues."
+          ],
+          "Nature of sensory loss": [
+            "No specific issues."
+          ],
+          "fatigue": [
+            "Overwhelming fatigue out of proportion to activity"
+          ],
+          "heat_sensitivity": [
+            "Noticeable worsening of symptoms with heat"
+          ]
+        }
+      }
+    },
+    "other_system_examinations": {
+      "observations": {
+        "heart_rate_bpm": 84,
+        "blood_pressure_systolic_mmHg": 120,
+        "blood_pressure_diastolic_mmHg": 84,
+        "respiratory_rate_bpm": 17,
+        "oxygen_saturations_percent": 97,
+        "temperature_celsius": 36.8
+      },
+      "ears_nose_sinuses": {
+        "ears": {
+          "external_appearance": [
+            "Unremarkable external ear examination."
+          ],
+          "otoscopy": [
+            "Canals clear, tympanic membranes unremarkable."
+          ]
+        },
+        "nose": {
+          "external_appearance": [
+            "Normal appearance bilaterally."
+          ],
+          "rhinoscopy": [
+            "Septum is midline and intact."
+          ]
+        },
+        "sinuses": {
+          "frontal_sinus_tenderness": false,
+          "maxillary_sinus_tenderness": false
+        }
+      },
+      "mouth_and_pharynx": {
+        "lips_and_oral_mucosa": [
+          "Lips are moist and not cracked."
+        ],
+        "gums_and_teeth": [
+          "Unremarkable gums and teeth."
+        ],
+        "tongue_surface": [
+          "Tongue appearance is unremarkable."
+        ],
+        "pharynx_and_tonsils": [
+          "Soft palate rises symmetrically."
+        ],
+        "mallampati_score": [
+          "Class I"
+        ]
+      },
+      "neck": {
+        "inspection": [
+          "Supple neck, no visible masses."
+        ],
+        "thyroid_gland": [
+          "No discrete nodules felt."
+        ],
+        "lymphadenopathy": [
+          "No significant lymphadenopathy felt."
+        ],
+        "carotid_bruits": [
+          "Absent bilaterally."
+        ]
+      },
+      "cardiovascular": {
+        "inspection": {
+          "precordium": [
+            "Veins are not distended over the chest wall."
+          ]
+        },
+        "palpation": {
+          "apex_beat_location": [
+            "Apex impulse is unremarkable."
+          ],
+          "heaves_and_thrills": [
+            "No right ventricular heave felt."
+          ]
+        },
+        "auscultation": {
+          "heart_sounds": [
+            "Heart sounds are crisp and clear."
+          ],
+          "added_sounds": [],
+          "murmurs": []
+        },
+        "jugular_venous_pressure_jvp": [
+          "Unremarkable JVP."
+        ]
+      },
+      "peripheral_vascular": {
+        "inspection": {
+          "colour_and_skin": [
+            "No dependent rubor or pallor on elevation."
+          ],
+          "trophic_changes": [
+            "Skin is supple and of normal texture."
+          ]
+        },
+        "palpation": {
+          "temperature": [
+            "No evidence of poor perfusion on palpation."
+          ],
+          "capillary_refill_time_crt_sec": 2,
+          "peripheral_oedema": [
+            "Unremarkable for oedema."
+          ],
+          "pulses": {
+            "radial": {},
+            "brachial": {},
+            "femoral": {},
+            "popliteal": {},
+            "dorsalis_pedis": {},
+            "posterior_tibial": {}
+          }
+        }
+      },
+      "respiratory": {
+        "inspection": {
+          "respiratory_rate_and_effort": [
+            "Respiratory rate 16 breaths/min, no increased work of breathing."
+          ],
+          "chest_shape_and_symmetry": [
+            "Chest is symmetrical in shape and movement."
+          ]
+        },
+        "palpation": {
+          "chest_expansion": [
+            "Symmetrical chest expansion."
+          ],
+          "tactile_fremitus": [
+            "Normal and symmetrical tactile fremitus."
+          ]
+        },
+        "percussion": {
+          "percussion_note": [
+            "Apices are resonant."
+          ]
+        },
+        "auscultation": {
+          "breath_sounds": [
+            "Good air entry bilaterally."
+          ],
+          "adventitious_sounds": []
+        }
+      },
+      "abdominal": {
+        "inspection": {
+          "contour_and_scars": [
+            "No visible masses, scars, or hernias."
+          ]
+        },
+        "auscultation": {
+          "bowel_sounds": [
+            "No abnormalities of bowel sounds."
+          ],
+          "bruits": [
+            "Negative for bruits."
+          ]
+        },
+        "percussion": {
+          "general_note": [
+            "Tympanic to percussion throughout."
+          ],
+          "shifting_dullness": false
+        },
+        "palpation": {
+          "tenderness_and_guarding": [
+            "Palpation is unremarkable."
+          ],
+          "organomegaly": [
+            "No masses or organomegaly."
+          ],
+          "masses": [
+            "No suprapubic masses."
+          ]
+        }
+      },
+      "musculoskeletal": {
+        "general_inspection": [
+          "Normal gait and posture."
+        ],
+        "joint_examination": [],
+        "spine": [
+          "Schober's test is normal (>5cm expansion)."
+        ]
+      },
+      "genitourinary_reproductive": {
+        "external_inspection": [
+          "Patient declined examination."
+        ],
+        "inguinal_region": [
+          "No tenderness in the inguinal canal."
+        ]
+      },
+      "rectal": {
+        "inspection": [
+          "Skin of the neck is clear."
+        ],
+        "digital_rectal_exam_dre": {
+          "sphincter_tone": [
+            "No sphincter laxity or hypertonia."
+          ],
+          "prostate_exam": [
+            "Not applicable"
+          ],
+          "rectal_walls": [
+            "No masses felt on digital rectal exam."
+          ],
+          "stool_on_glove": [
+            "Stool present, normal appearance."
+          ]
+        }
+      }
+    }
+  },
+  "examination_summary": "### Comprehensive Examination Summary\n\n#### Appearance\n- Bmi: 22.7\n- Dysmorphic Features: No dysmorphic features noted\n- General Observations: Cooperative with the examination, Maintains good eye contact\n- Head Circumference Percentile: 32.5\n- Height Cm: 157\n- Skin And Mucosal Changes: Scattered seborrheic keratoses on the back\n- Weight Kg: 56.0\n\n#### Higher Mental Functions\n- Alertness And Attention:\n  - Attention And Concentration:\n  - Digit Span Backwards: 6\n  - Digit Span Forwards: 7\n  - Serial Sevens: Completed without error\n  - Vigilance Test: Intact\n  - Gcs:\n  - Eye Response: 4\n  - Motor Response: 6\n  - Total Score: 15\n  - Verbal Response: 5\n  - Level Of Consciousness: Alert\n- Calculation:\n  - Acalculia: Absent\n- Executive Functions:\n  - Abstract Reasoning:\n  - Proverb Interpretation: Normal\n  - Similarities: Normal\n  - Cognitive Flexibility:\n  - Trail Making Test B Performance: Normal\n  - Inhibition And Impulse Control:\n  - Go No Go Task: Intact\n  - Luria Sequences: Intact\n  - Judgment And Problem Solving: Intact\n  - Verbal Fluency:\n  - Category Fluency Score: 28\n  - F A S Test Score: 40\n- Language:\n  - Comprehension: Intact\n  - Naming Anomia: Intact\n  - Reading Alexia: Intact\n  - Repetition: Intact\n  - Spontaneous Speech Fluency: Fluent\n  - Writing Agraphia: Intact\n- Memory:\n  - Anterograde Memory: Intact\n  - Cued Recall: Not required\n  - Immediate Recall: 3/3 words immediately\n  - Recent Memory Delayed Recall: 3/3 words after 5 minutes\n  - Remote Memory: Intact\n  - Retrograde Memory: Intact\n- Orientation:\n  - Orientation Person: Oriented\n  - Orientation Place: Oriented\n  - Orientation Situation: Oriented\n  - Orientation Time: Oriented\n- Praxis:\n  - Ideational Praxis: Intact\n  - Ideomotor Praxis: Intact\n- Visuospatial And Perceptual Function:\n  - Constructional Ability:\n  - Clock Drawing: Normal\n  - Intersecting Pentagons: Normal\n  - Facial Recognition Prosopagnosia: Intact\n  - Object Recognition Gnosis: Intact\n  - Visual Neglect: Absent\n\n#### Ace Iii\n- Attention And Orientation:\n  - Attention Total: 17\n  - Orientation Place: 5\n  - Orientation Time: 5\n  - Serial Sevens: 4\n  - Three Word Registration: 3\n- Language:\n  - Comprehension: 8\n  - Language Total: 26\n  - Naming Objects: 12\n  - Reading: 1\n  - Repetition: 4\n  - Writing Sentence: 1\n- Memory:\n  - Address Recall Anterograde Delayed: 7\n  - Address Recall Anterograde Immediate: 7\n  - Address Recognition Anterograde: 5\n  - Famous People Retrograde: 4\n  - Memory Total: 26\n  - Three Word Recall: 3\n- Total Score: 97\n- Verbal Fluency:\n  - Animal Fluency: 6\n  - Fluency Total: 13\n  - Letter P Fluency: 7\n- Visuospatial:\n  - Clock Drawing: 5\n  - Cube Copy: 1\n  - Dot Counting: 4\n  - Intersecting Pentagons: 1\n  - Shape Recognition: 4\n  - Visuospatial Total: 15\n\n#### Cranial Nerves\n- Iii Oculomotor Iv Trochlear Vi Abducens:\n  - Binocular Findings:\n  - Internuclear Ophthalmoplegia Ino: Absent\n  - Nystagmus: Absent\n  - Saccades: Normometric\n  - Smooth Pursuit: Smooth\n  - Left Eye:\n  - Movements:\n  - Abduction: Full\n  - Adduction: Full\n  - Depression: Full\n  - Depression In Adduction: Full\n  - Elevation: Full\n  - Elevation In Adduction: Full\n  - Primary Position: Central\n  - Ptosis: Absent\n  - Pupil Size Mm: 4\n  - Right Eye:\n  - Movements:\n  - Abduction: Full\n  - Adduction: Full\n  - Depression: Full\n  - Depression In Adduction: Full\n  - Elevation: Full\n  - Elevation In Adduction: Full\n  - Primary Position: Central\n  - Ptosis: Absent\n  - Pupil Size Mm: 3\n- Ii Optic:\n  - Color Vision Ishihara: Intact\n  - Fundoscopy: Left optic atrophy\n  - Pupil Light Reflex Consensual: L: Brisk, R: Brisk\n  - Pupil Light Reflex Direct: L: Brisk, R: Brisk\n  - Rapd: Present (Left)\n  - Visual Acuity: L: 6/24, R: 6/6\n  - Visual Fields: L: {'superior_temporal': 'Intact', 'inferior_temporal': 'Intact', 'superior_nasal': 'Intact', 'inferior_nasal': 'Intact', 'other_findings': 'Central Scotoma'}, R: {'superior_temporal': 'Intact', 'inferior_temporal': 'Intact', 'superior_nasal': 'Intact', 'inferior_nasal': 'Intact', 'other_findings': 'None'}\n- Ix Glossopharyngeal X Vagus:\n  - Gag Reflex: Present\n  - Palate Elevation: Symmetrical\n  - Voice: Normal\n- I Olfactory: Intact\n- Viii Vestibulocochlear:\n  - Head Impulse Test: Normal (negative)\n  - Hearing: Intact\n  - Rinne Test: AC > BC\n  - Weber Test: Central\n- Vii Facial:\n  - Facial Symmetry At Rest: Symmetrical\n  - Motor Power Lower: L: Normal, R: Normal\n  - Motor Power Upper: L: Normal, R: Normal\n- V Trigeminal:\n  - Corneal Reflex: L: Present, R: Present\n  - Jaw Jerk: Normal\n  - Motor Power: L: Normal, R: Normal\n  - Sensation V1: L: Intact, R: Intact\n  - Sensation V2: L: Intact, R: Intact\n  - Sensation V3: L: Intact, R: Intact\n- Xii Hypoglossal:\n  - Tongue Fasciculations: Absent\n  - Tongue Protrusion: Midline\n  - Tongue Wasting: Absent\n- Xi Accessory:\n  - Head Turn: L: Normal, R: Normal\n  - Shoulder Shrug: L: Normal, R: Normal\n\n#### Motor System\n- Power (MRC Scale):\n  - Upper Limb Left: Shoulder Abduction C5: 5/5, Elbow Flexion C5 C6: 5/5, Elbow Extension C7: 5/5, Wrist Extension C6: 5/5, Wrist Flexion C7: 5/5, Finger Extension C7: 5/5, Finger Flexion C8: 5/5, Abductor Pollicis Brevis C8 T1: 5/5, First Dorsal Interosseous C8 T1: 5/5, Abductor Digiti Minimi C8 T1: 5/5\n  - Upper Limb Right: Shoulder Abduction C5: 4+/5, Elbow Flexion C5 C6: 4+/5, Elbow Extension C7: 4+/5, Wrist Extension C6: 5/5, Wrist Flexion C7: 4+/5, Finger Extension C7: 5/5, Finger Flexion C8: 5/5, Abductor Pollicis Brevis C8 T1: 5/5, First Dorsal Interosseous C8 T1: 5/5, Abductor Digiti Minimi C8 T1: 4+/5\n  - Lower Limb Left: Hip Flexion L2 L3: 5/5, Hip Extension L5 S1: 5/5, Knee Extension L3 L4: 5/5, Knee Flexion L5 S1: 5/5, Ankle Dorsiflexion L4 L5: 5/5, Ankle Plantarflexion S1 S2: 5/5, Great Toe Extension L5: 5/5, Ankle Inversion L4 L5: 5/5, Ankle Eversion L5 S1: 5/5\n  - Lower Limb Right: Hip Flexion L2 L3: 4+/5, Hip Extension L5 S1: 4+/5, Knee Extension L3 L4: 5/5, Knee Flexion L5 S1: 4+/5, Ankle Dorsiflexion L4 L5: 5/5, Ankle Plantarflexion S1 S2: 4+/5, Great Toe Extension L5: 4+/5, Ankle Inversion L4 L5: 4+/5, Ankle Eversion L5 S1: 5/5\n- Reflexes: Biceps C5 C6: L: 2+ (Normal), R: 1+ (Hypoactive), Triceps C7: L: 2+ (Normal), R: 3+ (Brisk), Supinator C5 C6: L: 2+ (Normal), R: 0 (Absent), Knee L3 L4: L: 2+ (Normal), R: 3+ (Brisk), Ankle S1: L: 2+ (Normal), R: 4+ (Clonus), Plantar: L: Downgoing, R: Upgoing, Hoffmanns Sign: L: Absent, R: Present\n- Other Signs: Crossed Adductor Reflex: Absent\n- Coordination:\n  - Dysdiadochokinesia: Absent\n  - Finger Nose: L: Normal, R: Normal\n  - Heel Shin: L: Normal, R: Normal\n- Inspection:\n  - Fasciculations: []\n  - Wasting: []\n- Special Tests:\n  - Lower Limb: L: , R: \n  - Upper Limb: L: , R: \n- Tone:\n  - Lower Limb: L: Normal, R: Spasticity\n  - Upper Limb: L: Normal, R: Hypotonia\n\n#### Sensory System\n- Pinprick:\n  - Left Upper Limb: Absent (x2), Normal (x14), Reduced (x23)\n  - Right Upper Limb: All Normal\n  - Left Lower Limb: Absent (x4), Normal (x11), Reduced (x24)\n  - Right Lower Limb: All Normal\n  - Neck: All Normal\n  - Torso Anterior: Absent (x1), Normal (x7), Reduced (x6)\n  - Torso Posterior: Normal (x13), Reduced (x7)\n- Light Touch:\n  - Left Upper Limb: Absent (x1), Normal (x14), Reduced (x24)\n  - Right Upper Limb: All Normal\n  - Left Lower Limb: Absent (x1), Normal (x11), Reduced (x27)\n  - Right Lower Limb: All Normal\n  - Neck: All Normal\n  - Torso Anterior: Absent (x3), Normal (x7), Reduced (x4)\n  - Torso Posterior: Absent (x2), Normal (x13), Reduced (x5)\n- Temperature:\n  - Left Upper Limb: Absent (x1), Normal (x14), Reduced (x24)\n  - Right Upper Limb: All Normal\n  - Left Lower Limb: Absent (x2), Normal (x11), Reduced (x26)\n  - Right Lower Limb: All Normal\n  - Neck: All Normal\n  - Torso Anterior: Absent (x1), Normal (x7), Reduced (x6)\n  - Torso Posterior: Absent (x1), Normal (x13), Reduced (x6)\n- Vibration:\n  - Left Upper Limb: All Normal\n  - Right Upper Limb: Absent (x1), Reduced (x3)\n  - Left Lower Limb: All Normal\n  - Right Lower Limb: Absent (x1), Reduced (x3)\n- Proprioception:\n  - Left Upper Limb: All Normal\n  - Right Upper Limb: Absent (x1), Impaired (x3)\n  - Left Lower Limb: All Normal\n  - Right Lower Limb: All Impaired\n- Cortical Sensation:\n\n#### Gait And Balance\n- Arising From Chair: Stands easily without using arms\n- Gait Character: Unsteady\n- Pull Test: Normal (recovers in 1-2 steps)\n- Rombergs Test: Positive\n- Tandem Gait: Unstable\n\n#### Extrapyramidal Signs\n- Bradykinesia Akinesia:\n  - Facial Expression: Normal\n  - Finger Tapping: L: Normal, R: Normal\n  - Foot Tapping: L: Normal, R: Normal\n  - Hand Opening Closing: L: Normal, R: Normal\n- Other Involuntary Movements:\n  - Athetosis: Absent\n  - Chorea: Absent\n  - Dystonia:\n  - Location: []\n  - Present: Absent\n  - Myoclonus: Absent\n  - Tics: Absent\n- Perseveration:\n  - Motor Perseveration: Absent\n- Tremor:\n  - Action Tremor:\n  - Present: Absent\n  - Postural Tremor:\n  - Location: []\n  - Present: Absent\n  - Rest Tremor:\n  - Location: []\n  - Present: Absent\n\n#### Primitive Reflexes Frontal Release\n- Glabellar Tap: Absent (habituates)\n- Palmomental Reflex: Absent\n- Snout Reflex: Absent\n\n#### Autonomic Examination\n- Orthostatic Blood Pressure: No postural drop\n- Other: []",
+  "current_issues": [
+    {
+      "condition_name": "Multiple sclerosis",
+      "level_of_evidence": "Undergoing Investigation",
+      "referred_to_as": "Under investigation for the cause of Feeling tired all the time in a way not experienced before",
+      "presentation_category": "neuroanatomical_lesion",
+      "age_of_onset": 18.66,
+      "onset_duration_days": 15,
+      "expected_outcome": "relapsing_remitting",
+      "lesion_list": [
+        "II_optic_nerve.left",
+        "c5_spine.right"
+      ],
+      "severity": {
+        "II_optic_nerve.left": 0.14721655140980971,
+        "c5_spine.right": 0.1259844096260448
+      },
+      "general_symptoms_reported": [
+        "Feeling tired all the time in a way not experienced before"
+      ],
+      "specific_symptoms": {},
+      "associated_risk_factors": [],
+      "symptom_timeline": [
+        {
+          "lesion": "II_optic_nerve.left",
+          "symptoms": {
+            "general_patient_description": [
+              "Vision feeling foggy in the left eye."
+            ],
+            "specific_questioning": {
+              "Changes in colour vision": [
+                "No specific issues."
+              ],
+              "Changes in central vision": [
+                "Dark spot in the centre of vision in the left eye."
+              ],
+              "Severity of vision loss": [
+                "Vision being very poor in the left eye."
+              ],
+              "eye_movement_pain": [
+                "Pain worse on looking from side to side",
+                "Dull, aching pain behind the eye"
+              ]
+            }
+          },
+          "onset_age": 18.66,
+          "onset_duration_days": 13,
+          "resolution_status": "resolved",
+          "resolution_age": 18.73,
+          "resolution_duration_days": 11
+        },
+        {
+          "lesion": "c5_spine.right",
+          "symptoms": {
+            "general_patient_description": [
+              "Weakness in the right arm, especially when lifting."
+            ],
+            "specific_questioning": {
+              "Details of arm weakness": [
+                "No specific issues."
+              ],
+              "Nature of sensory loss": [
+                "No specific issues."
+              ],
+              "fatigue": [
+                "Overwhelming fatigue out of proportion to activity"
+              ],
+              "heat_sensitivity": [
+                "Noticeable worsening of symptoms with heat"
+              ]
+            }
+          },
+          "onset_age": 20.11,
+          "onset_duration_days": 15,
+          "resolution_status": "persistent",
+          "resolution_age": null,
+          "resolution_duration_days": null
+        }
+      ]
+    }
+  ],
+  "demographics": {
+    "age": 20.13,
+    "sex": "Female",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "pastMedicalHistory": {
+    "comorbidities": [
+      {
+        "conditionName": "Hay fever",
+        "timeline": {
+          "yearSymptomsFirstDeveloped": 2015,
+          "yearDiagnosed": 2015,
+          "dateDiagnosed": {
+            "day": 17,
+            "month": 6,
+            "year": 2015
+          }
+        },
+        "currentSyndrome": [
+          "An itchy throat, mouth, nose and ears",
+          "Feeling tired"
+        ],
+        "diseaseSeverity": {
+          "genericScaleValue_1_10": 5.5,
+          "specificScale": "none",
+          "specificScaleValue": "none"
+        },
+        "diseaseStability": "stable",
+        "recentInvestigations": [],
+        "functionalImpactADLs": [],
+        "currentTreatments": [
+          {
+            "treatmentName": "Mometasone nasal spray",
+            "medicationDetails": {
+              "dose": 50,
+              "unit": "mcg",
+              "frequency": "Once daily",
+              "route": "Nasal"
+            },
+            "patientDesignation": "Mometasone nasal spray",
+            "startDate": "2024-11-07",
+            "efficacy": 4.3
+          },
+          {
+            "treatmentName": "Beclometasone nasal spray",
+            "medicationDetails": {
+              "dose": 50,
+              "unit": "micrograms per spray",
+              "frequency": "Twice daily",
+              "route": "Nasal"
+            },
+            "patientDesignation": "don't know",
+            "startDate": "2022-06-12",
+            "efficacy": 9.1
+          },
+          {
+            "treatmentName": "Loratadine",
+            "medicationDetails": {
+              "dose": 10,
+              "unit": "mg",
+              "frequency": "Once daily",
+              "route": "Oral"
+            },
+            "patientDesignation": "Loratadine",
+            "startDate": "2020-01-03",
+            "efficacy": 9.8
+          }
+        ],
+        "previousTreatments": [
+          {
+            "treatmentName": "Cetirizine",
+            "reasonStopped": "lack_of_efficacy",
+            "startDate": "2021-05-19",
+            "endDate": "2022-12-21",
+            "efficacy": 1.9
+          }
+        ],
+        "experiencedSideEffects": [
+          "Dryness or irritation of nose and throat",
+          "Nasal irritation or burning"
+        ]
+      },
+      {
+        "conditionName": "Hypnogogic jerks",
+        "timeline": {
+          "yearSymptomsFirstDeveloped": 2007,
+          "yearDiagnosed": 2008,
+          "dateDiagnosed": {
+            "day": 26,
+            "month": 6,
+            "year": 2008
+          }
+        },
+        "currentSyndrome": [
+          "Feeling like I'm falling"
+        ],
+        "diseaseSeverity": {
+          "genericScaleValue_1_10": 4.7,
+          "specificScale": "none",
+          "specificScaleValue": "none"
+        },
+        "diseaseStability": "mildly_worse",
+        "recentInvestigations": [],
+        "functionalImpactADLs": [],
+        "currentTreatments": [],
+        "previousTreatments": [],
+        "experiencedSideEffects": []
+      }
+    ],
+    "surgeries": [],
+    "obGynHistory": {
+      "gravidity": 1,
+      "parity": 1,
+      "miscarriages": 0,
+      "menopausalStatus": "Pre-menopausal",
+      "contraception": "none",
+      "pregnancyComplications": []
+    }
+  },
+  "medications": {
+    "prescribed": [
+      {
+        "treatmentName": "Mometasone nasal spray",
+        "medicationDetails": {
+          "dose": 50,
+          "unit": "mcg",
+          "frequency": "Once daily",
+          "route": "Nasal"
+        },
+        "patientDesignation": "Mometasone nasal spray",
+        "startDate": "2024-11-07",
+        "efficacy": 4.3
+      },
+      {
+        "treatmentName": "Beclometasone nasal spray",
+        "medicationDetails": {
+          "dose": 50,
+          "unit": "micrograms per spray",
+          "frequency": "Twice daily",
+          "route": "Nasal"
+        },
+        "patientDesignation": "don't know",
+        "startDate": "2022-06-12",
+        "efficacy": 9.1
+      },
+      {
+        "treatmentName": "Loratadine",
+        "medicationDetails": {
+          "dose": 10,
+          "unit": "mg",
+          "frequency": "Once daily",
+          "route": "Oral"
+        },
+        "patientDesignation": "Loratadine",
+        "startDate": "2020-01-03",
+        "efficacy": 9.8
+      }
+    ],
+    "otcAndSupplements": [
+      "Antiseptic cream",
+      "Turmeric",
+      "Verruca treatment"
+    ],
+    "compliance": {
+      "isCompliant": false,
+      "reasonForNonCompliance": [
+        "Influenced by negative information from friends"
+      ]
+    }
+  },
+  "allergies": [],
+  "socialHistory": {
+    "education": [
+      "Bachelor's Degree (with Honours)"
+    ],
+    "occupation": [
+      "Store Manager"
+    ],
+    "isRetired": false,
+    "livingSituation": {
+      "with": [
+        "In a multi-generational household"
+      ],
+      "houseType": [
+        "Top-floor flat (stairs only)"
+      ],
+      "pets": [
+        "Stick Insect"
+      ]
+    },
+    "dietAndExercise": {
+      "diet": [
+        "Dairy-free"
+      ],
+      "exercise": [
+        "Exercises 3-4 times a week"
+      ]
+    },
+    "finance": {
+      "financialSituation": [
+        "Relying on food banks"
+      ]
+    },
+    "driving": {
+      "licenseStatus": "Group 2",
+      "drives": true,
+      "dvlaClearance": "Cleared",
+      "issues": "Not specified"
+    },
+    "substanceUse": {
+      "smoking": {
+        "status": "Current smoker",
+        "amount": "<5/day"
+      },
+      "alcohol": {
+        "status": "Heavy drinker",
+        "amount": ">10 units/week"
+      },
+      "recreationalDrugs": {
+        "status": "Never used",
+        "type": "Not specified",
+        "amount": "Not specified"
+      }
+    },
+    "socialSupport": [
+      "Limited support from friends"
+    ],
+    "carerResponsibilities": [
+      "Cares for young children"
+    ],
+    "countryOfBirth": "United Kingdom"
+  },
+  "familyHistory": {
+    "isAdopted": false,
+    "mother": {
+      "status": "Alive",
+      "age": 58.96,
+      "conditions": [],
+      "causeOfDeath": "Not applicable",
+      "sex": "Female"
+    },
+    "father": {
+      "status": "Alive",
+      "age": 49.99,
+      "conditions": [],
+      "causeOfDeath": "Not applicable",
+      "sex": "Male"
+    },
+    "siblings": [
+      {
+        "status": "Alive",
+        "age": 21.95,
+        "conditions": [],
+        "causeOfDeath": "Not applicable",
+        "sex": "Female",
+        "relationship": "Sister"
+      },
+      {
+        "status": "Alive",
+        "age": 16.37,
+        "conditions": [
+          {
+            "conditionName": "Generalised anxiety disorder",
+            "patientDescription": "some health problems"
+          }
+        ],
+        "causeOfDeath": "Not applicable",
+        "sex": "Female",
+        "relationship": "Sister"
+      },
+      {
+        "status": "Alive",
+        "age": 22.97,
+        "conditions": [],
+        "causeOfDeath": "Not applicable",
+        "sex": "Female",
+        "relationship": "Sister"
+      }
+    ],
+    "children": [
+      {
+        "status": "Alive",
+        "age": 4.01,
+        "conditions": [],
+        "causeOfDeath": "Not applicable",
+        "sex": "Male",
+        "relationship": "Son"
+      },
+      {
+        "status": "Alive",
+        "age": 3.03,
+        "conditions": [],
+        "causeOfDeath": "Not applicable",
+        "sex": "Male",
+        "relationship": "Son"
+      }
+    ],
+    "otherRelatives": [],
+    "parentalConsanguinity": false,
+    "hereditaryConditionsModeled": [],
+    "maternalGrandmother": {
+      "status": "Alive",
+      "age": 82.8,
+      "conditions": [
+        {
+          "conditionName": "Ulcerative colitis",
+          "patientDescription": "some health problems"
+        },
+        {
+          "conditionName": "Fungal nail infection",
+          "patientDescription": "some health problems"
+        }
+      ],
+      "causeOfDeath": "Not applicable",
+      "sex": "Female"
+    },
+    "maternalGrandfather": {
+      "status": "Deceased",
+      "age": 95.42,
+      "conditions": [],
+      "causeOfDeath": "Oesophageal Cancer",
+      "sex": "Male"
+    },
+    "paternalGrandmother": {
+      "status": "Alive",
+      "age": 73.67,
+      "conditions": [
+        {
+          "conditionName": "Dysphagia",
+          "patientDescription": "some health problems"
+        }
+      ],
+      "causeOfDeath": "Not applicable",
+      "sex": "Female"
+    },
+    "paternalGrandfather": {
+      "status": "Deceased",
+      "age": 70.51,
+      "conditions": [],
+      "causeOfDeath": "Oesophageal Cancer",
+      "sex": "Male"
+    }
+  },
+  "systemsReview": {
+    "general": [
+      "change_bowel_habit"
+    ]
+  },
+  "otherHistories": {
+    "travel": {
+      "hasTraveled": false,
+      "locations": []
+    },
+    "sexual": {
+      "activityStatus": "Not active",
+      "partners": "Not specified",
+      "contraception": "Not specified"
+    },
+    "developmental": {
+      "notes": [],
+      "prenatal_history": [
+        "Normal prenatal course; no known maternal illness or substance exposure."
+      ],
+      "birth_history": [
+        "Required resuscitation or had breathing difficulties at birth."
+      ],
+      "postnatal_history": [
+        "Uncomplicated neonatal period."
+      ],
+      "milestones": [
+        "Achieved all motor and language milestones at appropriate ages."
+      ],
+      "childhood_illnesses": [
+        "Normal childhood illnesses only; no significant medical history."
+      ],
+      "education_history": [
+        "No known learning difficulties; mainstream education."
+      ]
+    }
+  },
+  "Investigations": {
+    "Blood Tests": {
+      "Full Blood Count (FBC)": {
+        "Haemoglobin": {
+          "value": "number",
+          "units": "g/L"
+        },
+        "White Blood Cell Count (WBC)": {
+          "value": 5.67,
+          "units": "x10^9/L"
+        },
+        "Platelet Count": {
+          "value": 408,
+          "units": "x10^9/L"
+        },
+        "Mean Corpuscular Volume (MCV)": {
+          "value": 85,
+          "units": "fL"
+        },
+        "Eosinophil Count": {
+          "value": 0.36,
+          "units": "x10^9/L"
+        }
+      },
+      "Urea & Electrolytes (U&E)": {
+        "Sodium": {
+          "value": 143,
+          "units": "mmol/L"
+        },
+        "Potassium": {
+          "value": 4.91,
+          "units": "mmol/L"
+        },
+        "Urea": {
+          "value": 3.1,
+          "units": "mmol/L"
+        },
+        "Creatinine": {
+          "value": "number",
+          "units": "µmol/L"
+        }
+      },
+      "Liver Function Tests (LFTs)": {
+        "Bilirubin": {
+          "value": 14,
+          "units": "µmol/L"
+        },
+        "Alanine Aminotransferase (ALT)": {
+          "value": 46,
+          "units": "IU/L"
+        },
+        "Alkaline Phosphatase (ALP)": {
+          "value": 34,
+          "units": "IU/L"
+        },
+        "Gamma-Glutamyl Transferase (GGT)": {
+          "value": "number",
+          "units": "IU/L"
+        },
+        "Albumin": {
+          "value": 36,
+          "units": "g/L"
+        }
+      },
+      "Bone Profile": {
+        "Calcium (Adjusted)": {
+          "value": 2.23,
+          "units": "mmol/L"
+        },
+        "Phosphate": {
+          "value": 1.34,
+          "units": "mmol/L"
+        }
+      },
+      "Coagulation Screen": {
+        "Prothrombin Time (PT)": {
+          "value": 11.3,
+          "units": "seconds"
+        },
+        "Activated Partial Thromboplastin Time (aPTT)": {
+          "value": 35,
+          "units": "seconds"
+        },
+        "International Normalised Ratio (INR)": {
+          "value": 0.98,
+          "units": "Ratio"
+        }
+      },
+      "Iron Studies": {
+        "Ferritin": {
+          "value": "number",
+          "units": "µg/L"
+        },
+        "Serum Iron": {
+          "value": "number",
+          "units": "µmol/L"
+        },
+        "Total Iron Binding Capacity (TIBC)": {
+          "value": 51,
+          "units": "µmol/L"
+        }
+      },
+      "Lipid Profile": {
+        "Total Cholesterol": {
+          "value": 3.86,
+          "units": "mmol/L"
+        },
+        "Triglycerides": {
+          "value": 0.25,
+          "units": "mmol/L"
+        },
+        "High-Density Lipoprotein (HDL)": {
+          "value": 38.35,
+          "units": "mmol/L"
+        },
+        "Low-Density Lipoprotein (LDL)": {
+          "value": 1.79,
+          "units": "mmol/L"
+        }
+      },
+      "Thyroid Function Tests (TFTs)": {
+        "Thyroid Stimulating Hormone (TSH)": {
+          "value": 1.35,
+          "units": "mU/L"
+        },
+        "Free Thyroxine (FT4)": {
+          "value": 14,
+          "units": "pmol/L"
+        },
+        "Free Triiodothyronine (FT3)": {
+          "value": 4.27,
+          "units": "pmol/L"
+        }
+      },
+      "Endocrine Tests": {
+        "Cortisol (AM)": {
+          "value": 185,
+          "units": "nmol/L"
+        },
+        "Cortisol (PM)": {
+          "value": 235,
+          "units": "nmol/L"
+        },
+        "Short Synacthen Test (30 min Cortisol)": {
+          "value": 4316,
+          "units": "nmol/L"
+        },
+        "Prolactin": {
+          "value": "number",
+          "units": "mIU/L"
+        },
+        "Growth Hormone (GH)": {
+          "value": 3,
+          "units": "ng/mL"
+        },
+        "Insulin-like Growth Factor 1 (IGF-1)": {
+          "result": "Age-dependent",
+          "units": "ng/mL"
+        },
+        "Parathyroid Hormone (PTH)": {
+          "value": 2.81,
+          "units": "pmol/L"
+        }
+      },
+      "C-Reactive Protein (CRP)": {
+        "value": 3,
+        "units": "mg/L"
+      },
+      "Erythrocyte Sedimentation Rate (ESR)": {
+        "value": "number",
+        "units": "mm/hr"
+      },
+      "Creatine Kinase (CK)": {
+        "value": "number",
+        "units": "U/L"
+      },
+      "Glycated Haemoglobin (HbA1c)": {
+        "value": 24,
+        "units": "mmol/mol"
+      },
+      "Lactate": {
+        "value": 0.61,
+        "units": "mmol/L"
+      },
+      "Ammonia": {
+        "value": 30,
+        "units": "µg/dL"
+      },
+      "Urate": {
+        "value": "number",
+        "units": "mmol/L"
+      },
+      "Magnesium": {
+        "value": 0.87,
+        "units": "mmol/L"
+      },
+      "Serum Osmolality": {
+        "value": 292,
+        "units": "mOsm/kg"
+      },
+      "Angiotensin-Converting Enzyme (ACE)": {
+        "value": 39,
+        "units": "U/L"
+      },
+      "Antinuclear Antibodies (ANA)": {
+        "result": "Negative",
+        "units": "Titre/Pattern"
+      },
+      "Anti-Neutrophil Cytoplasmic Antibodies (ANCA)": {
+        "result": "Negative",
+        "units": "Titre/Pattern"
+      },
+      "Extractable Nuclear Antigens (ENA) Panel": {
+        "Anti-Ro": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-La": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Sm": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-RNP": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Scl-70": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Jo-1": {
+          "result": "Negative",
+          "units": ""
+        }
+      },
+      "Anti-dsDNA": {
+        "value": 6,
+        "units": "IU/mL"
+      },
+      "Rheumatoid Factor (RF)": {
+        "value": 4,
+        "units": "IU/mL"
+      },
+      "Anti-Cyclic Citrullinated Peptide (Anti-CCP)": {
+        "value": 5,
+        "units": "U/mL"
+      },
+      "Complement C3": {
+        "value": 1.73,
+        "units": "g/L"
+      },
+      "Complement C4": {
+        "value": 0.19,
+        "units": "g/L"
+      },
+      "Immunoglobulins": {
+        "IgG": {
+          "value": 10.25,
+          "units": "g/L"
+        },
+        "IgA": {
+          "value": 2.98,
+          "units": "g/L"
+        },
+        "IgM": {
+          "value": 0.78,
+          "units": "g/L"
+        }
+      },
+      "Serum Protein Electrophoresis (SPEP)": {
+        "result": "No monoclonal band detected",
+        "units": "Report"
+      },
+      "Serum Free Light Chains (SFLC)": {
+        "Kappa": {
+          "value": 8.93,
+          "units": "mg/L"
+        },
+        "Lambda": {
+          "value": 10.53,
+          "units": "mg/L"
+        },
+        "Ratio": {
+          "value": 0.4,
+          "units": "Ratio"
+        }
+      },
+      "Anti-Phospholipid Antibodies": {
+        "Lupus Anticoagulant": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Cardiolipin IgG/IgM": {
+          "value": 11,
+          "units": "U/mL"
+        },
+        "Anti-β2-Glycoprotein I IgG/IgM": {
+          "value": 0,
+          "units": "U/mL"
+        }
+      },
+      "Cryoglobulins": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Anti-Glomerular Basement Membrane (Anti-GBM)": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Aquaporin-4 (AQP4) IgG": {
+        "result": "Negative",
+        "units": "Titre"
+      },
+      "Myelin Oligodendrocyte Glycoprotein (MOG) IgG": {
+        "result": "Negative",
+        "units": "Titre"
+      },
+      "Autoimmune Encephalitis Panel": {
+        "NMDAR-Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "AMPAR1/2-Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "LGI1-Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "CASPR2-Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "GABA-B-R-Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "DPPX-Ab": {
+          "result": "Negative",
+          "units": ""
+        }
+      },
+      "GABA-A-R Antibody": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Paraneoplastic Antibody Panel": {
+        "Anti-Hu (ANNA-1)": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Yo (PCA-1)": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Ri (ANNA-2)": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Ma2": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-CV2/CRMP5": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Amphiphysin": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Anti-Tr (DNER)": {
+          "result": "Negative",
+          "units": ""
+        }
+      },
+      "Myasthenia Gravis Antibody Panel": {
+        "Acetylcholine Receptor (AChR) Binding Ab": {
+          "value": 0.04,
+          "units": "nmol/L"
+        },
+        "Muscle-Specific Kinase (MuSK) Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Low-Density Lipoprotein Receptor-Related Protein 4 (LRP4) Ab": {
+          "result": "Negative",
+          "units": ""
+        }
+      },
+      "Voltage-Gated Calcium Channel (VGCC) Antibody": {
+        "value": 9,
+        "units": "pM"
+      },
+      "Peripheral Nerve Antibody Panel": {
+        "Ganglioside GM1 Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Ganglioside GM2 Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Ganglioside GD1a Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Ganglioside GD1b Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Ganglioside GQ1b Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Ganglioside GT1b Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Myelin-Associated Glycoprotein (MAG) Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Contactin-1 (CNTN1) Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Neurofascin-155 (NF155) Ab": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Contactin-Associated Protein 1 (CASPR1) Ab": {
+          "result": "Negative",
+          "units": ""
+        }
+      },
+      "HIV 1 & 2 Antibody/Antigen": {
+        "result": "Non-reactive",
+        "units": ""
+      },
+      "Syphilis Serology (TPPA/IgG)": {
+        "result": "Non-reactive",
+        "units": ""
+      },
+      "Hepatitis B Serology (HBsAg)": {
+        "result": "Non-reactive",
+        "units": ""
+      },
+      "Hepatitis C Serology (HCV Ab)": {
+        "result": "Non-reactive",
+        "units": ""
+      },
+      "Lyme Serology (ELISA & Western Blot)": {
+        "result": "Negative",
+        "units": ""
+      },
+      "HTLV-1/2 Antibodies": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Whipple's Disease PCR (Tropheryma whipplei)": {
+        "result": "Not Detected",
+        "units": ""
+      },
+      "Brucella Serology": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Mycoplasma pneumoniae PCR/Serology": {
+        "result": "Negative",
+        "units": ""
+      },
+      "Cysticercosis Serology": {
+        "result": "Negative",
+        "units": ""
+      },
+      "CMV PCR": {
+        "result": "Not Detected",
+        "units": ""
+      },
+      "EBV PCR": {
+        "result": "Not Detected",
+        "units": ""
+      },
+      "Beta-D-Glucan": {
+        "value": 7,
+        "units": "pg/mL"
+      },
+      "Galactomannan Antigen": {
+        "value": 0.21,
+        "units": "Index"
+      },
+      "Vitamins & Cofactors": {
+        "Vitamin B12": {
+          "value": 483,
+          "units": "pg/mL"
+        },
+        "Folate (Serum)": {
+          "value": 15,
+          "units": "ng/mL"
+        },
+        "Vitamin D (25-OH)": {
+          "value": 77,
+          "units": "nmol/L"
+        },
+        "Vitamin A (Retinol)": {
+          "value": 51,
+          "units": "µg/dL"
+        },
+        "Vitamin B1 (Thiamine)": {
+          "value": 172,
+          "units": "nmol/L"
+        },
+        "Vitamin B2 (Riboflavin)": {
+          "value": 16,
+          "units": "µg/dL"
+        },
+        "Vitamin B3 (Niacin)": {
+          "value": 4.65,
+          "units": "mg/L"
+        },
+        "Vitamin B6 (Pyridoxine)": {
+          "value": 34,
+          "units": "ng/mL"
+        },
+        "Vitamin E (Alpha-Tocopherol)": {
+          "value": 14.12,
+          "units": "mg/L"
+        },
+        "Biotin": {
+          "value": 348,
+          "units": "pg/mL"
+        },
+        "Biotinidase Activity": {
+          "value": 4.91,
+          "units": "nmol/min/mL"
+        }
+      },
+      "Metabolic Intermediates": {
+        "Homocysteine": {
+          "value": 11,
+          "units": "µmol/L"
+        },
+        "Methylmalonic Acid (MMA)": {
+          "value": 99,
+          "units": "nmol/L"
+        },
+        "Copper": {
+          "value": 21,
+          "units": "µmol/L"
+        },
+        "Caeruloplasmin": {
+          "value": 0.58,
+          "units": "g/L"
+        },
+        "Zinc": {
+          "value": 14,
+          "units": "µmol/L"
+        },
+        "Very Long-Chain Fatty Acids (VLCFAs)": {
+          "result": "Within reference range",
+          "units": "Report"
+        },
+        "Phytanic Acid": {
+          "value": 5,
+          "units": "µmol/L"
+        },
+        "Pristanic Acid": {
+          "value": 0,
+          "units": "µmol/L"
+        },
+        "Plasma Amino Acids": {
+          "result": "Normal pattern",
+          "units": "Report"
+        },
+        "Plasma Acylcarnitine Profile": {
+          "result": "Normal pattern",
+          "units": "Report"
+        },
+        "Plasma Thymidine": {
+          "result": "Not Detected",
+          "units": "µmol/L"
+        }
+      },
+      "Lysosomal Storage Disorder Enzymes (Leukocytes)": {
+        "Hexosaminidase A & B": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Chitotriosidase": {
+          "value": 45,
+          "units": "nmol/hr/mL"
+        },
+        "Galactocerebrosidase": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Arylsulfatase A": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Alpha-galactosidase A": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Acid alpha-glucosidase": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Acid sphingomyelinase": {
+          "result": "Normal activity",
+          "units": ""
+        },
+        "Beta-galactocerebrosidase": {
+          "result": "Normal activity",
+          "units": ""
+        }
+      },
+      "Genetic Tests (Blood)": {
+        "Karyotype": {
+          "result": "46,XX or 46,XY",
+          "units": ""
+        },
+        "Fragile X Testing (FMR1 CGG repeats)": {
+          "value": 25,
+          "units": "repeats"
+        },
+        "Huntington's Disease (HTT CAG repeats)": {
+          "value": 14,
+          "units": "repeats"
+        },
+        "Spinocerebellar Ataxia (SCA) Panel": {
+          "result": "No pathogenic expansion detected",
+          "units": ""
+        },
+        "Myotonic Dystrophy Type 1 (DMPK CTG repeats)": {
+          "value": 5,
+          "units": "repeats"
+        },
+        "Myotonic Dystrophy Type 2 (CNBP CCTG repeats)": {
+          "value": 16,
+          "units": "repeats"
+        },
+        "Friedreich's Ataxia (FXN GAA repeats)": {
+          "value": 25,
+          "units": "repeats"
+        },
+        "Spinal Muscular Atrophy (SMN1 deletion)": {
+          "result": "2 copies present",
+          "units": ""
+        },
+        "Charcot-Marie-Tooth (CMT) Gene Panel": {
+          "result": "No pathogenic variant detected",
+          "units": ""
+        },
+        "Epilepsy Gene Panel": {
+          "result": "No pathogenic variant detected",
+          "units": ""
+        },
+        "Leukodystrophy Gene Panel": {
+          "result": "No pathogenic variant detected",
+          "units": ""
+        },
+        "Muscular Dystrophy Panel": {
+          "result": "No pathogenic variant detected",
+          "units": ""
+        },
+        "Mitochondrial DNA Deletion/Depletion Analysis": {
+          "result": "No pathogenic deletion/depletion detected",
+          "units": ""
+        },
+        "POLG1 Sequencing": {
+          "result": "No pathogenic variant detected",
+          "units": ""
+        },
+        "Whole Exome Sequencing (WES)": {
+          "result": "No primary pathogenic variant identified",
+          "units": ""
+        },
+        "Whole Genome Sequencing (WGS)": {
+          "result": "No primary pathogenic variant identified",
+          "units": ""
+        },
+        "Chromosomal Microarray (CMA)": {
+          "result": "No clinically significant copy number variants detected",
+          "units": ""
+        }
+      },
+      "Therapeutic Drug Monitoring": {
+        "Levetiracetam": {
+          "value": 0,
+          "units": "mg/L"
+        },
+        "Lamotrigine": {
+          "value": 0,
+          "units": "mg/L"
+        },
+        "Phenytoin": {
+          "value": 0,
+          "units": "mg/L"
+        },
+        "Carbamazepine": {
+          "value": 0,
+          "units": "mg/L"
+        },
+        "Valproic Acid": {
+          "value": 0,
+          "units": "mg/L"
+        },
+        "Tacrolimus": {
+          "value": 0,
+          "units": "ng/mL"
+        },
+        "Ciclosporin": {
+          "value": 0,
+          "units": "ng/mL"
+        },
+        "Sirolimus": {
+          "value": 0,
+          "units": "ng/mL"
+        },
+        "Mycophenolate Mofetil": {
+          "value": 0,
+          "units": "mg/L"
+        }
+      },
+      "Toxicology Screen (Serum)": {
+        "Opioids": {
+          "result": "Not Detected",
+          "units": ""
+        },
+        "Benzodiazepines": {
+          "result": "Not Detected",
+          "units": ""
+        },
+        "Cocaine": {
+          "result": "Not Detected",
+          "units": ""
+        },
+        "Amphetamines": {
+          "result": "Not Detected",
+          "units": ""
+        },
+        "Cannabinoids": {
+          "result": "Not Detected",
+          "units": ""
+        },
+        "Carbon Monoxide (Carboxyhaemoglobin)": {
+          "value": 0,
+          "units": "%"
+        }
+      },
+      "Heavy Metal Screen (Blood)": {
+        "Lead": {
+          "value": 5,
+          "units": "µg/dL"
+        },
+        "Mercury": {
+          "value": 10,
+          "units": "µg/L"
+        },
+        "Arsenic": {
+          "value": 25,
+          "units": "µg/L"
+        },
+        "Thallium": {
+          "value": 1,
+          "units": "µg/L"
+        }
+      },
+      "Tumour Markers": {
+        "Prostate-Specific Antigen (PSA)": {
+          "value": "number",
+          "units": "ng/mL"
+        },
+        "Carcinoembryonic Antigen (CEA)": {
+          "value": 3,
+          "units": "ng/mL"
+        },
+        "Cancer Antigen 125 (CA-125)": {
+          "value": "number",
+          "units": "U/mL"
+        },
+        "Cancer Antigen 19-9 (CA 19-9)": {
+          "value": 26,
+          "units": "U/mL"
+        },
+        "Alpha-Fetoprotein (AFP)": {
+          "value": 4,
+          "units": "ng/mL"
+        },
+        "Beta-Human Chorionic Gonadotropin (Beta-HCG)": {
+          "value": 4,
+          "units": "mIU/mL"
+        },
+        "Neuron-Specific Enolase (NSE)": {
+          "value": 15.87,
+          "units": "ng/mL"
+        }
+      }
+    },
+    "Urine Tests": {
+      "Urine Osmolality": {
+        "value": 218,
+        "units": "mOsm/kg"
+      },
+      "24-hour Urine Free Cortisol": {
+        "value": 53,
+        "units": "mcg/24h"
+      },
+      "Urine Amino Acids": {
+        "result": "Normal pattern",
+        "units": "Report"
+      },
+      "Urine Organic Acids": {
+        "result": "Normal pattern",
+        "units": "Report"
+      },
+      "Urine Acylglycines": {
+        "result": "Normal pattern",
+        "units": "Report"
+      }
+    },
+    "Cerebrospinal Fluid (CSF) Tests": {
+      "Routine Analysis": {
+        "Opening Pressure": {
+          "value": 17,
+          "units": "cmH2O"
+        },
+        "White Cell Count": {
+          "value": 4,
+          "units": "cells/µL"
+        },
+        "Red Cell Count": {
+          "value": 7,
+          "units": "cells/µL"
+        },
+        "Protein": {
+          "value": 0.4,
+          "units": "g/L"
+        },
+        "Glucose": {
+          "value": 4.35,
+          "units": "mmol/L"
+        },
+        "Lactate": {
+          "value": 2.23,
+          "units": "mmol/L"
+        }
+      },
+      "Specialised Tests": {
+        "Oligoclonal Bands": {
+          "result": "Unmatched bands",
+          "units": "Paired Serum/CSF Report",
+          "condition": "Multiple sclerosis"
+        },
+        "IgG Index": {
+          "value": 0.33,
+          "units": "Ratio"
+        },
+        "Neurofilament Light Chain (NfL)": {
+          "result": "Age-dependent",
+          "units": "pg/mL"
+        },
+        "Neurodegenerative Biomarkers": {
+          "Amyloid Beta 42 (Aβ42)": {
+            "value": 9626,
+            "units": "pg/mL"
+          },
+          "Phospho-Tau (p-Tau)": {
+            "value": 41,
+            "units": "pg/mL"
+          },
+          "Total Tau (t-Tau)": {
+            "value": 44,
+            "units": "pg/mL"
+          },
+          "Aβ42/Aβ40 Ratio": {
+            "value": 87.3,
+            "units": "Ratio"
+          },
+          "Alpha-Synuclein Seed Amplification Assay (SAA)": {
+            "result": "Negative",
+            "units": ""
+          }
+        },
+        "Infectious PCR (Viral)": {
+          "HSV-1/2": {
+            "result": "Not Detected",
+            "units": ""
+          },
+          "VZV": {
+            "result": "Not Detected",
+            "units": ""
+          },
+          "Enterovirus": {
+            "result": "Not Detected",
+            "units": ""
+          },
+          "JC Virus": {
+            "result": "Not Detected",
+            "units": ""
+          }
+        },
+        "Infectious PCR (Bacterial)": {
+          "S. pneumoniae": {
+            "result": "Not Detected",
+            "units": ""
+          },
+          "N. meningitidis": {
+            "result": "Not Detected",
+            "units": ""
+          },
+          "L. monocytogenes": {
+            "result": "Not Detected",
+            "units": ""
+          }
+        },
+        "Cryptococcal Antigen": {
+          "result": "Negative",
+          "units": ""
+        },
+        "Syphilis Serology (VDRL)": {
+          "result": "Non-reactive",
+          "units": ""
+        },
+        "Angiotensin-Converting Enzyme (ACE)": {
+          "value": 0.19,
+          "units": "U/L"
+        },
+        "Cytology": {
+          "result": "No malignant cells seen",
+          "units": "Microscopy report"
+        },
+        "Flow Cytometry": {
+          "result": "No abnormal cell population detected",
+          "units": "Report"
+        },
+        "CSF Thymidine": {
+          "result": "Not Detected",
+          "units": "µmol/L"
+        }
+      }
+    },
+    "Histopathology": {
+      "Muscle Biopsy": {
+        "biopsy_site": "N/A",
+        "report_summary": "Normal"
+      },
+      "Nerve Biopsy": {
+        "biopsy_site": "N/A",
+        "report_summary": "Normal"
+      },
+      "Brain Biopsy": {
+        "biopsy_site": "N/A",
+        "report_summary": "Normal"
+      },
+      "Skin Biopsy": {
+        "biopsy_site": "N/A",
+        "report_summary": "Normal"
+      },
+      "Other Biopsy": {
+        "biopsy_site": "N/A",
+        "report_summary": "Normal"
+      }
+    },
+    "Neurophysiology": {
+      "Electroencephalogram (EEG)": {
+        "Routine EEG": {
+          "report_summary": "Normal routine EEG."
+        },
+        "Sleep-Deprived EEG": {
+          "report_summary": "Normal sleep-deprived EEG."
+        },
+        "Ambulatory EEG (24-72h)": {
+          "report_summary": "Normal ambulatory EEG recording."
+        },
+        "Video-EEG Telemetry (per 24h)": {
+          "report_summary": "Normal inpatient video-EEG monitoring. No epileptic events captured."
+        }
+      },
+      "Nerve Conduction Studies and Electromyography": {
+        "Right Upper Limb": {
+          "NCS": "Median, ulnar, and radial sensory and motor nerve conduction studies are within normal limits for amplitude, conduction velocity, and latency.",
+          "EMG": "Needle EMG of representative proximal and distal muscles (e.g., Deltoid, Biceps, Triceps, First Dorsal Interosseous) shows no abnormal spontaneous activity. Motor unit action potentials are of normal morphology and recruitment is full.",
+          "RNS": "Repetitive nerve stimulation at 3Hz shows no significant decrement (>10%) in compound muscle action potential (CMAP) amplitude in representative nerves.",
+          "SFEMG": "Mean consecutive difference (MCD) is within the normal range for the muscle tested (e.g., frontalis or extensor digitorum communis). No impulse blocking is seen."
+        },
+        "Left Upper Limb": {
+          "NCS": "Median, ulnar, and radial sensory and motor nerve conduction studies are within normal limits for amplitude, conduction velocity, and latency.",
+          "EMG": "Needle EMG of representative proximal and distal muscles (e.g., Deltoid, Biceps, Triceps, First Dorsal Interosseous) shows no abnormal spontaneous activity. Motor unit action potentials are of normal morphology and recruitment is full.",
+          "RNS": "Repetitive nerve stimulation at 3Hz shows no significant decrement (>10%) in compound muscle action potential (CMAP) amplitude in representative nerves.",
+          "SFEMG": "Mean consecutive difference (MCD) is within the normal range for the muscle tested (e.g., frontalis or extensor digitorum communis). No impulse blocking is seen."
+        },
+        "Right Lower Limb": {
+          "NCS": "Peroneal, tibial, and sural sensory and motor nerve conduction studies are within normal limits for amplitude, conduction velocity, and latency. F-wave latencies are normal.",
+          "EMG": "Needle EMG of representative proximal and distal muscles (e.g., Vastus Lateralis, Tibialis Anterior, Gastrocnemius) shows no abnormal spontaneous activity. Motor unit action potentials are of normal morphology and recruitment is full.",
+          "RNS": "Repetitive nerve stimulation at 3Hz shows no significant decrement (>10%) in compound muscle action potential (CMAP) amplitude in representative nerves.",
+          "SFEMG": "Mean consecutive difference (MCD) is within the normal range for the muscle tested. No impulse blocking is seen."
+        },
+        "Left Lower Limb": {
+          "NCS": "Peroneal, tibial, and sural sensory and motor nerve conduction studies are within normal limits for amplitude, conduction velocity, and latency. F-wave latencies are normal.",
+          "EMG": "Needle EMG of representative proximal and distal muscles (e.g., Vastus Lateralis, Tibialis Anterior, Gastrocnemius) shows no abnormal spontaneous activity. Motor unit action potentials are of normal morphology and recruitment is full.",
+          "RNS": "Repetitive nerve stimulation at 3Hz shows no significant decrement (>10%) in compound muscle action potential (CMAP) amplitude in representative nerves.",
+          "SFEMG": "Mean consecutive difference (MCD) is within the normal range for the muscle tested. No impulse blocking is seen."
+        },
+        "Conclusion": "Normal four-limb neurophysiological study. No evidence of peripheral neuropathy, myopathy, radiculopathy, or neuromuscular junction dysfunction."
+      },
+      "Evoked Potentials (EPs)": {
+        "Visual Evoked Potentials (VEP)": {
+          "P100 Latency": "Absolute P100 latencies are within normal limits bilaterally (e.g., <115ms).",
+          "Amplitude & Morphology": "P100 amplitudes are symmetrical and of normal morphology.",
+          "Conclusion": "Normal visual evoked potentials."
+        },
+        "Brainstem Auditory Evoked Potentials (BAEP)": {
+          "Wave Latencies": "Absolute latencies of waves I, III, and V are present and within normal limits.",
+          "Interpeak Latencies": "I-III, III-V, and I-V interpeak latencies are normal, indicating normal conduction through the central auditory pathways.",
+          "Conclusion": "Normal brainstem auditory evoked potentials."
+        },
+        "Somatosensory Evoked Potentials (SSEP) - Upper Limbs": {
+          "Peripheral & Central Conduction": "Normal latencies for Erb's point, cervical cord (N13), and cortical (N20) potentials following median/ulnar nerve stimulation.",
+          "Conclusion": "Normal upper limb somatosensory evoked potentials."
+        },
+        "Somatosensory Evoked Potentials (SSEP) - Lower Limbs": {
+          "Peripheral & Central Conduction": "Normal latencies for popliteal fossa, lumbar cord, and cortical (P40) potentials following tibial nerve stimulation.",
+          "Conclusion": "Normal lower limb somatosensory evoked potentials."
+        }
+      }
+    },
+    "Imaging": {
+      "X-Ray": {
+        "Chest X-Ray (CXR)": "Clear lung fields, no consolidation. Normal cardiac silhouette. No pleural effusion."
+      },
+      "Computed Tomography (CT)": {
+        "CT Head (Non-Contrast)": "No evidence of acute intracranial haemorrhage, infarct, or space-occupying lesion. Normal ventricular system.",
+        "CT Head with Contrast": "No abnormally enhancing parenchymal or extra-axial lesions.",
+        "CT Angiogram (Head & Neck)": "The visualized intracranial and neck vessels are patent without evidence of significant stenosis, occlusion, aneurysm, or dissection.",
+        "CT Venogram (Head)": "The major dural venous sinuses and deep cerebral veins are patent.",
+        "CT Chest, Abdomen, Pelvis (CAP) with Contrast": "No evidence of metastatic disease. No significant lymphadenopathy. Organs appear unremarkable."
+      },
+      "Magnetic Resonance Imaging (MRI)": {
+        "status": "Abnormal",
+        "findings": [
+          {
+            "condition": "Multiple sclerosis",
+            "lesions": [
+              "II_optic_nerve.left",
+              "c5_spine.right"
+            ]
+          }
+        ]
+      },
+      "Nuclear Medicine": {
+        "DaTSCAN (SPECT)": "Normal, symmetrical, comma-shaped bilateral striatal uptake, consistent with a non-dopaminergic deficit syndrome.",
+        "FDG-PET Brain": "Symmetrical and normal pattern of cerebral glucose metabolism for age, with no focal areas of significant hyper- or hypometabolism.",
+        "Amyloid PET": "Negative for significant cortical amyloid plaque deposition.",
+        "PET-CT Whole Body": "No evidence of FDG-avid malignancy."
+      },
+      "Ultrasound": {
+        "Carotid Doppler": "No evidence of haemodynamically significant stenosis in the common, internal, or external carotid arteries bilaterally. Normal flow velocities.",
+        "Transcranial Doppler (TCD)": "Normal flow velocities and pulsatility indices in the major intracranial arteries (MCA, ACA, PCA, Vertebral, Basilar)."
+      }
+    },
+    "Bedside & Clinical Tests": {
+      "Cardiac": {
+        "Electrocardiogram (ECG)": "Normal sinus rhythm, heart rate 60-100 bpm, normal axis, no acute ST elevation or depression, normal intervals (PR, QRS, QTc).",
+        "24-hour Holter Monitor": "Predominantly sinus rhythm. No significant arrhythmias (e.g., atrial fibrillation, ventricular tachycardia), pauses, or high-grade AV block. Normal heart rate variability.",
+        "Echocardiogram (Transthoracic)": "Normal left ventricular size and systolic function (EF >55%). Normal right ventricular size and function. No significant valvular stenosis or regurgitation. No patent foramen ovale (PFO) on bubble study.",
+        "Tilt Table Test": "Normal haemodynamic response to orthostatic challenge. No evidence of orthostatic hypotension, postural orthostatic tachycardia syndrome (POTS), or vasovagal syncope."
+      },
+      "Respiratory": {
+        "Arterial Blood Gas (ABG)": {
+          "pH": {
+            "value": 7.36,
+            "units": "pH units"
+          },
+          "PaCO2": {
+            "value": 4.7,
+            "units": "kPa"
+          },
+          "PaO2": {
+            "value": 13,
+            "units": "kPa"
+          },
+          "HCO3-": {
+            "value": 22,
+            "units": "mmol/L"
+          },
+          "Base Excess": {
+            "value": -2,
+            "units": "mmol/L"
+          }
+        },
+        "Spirometry (Pulmonary Function Tests)": {
+          "Pattern": "No evidence of obstructive or restrictive deficit.",
+          "FEV1/FVC ratio": ">0.7",
+          "FVC": ">80% of predicted",
+          "FEV1": ">80% of predicted"
+        },
+        "Polysomnography (Full Sleep Study)": "Normal sleep architecture with appropriate proportions of N1, N2, N3, and REM sleep. Apnoea-Hypopnoea Index (AHI) is <5 events/hour. No significant periodic limb movements or other sleep-related disorders."
+      },
+      "Autonomic Function": {
+        "Autonomic Function Screen": {
+          "Heart Rate Variability": "Normal heart rate response to deep breathing and Valsalva manoeuvre.",
+          "QSART (Quantitative Sudomotor Axon Reflex Test)": "Normal, symmetrical sweat output in all tested limbs.",
+          "Thermoregulatory Sweat Test": "Normal, symmetrical sweat response to warming.",
+          "Conclusion": "No evidence of a significant autonomic neuropathy."
+        }
+      },
+      "Neuro-ophthalmology": {
+        "Formal Visual Field Testing (Perimetry)": "Full visual fields bilaterally. No evidence of scotoma, quadrantanopia, or hemianopia.",
+        "Fundus Photography / Optical Coherence Tomography (OCT)": "Normal optic discs with sharp margins and no pallor or swelling. Normal retinal nerve fibre layer (RNFL) thickness. Maculae are healthy."
+      }
+    },
+    "abnormalities_summary": [
+      "- Due to Multiple sclerosis: Investigations.Cerebrospinal Fluid (CSF) Tests.Specialised Tests.Oligoclonal Bands: Unmatched bands (Normal: Negative (Type 1))",
+      "- Investigations.Imaging.Magnetic Resonance Imaging (MRI): Abnormal\n  - Due to Multiple sclerosis: Lesions found at [II_optic_nerve.left, c5_spine.right]"
+    ]
+  },
+  "derived_summary_data": {
+    "lesion_locations": [
+      "II_optic_nerve.left",
+      "c5_spine.right"
+    ],
+    "presenting_complaint": {
+      "symptom": "Weakness in the right arm, especially when lifting.",
+      "related_lesion": "c5_spine.right",
+      "developed_over": "developed over 10 days",
+      "status": "related",
+      "onset_ago_raw": "recent",
+      "onset_ago_string": "started 12 days ago"
+    },
+    "comorbidities": {
+      "status": "not_provided",
+      "list": [
+        {
+          "conditionName": "Hay fever",
+          "has_focal_deficits": false,
+          "lesions": []
+        },
+        {
+          "conditionName": "Hypnogogic jerks",
+          "has_focal_deficits": false,
+          "lesions": []
+        }
+      ]
+    },
+    "selected_tests": {
+      "status": "normal",
+      "results": {
+        "Temp": "36.9°C",
+        "Urine": "Normal",
+        "CRP": "<5",
+        "CXR": "Clear"
+      },
+      "abnormal_finding": "na"
+    },
+    "evaluation": {
+      "diagnosis": [
+        "Multiple sclerosis"
+      ],
+      "lesions": [
+        {
+          "location": "II_optic_nerve.left",
+          "due_to": "Multiple sclerosis"
+        },
+        {
+          "location": "c5_spine.right",
+          "due_to": "Multiple sclerosis"
+        }
+      ],
+      "diagnostic_considerations": [],
+      "investigations": [
+        "- Due to Multiple sclerosis: Investigations.Cerebrospinal Fluid (CSF) Tests.Specialised Tests.Oligoclonal Bands: Unmatched bands (Normal: Negative (Type 1))",
+        "- Investigations.Imaging.Magnetic Resonance Imaging (MRI): Abnormal\n  - Due to Multiple sclerosis: Lesions found at [II_optic_nerve.left, c5_spine.right]"
+      ],
+      "management": {
+        "steroids": {
+          "treatment_inappropriate": true,
+          "reasons": {
+            "missing_information": [
+              "No indication this isn't an exacerbation of an old deficit/pseudorelapse.",
+              "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+            ],
+            "contraindications": []
+          }
+        },
+        "long_term_ms_dmt": {
+          "treatment_inappropriate": true,
+          "reasons": {
+            "missing_information": [
+              "Need confirmation of MS diagnosis.",
+              "Need a pregnancy test result.",
+              "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+            ],
+            "contraindications": []
+          }
+        }
+      }
+    }
+  }
+}

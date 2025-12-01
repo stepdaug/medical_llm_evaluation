@@ -1,0 +1,256 @@
+{
+  "case_id": "case_0001",
+  "provider": "goog",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 20.13,
+    "sex": "Female",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve (cranial nerve II) and right C5 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right C5 myelopathy",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "C5-C6 Spinal Cord",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)",
+          "right C5 myelopathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Neuromyelitis Optica Spectrum Disorder; MOG Antibody-Associated Disease; Neurosarcoidosis",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Neuromyelitis Optica Spectrum Disorder",
+          "MOG Antibody-Associated Disease",
+          "Neurosarcoidosis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Hay fever": "comorbidity",
+          "Hypnogogic jerks": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Hay fever",
+          "Hypnogogic jerks"
+        ],
+        "additional_diagnoses": [
+          "Neuromyelitis Optica Spectrum Disorder",
+          "MOG Antibody-Associated Disease",
+          "Neurosarcoidosis"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and Cervical Spine and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, orbits, and full spinal cord with gadolinium contrast",
+          "Aquaporin-4 (AQP4) antibody serology",
+          "Myelin Oligodendrocyte Glycoprotein (MOG) antibody serology",
+          "Lumbar puncture for CSF analysis (including cell count, protein, glucose, oligoclonal bands, and IgG index)",
+          "Serum for oligoclonal bands (for comparison with CSF)",
+          "Visual Evoked Potentials",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Erythrocyte Sedimentation Rate (ESR)",
+          "Antinuclear Antibody (ANA)",
+          "Angiotensin-Converting Enzyme (ACE)",
+          "Vitamin B12",
+          "Syphilis serology",
+          "HIV serology"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 3,
+        "found_tests_count": 3,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-Dose Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce inflammation of active demyelinating lesions",
+              "To shorten the duration and severity of the acute relapse",
+              "To accelerate functional recovery"
+            ]
+          },
+          {
+            "treatment": "Disease-Modifying Therapy (DMT)",
+            "timing": "Delay",
+            "reasons": [
+              "Awaiting definitive diagnostic confirmation and exclusion of mimics (NMOSD, MOGAD)",
+              "To allow for a considered discussion with the patient about long-term treatment options after the acute phase"
+            ]
+          },
+          {
+            "treatment": "Multidisciplinary Rehabilitation (Physiotherapy and Occupational Therapy)",
+            "timing": "Start Now",
+            "reasons": [
+              "To address current functional deficits including weakness and sensory ataxia",
+              "To improve gait stability and reduce fall risk",
+              "To maximize long-term functional recovery"
+            ]
+          },
+          {
+            "treatment": "Symptomatic Management for Spasticity",
+            "timing": "Delay",
+            "reasons": [
+              "The degree of residual spasticity after acute relapse treatment is unknown",
+              "To avoid unnecessary medication by re-assessing the need once the clinical picture has stabilized"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-Dose Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce inflammation of active demyelinating lesions",
+              "To shorten the duration and severity of the acute relapse",
+              "To accelerate functional recovery"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-Modifying Therapy (DMT)",
+            "timing": "Delay",
+            "reasons": [
+              "Awaiting definitive diagnostic confirmation and exclusion of mimics (NMOSD, MOGAD)",
+              "To allow for a considered discussion with the patient about long-term treatment options after the acute phase"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 3,
+          "acknowledged_reasons_count": 1,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.3333333333333333,
+          "proportion_reasons_missed": 0.6666666666666666
+        }
+      }
+    }
+  }
+}

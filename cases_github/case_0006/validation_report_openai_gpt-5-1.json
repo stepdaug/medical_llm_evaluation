@@ -56,7 +56,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and Neurosarcoid.\n\nOther possible differentials:\n- MOGAD, SLE and Neurosyphilis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, ADEM, Lymphoma and Sjogren's.\n\nOther considerations not mentioned:\n- Their comorbidity degenerative intervertebral disc disease could account for parts of the examination, e.g. with a lesion affecting right L5 nerve root.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right lateral pontine ischaemic stroke (atypical for unilateral optic nerve and unilateral cerebellum and unilateral spinal cord and unilateral nerve roots involvement)\n- Brainstem or cerebellopontine angle tumour (plausible for unilateral cerebellum, but atypical for unilateral optic nerve, unilateral spinal cord, unilateral nerve roots involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and Neurosarcoid.\n\nOther possible differentials:\n- MOGAD, SLE and Neurosyphilis.\n- Also feasible but of low probability: Vasculitis, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nOther considerations not mentioned:\n- Their comorbidity degenerative intervertebral disc disease could account for parts of the examination, e.g. with a lesion affecting right L5 nerve root.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right lateral pontine ischaemic stroke (atypical for unilateral optic nerve and unilateral cerebellum and unilateral spinal cord and unilateral nerve roots involvement)\n- Brainstem or cerebellopontine angle tumour (plausible for unilateral cerebellum; but atypical for unilateral optic nerve, unilateral spinal cord or unilateral nerve roots involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Relapsing-remitting multiple sclerosis",
@@ -76,31 +76,33 @@
           "Degenerative intervertebral disc disease"
         ],
         "matched_lesion_dx_keys": [
-          "Neurosarcoidosis",
           "MS",
-          "AQP4_NMOSD"
+          "AQP4_NMOSD",
+          "Neurosarcoidosis"
         ],
         "missing_lesion_dx_keys": [
-          "Infection_Lyme",
-          "Behcet_Disease",
+          "MOGAD",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
           "ADEM",
           "Autoimmune_Myelitis_SLE",
-          "MOGAD",
+          "Behcet_Disease",
           "CNS_Lymphoma",
-          "Autoimmune_Myelitis_Sjogren",
-          "Syphilis"
+          "Infection_Lyme"
         ],
         "missing_common_names": [
-          "SLE",
           "MOGAD",
-          "Neurosyphilis"
+          "Neurosyphilis",
+          "SLE"
         ],
         "missing_low_prob_names": [
-          "Lyme",
-          "Beh\u00e7et's",
+          "Vasculitis",
+          "Sjogren's",
           "ADEM",
+          "Beh\u00e7et's",
           "Lymphoma",
-          "Sjogren's"
+          "Lyme"
         ],
         "additional_diagnoses": [
           "Right lateral pontine ischaemic stroke",
@@ -117,15 +119,15 @@
         "additional_less_plausible_count": 2,
         "comorbidity_missing_count": 1,
         "other_considerations_missed_count": 1,
-        "lesion_ddx_total_count": 11,
+        "lesion_ddx_total_count": 12,
         "lesion_ddx_matched_count": 3,
         "lesion_ddx_missed_common_count": 3,
-        "lesion_ddx_missed_low_prob_count": 5,
-        "lesion_ddx_coverage_percentage": 0.2727272727272727
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.25
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of degenerative intervertebral disc disease.\n\n- But incomplete, should also consider: more extensive MRI spinal imaging to include Lumbosacral Spine.\n\n- Agree with the suggested MRI including the Brain; Thoracic Spine; Cervical Spine, and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, HIV, CRP, anti-MOG, syphilis, ACE, ENA, anti-dsDNA, anti-AQP4.\n- Could also consider testing: lyme, CSF (cytology and flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of their degenerative intervertebral disc disease comorbidity.\n\n- Agree with the suggested MRI including the Cervical Spine, Orbits, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: more extensive MRI spinal imaging to include Lumbosacral Spine.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: ANCA, lyme, CSF (flow cytometry and cytology).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -150,22 +152,22 @@
           },
           {
             "type": "MRI",
-            "region": "Brain",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
-            "region": "Thoracic Spine",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
             "region": "Cervical Spine",
             "condition": "Multiple sclerosis"
           },
           {
             "type": "MRI",
             "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
             "condition": "Multiple sclerosis"
           }
         ],
@@ -198,37 +200,37 @@
           "High-resolution CT chest"
         ],
         "all_identified_ft_keys": [
-          "ANA",
-          "LFT",
-          "NCS_EMG",
-          "Vitamin_B12",
-          "MOG_Antibodies",
-          "VEP",
-          "FBC",
-          "Serum_ACE",
-          "CSF_General",
-          "ENA_Panel",
           "Anti_dsDNA",
-          "Chest_XRay",
-          "Serum_Copper",
-          "MRI_Cervical_Spine",
-          "Serum_Protein_Electrophoresis",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "TFT",
-          "Serum_Immunoglobulins",
-          "OCT",
-          "CSF_Oligoclonal_Bands",
-          "Folate",
-          "HIV_Test",
-          "Chest_CT",
+          "MOG_Antibodies",
           "CRP",
-          "MRI_Thoracic_Spine",
-          "Syphilis_Serology",
+          "TFT",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
           "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
           "AQP4_Antibodies",
-          "MRI_Orbits"
+          "Syphilis_Serology",
+          "NCS_EMG",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "Serum_Copper",
+          "OCT",
+          "Serum_Protein_Electrophoresis",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
         ],
         "found_tests_primary": [
           {
@@ -243,22 +245,22 @@
           },
           {
             "type": "MRI",
-            "region": "Brain",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
-            "region": "Thoracic Spine",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
             "region": "Cervical Spine",
             "condition": "Multiple sclerosis"
           },
           {
             "type": "MRI",
             "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
             "condition": "Multiple sclerosis"
           },
           {
@@ -275,36 +277,38 @@
           }
         ],
         "expected_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "HIV_Test",
-          "CSF_Cytology",
-          "CRP",
+          "Anti_dsDNA",
           "MOG_Antibodies",
-          "Syphilis_Serology",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "AQP4_Antibodies",
           "ENA_Panel",
           "Serum_ACE",
-          "Lyme_Serology",
-          "Anti_dsDNA",
-          "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "HIV_Test",
-          "CRP",
-          "MOG_Antibodies",
-          "Syphilis_Serology",
-          "Serum_ACE",
-          "ENA_Panel",
           "Anti_dsDNA",
-          "AQP4_Antibodies"
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
           "CSF_Cytology",
-          "Lyme_Serology",
-          "CSF_Flow_Cytometry"
+          "ANCA",
+          "Lyme_Serology"
         ]
       },
       "scoring": {
@@ -312,9 +316,9 @@
         "primary_tests_found_count": 7,
         "primary_tests_missed_count": 1,
         "primary_tests_coverage_percentage": 0.875,
-        "ddx_tests_expected_count": 13,
+        "ddx_tests_expected_count": 14,
         "ddx_tests_found_count": 10,
-        "ddx_tests_coverage_percentage": 0.7692307692307693
+        "ddx_tests_coverage_percentage": 0.7142857142857143
       }
     },
     "Management": {

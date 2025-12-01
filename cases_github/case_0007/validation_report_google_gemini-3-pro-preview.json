@@ -10,7 +10,7 @@
   },
   "marking_output": {
     "Localisation": {
-      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left midbrain and left optic nerve.\n  \nAdditional signs indicate possible further lesion in:\n- right cerebellum.",
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve and left midbrain.\n  \nAdditional signs indicate lesion possibly also involving:\n- right cerebellum.",
       "structured_data": {
         "gt_lesions_english": [
           "left midbrain",
@@ -52,7 +52,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Lymphoma and Beh\u00e7et's.\n\nOther possible differentials:\n- SLE, Neurosyphilis and CNS Vasculitis.\n- Also feasible but low probability: Lyme, ADEM and Sjogren's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Glioma (plausible for unilateral brainstem, but atypical for unilateral cerebellum, unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Lymphoma and Beh\u00e7et's.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, Vasculitis, Sjogren's and ADEM.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Glioma (plausible for unilateral brainstem; but atypical for unilateral cerebellum or unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Multiple Sclerosis",
@@ -71,30 +71,30 @@
         ],
         "missing_original_gt": [],
         "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
           "Neurosarcoidosis",
-          "Behcet_Disease",
-          "MOGAD",
-          "CNS_Lymphoma",
           "MS",
-          "AQP4_NMOSD"
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
         ],
         "missing_lesion_dx_keys": [
           "Infection_Lyme",
-          "ADEM",
-          "CNS_Vasculitis",
-          "Autoimmune_Myelitis_SLE",
           "Syphilis",
-          "Autoimmune_Myelitis_Sjogren"
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE"
         ],
         "missing_common_names": [
-          "CNS Vasculitis",
-          "SLE",
-          "Neurosyphilis"
+          "Neurosyphilis",
+          "SLE"
         ],
         "missing_low_prob_names": [
           "Lyme",
-          "ADEM",
-          "Sjogren's"
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM"
         ],
         "additional_diagnoses": [
           "Brainstem Glioma"
@@ -112,13 +112,13 @@
         "other_considerations_missed_count": 0,
         "lesion_ddx_total_count": 12,
         "lesion_ddx_matched_count": 6,
-        "lesion_ddx_missed_common_count": 3,
-        "lesion_ddx_missed_low_prob_count": 3,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 4,
         "lesion_ddx_coverage_percentage": 0.5
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- But incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, HIV, CRP, anti-MOG, syphilis, ACE, ENA, anti-AQP4.\n- Could also consider testing: ANCA, lyme, anti-dsDNA, CSF (cytology and flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, ANCA, lyme, CSF (flow cytometry and cytology).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -156,24 +156,24 @@
           "Chest X-ray"
         ],
         "all_identified_ft_keys": [
-          "ANA",
-          "LFT",
           "MOG_Antibodies",
-          "VEP",
-          "FBC",
-          "Serum_ACE",
-          "CSF_General",
-          "ENA_Panel",
-          "Chest_XRay",
-          "MRI_Cervical_Spine",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "HIV_Test",
           "CRP",
-          "MRI_Thoracic_Spine",
+          "ENA_Panel",
+          "LFT",
+          "Serum_ACE",
+          "U_and_E",
+          "AQP4_Antibodies",
           "Syphilis_Serology",
-          "AQP4_Antibodies"
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
         ],
         "found_tests_primary": [
           {
@@ -195,38 +195,38 @@
           }
         ],
         "expected_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "ANCA",
-          "HIV_Test",
-          "CSF_Cytology",
-          "CRP",
+          "Anti_dsDNA",
           "MOG_Antibodies",
-          "Syphilis_Serology",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "AQP4_Antibodies",
           "ENA_Panel",
           "Serum_ACE",
-          "Lyme_Serology",
-          "Anti_dsDNA",
-          "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "HIV_Test",
-          "CRP",
           "MOG_Antibodies",
-          "Syphilis_Serology",
-          "Serum_ACE",
+          "ANA",
+          "CRP",
           "ENA_Panel",
-          "AQP4_Antibodies"
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
-          "ANCA",
-          "CSF_Cytology",
-          "Lyme_Serology",
           "Anti_dsDNA",
-          "CSF_Flow_Cytometry"
+          "CSF_Flow_Cytometry",
+          "CSF_Cytology",
+          "ANCA",
+          "Lyme_Serology"
         ]
       },
       "scoring": {

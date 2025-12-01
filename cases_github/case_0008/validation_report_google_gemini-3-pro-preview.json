@@ -42,7 +42,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Guillain-Barre Syndrome, Paraproteinemic Neuropathy, CIDP, Vitamin B12 Deficiency and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Diabetes-related Neuropathy, Alcohol-related Neuropathy, Hypothyroid Neuropathy, Uraemic Neuropathy and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Congestive heart failure, Chronic venous insufficiency or Kidney disease, if the signs are chronic.",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Guillain-Barre Syndrome, CIDP, Vitamin B12 Deficiency, Paraproteinemic Neuropathy and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Diabetes-related Neuropathy, Alcohol-related Neuropathy, Hypothyroid Neuropathy, Uraemic Neuropathy and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Kidney disease, Chronic venous insufficiency or Congestive heart failure, if the signs are chronic.",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Acute Inflammatory Demyelinating Polyneuropathy (Guillain-Barr\u00e9 Syndrome)",
@@ -68,9 +68,9 @@
         ],
         "matched_lesion_dx_keys": [
           "Guillain_Barre_Syndrome",
-          "Paraproteinemic_Neuropathy",
           "CIDP",
           "Vitamin_B12_Deficiency",
+          "Paraproteinemic_Neuropathy",
           "Vasculitic_Neuropathy"
         ],
         "missing_lesion_dx_keys": [
@@ -108,7 +108,7 @@
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: TFT, ANCA, LFT, folate, Nerve conduction studies and EMG, vitamin B12, FBC, Glucose / HbA1c, protein electrophoresis, U&E, CSF (Analysis (Protein/Cell Count)).\n- Could also consider testing: ESR, methylmalonic acid, HIV, CRP, Spirometry / FVC.",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: FBC, protein electrophoresis, TFT, folate, LFT, vitamin B12, U&E, Glucose / HbA1c, Nerve conduction studies and EMG, ANCA, CSF (Analysis (Protein/Cell Count)).\n- Could also consider testing: CRP, Spirometry / FVC, HIV, methylmalonic acid, ESR.",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -132,20 +132,20 @@
           "Anti-ganglioside antibodies"
         ],
         "all_identified_ft_keys": [
-          "TFT",
-          "ANA",
-          "ANCA",
-          "LFT",
-          "Folate",
-          "NCS_EMG",
-          "Vitamin_B12",
           "FBC",
-          "Anti_GQ1b_Antibodies",
-          "CSF_General",
-          "Glucose_HbA1c",
-          "Anti_Ganglioside_Antibodies",
+          "NCS_EMG",
+          "ANA",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Folate",
+          "LFT",
+          "Anti_Ganglioside_Antibodies",
+          "Anti_GQ1b_Antibodies",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "ANCA",
+          "CSF_General"
         ],
         "found_tests_primary": [
           {
@@ -156,42 +156,42 @@
         ],
         "missing_tests_primary": [],
         "expected_inv_keys_ddx": [
-          "TFT",
-          "ESR",
-          "ANCA",
-          "LFT",
-          "Folate",
-          "Methylmalonic_Acid",
-          "HIV_Test",
-          "NCS_EMG",
-          "Vitamin_B12",
-          "CRP",
           "FBC",
-          "CSF_General",
-          "Glucose_HbA1c",
-          "Spirometry",
+          "NCS_EMG",
+          "CRP",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Spirometry",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "ANCA",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Methylmalonic_Acid",
+          "ESR",
+          "CSF_General"
         ],
         "found_inv_keys_ddx": [
-          "TFT",
-          "ANCA",
-          "LFT",
-          "Folate",
-          "NCS_EMG",
-          "Vitamin_B12",
           "FBC",
-          "CSF_General",
-          "Glucose_HbA1c",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "U_and_E",
+          "Glucose_HbA1c",
+          "NCS_EMG",
+          "ANCA",
+          "CSF_General"
         ],
         "missing_inv_keys_ddx": [
-          "ESR",
-          "Methylmalonic_Acid",
-          "HIV_Test",
           "CRP",
-          "Spirometry"
+          "Spirometry",
+          "HIV_Test",
+          "Methylmalonic_Acid",
+          "ESR"
         ]
       },
       "scoring": {
@@ -205,80 +205,15 @@
       }
     },
     "Management": {
-      "report_string": "--- Management ---\nSteroids: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "report_string": "Nothing to add to management.",
       "structured_data": {
-        "ft_full_plan_parsed": [
-          {
-            "treatment": "Intravenous Immunoglobulin (IVIG)",
-            "timing": "Delay",
-            "reasons": [
-              "Patient is ambulant with normal gait",
-              "Respiratory function is currently stable",
-              "Diagnosis (e.g., GBS vs. other neuropathy) requires confirmation via NCS and LP"
-            ]
-          },
-          {
-            "treatment": "Thiamine and Vitamin B Complex supplementation",
-            "timing": "Start Now",
-            "reasons": [
-              "Low-risk intervention for potential nutritional etiology",
-              "Patient has risk factors (Obesity)"
-            ]
-          },
-          {
-            "treatment": "Compression Stockings",
-            "timing": "Start Now",
-            "reasons": [
-              "Symptomatic relief of dependent ankle edema",
-              "Assist with venous return"
-            ]
-          }
-        ],
-        "steroids_evaluation": {
-          "ft_plan": null,
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [],
-              "contraindications": [
-                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-              ]
-            }
-          },
-          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-        },
-        "dmt_evaluation": {
-          "ft_plan": null,
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [
-                "Need confirmation of MS diagnosis.",
-                "Need a pregnancy test result."
-              ],
-              "contraindications": []
-            }
-          },
-          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
-        }
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
       },
       "scoring": {
-        "steroids": {
-          "decision_category": "appropriate_omission",
-          "is_unsafe": 0,
-          "reasons_total": 1,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 1,
-          "reasons_coverage_percentage": 0.0
-        },
-        "dmt": {
-          "decision_category": "inappropriate_omission",
-          "is_unsafe": 1,
-          "reasons_total": 2,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 2,
-          "reasons_coverage_percentage": 0.0
-        }
+        "steroids": {},
+        "dmt": {}
       }
     }
   }

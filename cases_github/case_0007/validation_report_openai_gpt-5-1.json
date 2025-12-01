@@ -10,7 +10,7 @@
   },
   "marking_output": {
     "Localisation": {
-      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left midbrain and left optic nerve.\n  \nAdditional signs indicate possible further lesion in:\n- right cerebellum.",
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve and left midbrain.\n  \nAdditional signs indicate lesion possibly also involving:\n- right cerebellum.",
       "structured_data": {
         "gt_lesions_english": [
           "left midbrain",
@@ -52,7 +52,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+).\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE, Neurosyphilis and CNS Vasculitis.\n- Also feasible but low probability: Lyme, Beh\u00e7et's, ADEM, Lymphoma and Sjogren's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Left midbrain infarction in the paramedian posterior cerebral artery territory (plausible for unilateral brainstem, but atypical for unilateral cerebellum, unilateral optic nerve involvement)\n- Intrinsic left midbrain glioma (plausible for unilateral brainstem, but atypical for unilateral cerebellum, unilateral optic nerve involvement)\n- Intracerebral Haemorrhage (plausible for unilateral brainstem, unilateral cerebellum, but atypical for unilateral optic nerve involvement)\n- Cavernous Malformation (plausible for unilateral brainstem, unilateral cerebellum, but atypical for unilateral optic nerve involvement)\n- Posterior communicating artery aneurysm causing compressive left third nerve palsy with associated midbrain ischaemia (atypical for unilateral brainstem and unilateral cerebellum and unilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+).\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Left midbrain infarction in the paramedian posterior cerebral artery territory (plausible for unilateral brainstem; but atypical for unilateral cerebellum or unilateral optic nerve involvement)\n- Intrinsic left midbrain glioma (plausible for unilateral brainstem; but atypical for unilateral cerebellum or unilateral optic nerve involvement)\n- Left midbrain cavernous malformation with subacute haemorrhage (plausible for unilateral brainstem and unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Posterior communicating artery aneurysm causing compressive left third nerve palsy with associated midbrain ischaemia (atypical for unilateral brainstem and unilateral cerebellum and unilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Left midbrain infarction in the paramedian posterior cerebral artery territory",
@@ -75,29 +75,29 @@
         ],
         "missing_lesion_dx_keys": [
           "Infection_Lyme",
-          "Behcet_Disease",
-          "ADEM",
-          "CNS_Vasculitis",
-          "Autoimmune_Myelitis_SLE",
-          "MOGAD",
-          "CNS_Lymphoma",
           "Syphilis",
+          "CNS_Vasculitis",
+          "Neurosarcoidosis",
           "Autoimmune_Myelitis_Sjogren",
-          "Neurosarcoidosis"
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
         ],
         "missing_common_names": [
-          "CNS Vasculitis",
-          "SLE",
-          "MOGAD",
           "Neurosyphilis",
-          "Neurosarcoid"
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
         ],
         "missing_low_prob_names": [
           "Lyme",
-          "Beh\u00e7et's",
+          "Vasculitis",
+          "Sjogren's",
           "ADEM",
-          "Lymphoma",
-          "Sjogren's"
+          "Beh\u00e7et's",
+          "Lymphoma"
         ],
         "additional_diagnoses": [
           "Left midbrain infarction in the paramedian posterior cerebral artery territory",
@@ -118,13 +118,13 @@
         "other_considerations_missed_count": 0,
         "lesion_ddx_total_count": 12,
         "lesion_ddx_matched_count": 2,
-        "lesion_ddx_missed_common_count": 5,
-        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 6,
         "lesion_ddx_coverage_percentage": 0.16666666666666666
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Orbits and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, ANCA, HIV, CRP, anti-MOG, syphilis, ACE, anti-AQP4, CSF (cytology).\n- Could also consider testing: ENA, lyme, anti-dsDNA, CSF (flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ACE, HIV, ANCA, syphilis, ESR, CSF (cytology).\n- Could also consider testing: anti-dsDNA, ENA, lyme, CSF (flow cytometry).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -174,36 +174,36 @@
           "Carotid and vertebral artery Doppler ultrasound"
         ],
         "all_identified_ft_keys": [
-          "ANA",
           "Lipid_Profile",
-          "ANCA",
-          "LFT",
-          "CSF_Cytology",
-          "Vitamin_B12",
-          "MOG_Antibodies",
-          "Serum_ACE",
-          "FBC",
-          "VEP",
-          "CSF_General",
-          "Cerebral_Angiography",
-          "Carotid_Doppler",
-          "U_and_E",
           "MRI_Brain",
-          "ECG",
-          "ESR",
-          "Serum_Immunoglobulins",
-          "Folate",
-          "CSF_Oligoclonal_Bands",
-          "HIV_Test",
-          "OCT",
-          "MRA_Head_Neck",
-          "Coagulation_Screen",
+          "MOG_Antibodies",
           "CRP",
-          "Syphilis_Serology",
-          "Glucose_HbA1c",
-          "AQP4_Antibodies",
+          "VEP",
+          "Coagulation_Screen",
+          "LFT",
           "MRI_Orbits",
-          "CT_Head"
+          "Serum_ACE",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ECG",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "OCT",
+          "Cerebral_Angiography",
+          "Folate",
+          "HIV_Test",
+          "MRA_Head_Neck",
+          "Serum_Immunoglobulins",
+          "CSF_Cytology",
+          "ANCA",
+          "ESR",
+          "CT_Head",
+          "Carotid_Doppler"
         ],
         "found_tests_primary": [
           {
@@ -224,38 +224,38 @@
         ],
         "missing_tests_primary": [],
         "expected_inv_keys_ddx": [
-          "ESR",
-          "ANA",
-          "ANCA",
-          "HIV_Test",
-          "CSF_Cytology",
-          "CRP",
+          "Anti_dsDNA",
           "MOG_Antibodies",
-          "Syphilis_Serology",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "AQP4_Antibodies",
           "ENA_Panel",
           "Serum_ACE",
-          "Lyme_Serology",
-          "Anti_dsDNA",
-          "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
+          "MOG_Antibodies",
           "ANA",
-          "ANCA",
+          "CRP",
+          "AQP4_Antibodies",
+          "Serum_ACE",
           "HIV_Test",
           "CSF_Cytology",
-          "CRP",
-          "MOG_Antibodies",
+          "ANCA",
           "Syphilis_Serology",
-          "Serum_ACE",
-          "AQP4_Antibodies"
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
-          "ENA_Panel",
-          "Lyme_Serology",
           "Anti_dsDNA",
-          "CSF_Flow_Cytometry"
+          "CSF_Flow_Cytometry",
+          "ENA_Panel",
+          "Lyme_Serology"
         ]
       },
       "scoring": {

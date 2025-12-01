@@ -42,7 +42,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Paraproteinemic Neuropathy, Vasculitic Neuropathy, CIDP, Vitamin B12 Deficiency, Diabetes-related Neuropathy, Alcohol-related Neuropathy and Hypothyroid Neuropathy.\n\nOther possible differentials:\n- Uraemic Neuropathy, Guillain-Barre Syndrome and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Congestive heart failure, Chronic venous insufficiency or Kidney disease, if the signs are chronic.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Hereditary motor and sensory neuropathy (Charcot-Marie-Tooth disease) (atypical for length-dependent peripheral polyneuropathy involvement)\n- Paraneoplastic sensorimotor peripheral neuropathy (atypical for length-dependent peripheral polyneuropathy involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Hypothyroid Neuropathy, Alcohol-related Neuropathy, Diabetes-related Neuropathy, CIDP, Vitamin B12 Deficiency, Paraproteinemic Neuropathy and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Uraemic Neuropathy, Guillain-Barre Syndrome and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Kidney disease, Chronic venous insufficiency or Congestive heart failure, if the signs are chronic.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Hereditary motor and sensory neuropathy (Charcot-Marie-Tooth disease) (atypical for length-dependent peripheral polyneuropathy involvement)\n- Paraneoplastic sensorimotor peripheral neuropathy (atypical for length-dependent peripheral polyneuropathy involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Chronic length-dependent sensorimotor peripheral polyneuropathy of metabolic or toxic aetiology",
@@ -71,13 +71,13 @@
           "Chronic venous insufficiency"
         ],
         "matched_lesion_dx_keys": [
-          "Paraproteinemic_Neuropathy",
-          "Vasculitic_Neuropathy",
+          "Hypothyroidism_Neuropathy",
+          "Alcoholic_Neuropathy",
+          "Diabetic_Neuropathy",
           "CIDP",
           "Vitamin_B12_Deficiency",
-          "Diabetic_Neuropathy",
-          "Alcoholic_Neuropathy",
-          "Hypothyroidism_Neuropathy"
+          "Paraproteinemic_Neuropathy",
+          "Vasculitic_Neuropathy"
         ],
         "missing_lesion_dx_keys": [
           "Uraemic_Neuropathy",
@@ -113,7 +113,7 @@
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: TFT, ESR, ANCA, LFT, folate, HIV, Nerve conduction studies and EMG, vitamin B12, CRP, FBC, Glucose / HbA1c, protein electrophoresis, U&E.\n- Could also consider testing: methylmalonic acid, Spirometry / FVC, CSF (Analysis (Protein/Cell Count)).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: FBC, Nerve conduction studies and EMG, CRP, protein electrophoresis, TFT, folate, LFT, vitamin B12, HIV, Glucose / HbA1c, U&E, ANCA, ESR.\n- Could also consider testing: Spirometry / FVC, methylmalonic acid, CSF (Analysis (Protein/Cell Count)).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -149,24 +149,24 @@
           "Genetic testing for hereditary motor and sensory neuropathy if clinical or family history suggests"
         ],
         "all_identified_ft_keys": [
-          "Hepatitis_Screen",
-          "TFT",
-          "ESR",
-          "Serum_Immunoglobulins",
-          "ANA",
-          "LFT",
-          "Folate",
-          "ANCA",
-          "HIV_Test",
-          "Genetic_Neuropathy_Panel",
-          "NCS_EMG",
-          "Vitamin_B12",
-          "CRP",
           "FBC",
-          "Glucose_HbA1c",
-          "Urinalysis",
+          "NCS_EMG",
+          "ANA",
+          "CRP",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Hepatitis_Screen",
+          "Genetic_Neuropathy_Panel",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "Urinalysis",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "Serum_Immunoglobulins",
+          "U_and_E",
+          "ANCA",
+          "ESR"
         ],
         "found_tests_primary": [
           {
@@ -177,42 +177,42 @@
         ],
         "missing_tests_primary": [],
         "expected_inv_keys_ddx": [
-          "TFT",
-          "ESR",
-          "ANCA",
-          "LFT",
-          "Folate",
-          "Methylmalonic_Acid",
-          "HIV_Test",
-          "NCS_EMG",
-          "Vitamin_B12",
-          "CRP",
           "FBC",
-          "CSF_General",
-          "Glucose_HbA1c",
-          "Spirometry",
+          "NCS_EMG",
+          "CRP",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Spirometry",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "ANCA",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Methylmalonic_Acid",
+          "ESR",
+          "CSF_General"
         ],
         "found_inv_keys_ddx": [
-          "TFT",
-          "ESR",
-          "ANCA",
-          "LFT",
-          "Folate",
-          "HIV_Test",
-          "NCS_EMG",
-          "Vitamin_B12",
-          "CRP",
           "FBC",
-          "Glucose_HbA1c",
+          "NCS_EMG",
+          "CRP",
           "Serum_Protein_Electrophoresis",
-          "U_and_E"
+          "TFT",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "ANCA",
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
+          "Spirometry",
           "Methylmalonic_Acid",
-          "CSF_General",
-          "Spirometry"
+          "CSF_General"
         ]
       },
       "scoring": {
@@ -226,144 +226,15 @@
       }
     },
     "Management": {
-      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "report_string": "Nothing to add to management.",
       "structured_data": {
-        "ft_full_plan_parsed": [
-          {
-            "treatment": "Lifestyle modifications (weight loss, regular aerobic exercise, smoking cessation if relevant, and limitation of alcohol intake)",
-            "timing": "Start Now",
-            "reasons": [
-              "Safe and beneficial regardless of final aetiology",
-              "Obesity and possible metabolic syndrome increase risk of metabolic neuropathy and ankle oedema",
-              "Improves long-term cardiovascular, renal, and neurologic outcomes"
-            ]
-          },
-          {
-            "treatment": "Foot care education and podiatry referral",
-            "timing": "Start Now",
-            "reasons": [
-              "Distal sensory loss increases risk of unnoticed trauma and ulceration",
-              "Early education on daily foot inspection and appropriate footwear reduces complications",
-              "Can be implemented before full aetiological workup is completed"
-            ]
-          },
-          {
-            "treatment": "Physiotherapy and balance training",
-            "timing": "Start Now",
-            "reasons": [
-              "Mild distal weakness and sensory loss increase fall risk",
-              "Strengthening and proprioceptive training can improve functional status",
-              "Non-invasive and low-risk intervention"
-            ]
-          },
-          {
-            "treatment": "Compression stockings and leg elevation for ankle oedema",
-            "timing": "Start Now",
-            "reasons": [
-              "Symptomatic relief of puffy ankles while systemic causes are investigated",
-              "Conservative management appropriate in a haemodynamically stable patient without cardiorespiratory compromise",
-              "May reduce discomfort and improve mobility"
-            ]
-          },
-          {
-            "treatment": "Optimisation of glycaemic control with diet, lifestyle, and pharmacologic therapy if diabetes or pre-diabetes is confirmed",
-            "timing": "Delay",
-            "reasons": [
-              "Requires confirmation of abnormal glucose metabolism with HbA1c and fasting glucose",
-              "Choice of agents should be individualised based on comorbidities and renal/hepatic function",
-              "Tight glycaemic control slows progression of diabetic neuropathy but should be planned with primary care or endocrinology"
-            ]
-          },
-          {
-            "treatment": "Vitamin B12 replacement therapy if deficiency is identified",
-            "timing": "Delay",
-            "reasons": [
-              "B12 status must be confirmed to avoid masking other diagnoses and unnecessary treatment",
-              "Dosing and route (oral vs intramuscular) depend on severity and cause of deficiency",
-              "Correcting deficiency can halt or partially reverse neuropathic deficits"
-            ]
-          },
-          {
-            "treatment": "Disease-specific immunotherapy for chronic inflammatory demyelinating polyradiculoneuropathy (e.g., corticosteroids, intravenous immunoglobulin, or plasma exchange) if confirmed",
-            "timing": "Delay",
-            "reasons": [
-              "Requires confirmation of demyelinating neuropathy on nerve conduction studies and supportive clinical/laboratory criteria",
-              "Immunotherapies have significant risks and costs and should not be given empirically in mild, slowly progressive neuropathy",
-              "Should be initiated in consultation with a neuromuscular specialist"
-            ]
-          },
-          {
-            "treatment": "Neuropathic pain medication (e.g., amitriptyline, duloxetine, gabapentin, or pregabalin) if the patient reports troublesome neuropathic pain",
-            "timing": "Delay",
-            "reasons": [
-              "No pain symptoms are currently documented; treatment should be tailored to symptom burden",
-              "Choice of agent depends on comorbidities, potential drug interactions, and patient preference",
-              "Initiation can follow once full assessment clarifies aetiology and contraindications"
-            ]
-          },
-          {
-            "treatment": "Avoidance or minimisation of neurotoxic medications and toxins",
-            "timing": "Start Now",
-            "reasons": [
-              "Many drugs and toxins (e.g., certain chemotherapeutics, excessive vitamin B6, heavy alcohol use) can worsen neuropathy",
-              "Medication review can be completed immediately and harmful agents reduced or stopped",
-              "Prevents further axonal injury while diagnostic workup is ongoing"
-            ]
-          }
-        ],
-        "steroids_evaluation": {
-          "ft_plan": {
-            "treatment": "Disease-specific immunotherapy for chronic inflammatory demyelinating polyradiculoneuropathy (e.g., corticosteroids, intravenous immunoglobulin, or plasma exchange) if confirmed",
-            "timing": "Delay",
-            "reasons": [
-              "Requires confirmation of demyelinating neuropathy on nerve conduction studies and supportive clinical/laboratory criteria",
-              "Immunotherapies have significant risks and costs and should not be given empirically in mild, slowly progressive neuropathy",
-              "Should be initiated in consultation with a neuromuscular specialist"
-            ]
-          },
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [],
-              "contraindications": [
-                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-              ]
-            }
-          },
-          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
-        },
-        "dmt_evaluation": {
-          "ft_plan": null,
-          "gt_plan": {
-            "treatment_inappropriate": true,
-            "reasons": {
-              "missing_information": [
-                "Need confirmation of MS diagnosis.",
-                "Need a pregnancy test result."
-              ],
-              "contraindications": []
-            }
-          },
-          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
-        }
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
       },
       "scoring": {
-        "steroids": {
-          "decision_category": "inappropriate_commission",
-          "is_unsafe": 1,
-          "reasons_total": 1,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 1,
-          "reasons_coverage_percentage": 0.0
-        },
-        "dmt": {
-          "decision_category": "inappropriate_omission",
-          "is_unsafe": 1,
-          "reasons_total": 2,
-          "reasons_acknowledged": 0,
-          "reasons_missed": 2,
-          "reasons_coverage_percentage": 0.0
-        }
+        "steroids": {},
+        "dmt": {}
       }
     }
   }

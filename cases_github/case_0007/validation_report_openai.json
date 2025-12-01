@@ -1,0 +1,325 @@
+{
+  "case_id": "case_0007",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 58.47,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left midbrain.\n  \nAdditional signs indicate potential further lesions in:\n- right cerebellum and left optic nerve (cranial nerve II).",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain",
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 2,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.3333333333333333,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.6666666666666666,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\n- Other differentials to consider include: MOG Antibody-Associated Disease, Neuromyelitis Optica Spectrum Disorder (AQP4+), Neurosarcoidosis, Neurosyphilis and Beh\u00e7et's Disease.\n\nThese suggested differentials are less likely to explain the full clinical picture than those above:\n- Paramedian midbrain infarction (Weber/Claude/Benedikt syndrome); Midbrain haemorrhage; Midbrain cavernous malformation; Primary midbrain glioma or metastasis; Posterior communicating artery aneurysm causing third-nerve palsy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Paramedian midbrain infarction (Weber/Claude/Benedikt syndrome)",
+          "Midbrain haemorrhage",
+          "Midbrain cavernous malformation",
+          "Primary midbrain glioma or metastasis",
+          "Demyelinating brainstem lesion (multiple sclerosis or NMOSD)",
+          "Posterior communicating artery aneurysm causing third-nerve palsy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Syphilis",
+          "Behcet_Disease"
+        ],
+        "additional_diagnoses": [
+          "Paramedian midbrain infarction (Weber/Claude/Benedikt syndrome)",
+          "Midbrain haemorrhage",
+          "Midbrain cavernous malformation",
+          "Primary midbrain glioma or metastasis",
+          "Posterior communicating artery aneurysm causing third-nerve palsy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_inappropriate_count": 5,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- The suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- But incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: serum AQP4 Ab, serum MOG Ab, syphilis.\n- Could also consider: serum ACE.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Non-contrast CT Brain",
+          "CT Angiogram of Head and Neck",
+          "MRI Brain with and without gadolinium including DWI and SWI (brainstem-focused sequences)",
+          "MR Angiography of Head and Neck",
+          "ECG",
+          "Transthoracic echocardiogram",
+          "24\u201372 hour Holter monitoring",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen",
+          "Blood glucose",
+          "HbA1c",
+          "Lipid profile",
+          "Thyroid function tests",
+          "Vitamin B12",
+          "Folate",
+          "ESR",
+          "C-reactive protein",
+          "Antinuclear antibody",
+          "ANCA",
+          "Aquaporin-4 antibody",
+          "MOG antibody",
+          "HIV serology",
+          "Syphilis serology",
+          "Formal ophthalmology assessment with visual fields and optical coherence tomography"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "AQP4_Antibodies",
+          "MOG_Antibodies",
+          "Serum_ACE",
+          "Syphilis_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "AQP4_Antibodies",
+          "MOG_Antibodies",
+          "Syphilis_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "Serum_ACE"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 2,
+        "primary_tests_coverage_percentage": 0.3333333333333333,
+        "ddx_tests_expected_count": 4,
+        "ddx_tests_found_count": 3,
+        "ddx_tests_coverage_percentage": 0.75
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Presenting complaint is not specified, so no indication whether this is related to MS.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Stroke unit admission with neurological observations and early mobilisation",
+            "timing": "Start Now",
+            "reasons": [
+              "Improves outcomes in acute/subacute stroke",
+              "Allows rapid response to neurological deterioration"
+            ]
+          },
+          {
+            "treatment": "Aspirin 300 mg loading then 75 mg daily (or Clopidogrel 75 mg daily if aspirin-intolerant)",
+            "timing": "Start Now",
+            "reasons": [
+              "Presentation consistent with subacute non-cardioembolic brainstem infarction",
+              "Low clinical suspicion for active intracranial haemorrhage"
+            ]
+          },
+          {
+            "treatment": "High-intensity statin (e.g., Atorvastatin 80 mg nightly)",
+            "timing": "Start Now",
+            "reasons": [
+              "Secondary prevention after suspected ischaemic stroke",
+              "LDL lowering reduces recurrent stroke risk"
+            ]
+          },
+          {
+            "treatment": "Blood pressure optimisation (ACE inhibitor/diuretic as needed; target <130/80 longer term)",
+            "timing": "Start Now",
+            "reasons": [
+              "Hypertension is a key stroke risk factor",
+              "Secondary prevention benefit irrespective of baseline BP if tolerated"
+            ]
+          },
+          {
+            "treatment": "Intermittent pneumatic compression for DVT prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility with hemiparesis increases VTE risk",
+              "Safe prior to confirming stroke subtype"
+            ]
+          },
+          {
+            "treatment": "Eye care for third-nerve palsy (lubricating drops/ointment, eyelid taping at night, temporary occlusion/patch for diplopia)",
+            "timing": "Start Now",
+            "reasons": [
+              "Prevents exposure keratopathy",
+              "Improves function while palsy recovers"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy for gait and arm ataxia/weakness; falls precautions",
+            "timing": "Start Now",
+            "reasons": [
+              "Enhances functional recovery",
+              "Reduces fall risk from right-sided deficits and ataxia"
+            ]
+          },
+          {
+            "treatment": "Anticoagulation for cardioembolic source (e.g., AF)",
+            "timing": "Delay",
+            "reasons": [
+              "Only indicated if cardiac workup confirms embolic aetiology",
+              "Avoids unnecessary bleeding risk before diagnosis"
+            ]
+          },
+          {
+            "treatment": "Endovascular or surgical treatment of a posterior communicating artery aneurysm if identified",
+            "timing": "Delay",
+            "reasons": [
+              "Contingent on vascular imaging demonstrating aneurysm",
+              "Requires neurosurgical planning"
+            ]
+          },
+          {
+            "treatment": "Long-term strabismus/ptosis surgery or botulinum options if residual III nerve palsy persists >6\u201312 months",
+            "timing": "Delay",
+            "reasons": [
+              "Allow time for spontaneous neurological recovery",
+              "Interventions are elective and guided by ophthalmology"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days ago."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Presenting complaint is not specified, so no indication whether this is related to MS."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

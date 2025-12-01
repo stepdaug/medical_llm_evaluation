@@ -1,5 +1,0 @@
-{
-    "response": "My investigation plan is prioritised to urgently confirm the suspected diagnosis of Guillain-Barr\u00e9 Syndrome (GBS), exclude critical alternative diagnoses that could mimic it, and monitor for life-threatening complications. The highest priority is given to neurophysiology and cerebrospinal fluid analysis, which are key to diagnosing GBS. Imaging of the spine is crucial to rule out structural compression. Vital capacity monitoring is essential for patient safety due to the risk of respiratory failure. Blood tests are included to investigate for common GBS triggers and to exclude metabolic, inflammatory, and toxic causes.\n\ninvestigations = [\"Spirometry / Forced Vital Capacity\", \"Nerve Conduction Studies and Electromyography\", \"Lumbar Puncture for CSF analysis (cell count, protein, glucose)\", \"MRI of the whole spine with gadolinium\", \"Anti-ganglioside antibodies\", \"HbA1c\", \"Erythrocyte Sedimentation Rate\", \"Autoimmune screen (including ANA and ANCA)\", \"Serum Protein Electrophoresis\", \"Infectious serology (Campylobacter jejuni, CMV, EBV)\", \"Vitamin B12\"]",
-    "prompt_tokens": 1359,
-    "output_tokens": 225
-}

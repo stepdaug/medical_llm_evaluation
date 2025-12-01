@@ -1,3 +1,0 @@
-{
-    "response": "The clinical presentation indicates a lesion in the brainstem. Specifically, the Right Horner's syndrome, Right palate weakness (CN X), Right tongue deviation (CN XII), and Right cerebellar signs (ataxia, nystagmus) clearly localise to the Right Medulla Oblongata. The presence of bilateral spasticity, hyperreflexia, and clonus, along with bilateral sensory deficits, indicates that the lesion is extensive enough to involve the bilateral corticospinal tracts (pyramids) and sensory pathways (medial lemniscus/spinothalamic tracts) or the pyramidal decussation.\n\nlesion_locations = [\"Right Medulla Oblongata\"]"
-}

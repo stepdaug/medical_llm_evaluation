@@ -1,3 +1,0 @@
-{
-    "response": "The clinical picture represents a classic Brown-S\u00e9quard syndrome (hemicord lesion). The patient exhibits right-sided Lower Motor Neuron signs at the C5/C6 level (weakness, hypotonia, absent supinator reflex), right-sided Upper Motor Neuron signs below that level (spasticity, clonus, upgoing plantar), and right-sided dorsal column sensory loss (vibration/proprioception). Conversely, there is left-sided spinothalamic sensory loss (pain/temperature). This localises to the right side of the cervical spinal cord. Additionally, the reduced visual acuity and relative afferent pupillary defect (RAPD) on the left indicate a separate optic neuropathy.\n\nlesion_locations = [\"right C5/C6 Spinal Cord\", \"left Optic Nerve\"]"
-}

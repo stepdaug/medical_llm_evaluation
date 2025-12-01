@@ -49,7 +49,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, TB and Lymphoma.\n\nOther possible differentials:\n- Neurosyphilis, Compressive Optic Neuropathy, Bartonella, Retinal Detachment, Central Retinal Vein Occlusion, Central Retinal Artery Occlusion and Optic Neuropathy.\n- Also feasible but low probability: Sjogren's, Vasculitis and Leber's Hereditary Optic Neuropathy.",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, TB and Lymphoma.\n\nOther possible differentials:\n- Neurosyphilis, Compressive Optic Neuropathy, Bartonella and Retinal Detachment.\n- Also feasible but of low probability: Beh\u00e7et's, Lyme, Vasculitis, Sjogren's and Leber's Hereditary Optic Neuropathy.",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Neurosarcoidosis",
@@ -68,38 +68,38 @@
         ],
         "missing_original_gt": [],
         "matched_lesion_dx_keys": [
-          "Neurosarcoidosis",
-          "Autoimmune_Myelitis_SLE",
-          "MOGAD",
           "CNS_Tuberculosis",
-          "CNS_Lymphoma",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
           "MS",
-          "AQP4_NMOSD"
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD"
         ],
         "missing_lesion_dx_keys": [
           "Compressive_Optic_Neuropathy",
           "Bartonella_Henselae",
-          "Autoimmune_Myelitis_Sjogren",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Infection_Lyme",
           "Retinal_Detachment",
           "Syphilis",
-          "Central_Retinal_Vein_Occlusion",
           "CNS_Vasculitis",
-          "Central_Retinal_Artery_Occlusion",
-          "Leber_Hereditary_Optic_Neuropathy",
-          "Optic_Neuropathy_Nonspecific"
+          "Autoimmune_Myelitis_Sjogren",
+          "Optic_Neuropathy_Nonspecific",
+          "Leber_Hereditary_Optic_Neuropathy"
         ],
         "missing_common_names": [
           "Compressive Optic Neuropathy",
           "Bartonella",
           "Retinal Detachment",
-          "Neurosyphilis",
-          "Central Retinal Vein Occlusion",
-          "Central Retinal Artery Occlusion",
-          "Optic Neuropathy"
+          "Neurosyphilis"
         ],
         "missing_low_prob_names": [
-          "Sjogren's",
+          "Beh\u00e7et's",
+          "Lyme",
           "Vasculitis",
+          "Sjogren's",
           "Leber's Hereditary Optic Neuropathy"
         ],
         "additional_diagnoses": []
@@ -114,15 +114,15 @@
         "additional_less_plausible_count": 0,
         "comorbidity_missing_count": 0,
         "other_considerations_missed_count": 0,
-        "lesion_ddx_total_count": 17,
+        "lesion_ddx_total_count": 18,
         "lesion_ddx_matched_count": 7,
-        "lesion_ddx_missed_common_count": 7,
-        "lesion_ddx_missed_low_prob_count": 3,
-        "lesion_ddx_coverage_percentage": 0.4117647058823529
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.3888888888888889
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- But incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, ANCA, HIV, TB quantiferon / IGRA, CRP, anti-MOG, syphilis, ACE, ENA, anti-AQP4.\n- Could also consider testing: bartonella, anti-dsDNA, CSF (cytology and flow cytometry).",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, TB, ACE, ANCA, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, bartonella, lyme, CSF (flow cytometry and cytology).",
       "structured_data": {
         "gt_required_tests_primary": [
           {
@@ -132,12 +132,12 @@
           },
           {
             "type": "MRI",
-            "region": "Brain",
+            "region": "Orbits",
             "condition": "Multiple sclerosis"
           },
           {
             "type": "MRI",
-            "region": "Orbits",
+            "region": "Brain",
             "condition": "Multiple sclerosis"
           }
         ],
@@ -160,29 +160,29 @@
           "QuantiFERON-TB Gold"
         ],
         "all_identified_ft_keys": [
-          "Bone_Profile",
-          "ANA",
-          "AQP4_Antibodies",
-          "ANCA",
-          "LFT",
-          "MRI_Whole_Spine",
+          "MRI_Brain",
           "MOG_Antibodies",
-          "Serum_ACE",
-          "MRI_Lumbosacral_Spine",
+          "Autoimmune_Screen_General",
+          "CRP",
           "ENA_Panel",
+          "LFT",
+          "TB_Screen",
+          "Serum_ACE",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
           "CSF_General",
           "FBC",
-          "MRI_Cervical_Spine",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "HIV_Test",
+          "ANA",
+          "MRI_Whole_Spine",
           "Chest_CT",
-          "TB_Screen",
-          "CRP",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
           "MRI_Thoracic_Spine",
-          "Syphilis_Serology",
-          "Autoimmune_Screen_General"
+          "Bone_Profile",
+          "HIV_Test",
+          "ANCA",
+          "ESR"
         ],
         "found_tests_primary": [
           {
@@ -204,40 +204,42 @@
           }
         ],
         "expected_inv_keys_ddx": [
-          "ESR",
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
           "ANA",
-          "ANCA",
-          "Bartonella_Serology",
-          "HIV_Test",
-          "TB_Screen",
-          "CSF_Cytology",
           "CRP",
-          "Syphilis_Serology",
           "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
           "ENA_Panel",
           "Serum_ACE",
-          "Anti_dsDNA",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
           "AQP4_Antibodies",
-          "CSF_Flow_Cytometry"
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
+          "MOG_Antibodies",
           "ANA",
+          "CRP",
+          "ENA_Panel",
+          "TB_Screen",
+          "Serum_ACE",
           "ANCA",
           "HIV_Test",
-          "TB_Screen",
-          "CRP",
-          "MOG_Antibodies",
+          "AQP4_Antibodies",
           "Syphilis_Serology",
-          "Serum_ACE",
-          "ENA_Panel",
-          "AQP4_Antibodies"
+          "ESR"
         ],
         "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
           "Bartonella_Serology",
           "CSF_Cytology",
-          "Anti_dsDNA",
-          "CSF_Flow_Cytometry"
+          "Lyme_Serology"
         ]
       },
       "scoring": {
@@ -245,9 +247,9 @@
         "primary_tests_found_count": 1,
         "primary_tests_missed_count": 2,
         "primary_tests_coverage_percentage": 0.3333333333333333,
-        "ddx_tests_expected_count": 15,
+        "ddx_tests_expected_count": 16,
         "ddx_tests_found_count": 11,
-        "ddx_tests_coverage_percentage": 0.7333333333333333
+        "ddx_tests_coverage_percentage": 0.6875
       }
     },
     "Management": {

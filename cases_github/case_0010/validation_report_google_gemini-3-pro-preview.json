@@ -10,7 +10,7 @@
   },
   "marking_output": {
     "Localisation": {
-      "report_string": "--- Localisation ---\n  \nMore precision is possible than: 'right Optic Nerve'.  \nNamely, in the region of: bilateral optic nerve.\n  \nMore precision is possible than: 'right Thoracic Spinal Cord'.  \nNamely, in the region of: right T2 spinal cord.",
+      "report_string": "--- Localisation ---\n  \nSome more precision is possible than: 'right Optic Nerve'.  \nNamely, in the region of: bilateral optic nerve.\n  \nSome more precision is possible than: 'right Thoracic Spinal Cord'.  \nNamely, in the region of: right T2 spinal cord.",
       "structured_data": {
         "gt_lesions_english": [
           "right T2 myelopathy",
@@ -59,7 +59,7 @@
       }
     },
     "Differential diagnosis": {
-      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and ADEM.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but low probability: Lyme and Beh\u00e7et's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Spinal Cord Neoplasm (plausible for unilateral spinal cord, but atypical for bilateral optic nerve involvement)",
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and ADEM.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but of low probability: Lyme, Vasculitis and Beh\u00e7et's.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Spinal Cord Neoplasm (plausible for unilateral spinal cord; but atypical for bilateral optic nerve involvement)",
       "structured_data": {
         "ft_diagnoses_raw": [
           "Multiple Sclerosis",
@@ -78,23 +78,25 @@
         ],
         "missing_original_gt": [],
         "matched_lesion_dx_keys": [
-          "Neurosarcoidosis",
-          "ADEM",
-          "MOGAD",
           "AQP4_NMOSD",
+          "Neurosarcoidosis",
           "MS",
-          "Autoimmune_Myelitis_SLE"
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "MOGAD"
         ],
         "missing_lesion_dx_keys": [
           "Infection_Lyme",
-          "Behcet_Disease",
-          "Syphilis"
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Behcet_Disease"
         ],
         "missing_common_names": [
           "Neurosyphilis"
         ],
         "missing_low_prob_names": [
           "Lyme",
+          "Vasculitis",
           "Beh\u00e7et's"
         ],
         "additional_diagnoses": [
@@ -111,30 +113,20 @@
         "additional_less_plausible_count": 1,
         "comorbidity_missing_count": 0,
         "other_considerations_missed_count": 0,
-        "lesion_ddx_total_count": 9,
+        "lesion_ddx_total_count": 10,
         "lesion_ddx_matched_count": 6,
         "lesion_ddx_missed_common_count": 1,
-        "lesion_ddx_missed_low_prob_count": 2,
-        "lesion_ddx_coverage_percentage": 0.6666666666666666
+        "lesion_ddx_missed_low_prob_count": 3,
+        "lesion_ddx_coverage_percentage": 0.6
       }
     },
     "Investigations": {
-      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain; Thoracic Spine, and Cervical Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- But incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, ANA, CRP, anti-MOG, syphilis, ENA, lyme, anti-AQP4.\n- Could also consider testing: ACE, anti-dsDNA.",
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain, Cervical Spine and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: anti-dsDNA, ACE, ANCA.",
       "structured_data": {
         "gt_required_tests_primary": [
           {
             "type": "CSF",
             "detail": "Oligoclonal Bands",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
-            "region": "Brain",
-            "condition": "Multiple sclerosis"
-          },
-          {
-            "type": "MRI",
-            "region": "Thoracic Spine",
             "condition": "Multiple sclerosis"
           },
           {
@@ -145,6 +137,16 @@
           {
             "type": "MRI",
             "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
             "condition": "Multiple sclerosis"
           }
         ],
@@ -170,29 +172,29 @@
           "Visual Evoked Potentials"
         ],
         "all_identified_ft_keys": [
-          "ANA",
+          "MOG_Antibodies",
+          "CRP",
+          "TFT",
+          "ENA_Panel",
           "LFT",
           "Vitamin_B12",
-          "MOG_Antibodies",
-          "ENA_Panel",
-          "FBC",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
           "Lyme_Serology",
           "CSF_General",
-          "VEP",
-          "Chest_XRay",
+          "FBC",
+          "ANA",
           "MRI_Cervical_Spine",
-          "U_and_E",
-          "MRI_Brain",
-          "ESR",
-          "TFT",
+          "Chest_XRay",
           "Folate",
-          "CSF_Oligoclonal_Bands",
-          "HIV_Test",
-          "CRP",
           "MRI_Thoracic_Spine",
-          "Syphilis_Serology",
-          "Glucose_HbA1c",
-          "AQP4_Antibodies"
+          "HIV_Test",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
         ],
         "found_tests_primary": [
           {
@@ -202,12 +204,12 @@
           },
           {
             "type": "MRI",
-            "region": "Thoracic Spine",
+            "region": "Cervical Spine",
             "condition": "Multiple sclerosis"
           },
           {
             "type": "MRI",
-            "region": "Cervical Spine",
+            "region": "Thoracic Spine",
             "condition": "Multiple sclerosis"
           },
           {
@@ -224,30 +226,32 @@
           }
         ],
         "expected_inv_keys_ddx": [
-          "ESR",
+          "Anti_dsDNA",
+          "MOG_Antibodies",
           "ANA",
           "CRP",
-          "MOG_Antibodies",
-          "Syphilis_Serology",
-          "Serum_ACE",
+          "AQP4_Antibodies",
           "ENA_Panel",
-          "Lyme_Serology",
-          "Anti_dsDNA",
-          "AQP4_Antibodies"
+          "Serum_ACE",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "found_inv_keys_ddx": [
-          "ESR",
+          "MOG_Antibodies",
           "ANA",
           "CRP",
-          "MOG_Antibodies",
-          "Syphilis_Serology",
           "ENA_Panel",
-          "Lyme_Serology",
-          "AQP4_Antibodies"
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
         ],
         "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
           "Serum_ACE",
-          "Anti_dsDNA"
+          "ANCA"
         ]
       },
       "scoring": {
@@ -255,9 +259,9 @@
         "primary_tests_found_count": 4,
         "primary_tests_missed_count": 1,
         "primary_tests_coverage_percentage": 0.8,
-        "ddx_tests_expected_count": 10,
+        "ddx_tests_expected_count": 11,
         "ddx_tests_found_count": 8,
-        "ddx_tests_coverage_percentage": 0.8
+        "ddx_tests_coverage_percentage": 0.7272727272727273
       }
     },
     "Management": {

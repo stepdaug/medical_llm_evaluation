@@ -1,0 +1,249 @@
+{
+  "case_id": "case_0009",
+  "provider": "goog",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 37.07,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve (cranial nerve II).\n  \nThe suggested lesions in right Cerebral Hemisphere and left Cerebral Hemisphere not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Cerebral Hemisphere",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Cerebral Hemisphere",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "right Cerebral Hemisphere",
+          "left Cerebral Hemisphere"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 2,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 2.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included: Multiple sclerosis\n  \nThese suggested differentials are reasonable:\n\n- Neurosarcoidosis; Neuromyelitis Optica Spectrum Disorder; MOG Antibody Disease; Systemic Lupus Erythematosus",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Neurosarcoidosis",
+          "Neuromyelitis Optica Spectrum Disorder",
+          "MOG Antibody Disease",
+          "Systemic Lupus Erythematosus"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Visual impairment": "comorbidity",
+          "Raynaud's syndrome": "comorbidity"
+        },
+        "correctly_mentioned": [
+          "Multiple sclerosis"
+        ],
+        "missing_diagnoses": [
+          "Visual impairment",
+          "Raynaud's syndrome"
+        ],
+        "additional_diagnoses": [
+          "Neurosarcoidosis",
+          "Neuromyelitis Optica Spectrum Disorder",
+          "MOG Antibody Disease",
+          "Systemic Lupus Erythematosus"
+        ]
+      },
+      "scoring": {
+        "ms_included": 1,
+        "incidental_total_count": 0,
+        "incidental_missing_count": 0,
+        "incidental_missing_proportion": null,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nAgree with all suggestions.\n\n- MRI including the Orbits and CSF test for Oligoclonal Bands would potentially inform a diagnosis of multiple sclerosis.",
+      "structured_data": {
+        "gt_required_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium contrast",
+          "MRI of cervical and thoracic spine with gadolinium contrast",
+          "Aquaporin-4 (AQP4) antibody test",
+          "Myelin Oligodendrocyte Glycoprotein (MOG) antibody test",
+          "Lumbar puncture for CSF analysis (including oligoclonal bands and IgG index)",
+          "CT scan of the chest",
+          "Serum Angiotensin-Converting Enzyme (ACE)",
+          "Antinuclear Antibody (ANA)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Erythrocyte Sedimentation Rate (ESR)",
+          "Vitamin B12",
+          "Syphilis serology",
+          "Lyme disease serology",
+          "HIV serology",
+          "Visual Evoked Potentials"
+        ],
+        "found_tests": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests": []
+      },
+      "scoring": {
+        "gt_tests_count": 2,
+        "found_tests_count": 2,
+        "missing_tests_count": 0,
+        "proportion_found": 1.0,
+        "proportion_missing": 0.0
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse.\n\nDMTs: Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-dose intravenous corticosteroids",
+            "timing": "Start Now",
+            "reasons": [
+              "To accelerate recovery from the acute optic neuritis.",
+              "To reduce the duration and severity of the active CNS inflammation causing current symptoms."
+            ]
+          },
+          {
+            "treatment": "High-efficacy Disease-Modifying Therapy",
+            "timing": "Delay",
+            "reasons": [
+              "To await definitive diagnostic confirmation from MRI and serological testing.",
+              "To rule out critical mimics like NMOSD and MOGAD, for which some MS treatments are contraindicated.",
+              "To allow for comprehensive patient counselling on the risks, benefits, and choice of long-term therapy."
+            ]
+          },
+          {
+            "treatment": "Referral to multidisciplinary team",
+            "timing": "Start Now",
+            "reasons": [
+              "To provide immediate patient education and psychosocial support following a new, significant diagnosis.",
+              "To proactively manage potential non-motor symptoms such as fatigue and mood changes.",
+              "To establish a long-term support network for holistic care."
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous corticosteroids",
+            "timing": "Start Now",
+            "reasons": [
+              "To accelerate recovery from the acute optic neuritis.",
+              "To reduce the duration and severity of the active CNS inflammation causing current symptoms."
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Unsafe decision to start treatment now.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- No indication this isn't an exacerbation of an old deficit/pseudorelapse."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "High-efficacy Disease-Modifying Therapy",
+            "timing": "Delay",
+            "reasons": [
+              "To await definitive diagnostic confirmation from MRI and serological testing.",
+              "To rule out critical mimics like NMOSD and MOGAD, for which some MS treatments are contraindicated.",
+              "To allow for comprehensive patient counselling on the risks, benefits, and choice of long-term therapy."
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate decision to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms right upper lobe.).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_safety": 1,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 0,
+          "missed_reasons_count": 2,
+          "proportion_reasons_acknowledged": 0.0,
+          "proportion_reasons_missed": 1.0
+        },
+        "dmt": {
+          "decision_safety": 0,
+          "gt_reasons_count": 2,
+          "acknowledged_reasons_count": 2,
+          "missed_reasons_count": 0,
+          "proportion_reasons_acknowledged": 1.0,
+          "proportion_reasons_missed": 0.0
+        }
+      }
+    }
+  }
+}

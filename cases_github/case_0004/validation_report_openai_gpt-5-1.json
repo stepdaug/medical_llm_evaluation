@@ -1,0 +1,420 @@
+{
+  "case_id": "case_0004",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 27.79,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nSigns are better explained by:\n- left T8 spinal cord and left optic nerve lesions\n\nThan the suggested:\n- right cervicomedullary junction.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T8 myelopathy",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "cervicomedullary junction",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left T8 myelopathy",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "additional_lesions_in_ft": [
+          "right cervicomedullary junction"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 2,
+        "additional_lesion_count": 1,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 1.0,
+        "proportion_additional": 0.5
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and TB.\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Foramen magnum meningioma causing right cervicomedullary compression (atypical for unilateral optic nerve and unilateral spinal cord involvement)\n- Chiari I malformation with cervicomedullary crowding and syringobulbia (atypical for unilateral optic nerve and strictly unilateral spinal cord involvement)\n- Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)",
+          "Multiple sclerosis with brainstem and cervical spinal cord plaques",
+          "Foramen magnum meningioma causing right cervicomedullary compression",
+          "Chiari I malformation with cervicomedullary crowding and syringobulbia",
+          "Neuromyelitis optica spectrum disorder with cervicomedullary involvement",
+          "Tuberculous granuloma or other infectious mass lesion at the cervicomedullary junction"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS",
+          "AQP4_NMOSD",
+          "CNS_Tuberculosis"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "Syphilis",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Intrinsic cervicomedullary junction glioma (e.g., low-grade astrocytoma or ependymoma)",
+          "Foramen magnum meningioma causing right cervicomedullary compression",
+          "Chiari I malformation with cervicomedullary crowding and syringobulbia"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 3,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 3,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.23076923076923078
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: more extensive MRI spinal imaging to include Thoracic Spine and MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ACE, ANCA, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, TB, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and cervical spine with gadolinium contrast",
+          "MR angiography of head and neck",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Serum vitamin B12 level",
+          "Serum folate level",
+          "Serum copper level",
+          "Serum caeruloplasmin level",
+          "Thyroid function tests",
+          "Serum aquaporin-4 antibody",
+          "Serum myelin oligodendrocyte glycoprotein (MOG) antibody",
+          "Antinuclear antibody (ANA)",
+          "Extractable nuclear antigen (ENA) panel",
+          "Antineutrophil cytoplasmic antibodies (ANCA)",
+          "Serum angiotensin-converting enzyme (ACE) level",
+          "HIV antibody/antigen test",
+          "Syphilis serology (VDRL and TPPA)",
+          "Lumbar puncture with CSF cell count, protein, glucose and culture",
+          "CSF oligoclonal bands and IgG index",
+          "Visual evoked potentials",
+          "Nerve conduction studies and electromyography",
+          "CT of chest, abdomen and pelvis"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_Ceruloplasmin",
+          "TFT",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Blood_Cultures",
+          "CSF_General",
+          "NCS_EMG",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "Serum_Copper",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "ANCA",
+          "HIV_Test",
+          "MRA_Head_Neck",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 5,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 2,
+        "primary_tests_coverage_percentage": 0.6,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.6666666666666666
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Admit to high-dependency neurology or neurosurgical unit with close monitoring of respiratory function, swallowing and neurological status",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem and upper cervical cord involvement can deteriorate rapidly and threaten ventilation",
+              "Bulbar cranial nerve signs and unsteady gait increase risk of aspiration and falls"
+            ]
+          },
+          {
+            "treatment": "Speech and swallow assessment with implementation of appropriate diet modification and aspiration precautions",
+            "timing": "Start Now",
+            "reasons": [
+              "Palatal and tongue weakness indicate bulbar dysfunction",
+              "Early assessment reduces risk of aspiration pneumonia"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis with graduated compression stockings and low molecular weight heparin unless contraindicated",
+            "timing": "Start Now",
+            "reasons": [
+              "Spastic quadriparesis and impaired mobility markedly increase thromboembolic risk",
+              "Prophylaxis reduces morbidity from deep vein thrombosis and pulmonary embolism"
+            ]
+          },
+          {
+            "treatment": "Early neurosurgical consultation for consideration of decompression or resection if MRI confirms a structural cervicomedullary mass",
+            "timing": "Delay",
+            "reasons": [
+              "Definitive structural diagnosis is required from MRI before planning surgery",
+              "Timely decompression may reverse long-tract dysfunction and prevent further deterioration"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone followed by an oral steroid taper if imaging and CSF support an inflammatory demyelinating lesion",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids are first-line acute therapy for inflammatory demyelinating lesions of the brainstem and cervical cord",
+              "Empirical steroids should be avoided until infection and tumour have been reasonably excluded"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy for gait training, balance work and spasticity management",
+            "timing": "Delay",
+            "reasons": [
+              "Rehabilitation is essential for maximising functional recovery once the acute phase is stabilised",
+              "Regular stretching and strengthening help prevent contractures and improve safety with mobility"
+            ]
+          },
+          {
+            "treatment": "Symptomatic treatment of spasticity with agents such as oral baclofen or tizanidine",
+            "timing": "Delay",
+            "reasons": [
+              "Generalised spasticity contributes to gait impairment and discomfort",
+              "Spasticity medication is best introduced after underlying diagnosis and renal/hepatic function are clarified"
+            ]
+          },
+          {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis if diagnostic criteria are fulfilled",
+            "timing": "Delay",
+            "reasons": [
+              "Long-term immunomodulatory treatment reduces relapse frequency and disability progression in confirmed multiple sclerosis",
+              "Should only be started after robust diagnostic confirmation and counselling regarding risks and benefits"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone followed by an oral steroid taper if imaging and CSF support an inflammatory demyelinating lesion",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids are first-line acute therapy for inflammatory demyelinating lesions of the brainstem and cervical cord",
+              "Empirical steroids should be avoided until infection and tumour have been reasonably excluded"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis if diagnostic criteria are fulfilled",
+            "timing": "Delay",
+            "reasons": [
+              "Long-term immunomodulatory treatment reduces relapse frequency and disability progression in confirmed multiple sclerosis",
+              "Should only be started after robust diagnostic confirmation and counselling regarding risks and benefits"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 3,
+          "reasons_missed": 0,
+          "reasons_coverage_percentage": 1.0
+        }
+      }
+    }
+  }
+}

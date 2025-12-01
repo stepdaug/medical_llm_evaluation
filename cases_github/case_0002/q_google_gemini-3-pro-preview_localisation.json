@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a multifocal CNS syndrome separated in space: 1) Left-sided reduced visual acuity and Relative Afferent Pupillary Defect (RAPD) localize to the Left Optic Nerve. 2) Right-sided hemi-ataxia, dysdiadochokinesia, and gaze-evoked nystagmus localize to the Right Cerebellum. 3) Right-sided spastic weakness (pyramidal signs) and hyperreflexia, alongside impaired vibration/proprioception in the right lower limb, localize to the Right Cervical Spinal Cord (involving the lateral corticospinal tract and dorsal columns).\n\nlesion_locations = [\"Left Optic Nerve\", \"Right Cerebellum\", \"Right Cervical Spinal Cord\"]"
+}

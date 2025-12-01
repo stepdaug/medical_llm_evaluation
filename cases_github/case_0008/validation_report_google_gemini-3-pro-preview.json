@@ -1,0 +1,220 @@
+{
+  "case_id": "case_0008",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 48.93,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- length-dependent peripheral polyneuropathy.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "length-dependent peripheral polyneuropathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Length-dependent Peripheral Polyneuropathy",
+            "side": "bilateral",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "length-dependent peripheral polyneuropathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Peripheral neuropathy.\n\nAgree to also consider:\n- Guillain-Barre Syndrome, CIDP, Vitamin B12 Deficiency, Paraproteinemic Neuropathy and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Diabetes-related Neuropathy, Alcohol-related Neuropathy, Hypothyroid Neuropathy, Uraemic Neuropathy and HIV Neuropathy.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Kidney disease, Chronic venous insufficiency or Congestive heart failure, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Acute Inflammatory Demyelinating Polyneuropathy (Guillain-Barr\u00e9 Syndrome)",
+          "Vasculitic Neuropathy",
+          "Nutritional Polyneuropathy (e.g., Thiamine or B12 deficiency)",
+          "Paraproteinemic Neuropathy",
+          "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+          "Toxic Polyneuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Peripheral neuropathy": "evaluation",
+          "Congestive heart failure": "incidental_cause",
+          "Kidney disease": "incidental_cause",
+          "Chronic venous insufficiency": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Peripheral neuropathy"
+        ],
+        "missing_original_gt": [
+          "Congestive heart failure",
+          "Kidney disease",
+          "Chronic venous insufficiency"
+        ],
+        "matched_lesion_dx_keys": [
+          "Guillain_Barre_Syndrome",
+          "CIDP",
+          "Vitamin_B12_Deficiency",
+          "Paraproteinemic_Neuropathy",
+          "Vasculitic_Neuropathy"
+        ],
+        "missing_lesion_dx_keys": [
+          "Diabetic_Neuropathy",
+          "Alcoholic_Neuropathy",
+          "Hypothyroidism_Neuropathy",
+          "Uraemic_Neuropathy",
+          "HIV_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Diabetes-related Neuropathy",
+          "Alcohol-related Neuropathy",
+          "Hypothyroid Neuropathy",
+          "Uraemic Neuropathy",
+          "HIV Neuropathy"
+        ],
+        "missing_low_prob_names": [],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Peripheral neuropathy",
+        "gt_total_count": 4,
+        "gt_matched_count": 1,
+        "gt_missed_count": 3,
+        "gt_coverage_percentage": 0.25,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 3,
+        "lesion_ddx_total_count": 10,
+        "lesion_ddx_matched_count": 5,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 0,
+        "lesion_ddx_coverage_percentage": 0.5
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of peripheral neuropathy.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: FBC, protein electrophoresis, TFT, folate, LFT, vitamin B12, U&E, Glucose / HbA1c, Nerve conduction studies and EMG, ANCA, CSF (Analysis (Protein/Cell Count)).\n- Could also consider testing: CRP, Spirometry / FVC, HIV, methylmalonic acid, ESR.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "peripheral_polyneuropathy_length_dependent.bilateral",
+            "condition": "Peripheral neuropathy"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Nerve Conduction Studies and EMG",
+          "Lumbar Puncture",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "HbA1c",
+          "Vitamin B12 and Folate",
+          "Serum Protein Electrophoresis",
+          "Thyroid Function Tests",
+          "Antinuclear Antibody (ANA)",
+          "ANCA screen",
+          "Anti-ganglioside antibodies"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "NCS_EMG",
+          "ANA",
+          "Serum_Protein_Electrophoresis",
+          "TFT",
+          "Folate",
+          "LFT",
+          "Anti_Ganglioside_Antibodies",
+          "Anti_GQ1b_Antibodies",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "ANCA",
+          "CSF_General"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "peripheral_polyneuropathy_length_dependent.bilateral",
+            "condition": "Peripheral neuropathy"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "FBC",
+          "NCS_EMG",
+          "CRP",
+          "Serum_Protein_Electrophoresis",
+          "TFT",
+          "Spirometry",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "ANCA",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Methylmalonic_Acid",
+          "ESR",
+          "CSF_General"
+        ],
+        "found_inv_keys_ddx": [
+          "FBC",
+          "Serum_Protein_Electrophoresis",
+          "TFT",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "U_and_E",
+          "Glucose_HbA1c",
+          "NCS_EMG",
+          "ANCA",
+          "CSF_General"
+        ],
+        "missing_inv_keys_ddx": [
+          "CRP",
+          "Spirometry",
+          "HIV_Test",
+          "Methylmalonic_Acid",
+          "ESR"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 1,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 11,
+        "ddx_tests_coverage_percentage": 0.6875
+      }
+    },
+    "Management": {
+      "report_string": "Nothing to add to management.",
+      "structured_data": {
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
+      },
+      "scoring": {
+        "steroids": {},
+        "dmt": {}
+      }
+    }
+  }
+}

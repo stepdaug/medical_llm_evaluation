@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a Left CN III palsy (ptosis, mydriasis, ophthalmoplegia) combined with contralateral (Right) hemiparesis, hemi-sensory loss, and hemi-ataxia. This classic 'crossed' syndrome (Weber's/Benedikt's/Claude's overlap) localises to the Left Midbrain, specifically involving the cerebral peduncle and tegmentum. The concurrent Left Relative Afferent Pupillary Defect (RAPD) and reduced visual acuity cannot be explained by the midbrain lesion and indicate a separate lesion affecting the Left Optic Nerve. The presence of distinct lesions in the optic nerve and brainstem suggests a multifocal process.\n\nlesion_locations = [\"Left Midbrain\", \"Left Optic Nerve\"]"
+}

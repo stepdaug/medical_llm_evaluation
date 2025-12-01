@@ -1,0 +1,413 @@
+{
+  "case_id": "case_0006",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 40.22,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve and right cerebellum.\n  \nSome more precision is possible than: 'left Thoracic Spinal Cord'.  \nNamely, in the region of: left T4 spinal cord.\n  \nAdditional signs indicate lesion possibly also involving:\n- right L5 nerve root.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T4 myelopathy",
+          "right L5 radiculopathy",
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Cerebellar Hemisphere",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Thoracic Spinal Cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "imprecise_matches": [
+          [
+            "left Thoracic Spinal Cord",
+            [
+              "left T4 myelopathy"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [
+          "right L5 radiculopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 4,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.25,
+        "proportion_missed": 0.25,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Lymphoma.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but of low probability: Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lyme.\n\nOther considerations not mentioned:\n- Their comorbidity degenerative intervertebral disc disease could account for parts of the examination, e.g. with a lesion affecting right L5 nerve root.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Neurosarcoidosis",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "MOG Antibody Disease (MOGAD)",
+          "Systemic Lupus Erythematosus",
+          "CNS Lymphoma"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Degenerative intervertebral disc disease": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Degenerative intervertebral disc disease"
+        ],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Behcet_Disease",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis"
+        ],
+        "missing_low_prob_names": [
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lyme"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 1,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 12,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 1,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.5
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Lumbosacral Spine, Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of their degenerative intervertebral disc disease comorbidity.\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, ANCA, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and whole spine with contrast",
+          "High-resolution CT Chest",
+          "Lumbar Puncture (CSF analysis for OCBs, protein, glucose, cell count, ACE)",
+          "Serum ACE",
+          "Aquaporin-4 antibodies (NMO-IgG)",
+          "Anti-MOG antibodies",
+          "Visual Evoked Potentials",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-Reactive Protein",
+          "Erythrocyte Sedimentation Rate",
+          "ANA and ENA panel",
+          "Calcium profile",
+          "HIV serology",
+          "Syphilis serology"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "ENA_Panel",
+          "LFT",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Chest_CT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "MRI_Thoracic_Spine",
+          "Bone_Profile",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "CSF_Cytology",
+          "ANCA",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 8,
+        "primary_tests_found_count": 7,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.875,
+        "ddx_tests_expected_count": 14,
+        "ddx_tests_found_count": 9,
+        "ddx_tests_coverage_percentage": 0.6428571428571429
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce acute inflammation and accelerate recovery from the relapse",
+              "Patient has significant functional deficits (vision loss and gait instability)"
+            ]
+          },
+          {
+            "treatment": "Gastroprotection (e.g., Omeprazole)",
+            "timing": "Start Now",
+            "reasons": [
+              "Prophylaxis against gastritis/ulceration while on high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab, Infliximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Must await definitive diagnosis (MS vs Neurosarcoidosis) as treatments differ",
+              "Must exclude active infection before commencing immunosuppression"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and Occupational Therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "To assist with gait safety and rehabilitation of motor deficits"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce acute inflammation and accelerate recovery from the relapse",
+              "Patient has significant functional deficits (vision loss and gait instability)"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab, Infliximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Must await definitive diagnosis (MS vs Neurosarcoidosis) as treatments differ",
+              "Must exclude active infection before commencing immunosuppression"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: perihilar Ground-glass changes.).\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 2,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.6666666666666666
+        }
+      }
+    }
+  }
+}

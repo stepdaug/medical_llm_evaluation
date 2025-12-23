@@ -1,0 +1,356 @@
+{
+  "case_id": "case_0052",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 58.08,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve.\n  \nThe suggested lesion left Cervical Spinal Cord not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Cervical Spinal Cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "left Cervical Spinal Cord"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 1.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Neurosyphilis, NAION, Giant Cell Arteritis and Lyme.\n\nOther possible differentials:\n- SLE, Compressive Optic Neuropathy, Central Retinal Artery Occlusion, Bartonella, Retinal Detachment and Central Retinal Vein Occlusion.\n- Also feasible but of low probability: TB, Beh\u00e7et's, Lymphoma, Vasculitis, Sjogren's and Leber's Hereditary Optic Neuropathy.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Giant Cell Arteritis (Arteritic Anterior Ischaemic Optic Neuropathy)",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "MOG Antibody-Associated Disease (MOGAD)",
+          "Multiple Sclerosis",
+          "Infectious Optic Neuropathy (e.g., Syphilis, Lyme disease)",
+          "Neurosarcoidosis",
+          "Non-arteritic Anterior Ischaemic Optic Neuropathy (NAION)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MOGAD",
+          "Syphilis",
+          "Ischemic_Optic_Neuropathy_NAION",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Infection_Lyme",
+          "Giant_Cell_Arteritis"
+        ],
+        "missing_lesion_dx_keys": [
+          "Compressive_Optic_Neuropathy",
+          "CNS_Tuberculosis",
+          "Central_Retinal_Artery_Occlusion",
+          "Bartonella_Henselae",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Retinal_Detachment",
+          "CNS_Lymphoma",
+          "Central_Retinal_Vein_Occlusion",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Optic_Neuropathy_Nonspecific",
+          "Leber_Hereditary_Optic_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Compressive Optic Neuropathy",
+          "Central Retinal Artery Occlusion",
+          "Bartonella",
+          "Retinal Detachment",
+          "Central Retinal Vein Occlusion",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Vasculitis",
+          "Sjogren's",
+          "Leber's Hereditary Optic Neuropathy"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 22,
+        "lesion_ddx_matched_count": 8,
+        "lesion_ddx_missed_common_count": 6,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.36363636363636365
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ANCA, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: bartonella, TB, ACE, HIV, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Cervical Spine with contrast",
+          "Erythrocyte sedimentation rate (ESR)",
+          "C-reactive protein",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Serum AQP4 antibodies",
+          "Serum MOG antibodies",
+          "Autoimmune screen (ANA, ANCA, dsDNA)",
+          "Syphilis serology",
+          "Lyme disease serology",
+          "Blood cultures",
+          "Lumbar Puncture for CSF analysis (microscopy, culture, oligoclonal bands)",
+          "Temporal Artery Ultrasound or Biopsy"
+        ],
+        "all_identified_ft_keys": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "ENA_Panel",
+          "LFT",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "Syphilis_Serology",
+          "Lyme_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Cervical_Spine",
+          "ANCA",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "ANCA",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To rapidly reduce inflammation in the optic nerve",
+              "To prevent further visual loss if cause is Giant Cell Arteritis or NMO"
+            ]
+          },
+          {
+            "treatment": "Proton Pump Inhibitor (e.g., Omeprazole)",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastric protection required due to high-dose steroid administration"
+            ]
+          },
+          {
+            "treatment": "Tocilizumab",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis of Giant Cell Arteritis or NMOSD before initiation"
+            ]
+          },
+          {
+            "treatment": "Plasma Exchange (PLEX)",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for steroid-refractory cases of severe demyelinating optic neuritis"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To rapidly reduce inflammation in the optic nerve",
+              "To prevent further visual loss if cause is Giant Cell Arteritis or NMO"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 161)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Tocilizumab",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis of Giant Cell Arteritis or NMOSD before initiation"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 161)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "case_id": "case_0055",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 61.09,
+    "sex": "Male",
+    "genderIdentity": "Non-binary",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right cerebellum.\n  \nAdditional signs indicate lesion possibly also involving:\n- left optic nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "cerebellar hemisphere",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right cerebellum"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis and Giant Cell Arteritis.\n- Also feasible but of low probability: Lyme, Vasculitis, Susac Syndrome, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right posterior inferior cerebellar artery (PICA) or superior cerebellar artery territory cerebellar infarction (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Right cerebellar tumour (primary cerebellar neoplasm or metastatic lesion) (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Right cerebellar haemorrhage (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Paraneoplastic cerebellar degeneration (atypical for unilateral optic nerve and strictly unilateral cerebellum involvement)\n- Alcohol-related cerebellar degeneration (atypical for unilateral optic nerve and strictly unilateral cerebellum involvement)\n- Autoimmune or post-infectious cerebellitis (atypical for unilateral optic nerve and strictly unilateral cerebellum involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Right posterior inferior cerebellar artery (PICA) or superior cerebellar artery territory cerebellar infarction",
+          "Right cerebellar tumour (primary cerebellar neoplasm or metastatic lesion)",
+          "Right cerebellar haemorrhage",
+          "Relapsing-remitting multiple sclerosis with right cerebellar plaque",
+          "Paraneoplastic cerebellar degeneration",
+          "Alcohol-related cerebellar degeneration",
+          "Autoimmune or post-infectious cerebellitis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Susac_Syndrome",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Giant_Cell_Arteritis"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD",
+          "Giant Cell Arteritis"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "Vasculitis",
+          "Susac Syndrome",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Right posterior inferior cerebellar artery (PICA) or superior cerebellar artery territory cerebellar infarction",
+          "Right cerebellar tumour (primary cerebellar neoplasm or metastatic lesion)",
+          "Right cerebellar haemorrhage",
+          "Paraneoplastic cerebellar degeneration",
+          "Alcohol-related cerebellar degeneration",
+          "Autoimmune or post-infectious cerebellitis"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 6,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 1,
+        "lesion_ddx_missed_common_count": 6,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.07142857142857142
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ANA, CRP, ENA, HIV, ANCA, ESR, CSF (cytology).\n- Could also consider testing: anti-dsDNA, anti-MOG, ACE, anti-AQP4, syphilis, lyme, CSF (flow cytometry), audiometry, fluorescein angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain with diffusion-weighted imaging and contrast",
+          "MR angiogram or CT angiogram of head and neck",
+          "Non-contrast CT brain",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen",
+          "Blood glucose",
+          "Lipid profile",
+          "Erythrocyte sedimentation rate",
+          "C-reactive protein",
+          "Vitamin B12 level",
+          "Thiamine level",
+          "Thyroid function tests",
+          "Serum alcohol level (if clinically indicated)",
+          "Autoimmune screen including antinuclear antibody and extractable nuclear antigens",
+          "Serum paraneoplastic antibody panel",
+          "Serum onconeural antibodies (e.g., anti-Yo, anti-Hu, anti-Ri, anti-Tr, others per local panel)",
+          "Serum tumour markers (e.g., PSA, CEA, CA-19-9, CA-125 as guided by history)",
+          "Chest CT scan",
+          "CT scan of abdomen and pelvis",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands, and cytology (if no contraindication on imaging)",
+          "Electrocardiogram",
+          "Transthoracic echocardiogram",
+          "Holter monitor or prolonged cardiac rhythm monitoring (if embolic stroke suspected)",
+          "Toxicology screen (if toxin exposure suspected)"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "TFT",
+          "Coagulation_Screen",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "Thiamine",
+          "U_and_E",
+          "ECG",
+          "CSF_General",
+          "FBC",
+          "Alcohol_Level",
+          "ANA",
+          "Chest_CT",
+          "Toxicology_Screen",
+          "Chest_XRay",
+          "Paraneoplastic_Antibodies",
+          "ANCA",
+          "MRA_Head_Neck",
+          "CSF_Cytology",
+          "MRI_Brain",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "Serum_ACE",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.4375
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Urgent admission to stroke or neurology unit with frequent neurological observations",
+            "timing": "Start Now",
+            "reasons": [
+              "Risk of rapid deterioration from cerebellar swelling and brainstem compression",
+              "Need for close monitoring of level of consciousness, vital signs, and new brainstem signs",
+              "Facilitates rapid access to imaging and specialist input"
+            ]
+          },
+          {
+            "treatment": "Non-contrast CT brain followed immediately by MRI brain and vascular imaging",
+            "timing": "Start Now",
+            "reasons": [
+              "Differentiate between ischaemic infarct, haemorrhage, tumour, or demyelination",
+              "Imaging results are essential to determine suitability for antithrombotic therapy or neurosurgical intervention"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet therapy with aspirin (or clopidogrel if aspirin-intolerant) for suspected cerebellar infarction once haemorrhage is excluded",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduces risk of early recurrent ischaemic stroke",
+              "Standard secondary prevention after non-cardioembolic ischaemic stroke"
+            ]
+          },
+          {
+            "treatment": "High-intensity statin therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Indicated for secondary prevention after ischaemic stroke or TIA",
+              "Reduces long-term vascular risk irrespective of baseline cholesterol in this context"
+            ]
+          },
+          {
+            "treatment": "Blood pressure optimisation according to acute stroke guidelines",
+            "timing": "Start Now",
+            "reasons": [
+              "Avoids exacerbation of cerebral oedema or haemorrhagic transformation",
+              "Reduces risk of recurrent stroke and other vascular events"
+            ]
+          },
+          {
+            "treatment": "Neurosurgical consultation for possible posterior fossa decompression or external ventricular drain if mass effect or hydrocephalus is demonstrated",
+            "timing": "Start Now",
+            "reasons": [
+              "Cerebellar infarcts or haemorrhages can cause life-threatening compression of the brainstem",
+              "Early neurosurgical involvement improves outcomes if decompression becomes necessary"
+            ]
+          },
+          {
+            "treatment": "Intravenous thrombolysis or endovascular thrombectomy (if within appropriate time windows and imaging confirms eligible posterior circulation occlusion)",
+            "timing": "Start Now",
+            "reasons": [
+              "Potential to restore perfusion and limit infarct size",
+              "Time-sensitive therapy where earlier treatment is associated with better outcomes"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy focusing on gait and balance rehabilitation",
+            "timing": "Start Now",
+            "reasons": [
+              "Improves functional recovery from cerebellar ataxia",
+              "Reduces falls risk and promotes safe mobility"
+            ]
+          },
+          {
+            "treatment": "Speech and language therapy assessment if dysarthria or swallowing difficulty develops",
+            "timing": "Delay",
+            "reasons": [
+              "Currently no documented bulbar dysfunction but risk may evolve with lesion progression",
+              "Implement when symptoms are present or identified on screening"
+            ]
+          },
+          {
+            "treatment": "Disease-specific therapy if alternative aetiology confirmed (e.g., corticosteroids for demyelinating lesion, chemotherapy/radiotherapy or surgical resection for tumour, immunotherapy for paraneoplastic cerebellar degeneration, alcohol cessation and thiamine for alcohol-related degeneration)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis from imaging, CSF, and serological investigations",
+              "Therapy must be tailored to the confirmed underlying pathology"
+            ]
+          },
+          {
+            "treatment": "Long-term secondary prevention including smoking cessation support, diabetes control, and antihypertensive therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Implemented after acute phase once diagnosis and vascular risk profile are fully characterised",
+              "Targets modifiable risk factors to prevent recurrent cerebrovascular events"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-specific therapy if alternative aetiology confirmed (e.g., corticosteroids for demyelinating lesion, chemotherapy/radiotherapy or surgical resection for tumour, immunotherapy for paraneoplastic cerebellar degeneration, alcohol cessation and thiamine for alcohol-related degeneration)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis from imaging, CSF, and serological investigations",
+              "Therapy must be tailored to the confirmed underlying pathology"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days ago.",
+                "Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

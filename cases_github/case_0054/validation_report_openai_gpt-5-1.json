@@ -1,0 +1,456 @@
+{
+  "case_id": "case_0054",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 45.54,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve, right cerebellum and left L5 nerve root.\n  \nThe suggested lesion bilateral length-dependent peripheral polyneuropathy not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left L5 radiculopathy",
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "cerebellum",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "length-dependent peripheral polyneuropathy",
+            "side": "bilateral",
+            "qualifier": null
+          },
+          {
+            "location": "L5 nerve root",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)",
+          "right cerebellum",
+          "left L5 radiculopathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "bilateral length-dependent peripheral polyneuropathy"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 3,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.3333333333333333
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Susac Syndrome.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but of low probability: Lyme, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nOther considerations not mentioned:\n- Their comorbidity sciatica could account for parts of the examination, e.g. with a lesion affecting left L5 nerve root.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Vitamin B12 deficiency with myelopathy, optic neuropathy and peripheral neuropathy (plausible for unilateral cerebellum; but atypical for unilateral optic nerve or unilateral nerve roots involvement)\n- Paraneoplastic cerebellar degeneration with sensory neuropathy (atypical for unilateral optic nerve and strictly unilateral cerebellum and unilateral nerve roots involvement)\n- Length-dependent peripheral neuropathy due to diabetes mellitus or impaired glucose tolerance (atypical for unilateral optic nerve and unilateral cerebellum and unilateral nerve roots involvement)\n- Left L5 radiculopathy due to lumbar intervertebral disc herniation (atypical for unilateral optic nerve and unilateral cerebellum and unilateral nerve roots involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis",
+          "Central nervous system demyelination not yet fulfilling criteria for multiple sclerosis (clinically isolated syndrome)",
+          "Neuromyelitis optica spectrum disorder",
+          "MOG-antibody associated disease",
+          "Central nervous system involvement of systemic autoimmune disease (e.g., neurosarcoidosis, systemic lupus erythematosus)",
+          "Vitamin B12 deficiency with myelopathy, optic neuropathy and peripheral neuropathy",
+          "Paraneoplastic cerebellar degeneration with sensory neuropathy",
+          "Length-dependent peripheral neuropathy due to diabetes mellitus or impaired glucose tolerance",
+          "Paraproteinaemic peripheral neuropathy",
+          "Left L5 radiculopathy due to lumbar intervertebral disc herniation"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Sciatica": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Sciatica"
+        ],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Susac_Syndrome",
+          "MS",
+          "Autoimmune_Myelitis_SLE",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Behcet_Disease",
+          "CNS_Lymphoma"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Vitamin B12 deficiency with myelopathy, optic neuropathy and peripheral neuropathy",
+          "Paraneoplastic cerebellar degeneration with sensory neuropathy",
+          "Length-dependent peripheral neuropathy due to diabetes mellitus or impaired glucose tolerance",
+          "Left L5 radiculopathy due to lumbar intervertebral disc herniation"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 4,
+        "comorbidity_missing_count": 1,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 1,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.46153846153846156
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- Agree with the suggested MRI including the Lumbosacral Spine, Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of their sciatica comorbidity.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, anti-AQP4, ENA, ACE, HIV, ANCA, syphilis, ESR.\n- Could also consider testing: lyme, CSF (flow cytometry and cytology), audiometry, fluorescein angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Sciatica"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Sciatica"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Sciatica"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and entire spinal cord with gadolinium",
+          "Lumbar puncture with CSF oligoclonal bands and IgG index",
+          "CSF cell count and differential",
+          "CSF protein and glucose",
+          "Visual evoked potentials",
+          "Optical coherence tomography of both optic nerves",
+          "Automated perimetry (formal visual field testing)",
+          "Nerve conduction studies and electromyography of lower limbs",
+          "MRI of lumbar spine",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "HbA1c",
+          "Vitamin B12 level",
+          "Folate level",
+          "Thyroid function tests",
+          "Serum copper and ceruloplasmin",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Anti-double-stranded DNA antibody",
+          "Antineutrophil cytoplasmic antibodies",
+          "Serum angiotensin-converting enzyme level",
+          "Aquaporin-4 (NMO) IgG antibody",
+          "Myelin oligodendrocyte glycoprotein (MOG) IgG antibody",
+          "Serum protein electrophoresis with immunofixation",
+          "Serum HIV test",
+          "Syphilis serology (e.g., RPR and TPPA)"
+        ],
+        "all_identified_ft_keys": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "TFT",
+          "Serum_Ceruloplasmin",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "CSF_Oligoclonal_Bands",
+          "Glucose_HbA1c",
+          "NCS_EMG",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Serum_Copper",
+          "OCT",
+          "Serum_Protein_Electrophoresis",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "ANCA",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Sciatica"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Sciatica"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Sciatica"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 6,
+        "primary_tests_found_count": 5,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.8333333333333334,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 11,
+        "ddx_tests_coverage_percentage": 0.6875
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days followed by a short oral steroid taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute demyelinating optic neuritis with significant visual impairment and associated cerebellar relapse",
+              "High-dose steroids accelerate recovery from relapses in multiple sclerosis and related demyelinating disorders",
+              "No clinical evidence of active infection or contraindications in the presented data"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor for gastroprotection during high-dose steroid therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduces risk of steroid-induced gastritis or peptic ulcer disease",
+              "Patient will receive several days of high-dose corticosteroids"
+            ]
+          },
+          {
+            "treatment": "Initiation of high-efficacy disease-modifying therapy for multiple sclerosis (e.g., ocrelizumab, natalizumab, or equivalent per local protocols)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis with MRI and CSF studies",
+              "Baseline infection screening and vaccination review are needed before starting immunosuppressive therapy",
+              "Choice of agent should follow multidisciplinary discussion and patient counselling about risks and benefits"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy, vestibular and cerebellar rehabilitation with gait and balance training",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has ataxic gait and unstable tandem walking, increasing fall risk",
+              "Early rehabilitation improves adaptation to cerebellar and sensory deficits",
+              "Can be initiated safely in parallel with diagnostic work-up"
+            ]
+          },
+          {
+            "treatment": "Neuropathic pain management and conservative treatment for sciatica (e.g., gabapentin or amitriptyline, NSAIDs as appropriate, and lumbar/core strengthening exercises)",
+            "timing": "Start Now",
+            "reasons": [
+              "History of sciatica with objective left L5 weakness suggests symptomatic radiculopathy",
+              "Early analgesia and targeted physiotherapy may prevent chronic pain and functional decline",
+              "No immediate indication for surgical intervention is described"
+            ]
+          },
+          {
+            "treatment": "Vitamin B12 supplementation if deficiency confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "B12 deficiency is a reversible cause of myelopathy, optic neuropathy and neuropathy but must be biochemically documented",
+              "Avoids unnecessary treatment if levels are normal"
+            ]
+          },
+          {
+            "treatment": "Neurosurgical or interventional pain referral for possible lumbar decompression or nerve root block",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for persistent or progressive L5 radiculopathy despite optimal conservative management",
+              "Requires correlation with MRI lumbar spine findings"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days followed by a short oral steroid taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute demyelinating optic neuritis with significant visual impairment and associated cerebellar relapse",
+              "High-dose steroids accelerate recovery from relapses in multiple sclerosis and related demyelinating disorders",
+              "No clinical evidence of active infection or contraindications in the presented data"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of high-efficacy disease-modifying therapy for multiple sclerosis (e.g., ocrelizumab, natalizumab, or equivalent per local protocols)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis with MRI and CSF studies",
+              "Baseline infection screening and vaccination review are needed before starting immunosuppressive therapy",
+              "Choice of agent should follow multidisciplinary discussion and patient counselling about risks and benefits"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        }
+      }
+    }
+  }
+}

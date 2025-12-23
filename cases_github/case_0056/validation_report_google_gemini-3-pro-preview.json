@@ -1,0 +1,242 @@
+{
+  "case_id": "case_0056",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 31.69,
+    "sex": "Female",
+    "genderIdentity": "Non-binary",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right ulnar nerve and left median nerve.\n  \nSome more precision is possible than: 'left Sciatic Nerve'.  \nNamely, in the region of: left common peroneal nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right ulnar nerve at the elbow",
+          "left common peroneal nerve",
+          "left median nerve at the wrist (carpal tunnel)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Ulnar Nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Median Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Sciatic Nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right ulnar nerve at the elbow",
+          "left median nerve at the wrist (carpal tunnel)"
+        ],
+        "imprecise_matches": [
+          [
+            "left Sciatic Nerve",
+            [
+              "left common peroneal nerve"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.6666666666666666,
+        "proportion_imprecise": 0.3333333333333333,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Hereditary neuropathy with pressure palsies (HNPP).\n\nAgree to also consider:\n- Multifocal Acquired Demyelinating Sensory and Motor Neuropathy  (MADSAM), HIV Neuropathy and Vasculitic Neuropathy.\n\nOther possible differentials:\n- Acromegaly (Entrapment Neuropathy).\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Multifocal Motor Neuropathy (MMN) (atypical for multiple compressive mononeuropathies involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Vasculitic Neuropathy (e.g., EGPA, Polyarteritis Nodosa)",
+          "Connective Tissue Disease-associated Vasculitis (e.g., RA, SLE)",
+          "Infectious Mononeuritis Multiplex (e.g., HIV, Hepatitis B/C, Lyme Disease)",
+          "Hereditary Neuropathy with Liability to Pressure Palsies (HNPP)",
+          "Multifocal Motor Neuropathy (MMN)",
+          "Lewis-Sumner Syndrome (MADSAM)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Hereditary neuropathy with pressure palsies (HNPP)": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Hereditary neuropathy with pressure palsies (HNPP)"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MADSAM",
+          "HIV_Neuropathy",
+          "Vasculitic_Neuropathy",
+          "Hereditary_Neuropathy_Pressure_Palsies"
+        ],
+        "missing_lesion_dx_keys": [
+          "Acromegaly_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Acromegaly (Entrapment Neuropathy)"
+        ],
+        "missing_low_prob_names": [],
+        "additional_diagnoses": [
+          "Multifocal Motor Neuropathy (MMN)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Hereditary neuropathy with pressure palsies (HNPP)",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 5,
+        "lesion_ddx_matched_count": 4,
+        "lesion_ddx_missed_common_count": 1,
+        "lesion_ddx_missed_low_prob_count": 0,
+        "lesion_ddx_coverage_percentage": 0.8
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested Nerve Conduction Studies and EMG - would potentially inform a diagnosis/details of hereditary neuropathy with pressure palsies (hnpp).\n\nBut incomplete, should also consider: PMP22 genetic test.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: CRP, HIV, Nerve conduction studies and EMG, ANCA, ESR.\n- Could also consider testing: PMP22 Genetic testing, IGF-1 Level, CSF (Analysis (Protein/Cell Count)).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "PMP22 genetic test",
+            "detail": "PMP22 deletion",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          },
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "ulnar_nerve_high_elbow.right",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          },
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "common_peroneal_nerve.left",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          },
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "median_nerve_wrist_carpal_tunnel.left",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Nerve conduction studies",
+          "Electromyography",
+          "Full blood count",
+          "Erythrocyte sedimentation rate",
+          "C-reactive protein",
+          "Urea and electrolytes",
+          "ANCA vasculitis screen",
+          "ANA screen",
+          "Hepatitis B and C serology",
+          "HIV serology",
+          "HbA1c",
+          "Stool microscopy (Ova and Parasites)",
+          "Urinalysis"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "NCS_EMG",
+          "ANA",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "Hepatitis_Screen",
+          "ENA_Panel",
+          "Urinalysis",
+          "ANCA",
+          "HIV_Test",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Cryoglobulins",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "ulnar_nerve_high_elbow.right",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          },
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "common_peroneal_nerve.left",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          },
+          {
+            "type": "nerve conduction studies and emg",
+            "region": "median_nerve_wrist_carpal_tunnel.left",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "PMP22 genetic test",
+            "detail": "PMP22 deletion",
+            "condition": "Hereditary neuropathy with pressure palsies (HNPP)"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "PMP22_Gene",
+          "CRP",
+          "CSF_General",
+          "HIV_Test",
+          "NCS_EMG",
+          "ANCA",
+          "ESR",
+          "IGF1_Level"
+        ],
+        "found_inv_keys_ddx": [
+          "CRP",
+          "HIV_Test",
+          "NCS_EMG",
+          "ANCA",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "PMP22_Gene",
+          "CSF_General",
+          "IGF1_Level"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.75,
+        "ddx_tests_expected_count": 8,
+        "ddx_tests_found_count": 5,
+        "ddx_tests_coverage_percentage": 0.625
+      }
+    },
+    "Management": {
+      "report_string": "Nothing to add to management.",
+      "structured_data": {
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
+      },
+      "scoring": {
+        "steroids": {},
+        "dmt": {}
+      }
+    }
+  }
+}

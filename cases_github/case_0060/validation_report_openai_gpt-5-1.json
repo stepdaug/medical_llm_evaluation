@@ -1,0 +1,413 @@
+{
+  "case_id": "case_0060",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 36.74,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Amerindian / Indigenous American"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left cerebellum and left optic nerve.\n  \nThe suggested lesion bilateral length-dependent peripheral polyneuropathy not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "cerebellar hemisphere",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "length-dependent peripheral polyneuropathy",
+            "side": "bilateral",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "bilateral length-dependent peripheral polyneuropathy"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.5
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Vasculitis, Susac Syndrome, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Isolated left cerebellar infarct in the PICA or SCA territory (including vertebral artery dissection) (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Primary cerebellar tumour (e.g. low-grade astrocytoma) or cerebellar metastasis (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Autoimmune or post-infectious cerebellitis (atypical for strictly unilateral cerebellum and unilateral optic nerve involvement)\n- Paraneoplastic cerebellar degeneration (atypical for strictly unilateral cerebellum and unilateral optic nerve involvement)\n- Diabetic length-dependent sensorimotor polyneuropathy (atypical for unilateral cerebellum and unilateral optic nerve involvement)\n- Non-arteritic anterior ischaemic optic neuropathy of the left eye (plausible for unilateral optic nerve; but atypical for unilateral cerebellum involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple sclerosis (relapsing\u2013remitting)",
+          "Isolated left cerebellar infarct in the PICA or SCA territory (including vertebral artery dissection)",
+          "Primary cerebellar tumour (e.g. low-grade astrocytoma) or cerebellar metastasis",
+          "Autoimmune or post-infectious cerebellitis",
+          "Paraneoplastic cerebellar degeneration",
+          "Diabetic length-dependent sensorimotor polyneuropathy",
+          "Advanced proliferative diabetic retinopathy of the left eye",
+          "Non-arteritic anterior ischaemic optic neuropathy of the left eye"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Susac_Syndrome",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "MOGAD",
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Vasculitis",
+          "Susac Syndrome",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Isolated left cerebellar infarct in the PICA or SCA territory (including vertebral artery dissection)",
+          "Primary cerebellar tumour (e.g. low-grade astrocytoma) or cerebellar metastasis",
+          "Autoimmune or post-infectious cerebellitis",
+          "Paraneoplastic cerebellar degeneration",
+          "Diabetic length-dependent sensorimotor polyneuropathy",
+          "Advanced proliferative diabetic retinopathy of the left eye",
+          "Non-arteritic anterior ischaemic optic neuropathy of the left eye"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 7,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 1,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.07692307692307693
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ESR.\n- Could also consider testing: anti-dsDNA, ENA, ACE, ANCA, HIV, syphilis, lyme, CSF (flow cytometry and cytology), audiometry, fluorescein angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium (including posterior fossa sequences)",
+          "MRI of cervical spine with gadolinium",
+          "MR angiography of head and neck (including vertebral arteries)",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands and IgG index",
+          "Nerve conduction studies and electromyography",
+          "Visual evoked potentials",
+          "Ophthalmology assessment with dilated fundus examination and optical coherence tomography",
+          "CT chest with contrast to evaluate left lung-base airspace disease and exclude malignancy",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "HbA1c",
+          "Vitamin B12 level",
+          "Serum folate",
+          "Thyroid function tests",
+          "Serum protein electrophoresis and immunoglobulins",
+          "Aquaporin-4 antibody",
+          "MOG antibody",
+          "Antinuclear antibody",
+          "Onconeural antibody panel (e.g. anti-Yo, anti-Hu, anti-Ri, anti-Tr)"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "TFT",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "NCS_EMG",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "Serum_Protein_Electrophoresis",
+          "OCT",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "Paraneoplastic_Antibodies",
+          "Ophthalmology Assessment",
+          "MRA_Head_Neck",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 5,
+        "ddx_tests_coverage_percentage": 0.3125
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.).\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.).",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Inpatient admission with neuro-observations, falls precautions and physiotherapy-led gait training",
+            "timing": "Start Now",
+            "reasons": [
+              "Marked gait ataxia and unilateral limb dysmetria place the patient at high risk of falls and injury",
+              "Inpatient monitoring allows early detection of neurological deterioration while investigations are completed"
+            ]
+          },
+          {
+            "treatment": "Optimisation of diabetes control and institution of foot-care measures",
+            "timing": "Start Now",
+            "reasons": [
+              "Distal large-fibre sensory loss is consistent with diabetic neuropathy and improved glycaemic control can slow progression",
+              "Structured foot care reduces risk of ulceration and infection in the setting of reduced sensation"
+            ]
+          },
+          {
+            "treatment": "Empiric antibiotic therapy for suspected left lower-lobe pneumonia, tailored to local guidelines",
+            "timing": "Start Now",
+            "reasons": [
+              "Chest X-ray shows airspace disease with air bronchograms at the left lung base, compatible with consolidation",
+              "Early treatment is advisable in a diabetic patient to prevent respiratory and systemic deterioration"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone for a suspected multiple sclerosis relapse",
+            "timing": "Delay",
+            "reasons": [
+              "Should only be started after MRI confirms an acute demyelinating lesion involving the cerebellum or brainstem",
+              "Active infection and alternative structural diagnoses must be excluded before initiating high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Initiation of long-term disease-modifying therapy for multiple sclerosis",
+            "timing": "Delay",
+            "reasons": [
+              "Requires a definite diagnosis of multiple sclerosis based on McDonald criteria",
+              "Choice of agent needs multidisciplinary discussion and detailed counselling about benefits and risks"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet therapy with aspirin for secondary prevention if imaging confirms cerebellar ischaemic stroke",
+            "timing": "Delay",
+            "reasons": [
+              "Not indicated until ischaemic stroke is proven and haemorrhage is excluded on neuroimaging",
+              "Dose and duration should follow stroke guidelines and be individualised based on vascular risk"
+            ]
+          },
+          {
+            "treatment": "Neurosurgical and oncology referral for resection or radiotherapy if a cerebellar mass lesion is identified",
+            "timing": "Delay",
+            "reasons": [
+              "Definitive management depends on MRI characterisation of any mass lesion",
+              "Intervention is only appropriate once tumour type, size and resectability are defined"
+            ]
+          },
+          {
+            "treatment": "Ophthalmology referral for assessment and management of profound left visual loss",
+            "timing": "Start Now",
+            "reasons": [
+              "Left eye has no perception of light with a relative afferent pupillary defect, requiring urgent structural evaluation",
+              "Early ophthalmic input allows optimisation of diabetic retinopathy or optic neuropathy management and provision of low-vision support"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone for a suspected multiple sclerosis relapse",
+            "timing": "Delay",
+            "reasons": [
+              "Should only be started after MRI confirms an acute demyelinating lesion involving the cerebellum or brainstem",
+              "Active infection and alternative structural diagnoses must be excluded before initiating high-dose steroids"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.).\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of long-term disease-modifying therapy for multiple sclerosis",
+            "timing": "Delay",
+            "reasons": [
+              "Requires a definite diagnosis of multiple sclerosis based on McDonald criteria",
+              "Choice of agent needs multidisciplinary discussion and detailed counselling about benefits and risks"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Airspace disease with air bronchograms left lung base.)."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        }
+      }
+    }
+  }
+}

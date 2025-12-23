@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with subacute monocular visual loss (Left eye acuity 6/12) and a left-sided Relative Afferent Pupillary Defect (RAPD). The presence of an RAPD coupled with reduced acuity strongly localizes the lesion to the anterior visual pathway anterior to the optic chiasm. The absence of extraocular movement deficits, normal fundoscopy (implied by lack of retinal notes), and normal neurological exam elsewhere confirms the lesion is intrinsic to the nerve.\n\nlesion_locations = [\"Left Optic Nerve\"]"
+}

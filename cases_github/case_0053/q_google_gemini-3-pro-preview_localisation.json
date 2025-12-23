@@ -1,0 +1,3 @@
+{
+    "response": "The patient exhibits a classic Brown-S\u00e9quard (hemicord) syndrome. There are ipsilateral (left-sided) Upper Motor Neuron signs in the lower limb (spasticity, hyperreflexia, clonus, upgoing plantar) and ipsilateral loss of dorsal column modalities (proprioception/vibration). There is contralateral (right-sided) impairment of spinothalamic modalities (pain/temperature). The lesion level is localised to the T1 segment due to the presence of specific Lower Motor Neuron signs at that level: weakness of the left First Dorsal Interosseous (T1 innervation) and left upper limb hypotonia.\n\nlesion_locations = [\"Left T1 Spinal Cord\"]"
+}

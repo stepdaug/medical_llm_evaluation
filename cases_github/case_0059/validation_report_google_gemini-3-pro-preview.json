@@ -1,0 +1,381 @@
+{
+  "case_id": "case_0059",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 49.65,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right cerebellum.\n  \nSome more precision is possible than: 'left Cervicothoracic Spinal Cord'.  \nNamely, lesions in the region of: left T1 spinal cord and left L5 nerve root.\n  \nThe suggested lesion Cervicomedullary Junction not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T1 myelopathy",
+          "left L5 radiculopathy",
+          "right cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Cervicothoracic Spinal Cord",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Cerebellum",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Cervicomedullary Junction",
+            "side": null,
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right cerebellum"
+        ],
+        "imprecise_matches": [
+          [
+            "left Cervicothoracic Spinal Cord",
+            [
+              "left T1 myelopathy",
+              "left L5 radiculopathy"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "Cervicomedullary Junction"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 0.3333333333333333,
+        "proportion_imprecise": 0.3333333333333333,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.3333333333333333
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nMissed Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), Neurosarcoid, Vasculitis and ADEM.\n\nOther possible differentials:\n- MOGAD, SLE, Neurosyphilis and Multiple Sclerosis.\n- Also feasible but of low probability: Sjogren's, Beh\u00e7et's, Lymphoma and Lyme.\n\nOther considerations not mentioned:\n- Their comorbidity degenerative intervertebral disc disease could account for parts of the examination, e.g. with a lesion affecting left L5 nerve root.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Spinal Epidural Abscess (plausible for unilateral spinal cord; but atypical for unilateral cerebellum or unilateral nerve roots involvement)\n- Listeria (plausible for unilateral cerebellum; but atypical for unilateral spinal cord or unilateral nerve roots involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Spinal Epidural Abscess",
+          "Acute Disseminated Encephalomyelitis (ADEM)",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "Listeria Rhombencephalitis",
+          "Neurosarcoidosis",
+          "CNS Vasculitis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Degenerative intervertebral disc disease": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [],
+        "missing_original_gt": [
+          "Multiple sclerosis",
+          "Degenerative intervertebral disc disease"
+        ],
+        "matched_lesion_dx_keys": [
+          "CNS_Vasculitis",
+          "ADEM",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "Syphilis",
+          "Autoimmune_Myelitis_Sjogren",
+          "MS",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "MOGAD",
+          "Neurosyphilis",
+          "Multiple Sclerosis",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Sjogren's",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Spinal Epidural Abscess",
+          "Listeria Rhombencephalitis"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 0,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 0,
+        "gt_missed_count": 2,
+        "gt_coverage_percentage": 0.0,
+        "additional_less_plausible_count": 2,
+        "comorbidity_missing_count": 1,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 12,
+        "lesion_ddx_matched_count": 4,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.3333333333333333
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- Agree with the suggested MRI including the Cervical Spine, Lumbosacral Spine and Thoracic Spine - would potentially inform a diagnosis/details of degenerative intervertebral disc disease.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ANCA, HIV, anti-AQP4, ESR.\n- Could also consider testing: anti-dsDNA, ACE, syphilis, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of Brain and Whole Spine with contrast",
+          "Full blood count",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood cultures",
+          "Lumbar Puncture (CSF microscopy, culture, viral PCR, oligoclonal bands)",
+          "Serum Aquaporin-4 antibodies",
+          "Serum MOG antibodies",
+          "Autoimmune screen (ANA, ANCA)",
+          "HIV serology",
+          "Echocardiogram"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "CSF_Viral_PCR",
+          "ENA_Panel",
+          "CSF_Oligoclonal_Bands",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "MRI_Thoracic_Spine",
+          "ANCA",
+          "HIV_Test",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Degenerative intervertebral disc disease"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "ANCA",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Serum_ACE",
+          "CSF_Cytology",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 7,
+        "primary_tests_found_count": 7,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 14,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.5714285714285714
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CRP: 145).\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 145).\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Antibiotics (e.g., Ceftriaxone + Ampicillin)",
+            "timing": "Start Now",
+            "reasons": [
+              "High CRP suggests bacterial infection",
+              "Covers Listeria and common CNS pathogens",
+              "Risk of sepsis or abscess progression"
+            ]
+          },
+          {
+            "treatment": "DVT Prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has reduced mobility and lower limb weakness"
+            ]
+          },
+          {
+            "treatment": "Intravenous Corticosteroids",
+            "timing": "Delay",
+            "reasons": [
+              "Must rule out infection (abscess/meningitis) via imaging and CSF first",
+              "Indicated if diagnosis confirms ADEM, NMOSD, or Vasculitis"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Corticosteroids",
+            "timing": "Delay",
+            "reasons": [
+              "Must rule out infection (abscess/meningitis) via imaging and CSF first",
+              "Indicated if diagnosis confirms ADEM, NMOSD, or Vasculitis"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 145)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CRP: 145).\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 145)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 145).\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

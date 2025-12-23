@@ -1,0 +1,3 @@
+{
+    "response": "MRI is critical to demonstrate dissemination in space and time. CSF analysis supports the diagnosis of MS (Oligoclonal bands) and excludes infection. Bloods are required to rule out mimics (NMO, Vasculitis, Infection) and assess safety for treatment.\n\ninvestigations = [\"MRI Brain and Spinal Cord with contrast\", \"Lumbar Puncture (CSF microscopy, culture, protein, glucose, oligoclonal bands)\", \"Full blood count\", \"Urea and electrolytes\", \"Liver function tests\", \"C-reactive protein\", \"Erythrocyte sedimentation rate\", \"Anti-AQP4 antibodies\", \"Anti-MOG antibodies\", \"Autoimmune screen (ANA, ENA, ANCA)\", \"Vitamin B12 and Folate\", \"Syphilis serology\", \"Lyme serology\", \"HIV serology\", \"Midstream urine culture\"]"
+}

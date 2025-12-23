@@ -1,0 +1,388 @@
+{
+  "case_id": "case_0052",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 58.08,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "Sub-Saharan African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Compressive Optic Neuropathy, NAION, Central Retinal Vein Occlusion, Central Retinal Artery Occlusion and Giant Cell Arteritis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis, Bartonella and Retinal Detachment.\n- Also feasible but of low probability: TB, Beh\u00e7et's, Lyme, Lymphoma, Vasculitis, Sjogren's and Leber's Hereditary Optic Neuropathy.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Arteritic anterior ischaemic optic neuropathy due to giant cell arteritis",
+          "Non-arteritic anterior ischaemic optic neuropathy",
+          "Demyelinating optic neuritis (including multiple sclerosis associated optic neuritis)",
+          "Central retinal artery occlusion",
+          "Central retinal vein occlusion",
+          "Compressive optic neuropathy (for example optic nerve sheath meningioma or orbital mass)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Optic_Neuropathy",
+          "Ischemic_Optic_Neuropathy_NAION",
+          "Central_Retinal_Vein_Occlusion",
+          "MS",
+          "Central_Retinal_Artery_Occlusion",
+          "Giant_Cell_Arteritis"
+        ],
+        "missing_lesion_dx_keys": [
+          "CNS_Tuberculosis",
+          "Bartonella_Henselae",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Infection_Lyme",
+          "Retinal_Detachment",
+          "Syphilis",
+          "CNS_Lymphoma",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Optic_Neuropathy_Nonspecific",
+          "Leber_Hereditary_Optic_Neuropathy",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Bartonella",
+          "Retinal Detachment",
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Beh\u00e7et's",
+          "Lyme",
+          "Lymphoma",
+          "Vasculitis",
+          "Sjogren's",
+          "Leber's Hereditary Optic Neuropathy"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 22,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 7,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.2727272727272727
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Orbits and Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ANA, CRP, ENA, ACE, ANCA, syphilis, ESR, lyme.\n- Could also consider testing: anti-dsDNA, anti-MOG, bartonella, TB, HIV, anti-AQP4, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Urgent ophthalmology assessment with dilated fundus examination",
+          "Erythrocyte sedimentation rate",
+          "C-reactive protein",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Blood glucose",
+          "Temporal artery ultrasound",
+          "Temporal artery biopsy",
+          "MRI of orbits and brain with gadolinium contrast",
+          "Visual field testing with automated perimetry",
+          "Optical coherence tomography of retinal nerve fiber layer and macula",
+          "Lipid profile",
+          "Autoimmune screen including antinuclear antibodies and extractable nuclear antigen panel",
+          "Antineutrophil cytoplasmic antibodies",
+          "Serum angiotensin converting enzyme level",
+          "Infectious screen including syphilis serology and Lyme serology if clinically indicated"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "ENA_Panel",
+          "LFT",
+          "MRI_Orbits",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Temporal_Artery_Biopsy",
+          "Syphilis_Serology",
+          "Lyme_Serology",
+          "FBC",
+          "ANA",
+          "OCT",
+          "Ophthalmology Assessment",
+          "ANCA",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "HIV_Test",
+          "CSF_Cytology",
+          "AQP4_Antibodies"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.5
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High dose corticosteroid therapy for presumed giant cell arteritis (for example intravenous methylprednisolone 500\u20131000 mg daily for 3 days followed by high dose oral prednisolone)",
+            "timing": "Start Now",
+            "reasons": [
+              "Age over 50 with acute unilateral visual loss and relative afferent pupillary defect strongly suggests arteritic anterior ischaemic optic neuropathy",
+              "Raised inflammatory markers markedly increase the pre test probability of giant cell arteritis",
+              "Delay in steroid treatment significantly increases the risk of permanent bilateral blindness",
+              "Temporal artery biopsy and imaging remain interpretable if performed within 1\u20132 weeks after starting steroids"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor for gastrointestinal protection during high dose steroid therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "High dose systemic steroids increase the risk of peptic ulcer disease and upper gastrointestinal bleeding",
+              "Concurrent gastroprotection reduces avoidable steroid related gastrointestinal complications",
+              "Patient is likely to require a prolonged steroid taper"
+            ]
+          },
+          {
+            "treatment": "Low dose aspirin 75\u2013100 mg daily",
+            "timing": "Start Now",
+            "reasons": [
+              "Often recommended in giant cell arteritis to reduce further cranial ischaemic events when not contraindicated",
+              "May provide additional vascular protection if the final diagnosis is an ischaemic optic neuropathy or retinal vascular occlusion",
+              "Bleeding risk can be mitigated with gastroprotection and assessment of contraindications"
+            ]
+          },
+          {
+            "treatment": "Calcium and vitamin D supplementation",
+            "timing": "Delay",
+            "reasons": [
+              "Indicated to prevent steroid induced osteoporosis when prolonged corticosteroid therapy is confirmed",
+              "Can be initiated after baseline calcium and vitamin D levels and bone health assessment"
+            ]
+          },
+          {
+            "treatment": "Bisphosphonate therapy such as oral alendronate",
+            "timing": "Delay",
+            "reasons": [
+              "Recommended for patients commencing long term high dose steroids who are at increased fracture risk",
+              "Should follow fracture risk stratification and, ideally, dental review to minimise risk of osteonecrosis of the jaw"
+            ]
+          },
+          {
+            "treatment": "Disease modifying therapy for multiple sclerosis if demyelinating optic neuritis is confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis with MRI and clinical criteria before initiation",
+              "Choice of agent must be individualised and started in a specialist neuroimmunology service"
+            ]
+          },
+          {
+            "treatment": "Aggressive vascular risk factor modification including antihypertensive therapy, statin therapy, and smoking cessation support",
+            "timing": "Delay",
+            "reasons": [
+              "Important for long term secondary prevention if an ischaemic optic neuropathy or retinal vascular event is confirmed",
+              "Implementation should follow comprehensive cardiovascular risk assessment and coordination with primary care"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High dose corticosteroid therapy for presumed giant cell arteritis (for example intravenous methylprednisolone 500\u20131000 mg daily for 3 days followed by high dose oral prednisolone)",
+            "timing": "Start Now",
+            "reasons": [
+              "Age over 50 with acute unilateral visual loss and relative afferent pupillary defect strongly suggests arteritic anterior ischaemic optic neuropathy",
+              "Raised inflammatory markers markedly increase the pre test probability of giant cell arteritis",
+              "Delay in steroid treatment significantly increases the risk of permanent bilateral blindness",
+              "Temporal artery biopsy and imaging remain interpretable if performed within 1\u20132 weeks after starting steroids"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 161)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease modifying therapy for multiple sclerosis if demyelinating optic neuritis is confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis with MRI and clinical criteria before initiation",
+              "Choice of agent must be individualised and started in a specialist neuroimmunology service"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 161)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 161).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

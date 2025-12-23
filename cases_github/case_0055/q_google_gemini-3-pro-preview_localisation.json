@@ -1,0 +1,3 @@
+{
+    "response": "The clinical presentation demonstrates 'dissemination in space' with signs affecting two distinct CNS locations. The reduced visual acuity (6/60) and Relative Afferent Pupillary Defect (RAPD) on the left indicate an optic neuropathy. The right-sided appendicular ataxia (intention tremor, dysmetria, dysdiadochokinesia) combined with gaze-evoked nystagmus localises to the ipsilateral cerebellum. The subacute course (10 days) suggests an inflammatory or infiltrative etiology rather than a vascular one.\n\nlesion_locations = [\"Left Optic Nerve\", \"Right Cerebellar Hemisphere\"]"
+}

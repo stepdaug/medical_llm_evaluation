@@ -1,0 +1,376 @@
+{
+  "case_id": "case_0012",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 51.21,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nSome more precision is possible than: 'left thoracic spinal cord'.  \nNamely, in the region of: left T11 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T11 myelopathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "thoracic spinal cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [
+          [
+            "left thoracic spinal cord",
+            [
+              "left T11 myelopathy"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 1.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Disc Herniation, Spinal Vascular Malformation and Spinal Tumour.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Neurosyphilis and Spinal spondylosis / stenosis.\n- Also feasible but of low probability: Spinal cord trauma, Epidural Haematoma, Spinal Abscess and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency (atypical for strictly unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Left thoracic spinal cord extrinsic compression due to meningioma",
+          "Left thoracic spinal cord extrinsic compression due to metastatic epidural spinal cord compression",
+          "Thoracic disc herniation with left-sided spinal cord compression",
+          "Inflammatory or demyelinating myelitis of the left thoracic spinal cord (e.g., multiple sclerosis)",
+          "Spinal dural arteriovenous fistula causing thoracic myelopathy",
+          "Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Myelopathy_Disc",
+          "MS",
+          "Spinal_Vascular_Malformation",
+          "Compressive_Myelopathy_Tumour"
+        ],
+        "missing_lesion_dx_keys": [
+          "Syphilis",
+          "Traumatic_Spinal_Cord_Injury",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Compressive_Myelopathy_Spondylosis",
+          "Compressive_Myelopathy_Haematoma",
+          "Compressive_Myelopathy_Abscess",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Transverse_Myelitis_Idiopathic"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "Spinal spondylosis / stenosis",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Spinal cord trauma",
+          "Epidural Haematoma",
+          "Spinal Abscess",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 4,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.2857142857142857
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, HIV, anti-AQP4, syphilis, ESR, CSF (cytology).\n- Could also consider testing: ACE, CSF (flow cytometry), spinal angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of whole spine with gadolinium contrast",
+          "MRI brain with gadolinium contrast",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Serum copper and ceruloplasmin",
+          "Erythrocyte sedimentation rate",
+          "Serum C-reactive protein",
+          "Thyroid function tests",
+          "HbA1c",
+          "Serum protein electrophoresis and immunofixation",
+          "HIV serology",
+          "Syphilis serology (VDRL/TPPA)",
+          "Autoimmune screen including ANA, ENA and dsDNA",
+          "Aquaporin-4 antibody",
+          "Myelin oligodendrocyte glycoprotein (MOG) antibody",
+          "Lumbar puncture with CSF analysis including cells, protein, glucose and oligoclonal bands",
+          "CT chest, abdomen and pelvis with contrast"
+        ],
+        "all_identified_ft_keys": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "Serum_Ceruloplasmin",
+          "TFT",
+          "Coagulation_Screen",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Serum_Copper",
+          "Serum_Protein_Electrophoresis",
+          "Chest_CT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "Spinal_Angiography",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "HIV_Test",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Serum_ACE",
+          "Spinal_Angiography"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 4,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 10,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.7
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Urgent MRI of the whole spine and referral to neurosurgery/spinal services",
+            "timing": "Start Now",
+            "reasons": [
+              "Suspected thoracic spinal cord compression requires rapid imaging to identify surgically treatable lesions",
+              "Early decompression improves neurological outcomes if a compressive lesion is present"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy with gait and balance training",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has an unsteady, spastic gait with positive Romberg sign",
+              "Early rehabilitation reduces falls risk and secondary deconditioning"
+            ]
+          },
+          {
+            "treatment": "Provision of walking aid and falls-prevention strategies",
+            "timing": "Start Now",
+            "reasons": [
+              "Unsteady gait and sensory ataxia place the patient at high risk of falls",
+              "Environmental adaptation and education can be implemented immediately"
+            ]
+          },
+          {
+            "treatment": "Thromboprophylaxis with low-molecular-weight heparin according to mobility and VTE risk",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduced mobility from spastic leg increases venous thromboembolism risk",
+              "Prophylaxis is standard while awaiting diagnosis and definitive treatment unless contraindicated"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous corticosteroids",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for confirmed or strongly suspected inflammatory myelitis or malignant cord compression",
+              "Should generally be started after MRI defines the pathology to avoid masking alternative diagnoses or complicating surgical planning"
+            ]
+          },
+          {
+            "treatment": "Surgical decompression or tumour resection of identified spinal cord lesion",
+            "timing": "Delay",
+            "reasons": [
+              "Definitive management depends on MRI findings and multidisciplinary assessment",
+              "Timing and approach differ for meningioma, metastasis, disc herniation or vascular malformation"
+            ]
+          },
+          {
+            "treatment": "Vitamin B12 replacement therapy if deficiency is confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Subacute combined degeneration is in the differential diagnosis",
+              "Replacement should follow biochemical confirmation and will be long term"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous corticosteroids",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for confirmed or strongly suspected inflammatory myelitis or malignant cord compression",
+              "Should generally be started after MRI defines the pathology to avoid masking alternative diagnoses or complicating surgical planning"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

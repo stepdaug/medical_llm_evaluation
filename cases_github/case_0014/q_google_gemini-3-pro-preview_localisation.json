@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic Brown-S\u00e9quard syndrome (hemicord syndrome). There is ipsilateral (right-sided) Upper Motor Neuron weakness (spasticity, hyperreflexia, extensor plantar) and ipsilateral loss of dorsal column sensations (proprioception, vibration). Contralaterally (left side), there is loss of spinothalamic modalities (pain/pinprick). The 'band of numbness across the stomach' on the right suggests radicular involvement at the level of the lesion, localising it to the thoracic segments (likely T6-T10).\n\nlesion_locations = [\"Right Thoracic Spinal Cord\"]"
+}

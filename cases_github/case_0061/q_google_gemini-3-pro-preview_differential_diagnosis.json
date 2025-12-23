@@ -1,0 +1,3 @@
+{
+    "response": "Given the acute presentation (implied) and the involvement of a contiguous vascular territory (vertebrobasilar), an ischaemic event is the leading diagnosis. The patient's age (47) necessitates excluding vertebral artery dissection. Space-occupying lesions (glioma) or inflammatory processes (MS, rhombencephalitis) are differentials but less likely to present with such dense, multi-level deficits simultaneously without prodrome.\n\ndifferential_diagnosis = [\"Ischaemic Stroke (Vertebrobasilar territory)\", \"Vertebral Artery Dissection\", \"Brainstem Glioma\", \"Rhombencephalitis (e.g., Listeria, HSV)\", \"Multiple Sclerosis\"]"
+}

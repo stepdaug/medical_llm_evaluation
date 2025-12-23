@@ -1,0 +1,322 @@
+{
+  "case_id": "case_0062",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 40.01,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right pons.\n  \nAdditional signs indicate lesion possibly also involving:\n- left high cervical spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left high cervical myelopathy",
+          "right pons"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Caudal Pons",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right pons"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left high cervical myelopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Neurosarcoid, Beh\u00e7et's and ADEM.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, TB, Vasculitis, Sjogren's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Metastasis (likely Lung primary) (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Brainstem Abscess (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Pontine Infarction (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Metastasis (likely Lung primary)",
+          "Brainstem Abscess",
+          "Primary Brainstem Glioma",
+          "Demyelination (e.g., Multiple Sclerosis or ADEM)",
+          "Neuro-Behcet's or Neurosarcoidosis",
+          "Pontine Infarction"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS",
+          "ADEM",
+          "Neurosarcoidosis",
+          "Behcet_Disease"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Brainstem Metastasis (likely Lung primary)",
+          "Brainstem Abscess",
+          "Primary Brainstem Glioma",
+          "Pontine Infarction"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 4,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 4,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.3076923076923077
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Cervical Spine and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR, CRP.\n- Could also consider testing: anti-dsDNA, anti-MOG, ANA, TB, ENA, ACE, HIV, ANCA, anti-AQP4, syphilis, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain with contrast",
+          "CT Chest, Abdomen and Pelvis",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood cultures",
+          "Lumbar Puncture"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "Chest_CT",
+          "CRP",
+          "Chest_XRay",
+          "LFT",
+          "U_and_E",
+          "MRI_Brain",
+          "Blood_Cultures",
+          "ESR",
+          "CSF_General"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ESR",
+          "CRP"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 2,
+        "primary_tests_coverage_percentage": 0.3333333333333333,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 2,
+        "ddx_tests_coverage_percentage": 0.13333333333333333
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Swallowing Assessment (NBM initially)",
+            "timing": "Start Now",
+            "reasons": [
+              "High risk of aspiration due to brainstem involvement and existing lung infiltrate"
+            ]
+          },
+          {
+            "treatment": "VTE Prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has reduced mobility (hemiparesis) and is being admitted"
+            ]
+          },
+          {
+            "treatment": "Dexamethasone",
+            "timing": "Delay",
+            "reasons": [
+              "Wait for MRI results to confirm mass/oedema",
+              "Avoid masking potential lymphoma or infectious etiology before biopsy/sampling"
+            ]
+          },
+          {
+            "treatment": "Intravenous Antibiotics",
+            "timing": "Delay",
+            "reasons": [
+              "Await confirmation of infectious vs malignant etiology (CRP is currently normal)"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Dexamethasone",
+            "timing": "Delay",
+            "reasons": [
+              "Wait for MRI results to confirm mass/oedema",
+              "Avoid masking potential lymphoma or infectious etiology before biopsy/sampling"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days",
+                "Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 2,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.6666666666666666
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "response": "The clinical presentation demonstrates distinct involvement of two separate anatomical areas. The reduced visual acuity (6/18) and Relative Afferent Pupillary Defect (RAPD) in the right eye localize to the right optic nerve. The left-sided appendicular ataxia (dysmetria, dysdiadochokinesia), gaze-evoked nystagmus, and ataxic gait localize to the left cerebellar hemisphere and its connections. A single lesion cannot explain both a pre-chiasmal visual deficit and contralateral cerebellar signs, indicating a multifocal pathology.\n\nlesion_locations = [\"Right Optic Nerve\", \"Left Cerebellar Hemisphere\"]"
+}

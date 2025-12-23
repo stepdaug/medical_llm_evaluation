@@ -1,0 +1,404 @@
+{
+  "case_id": "case_0062",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 40.01,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right pons.\n  \nAdditional signs indicate lesion possibly also involving:\n- left high cervical spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left high cervical myelopathy",
+          "right pons"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "pons",
+            "side": "right",
+            "qualifier": "dorsal"
+          }
+        ],
+        "exact_matches": [
+          "right pons"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left high cervical myelopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, TB, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right pontine ischaemic stroke (lacunar infarct of basis/tegmentum) (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Intrinsic brainstem neoplasm (e.g., low-grade pontine glioma) (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Brainstem cavernous malformation with subacute haemorrhage (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Infective brainstem encephalitis or rhombencephalitis (e.g., Listeria monocytogenes) (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Right pontine demyelinating plaque due to multiple sclerosis",
+          "Right pontine ischaemic stroke (lacunar infarct of basis/tegmentum)",
+          "Intrinsic brainstem neoplasm (e.g., low-grade pontine glioma)",
+          "Brainstem cavernous malformation with subacute haemorrhage",
+          "Infective brainstem encephalitis or rhombencephalitis (e.g., Listeria monocytogenes)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Right pontine ischaemic stroke (lacunar infarct of basis/tegmentum)",
+          "Intrinsic brainstem neoplasm (e.g., low-grade pontine glioma)",
+          "Brainstem cavernous malformation with subacute haemorrhage",
+          "Infective brainstem encephalitis or rhombencephalitis (e.g., Listeria monocytogenes)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 4,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 1,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.07692307692307693
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, TB, ACE, ANCA, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain with and without gadolinium contrast including dedicated brainstem sequences",
+          "Diffusion-weighted MRI of brain",
+          "MRI of cervical spine with and without gadolinium contrast",
+          "MR angiography of head and neck",
+          "Non-contrast CT brain (if MRI is delayed or before lumbar puncture)",
+          "Lumbar puncture with CSF analysis including cell count, protein, glucose, oligoclonal bands, culture and viral PCR",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Coagulation screen",
+          "Fasting blood glucose",
+          "HbA1c",
+          "Lipid profile",
+          "ANA and ENA panel",
+          "Serum aquaporin-4 and MOG antibodies",
+          "HIV serology",
+          "Syphilis serology",
+          "ECG",
+          "Transthoracic echocardiogram",
+          "Arterial blood gas",
+          "Sputum culture and sensitivity"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "MOG_Antibodies",
+          "CRP",
+          "CSF_Viral_PCR",
+          "Coagulation_Screen",
+          "LFT",
+          "ENA_Panel",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "Syphilis_Serology",
+          "CSF_General",
+          "ECG",
+          "FBC",
+          "ANA",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "HIV_Test",
+          "ABG",
+          "MRA_Head_Neck",
+          "MRI_Brain",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "Serum_ACE",
+          "ANCA",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.5333333333333333
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Admission to a monitored neurology or stroke unit with frequent neurological and respiratory observations",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem lesions may rapidly compromise airway and breathing",
+              "Allows close monitoring of evolving neurological deficits and prompt response to deterioration"
+            ]
+          },
+          {
+            "treatment": "Empiric intravenous antibiotics for community-acquired pneumonia according to local guidelines",
+            "timing": "Start Now",
+            "reasons": [
+              "CXR shows right lower lobe infiltrate consistent with pneumonia",
+              "Presenting symptom is dyspnoea and untreated infection may worsen respiratory status and delay neuro-specific therapies"
+            ]
+          },
+          {
+            "treatment": "Swallow assessment by speech and language therapist with appropriate diet modification or nasogastric feeding",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem and facial weakness increase risk of aspiration",
+              "Existing pneumonia may have been aspiration-related and further episodes must be prevented"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis with low-molecular-weight heparin and intermittent pneumatic compression unless contraindicated",
+            "timing": "Start Now",
+            "reasons": [
+              "Left hemiparesis and reduced mobility increase risk of deep vein thrombosis and pulmonary embolism",
+              "No current contraindication to pharmacologic prophylaxis is evident"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy for gait training, balance, and limb strengthening",
+            "timing": "Start Now",
+            "reasons": [
+              "Early mobilisation improves functional outcome after focal brain lesions",
+              "Addresses unsteady gait and left-sided weakness to reduce fall risk"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone pulse therapy for 3\u20135 days followed by oral taper if MRI/CSF confirm active demyelinating disease",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids are indicated for acute multiple sclerosis relapses but not for stroke or neoplasm",
+              "Immunosuppression could worsen his pneumonia, so infection should be stabilised first",
+              "Treatment should be guided by MRI and CSF evidence of inflammatory demyelination"
+            ]
+          },
+          {
+            "treatment": "Initiation of long-term disease-modifying therapy for multiple sclerosis if diagnostic criteria are met",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis and assessment of disease burden and prognostic factors",
+              "Needs discussion of options, risks, and monitoring requirements with the patient"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet therapy with aspirin for secondary stroke prevention if imaging demonstrates an ischaemic pontine infarct",
+            "timing": "Delay",
+            "reasons": [
+              "Antiplatelets are standard after non-cardioembolic ischaemic stroke but not indicated for demyelination or tumour",
+              "Must exclude intracranial haemorrhage or other contraindications on imaging"
+            ]
+          },
+          {
+            "treatment": "Cardiovascular risk factor modification including blood pressure control, statin therapy, smoking cessation support, and lifestyle advice if vascular aetiology is confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Targets long-term reduction of recurrent stroke risk",
+              "Requires assessment of baseline risk factors and patient engagement in chronic disease management"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone pulse therapy for 3\u20135 days followed by oral taper if MRI/CSF confirm active demyelinating disease",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids are indicated for acute multiple sclerosis relapses but not for stroke or neoplasm",
+              "Immunosuppression could worsen his pneumonia, so infection should be stabilised first",
+              "Treatment should be guided by MRI and CSF evidence of inflammatory demyelination"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days",
+                "Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of long-term disease-modifying therapy for multiple sclerosis if diagnostic criteria are met",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis and assessment of disease burden and prognostic factors",
+              "Needs discussion of options, risks, and monitoring requirements with the patient"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: right lower lobe Infiltrate.).\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

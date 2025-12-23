@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic 'crossed brainstem syndrome' characterised by ipsilateral (left-sided) cranial nerve palsies (VI, VII, IX, X, XII), left-sided Horner's syndrome, and left cerebellar signs, combined with contralateral (right-sided) hemiparesis and hemisensory loss (affecting both spinothalamic and dorsal column modalities). This clinical picture requires a lesion affecting the left cranial nerve nuclei and the adjacent long tracts (corticospinal, medial lemniscus, spinothalamic) spanning the pontine and medullary levels.\n\nlesion_locations = [\"Left Ponto-medullary Brainstem\"]"
+}

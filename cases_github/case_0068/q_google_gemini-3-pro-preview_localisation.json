@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with two distinct clinical syndromes indicating multifocal pathology. 1) A Right CN III palsy (ptosis, mydriasis, vertical gaze palsy) combined with contralateral (left-sided) hemiparesis, sensory loss, and cerebellar signs (Weber's/Benedikt's syndrome) localises to the Right Midbrain. The bilateral lower limb pyramidal signs suggest the midbrain lesion may be extensive or there is additional subclinical cord involvement, but the midbrain is the primary locus. 2) The Right Relative Afferent Pupillary Defect (RAPD) and reduced visual acuity (6/24) indicate pre-chiasmal optic nerve pathology, which cannot be explained by the midbrain lesion.\n\nlesion_locations = [\"Right Optic Nerve\", \"Right Midbrain\"]"
+}

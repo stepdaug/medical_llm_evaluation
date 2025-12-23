@@ -1,0 +1,3 @@
+{
+    "response": "Urgent neuro-imaging is required to visualise the brainstem lesion and distinguish between mass, infection, and inflammation. Imaging of the chest is crucial to characterise the lung infiltrate which is likely the primary source. Baseline bloods are needed to assess for infection, metabolic status, and operative fitness.\n\ninvestigations = [\"MRI Brain with contrast\", \"CT Chest, Abdomen and Pelvis\", \"Full blood count\", \"Urea and electrolytes\", \"Liver function tests\", \"C-reactive protein\", \"Erythrocyte sedimentation rate\", \"Blood cultures\", \"Lumbar Puncture\"]"
+}

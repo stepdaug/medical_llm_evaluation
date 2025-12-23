@@ -1,0 +1,3 @@
+{
+    "response": "The clinical presentation demonstrates two distinct sites of pathology. Firstly, right-sided visual loss with a Relative Afferent Pupillary Defect (RAPD) localises to the Right Optic Nerve. Secondly, the constellation of a Left Oculomotor (CN III) palsy (ptosis, mydriasis, ophthalmoplegia) combined with contralateral (Right) spastic hemiparesis, hemi-sensory loss, and intention tremor represents a classic crossed brainstem syndrome (Benedikt's or Weber's syndrome variant). This cluster of signs is most parsimoniously explained by a single lesion in the Left Midbrain affecting the nerve fascicle, cerebral peduncle, medial lemniscus, and red nucleus/dentatorubrothalamic fibers.\n\nlesion_locations = [\"Right Optic Nerve\", \"Left Midbrain\"]"
+}

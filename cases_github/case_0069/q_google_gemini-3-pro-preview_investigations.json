@@ -1,0 +1,3 @@
+{
+    "response": "Urgent MRI is critical to visualize the lesion and differentiate between inflammation (myelitis) and compression (abscess/mass), which dictates immediate management. Extensive blood and CSF analysis is necessary to determine the specific infectious or autoimmune cause.\n\ninvestigations = [\"MRI Cervical Spine with contrast\", \"MRI Brain\", \"Lumbar Puncture\", \"Full blood count\", \"Urea and electrolytes\", \"C-reactive protein\", \"Erythrocyte sedimentation rate\", \"Blood cultures\", \"Mycoplasma pneumoniae serology\", \"HIV serology\", \"Syphilis serology\", \"Aquaporin-4 antibodies\", \"Anti-MOG antibodies\", \"Autoimmune screen (ANA, ENA, ANCA)\", \"Vitamin B12 and Folate\", \"Chest X-ray or CT Chest\"]"
+}

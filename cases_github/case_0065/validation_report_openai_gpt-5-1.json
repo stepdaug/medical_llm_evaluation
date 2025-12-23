@@ -1,0 +1,442 @@
+{
+  "case_id": "case_0065",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 47.86,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve and right high cervical spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right high cervical myelopathy",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "high cervical spinal cord",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)",
+          "right high cervical myelopathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+) and MOGAD.\n\nOther possible differentials:\n- Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: TB, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Epilepsy, if the signs are chronic.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right cervical spinal cord extrinsic compression (e.g., meningioma, neurofibroma, cervical disc prolapse, epidural abscess) (plausible for unilateral spinal cord; but atypical for unilateral optic nerve involvement)\n- Idiopathic or post-infectious inflammatory transverse myelitis (plausible for unilateral spinal cord; but atypical for unilateral optic nerve involvement)\n- Subacute combined degeneration from vitamin B12 deficiency (atypical for strictly unilateral spinal cord and strictly unilateral optic nerve involvement)\n- Spinal cord infarction (anterior spinal artery or hemicord territory) (atypical for strictly unilateral spinal cord and unilateral optic nerve involvement)\n- Non-arteritic ischaemic optic neuropathy causing the left optic nerve findings independently of the spinal cord lesion (plausible for unilateral optic nerve; but atypical for unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis with cervical myelitis and left optic neuritis",
+          "Neuromyelitis optica spectrum disorder (AQP4-IgG\u2013associated)",
+          "Myelin oligodendrocyte glycoprotein antibody-associated disease (MOGAD)",
+          "Right cervical spinal cord extrinsic compression (e.g., meningioma, neurofibroma, cervical disc prolapse, epidural abscess)",
+          "Right cervical spinal cord intramedullary tumour (e.g., ependymoma, astrocytoma)",
+          "Idiopathic or post-infectious inflammatory transverse myelitis",
+          "Subacute combined degeneration from vitamin B12 deficiency",
+          "Spinal cord infarction (anterior spinal artery or hemicord territory)",
+          "Non-arteritic ischaemic optic neuropathy causing the left optic nerve findings independently of the spinal cord lesion"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Epilepsy": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Epilepsy"
+        ],
+        "matched_lesion_dx_keys": [
+          "MS",
+          "MOGAD",
+          "AQP4_NMOSD"
+        ],
+        "missing_lesion_dx_keys": [
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "Neurosarcoid",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Right cervical spinal cord extrinsic compression (e.g., meningioma, neurofibroma, cervical disc prolapse, epidural abscess)",
+          "Right cervical spinal cord intramedullary tumour (e.g., ependymoma, astrocytoma)",
+          "Idiopathic or post-infectious inflammatory transverse myelitis",
+          "Subacute combined degeneration from vitamin B12 deficiency",
+          "Spinal cord infarction (anterior spinal artery or hemicord territory)",
+          "Non-arteritic ischaemic optic neuropathy causing the left optic nerve findings independently of the spinal cord lesion"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 6,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 3,
+        "lesion_ddx_missed_common_count": 3,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.23076923076923078
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ACE, ANCA, HIV, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: TB, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and whole spine with gadolinium contrast, including dedicated sequences of the cervical spinal cord and optic nerves",
+          "Lumbar puncture for cerebrospinal fluid cell count, protein, glucose, oligoclonal bands, IgG index, and viral PCR where indicated",
+          "Serum aquaporin-4 (AQP4) IgG antibodies",
+          "Serum myelin oligodendrocyte glycoprotein (MOG) IgG antibodies",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Serum vitamin B12 level",
+          "Serum folate level",
+          "Serum copper and ceruloplasmin",
+          "Thyroid function tests",
+          "Serum angiotensin-converting enzyme level",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen antibody panel",
+          "Double-stranded DNA antibody",
+          "Antineutrophil cytoplasmic antibodies",
+          "HIV antibody and antigen test",
+          "Syphilis serology",
+          "Lyme disease serology",
+          "Visual evoked potentials",
+          "Optical coherence tomography of the retinal nerve fiber layer",
+          "Urine culture and sensitivity",
+          "ECG"
+        ],
+        "all_identified_ft_keys": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_Ceruloplasmin",
+          "TFT",
+          "CSF_Viral_PCR",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Blood_Cultures",
+          "CSF_General",
+          "Lyme_Serology",
+          "ECG",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Serum_Copper",
+          "OCT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "ANCA",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 4,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 12,
+        "ddx_tests_coverage_percentage": 0.8
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\nDMTs: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute, functionally significant myelopathy and optic neuropathy strongly suggest inflammatory demyelination",
+              "Early high-dose corticosteroids improve speed of recovery and may limit permanent disability in demyelinating relapses",
+              "To be commenced promptly once emergent MRI has excluded compressive cord lesions and active central nervous system infection"
+            ]
+          },
+          {
+            "treatment": "Oral prednisolone taper for 2\u20134 weeks after intravenous steroids",
+            "timing": "Delay",
+            "reasons": [
+              "Started after completion of IV methylprednisolone to prevent rebound of inflammation",
+              "Dose and duration should be individualised once a firm diagnosis is established and comorbidities reviewed"
+            ]
+          },
+          {
+            "treatment": "Neurology-led initiation of disease-modifying therapy for multiple sclerosis if confirmed (e.g., ocrelizumab, natalizumab, or other high-efficacy agent)",
+            "timing": "Delay",
+            "reasons": [
+              "Choice of agent depends on MRI lesion load, CSF findings, antibody status, and patient factors",
+              "Requires counselling, baseline infection screening, and vaccination review before commencement"
+            ]
+          },
+          {
+            "treatment": "Therapeutic plasma exchange",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for severe myelitis or optic neuritis not responding adequately to high-dose corticosteroids",
+              "Particularly indicated if neuromyelitis optica spectrum disorder or MOGAD is confirmed or strongly suspected"
+            ]
+          },
+          {
+            "treatment": "Neurosurgical decompression of the cervical spinal cord if MRI shows a surgically amenable compressive lesion",
+            "timing": "Delay",
+            "reasons": [
+              "Decompression is the definitive treatment for extradural compression such as tumour, disc prolapse, or epidural abscess",
+              "Timing and surgical approach depend entirely on imaging findings and anaesthetic assessment"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy-led neurorehabilitation",
+            "timing": "Start Now",
+            "reasons": [
+              "Right-sided weakness and sensory loss place the patient at high risk of falls and deconditioning",
+              "Early rehabilitation optimises motor recovery, balance, gait, and functional independence"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis with low-molecular-weight heparin and graduated compression stockings",
+            "timing": "Start Now",
+            "reasons": [
+              "Right leg weakness and reduced mobility significantly increase risk of deep vein thrombosis and pulmonary embolism",
+              "No current evidence of contraindications to pharmacologic thromboprophylaxis"
+            ]
+          },
+          {
+            "treatment": "Spasticity management with oral baclofen or tizanidine as required",
+            "timing": "Delay",
+            "reasons": [
+              "Spasticity may become more functionally limiting as the acute phase settles",
+              "Medications should be titrated cautiously after initial stabilisation to avoid excessive weakness or sedation"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor while receiving high-dose corticosteroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduces risk of steroid-associated gastritis and peptic ulcer disease",
+              "Patient has a history of gastro-oesophageal reflux disease, increasing susceptibility to upper gastrointestinal complications"
+            ]
+          },
+          {
+            "treatment": "Bladder and bowel management including monitoring for retention, intermittent catheterisation if required, and a regular bowel regimen",
+            "timing": "Start Now",
+            "reasons": [
+              "Cervical spinal cord lesions frequently impair sphincter function, predisposing to urinary retention, urinary tract infection, and constipation",
+              "Early structured management prevents secondary complications and improves comfort and dignity"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Acute, functionally significant myelopathy and optic neuropathy strongly suggest inflammatory demyelination",
+              "Early high-dose corticosteroids improve speed of recovery and may limit permanent disability in demyelinating relapses",
+              "To be commenced promptly once emergent MRI has excluded compressive cord lesions and active central nervous system infection"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.",
+                "Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Neurology-led initiation of disease-modifying therapy for multiple sclerosis if confirmed (e.g., ocrelizumab, natalizumab, or other high-efficacy agent)",
+            "timing": "Delay",
+            "reasons": [
+              "Choice of agent depends on MRI lesion load, CSF findings, antibody status, and patient factors",
+              "Requires counselling, baseline infection screening, and vaccination review before commencement"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Protein +, Leucocytes +).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

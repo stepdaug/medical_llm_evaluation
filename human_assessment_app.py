@@ -184,7 +184,7 @@ def get_reviewer_assignment(reviewer, completion_df):
             case_model_map[c_str] = model
 
     if reviewer in ["JV", "MH","test1","test2"]:
-        for i in range(1, 11): add_case(i)
+        # for i in range(1, 11): add_case(i)
         if reviewer == "JV" or reviewer == "test1":
             for i in range(11, 41): add_case(i)
         elif reviewer == "MH" or reviewer == "test2":
@@ -423,3 +423,4 @@ if case_number and reviewer_initials and provider:
                             st.warning(f"Auto-advance error: {e}")
 else:
     st.info("Please select your initials and a case from the sidebar to begin.")
+

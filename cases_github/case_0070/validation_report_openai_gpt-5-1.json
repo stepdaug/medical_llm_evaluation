@@ -1,0 +1,439 @@
+{
+  "case_id": "case_0070",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 37.16,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right cerebellum and left optic nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "cerebellar hemisphere",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right cerebellum",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD and Neurosarcoid.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but of low probability: Vasculitis, Susac Syndrome, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right cerebellar space-occupying lesion (e.g. low-grade glioma or metastasis) (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Ischaemic stroke of the right cerebellar hemisphere (e.g. PICA or SCA territory) (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)\n- Toxic or metabolic cerebellar degeneration (e.g. alcohol, phenytoin, gluten ataxia, vitamin B12 deficiency) (plausible for unilateral cerebellum; but atypical for strictly unilateral optic nerve involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis",
+          "Clinically isolated syndrome due to central nervous system demyelination",
+          "Neuromyelitis optica spectrum disorder",
+          "Myelin-oligodendrocyte-glycoprotein antibody-associated disease",
+          "Right cerebellar space-occupying lesion (e.g. low-grade glioma or metastasis)",
+          "Autoimmune or paraneoplastic cerebellitis",
+          "Ischaemic stroke of the right cerebellar hemisphere (e.g. PICA or SCA territory)",
+          "Toxic or metabolic cerebellar degeneration (e.g. alcohol, phenytoin, gluten ataxia, vitamin B12 deficiency)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS",
+          "MOGAD",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis"
+        ],
+        "missing_lesion_dx_keys": [
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Susac_Syndrome",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Vasculitis",
+          "Susac Syndrome",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Right cerebellar space-occupying lesion (e.g. low-grade glioma or metastasis)",
+          "Ischaemic stroke of the right cerebellar hemisphere (e.g. PICA or SCA territory)",
+          "Toxic or metabolic cerebellar degeneration (e.g. alcohol, phenytoin, gluten ataxia, vitamin B12 deficiency)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 3,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 4,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.3076923076923077
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: ANCA, lyme, CSF (flow cytometry and cytology), audiometry, fluorescein angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI brain and orbits with gadolinium contrast",
+          "MRI cervical spine with gadolinium contrast",
+          "MRI thoracic spine with gadolinium contrast",
+          "Lumbar puncture with CSF cell count and differential",
+          "Lumbar puncture with CSF protein and glucose",
+          "Lumbar puncture with CSF oligoclonal bands and IgG index",
+          "Lumbar puncture with CSF culture and viral PCR as indicated",
+          "Visual evoked potentials",
+          "Optical coherence tomography of optic nerves and maculae",
+          "Automated visual field testing (perimetry)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Thyroid function tests",
+          "Vitamin B12 level",
+          "Serum folate level",
+          "Serum vitamin D level",
+          "Serum aquaporin-4 IgG antibody",
+          "Serum MOG IgG antibody",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Anti-double-stranded DNA antibody",
+          "Serum angiotensin-converting enzyme level",
+          "Syphilis serology (treponemal and non-treponemal tests)",
+          "HIV antigen/antibody test",
+          "Hepatitis B and C serology",
+          "Coeliac serology (tissue transglutaminase IgA and total IgA)",
+          "Paraneoplastic neuronal antibody panel",
+          "CT scan of chest, abdomen and pelvis for malignancy screening (if paraneoplastic cerebellitis suspected)",
+          "Electrocardiogram (pre-steroid and general medical assessment)"
+        ],
+        "all_identified_ft_keys": [
+          "Vitamin_D",
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "TFT",
+          "Hepatitis_Screen",
+          "CSF_Viral_PCR",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "Syphilis_Serology",
+          "CSF_General",
+          "ECG",
+          "FBC",
+          "ANA",
+          "Coeliac_Serology",
+          "Chest_CT",
+          "OCT",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "Paraneoplastic_Antibodies",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ANCA",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- This could be a pseudorelapse (exacerbation of an old deficit) rather than a new acute inflammatory relapse, need further clarity in the history of presenting complaint.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Presentation is highly suggestive of an acute inflammatory demyelinating attack with significant gait and speech impairment",
+              "Therapeutic window for maximal benefit of steroids is within the first 2 weeks of symptom onset",
+              "No clinical evidence of systemic infection or sepsis on initial assessment",
+              "Standard first-line treatment for acute MS, NMOSD and MOGAD relapses while awaiting MRI and serology"
+            ]
+          },
+          {
+            "treatment": "Oral prednisolone taper over 1\u20132 weeks following IV methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Initiated after completion of IV pulse to reduce risk of rebound symptoms",
+              "Allows gradual withdrawal of corticosteroids and minimises adrenal suppression"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor prophylaxis during corticosteroid therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "High-dose steroids increase risk of peptic ulcer disease and gastrointestinal bleeding",
+              "Patient has no contraindication to PPI and will be receiving several days of systemic steroids"
+            ]
+          },
+          {
+            "treatment": "Thromboprophylaxis with low-molecular-weight heparin and graduated compression stockings while inpatient",
+            "timing": "Start Now",
+            "reasons": [
+              "Ataxic gait and reduced mobility increase risk of venous thromboembolism",
+              "High-dose steroids may further increase thrombotic risk"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy focusing on gait, balance and home safety assessment",
+            "timing": "Start Now",
+            "reasons": [
+              "Cerebellar ataxia and unstable tandem gait confer high falls risk",
+              "Early rehabilitation improves functional outcomes and independence"
+            ]
+          },
+          {
+            "treatment": "Speech and language therapy assessment and intervention",
+            "timing": "Start Now",
+            "reasons": [
+              "Slurred speech suggests cerebellar dysarthria which may impair intelligibility",
+              "Early assessment can guide communication strategies and screen for associated swallowing problems"
+            ]
+          },
+          {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis (e.g. ocrelizumab, natalizumab, fingolimod or other agent according to local protocol)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of MS diagnosis with MRI and CSF findings and exclusion of NMOSD/MOGAD",
+              "Choice of agent depends on disease activity, comorbidities, pregnancy plans and JCV serostatus",
+              "Not required emergently during the acute relapse treatment phase"
+            ]
+          },
+          {
+            "treatment": "Long-term immunosuppressive therapy for neuromyelitis optica spectrum disorder or MOG-antibody disease (e.g. rituximab, inebilizumab, satralizumab, mycophenolate mofetil)",
+            "timing": "Delay",
+            "reasons": [
+              "Only indicated if aquaporin-4 or MOG antibodies confirm alternative diagnosis to MS",
+              "Requires detailed counselling about infection risk, vaccination status and fertility considerations"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange for severe or steroid-refractory relapse",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for cases with poor response to high-dose corticosteroids or very severe visual or cerebellar deficits",
+              "Invasive procedure requiring central venous access and haemodynamic monitoring, so used selectively"
+            ]
+          },
+          {
+            "treatment": "Vitamin D supplementation if deficiency confirmed",
+            "timing": "Delay",
+            "reasons": [
+              "Low vitamin D is associated with increased MS risk and disease activity",
+              "Dosing should be tailored to measured serum vitamin D level to avoid toxicity"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Presentation is highly suggestive of an acute inflammatory demyelinating attack with significant gait and speech impairment",
+              "Therapeutic window for maximal benefit of steroids is within the first 2 weeks of symptom onset",
+              "No clinical evidence of systemic infection or sepsis on initial assessment",
+              "Standard first-line treatment for acute MS, NMOSD and MOGAD relapses while awaiting MRI and serology"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- This could be a pseudorelapse (exacerbation of an old deficit) rather than a new acute inflammatory relapse, need further clarity in the history of presenting complaint.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis (e.g. ocrelizumab, natalizumab, fingolimod or other agent according to local protocol)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of MS diagnosis with MRI and CSF findings and exclusion of NMOSD/MOGAD",
+              "Choice of agent depends on disease activity, comorbidities, pregnancy plans and JCV serostatus",
+              "Not required emergently during the acute relapse treatment phase"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "case_id": "case_0036",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 59.91,
+    "sex": "Female",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "East Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right optic nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosyphilis, Compressive Optic Neuropathy, NAION, Leber's Hereditary Optic Neuropathy, Giant Cell Arteritis and Lyme.\n\nOther possible differentials:\n- Neurosarcoid, SLE, Central Retinal Artery Occlusion, Bartonella, Retinal Detachment and Central Retinal Vein Occlusion.\n- Also feasible but of low probability: TB, Beh\u00e7et's, Lymphoma, Vasculitis and Sjogren's.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Optic Neuritis (associated with MS, NMOSD, or MOGAD)",
+          "Non-Arteritic Anterior Ischemic Optic Neuropathy (NAION)",
+          "Compressive Optic Neuropathy (e.g., Optic Nerve Sheath Meningioma)",
+          "Giant Cell Arteritis",
+          "Infectious Optic Neuropathy (Syphilis, Lyme)",
+          "Leber Hereditary Optic Neuropathy",
+          "Toxic/Nutritional Optic Neuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Optic_Neuropathy",
+          "MOGAD",
+          "Syphilis",
+          "Ischemic_Optic_Neuropathy_NAION",
+          "AQP4_NMOSD",
+          "MS",
+          "Leber_Hereditary_Optic_Neuropathy",
+          "Infection_Lyme",
+          "Giant_Cell_Arteritis"
+        ],
+        "missing_lesion_dx_keys": [
+          "CNS_Tuberculosis",
+          "Central_Retinal_Artery_Occlusion",
+          "Bartonella_Henselae",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Retinal_Detachment",
+          "CNS_Lymphoma",
+          "Central_Retinal_Vein_Occlusion",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Optic_Neuropathy_Nonspecific"
+        ],
+        "missing_common_names": [
+          "Central Retinal Artery Occlusion",
+          "Bartonella",
+          "Retinal Detachment",
+          "Central Retinal Vein Occlusion",
+          "Neurosarcoid",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Vasculitis",
+          "Sjogren's"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 22,
+        "lesion_ddx_matched_count": 9,
+        "lesion_ddx_missed_common_count": 6,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.4090909090909091
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Orbits and Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ANCA, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: anti-dsDNA, bartonella, TB, ACE, HIV, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Orbits with Gadolinium",
+          "Aquaporin-4 antibodies (NMO-IgG)",
+          "Myelin Oligodendrocyte Glycoprotein (MOG) antibodies",
+          "Erythrocyte Sedimentation Rate (ESR)",
+          "C-Reactive Protein",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "HbA1c",
+          "Syphilis serology (VDRL/TPHA)",
+          "Lyme disease serology",
+          "Autoimmune screen (ANA, ANCA)",
+          "Vitamin B12 and Folate",
+          "Optical Coherence Tomography (OCT)",
+          "Visual Field Testing (Perimetry)"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Lyme_Serology",
+          "FBC",
+          "ANA",
+          "OCT",
+          "Folate",
+          "ANCA",
+          "Serum_Immunoglobulins",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "ANCA",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 9,
+        "ddx_tests_coverage_percentage": 0.5625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "Standard acute treatment for optic neuritis to hasten visual recovery",
+              "May be vision-saving in cases of NMOSD or MOGAD while awaiting antibody results"
+            ]
+          },
+          {
+            "treatment": "Oral Prednisone taper",
+            "timing": "Delay",
+            "reasons": [
+              "To follow IV pulse therapy",
+              "Dosing regimen depends on confirmation of etiology (e.g., requires slower taper for MOGAD to prevent rebound)"
+            ]
+          },
+          {
+            "treatment": "Long-term Immunosuppression (e.g., Rituximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis of NMOSD or MOGAD via antibody testing",
+              "Not indicated for isolated idiopathic optic neuritis or NAION"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "Standard acute treatment for optic neuritis to hasten visual recovery",
+              "May be vision-saving in cases of NMOSD or MOGAD while awaiting antibody results"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Long-term Immunosuppression (e.g., Rituximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmed diagnosis of NMOSD or MOGAD via antibody testing",
+              "Not indicated for isolated idiopathic optic neuritis or NAION"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 1,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 0,
+          "reasons_coverage_percentage": 1.0
+        }
+      }
+    }
+  }
+}

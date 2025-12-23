@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with two distinct sites of pathology. Firstly, reduced visual acuity and a Relative Afferent Pupillary Defect (RAPD) on the left indicate a Left Optic Nerve lesion. Secondly, the combination of a Right Lower Motor Neuron facial palsy, Right Internuclear Ophthalmoplegia (implied by right eye adduction plegia and contralateral abducting nystagmus), Left spastic hemiparesis, and Left hemi-sensory loss indicates a single lesion in the Right Pons. This pontine lesion involves the medial longitudinal fasciculus (MLF), facial nucleus, corticospinal tract, and spinothalamic/medial lemniscus pathways.\n\nlesion_locations = [\"Left Optic Nerve\", \"Right Pons\"]"
+}

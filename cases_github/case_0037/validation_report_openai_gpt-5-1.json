@@ -1,0 +1,399 @@
+{
+  "case_id": "case_0037",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 41.32,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve and left midbrain.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nMissed Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Multiple Sclerosis and Lymphoma.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but of low probability: Leptomeningeal carcinomatosis, TB, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Left midbrain infarction (Benedikt or Claude syndrome) (plausible for unilateral brainstem; but atypical for unilateral optic nerve involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Relapsing-remitting multiple sclerosis relapse with left midbrain plaque and right optic neuritis",
+          "Neuromyelitis optica spectrum disorder",
+          "Myelin oligodendrocyte glycoprotein (MOG) antibody\u2013associated demyelinating disease",
+          "Left midbrain infarction (Benedikt or Claude syndrome)",
+          "Intrinsic left midbrain tumour (e.g., glioma or lymphoma)",
+          "Neurosarcoidosis involving optic nerve and brainstem"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Leptomeningeal_Carcinomatosis",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Leptomeningeal carcinomatosis",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Left midbrain infarction (Benedikt or Claude syndrome)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 5,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.35714285714285715
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ENA, ACE, HIV, ANCA, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, TB, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, brainstem and orbits with gadolinium",
+          "MR angiogram of intracranial vessels",
+          "MRI of cervical spine with gadolinium",
+          "Lumbar puncture with CSF cell count and differential",
+          "Lumbar puncture with CSF protein and glucose",
+          "Lumbar puncture with CSF oligoclonal bands and IgG index",
+          "Lumbar puncture with CSF viral PCR and bacterial culture",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Coagulation screen",
+          "Blood glucose",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Thyroid function tests",
+          "Serum angiotensin-converting enzyme",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Antineutrophil cytoplasmic antibodies",
+          "Aquaporin-4 IgG antibody",
+          "Myelin oligodendrocyte glycoprotein (MOG) IgG antibody",
+          "HIV serology",
+          "Syphilis serology (treponemal and non-treponemal tests)",
+          "Serum protein electrophoresis and immunofixation",
+          "Visual evoked potentials",
+          "Optical coherence tomography of optic nerves and maculae",
+          "Automated perimetry (formal visual field testing)",
+          "CT chest with contrast"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "TFT",
+          "CSF_Viral_PCR",
+          "Coagulation_Screen",
+          "MRI_Orbits",
+          "LFT",
+          "ENA_Panel",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "Serum_Protein_Electrophoresis",
+          "OCT",
+          "Cerebral_Angiography",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "Chest_XRay",
+          "ANCA",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "ANA",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.6666666666666666
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Clinical picture strongly suggests an acute inflammatory demyelinating relapse affecting brainstem and optic nerve",
+              "High-dose IV corticosteroids shorten duration and severity of relapses in multiple sclerosis and related demyelinating diseases",
+              "No current evidence of sepsis or raised intracranial pressure on initial assessment"
+            ]
+          },
+          {
+            "treatment": "Oral prednisolone taper over 1\u20132 weeks following IV steroids",
+            "timing": "Delay",
+            "reasons": [
+              "Commence once IV methylprednisolone course is completed",
+              "Helps prevent rebound deterioration after abrupt cessation of high-dose steroids"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange (five to seven exchanges over 10\u201314 days)",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for cases with severe persistent deficit or poor response to IV steroids",
+              "Particularly indicated if neuromyelitis optica spectrum disorder or MOG-antibody disease is confirmed"
+            ]
+          },
+          {
+            "treatment": "Initiation or escalation of high-efficacy disease-modifying therapy for multiple sclerosis",
+            "timing": "Delay",
+            "reasons": [
+              "A further disabling relapse despite existing therapy suggests need for optimisation of long-term treatment",
+              "Choice of agent depends on MRI lesion burden, prior treatments and screening for infections and contraindications",
+              "Best started after acute relapse has stabilised and alternative diagnoses have been excluded"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy focused on gait, balance and upper-limb function",
+            "timing": "Start Now",
+            "reasons": [
+              "Right hemiparesis, spasticity and ataxia significantly impair mobility and activities of daily living",
+              "Early rehabilitation reduces risk of falls, deconditioning and contractures and promotes neuroplastic recovery"
+            ]
+          },
+          {
+            "treatment": "Oral baclofen (or alternative antispasticity agent) titrated to effect",
+            "timing": "Start Now",
+            "reasons": [
+              "Right-sided spasticity with clonus is functionally limiting and painful for many patients",
+              "Reducing tone improves comfort and facilitates physiotherapy, while monitoring for excessive weakness"
+            ]
+          },
+          {
+            "treatment": "Pharmacologic and mechanical venous thromboembolism prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Hemiparesis and reduced mobility markedly increase risk of deep-vein thrombosis and pulmonary embolism",
+              "Low-molecular-weight heparin and compression stockings are standard prophylaxis in immobilised neurological patients unless contraindicated"
+            ]
+          },
+          {
+            "treatment": "Neuro-ophthalmology referral for visual rehabilitation and management of diplopia and ptosis",
+            "timing": "Delay",
+            "reasons": [
+              "Detailed assessment and interventions such as prisms, occlusion therapy or surgical correction are best planned once the acute inflammatory phase has stabilised",
+              "Supports long-term visual function and quality of life if residual third-nerve or optic nerve deficits persist"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous methylprednisolone 1 g daily for 3\u20135 days",
+            "timing": "Start Now",
+            "reasons": [
+              "Clinical picture strongly suggests an acute inflammatory demyelinating relapse affecting brainstem and optic nerve",
+              "High-dose IV corticosteroids shorten duration and severity of relapses in multiple sclerosis and related demyelinating diseases",
+              "No current evidence of sepsis or raised intracranial pressure on initial assessment"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 112)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation or escalation of high-efficacy disease-modifying therapy for multiple sclerosis",
+            "timing": "Delay",
+            "reasons": [
+              "A further disabling relapse despite existing therapy suggests need for optimisation of long-term treatment",
+              "Choice of agent depends on MRI lesion burden, prior treatments and screening for infections and contraindications",
+              "Best started after acute relapse has stabilised and alternative diagnoses have been excluded"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 112)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a 'crossed' brainstem syndrome characterized by ipsilateral cranial nerve signs and contralateral long tract signs. Specifically, there is a Right CN III palsy (ptosis, mydriasis, depression/adduction/elevation weakness) combined with Left hemiparesis (corticospinal tract), Left hemi-sensory loss (medial lemniscus/spinothalamic), and Left cerebellar signs (rubrospinal/dentatothalamic involvement). This combination of a third nerve palsy with contralateral motor, sensory, and extrapyramidal signs indicates a lesion affecting the ventral and tegmental midbrain (encompassing features of Weber's, Benedikt's, and Claude's syndromes).\n\nlesion_locations = [\"Right Midbrain\"]"
+}

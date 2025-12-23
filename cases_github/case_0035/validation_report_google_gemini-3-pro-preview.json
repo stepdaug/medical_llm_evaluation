@@ -1,0 +1,319 @@
+{
+  "case_id": "case_0035",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 40.93,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left pons.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left pons"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Pons",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left pons"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), Neurosarcoid, Listeria, Brainstem Tumour (Primary or Metastatic) and Brainstem Infarct / Vertebral Artery Dissection.\n\nOther possible differentials:\n- MOGAD, SLE, Neurosyphilis, Intracerebral Haemorrhage and Cavernous Malformation.\n- Also feasible but of low probability: TB, Beh\u00e7et's, Lyme, Leptomeningeal carcinomatosis, Vasculitis, Lymphoma and Brainstem Abscess.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Gastrooesophageal reflux disease (GORD), if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Glioma",
+          "Multiple Sclerosis (Demyelination)",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "Subacute Pontine Ischaemic Stroke",
+          "Rhombencephalitis (Listeria, HSV)",
+          "Neurosarcoidosis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Gastrooesophageal reflux disease (GORD)": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Gastrooesophageal reflux disease (GORD)"
+        ],
+        "matched_lesion_dx_keys": [
+          "Listeria_Rhombencephalitis",
+          "Brainstem_Tumour",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Brain_Infarct_Brainstem"
+        ],
+        "missing_lesion_dx_keys": [
+          "Brain_Haemorrhage",
+          "CNS_Tuberculosis",
+          "Cavernous_Malformation",
+          "Behcet_Disease",
+          "Infection_Lyme",
+          "Leptomeningeal_Carcinomatosis",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Brain_Abscess_Brainstem"
+        ],
+        "missing_common_names": [
+          "Intracerebral Haemorrhage",
+          "Cavernous Malformation",
+          "Neurosyphilis",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Beh\u00e7et's",
+          "Lyme",
+          "Leptomeningeal carcinomatosis",
+          "Vasculitis",
+          "Lymphoma",
+          "Brainstem Abscess"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 18,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.3333333333333333
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ANCA, anti-AQP4, ESR.\n- Could also consider testing: anti-dsDNA, TB, ACE, HIV, syphilis, lyme, CSF (flow cytometry, PCR for Listeria and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain with contrast",
+          "MRI Angiogram of intracranial vessels",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "HbA1c",
+          "Anti-AQP4 antibodies",
+          "Anti-MOG antibodies",
+          "Autoimmune screen (ANA, ANCA)",
+          "Lumbar puncture for CSF analysis"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "AQP4_Antibodies",
+          "Cerebral_Angiography",
+          "ENA_Panel",
+          "LFT",
+          "ANCA",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "MRI_Brain",
+          "ESR",
+          "CSF_General"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "ANCA",
+          "AQP4_Antibodies",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.5,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.4375
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Inpatient Admission to Neurology",
+            "timing": "Start Now",
+            "reasons": [
+              "Progressive neurological deficit requiring close monitoring",
+              "Risk of airway compromise or decreased GCS",
+              "Need for expedited inpatient MRI"
+            ]
+          },
+          {
+            "treatment": "IV Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI and infection screen results",
+              "Contraindicated if the cause is infectious (e.g., Listeria)"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet Therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Must exclude haemorrhagic stroke on imaging",
+              "Diagnosis of ischaemic stroke is not yet confirmed"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "IV Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI and infection screen results",
+              "Contraindicated if the cause is infectious (e.g., Listeria)"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

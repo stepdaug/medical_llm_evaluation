@@ -1,0 +1,3 @@
+{
+    "response": "The patient demonstrates a classical Brown-S\u00e9quard syndrome: right-sided upper motor neuron signs (spasticity, hyperreflexia, pyramidal weakness) and proprioceptive loss, with contralateral (left-sided) spinothalamic loss (pain/temperature). This strictly localises to a right hemicord lesion in the cervical spinal cord (given upper limb involvement). Additionally, the left oculomotor nerve palsy (mydriasis, ptosis, ophthalmoplegia) and downbeat nystagmus indicate separate or extensive pathology involving the left midbrain/subarachnoid space and the vestibulocerebellum/craniocervical junction.\n\nlesion_locations = [\"Right Cervical Spinal Cord\", \"Left Oculomotor Nerve\", \"Vestibulocerebellum\"]"
+}

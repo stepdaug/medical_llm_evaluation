@@ -1,0 +1,353 @@
+{
+  "case_id": "case_0034",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 38.09,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right midbrain.\n  \nAdditional signs indicate lesion possibly also involving:\n- left T10 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T10 myelopathy",
+          "right midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Midbrain",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left T10 myelopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Lymphoma and Beh\u00e7et's.\n\nOther possible differentials:\n- SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, TB, Vasculitis, Sjogren's and ADEM.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Glioma (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Brainstem Cavernoma (with recent haemorrhage) (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "MOG Antibody Disease",
+          "Brainstem Glioma",
+          "Neurosarcoidosis",
+          "CNS Lymphoma",
+          "Brainstem Cavernoma (with recent haemorrhage)",
+          "Behcet's Disease"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM"
+        ],
+        "additional_diagnoses": [
+          "Brainstem Glioma",
+          "Brainstem Cavernoma (with recent haemorrhage)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 2,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.46153846153846156
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: more extensive MRI spinal imaging to include Thoracic Spine.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, syphilis, ESR, CSF (cytology).\n- Could also consider testing: anti-dsDNA, TB, ENA, ACE, HIV, ANCA, lyme, CSF (flow cytometry).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Cervical Spine with contrast",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-Reactive Protein",
+          "Erythrocyte Sedimentation Rate",
+          "Serum Glucose",
+          "Anti-Nuclear Antibody (ANA)",
+          "Anti-Aquaporin-4 Antibodies",
+          "Anti-MOG Antibodies",
+          "Treponemal serology",
+          "Vitamin B12 and Folate",
+          "Lumbar Puncture (Opening pressure, MCS, protein, glucose, oligoclonal bands, cytology)",
+          "Chest X-ray"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "LFT",
+          "CSF_Opening_Pressure",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "CSF_Cytology",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.75,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.4666666666666667
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce inflammation and accelerate recovery given high suspicion of demyelinating/inflammatory etiology",
+              "Should be initiated promptly once active infection is ruled out or deemed unlikely"
+            ]
+          },
+          {
+            "treatment": "Proton Pump Inhibitor (e.g., Omeprazole)",
+            "timing": "Start Now",
+            "reasons": [
+              "Gastric protection is mandatory during high-dose steroid therapy",
+              "Patient has a specific history of Gastritis"
+            ]
+          },
+          {
+            "treatment": "Low Molecular Weight Heparin",
+            "timing": "Start Now",
+            "reasons": [
+              "Deep vein thrombosis prophylaxis is required due to reduced mobility from hemiparesis and ataxia"
+            ]
+          },
+          {
+            "treatment": "Occlusive Eye Patch",
+            "timing": "Start Now",
+            "reasons": [
+              "Symptomatic relief for intractable diplopia caused by the third nerve palsy"
+            ]
+          },
+          {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab/Rituximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis (e.g., confirmation of MS vs NMO) via MRI and antibody results before selection"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To reduce inflammation and accelerate recovery given high suspicion of demyelinating/inflammatory etiology",
+              "Should be initiated promptly once active infection is ruled out or deemed unlikely"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab/Rituximab)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis (e.g., confirmation of MS vs NMO) via MRI and antibody results before selection"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "case_id": "case_0039",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 41.52,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right high cervical spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right high cervical myelopathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "High Cervical Spinal Cord",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right high cervical myelopathy"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), Neurosarcoid, Neurosyphilis, Disc Herniation and Spinal Tumour.\n\nOther possible differentials:\n- MOGAD, Spinal Vascular Malformation and Spinal spondylosis / stenosis.\n- Also feasible but of low probability: Spinal cord trauma, Epidural Haematoma, Spinal Abscess and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Spinal Cord Infarction (atypical for strictly unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Acute Transverse Myelitis (Demyelinating - MS, NMO, MOG)",
+          "Compressive Myelopathy (Cervical Disc Herniation)",
+          "Intramedullary or Extramedullary Spinal Tumor",
+          "Infectious Myelitis (Varicella Zoster, Lyme, Syphilis, HIV)",
+          "Spinal Cord Infarction",
+          "Neurosarcoidosis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Myelopathy_Disc",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Compressive_Myelopathy_Tumour"
+        ],
+        "missing_lesion_dx_keys": [
+          "Traumatic_Spinal_Cord_Injury",
+          "Spinal_Vascular_Malformation",
+          "Compressive_Myelopathy_Spondylosis",
+          "Compressive_Myelopathy_Haematoma",
+          "Compressive_Myelopathy_Abscess",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Transverse_Myelitis_Idiopathic"
+        ],
+        "missing_common_names": [
+          "Spinal Vascular Malformation",
+          "Spinal spondylosis / stenosis",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Spinal cord trauma",
+          "Epidural Haematoma",
+          "Spinal Abscess",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Spinal Cord Infarction"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 3,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.42857142857142855
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: ACE, CSF (flow cytometry and cytology), spinal angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Cervical Spine with contrast",
+          "MRI Brain",
+          "Bedside Spirometry (Forced Vital Capacity)",
+          "Lumbar Puncture (CSF microscopy, culture, protein, glucose, oligoclonal bands)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Aquaporin-4 antibodies",
+          "Anti-MOG antibodies",
+          "Vitamin B12 and Folate",
+          "HIV serology",
+          "Syphilis serology",
+          "Autoimmune screen (ANA, ENA)"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "Bedside_Spirometry",
+          "ENA_Panel",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "HIV_Test",
+          "ANCA",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "Spinal_Angiography",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Serum_ACE",
+          "Spinal_Angiography",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 10,
+        "ddx_tests_found_count": 6,
+        "ddx_tests_coverage_percentage": 0.6
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- This could be a pseudorelapse (exacerbation of an old deficit) rather than a new acute inflammatory relapse, need further clarity in the history of presenting complaint.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Respiratory Support / Monitoring",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient reports severe difficulty breathing",
+              "High cervical lesion risks phrenic nerve (diaphragm) paralysis"
+            ]
+          },
+          {
+            "treatment": "Intravenous Methylprednisolone (High Dose)",
+            "timing": "Start Now",
+            "reasons": [
+              "First-line empiric treatment for suspected acute inflammatory myelitis",
+              "To reduce inflammation and cord edema pending definitive diagnosis"
+            ]
+          },
+          {
+            "treatment": "Neurosurgical Decompression",
+            "timing": "Delay",
+            "reasons": [
+              "Await MRI results to confirm if a structural compressive lesion is present"
+            ]
+          },
+          {
+            "treatment": "Plasma Exchange (PLEX)",
+            "timing": "Delay",
+            "reasons": [
+              "Consider second-line if poor response to steroids or if NMO/severe attack confirmed"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone (High Dose)",
+            "timing": "Start Now",
+            "reasons": [
+              "First-line empiric treatment for suspected acute inflammatory myelitis",
+              "To reduce inflammation and cord edema pending definitive diagnosis"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "No indication this isn't an exacerbation of an old deficit/pseudorelapse.",
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- This could be a pseudorelapse (exacerbation of an old deficit) rather than a new acute inflammatory relapse, need further clarity in the history of presenting complaint.\n\n- Safety screen for contraindications like active infection is required before immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

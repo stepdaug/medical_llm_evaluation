@@ -1,0 +1,340 @@
+{
+  "case_id": "case_0038",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 58.31,
+    "sex": "Female",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nSigns are better explained by:\n- left midbrain lesion\n\nThan the suggested:\n- right Cervical Spinal Cord, left Oculomotor Nerve and Vestibulocerebellum.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Cervical Spinal Cord",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Oculomotor Nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Vestibulocerebellum",
+            "side": null,
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left midbrain"
+        ],
+        "additional_lesions_in_ft": [
+          "right Cervical Spinal Cord",
+          "left Oculomotor Nerve",
+          "Vestibulocerebellum"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 3,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 1.0,
+        "proportion_additional": 3.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Neurosarcoid, Leptomeningeal carcinomatosis, TB, Listeria and Lymphoma.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, SLE, Neurosyphilis, Intracerebral Haemorrhage, Cavernous Malformation, Brainstem Tumour (Primary or Metastatic) and Brainstem Infarct / Vertebral Artery Dissection.\n- Also feasible but of low probability: Beh\u00e7et's, Lyme, Vasculitis and Brainstem Abscess.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Migraine, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Neurosarcoidosis",
+          "Multiple Sclerosis",
+          "Tuberculous Meningitis",
+          "Leptomeningeal Carcinomatosis",
+          "CNS Lymphoma",
+          "Brainstem Encephalitis (e.g., Listeria)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Migraine": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Migraine"
+        ],
+        "matched_lesion_dx_keys": [
+          "Leptomeningeal_Carcinomatosis",
+          "CNS_Tuberculosis",
+          "Listeria_Rhombencephalitis",
+          "Neurosarcoidosis",
+          "MS",
+          "CNS_Lymphoma"
+        ],
+        "missing_lesion_dx_keys": [
+          "Brain_Haemorrhage",
+          "Cavernous_Malformation",
+          "Behcet_Disease",
+          "Infection_Lyme",
+          "Syphilis",
+          "Brainstem_Tumour",
+          "AQP4_NMOSD",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_SLE",
+          "Brain_Infarct_Brainstem",
+          "MOGAD",
+          "Brain_Abscess_Brainstem"
+        ],
+        "missing_common_names": [
+          "Intracerebral Haemorrhage",
+          "Cavernous Malformation",
+          "Neurosyphilis",
+          "Brainstem Tumour (Primary or Metastatic)",
+          "NMOSD (AQP4+)",
+          "SLE",
+          "Brainstem Infarct / Vertebral Artery Dissection",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Beh\u00e7et's",
+          "Lyme",
+          "Vasculitis",
+          "Brainstem Abscess"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 18,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 8,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.3333333333333333
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ENA, ACE, ANCA, ESR, CSF (cytology).\n- Could also consider testing: anti-dsDNA, TB, HIV, syphilis, lyme, CSF (flow cytometry and PCR for Listeria).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Whole Spine with contrast",
+          "CT Chest, Abdomen and Pelvis",
+          "Lumbar Puncture (CSF microscopy, culture, cytology, ACE, oligoclonal bands)",
+          "Serum ACE",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Autoimmune screen (ANA, ANCA)",
+          "Serum NMO/MOG antibodies",
+          "ECG"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "ENA_Panel",
+          "LFT",
+          "Serum_ACE",
+          "CSF_Oligoclonal_Bands",
+          "ECG",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "Chest_CT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "MRI_Thoracic_Spine",
+          "ANCA",
+          "CSF_Cytology",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "CSF_Cytology",
+          "ANCA",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "HIV_Test",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 9,
+        "ddx_tests_coverage_percentage": 0.5625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a recent or older issue.\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await CSF analysis and imaging to exclude active infection (e.g., TB meningitis)",
+              "Risk of exacerbating an infective process"
+            ]
+          },
+          {
+            "treatment": "Analgesia",
+            "timing": "Start Now",
+            "reasons": [
+              "To provide symptomatic relief for the presenting headache"
+            ]
+          },
+          {
+            "treatment": "DVT Prophylaxis (LMWH)",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has reduced mobility due to hemiparesis",
+              "Hospital admission increases thrombotic risk"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await CSF analysis and imaging to exclude active infection (e.g., TB meningitis)",
+              "Risk of exacerbating an infective process"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a recent or older issue."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.",
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a recent or older issue."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 2,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.6666666666666666
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

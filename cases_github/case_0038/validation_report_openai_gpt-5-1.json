@@ -1,0 +1,378 @@
+{
+  "case_id": "case_0038",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 58.31,
+    "sex": "Female",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left midbrain.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Metastatic Disease, Intracerebral Haemorrhage, Brainstem Tumour (Primary or Metastatic), Vasculitis, Cavernous Malformation and Brainstem Infarct / Vertebral Artery Dissection.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Neurosyphilis and Listeria.\n- Also feasible but of low probability: TB, Beh\u00e7et's, Lyme, Leptomeningeal carcinomatosis, Lymphoma and Brainstem Abscess.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Migraine, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Left midbrain ischaemic stroke (Benedikt/Weber-type brainstem syndrome)",
+          "Left midbrain haemorrhage or cavernous malformation",
+          "Demyelinating brainstem lesion (e.g., multiple sclerosis)",
+          "Intrinsic brainstem tumour (e.g., midbrain glioma) or metastatic lesion",
+          "Complicated migraine with brainstem aura"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Migraine": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Migraine"
+        ],
+        "matched_lesion_dx_keys": [
+          "Metastatic_General",
+          "Brain_Haemorrhage",
+          "Brainstem_Tumour",
+          "CNS_Vasculitis",
+          "Cavernous_Malformation",
+          "MS",
+          "Brain_Infarct_Brainstem"
+        ],
+        "missing_lesion_dx_keys": [
+          "CNS_Tuberculosis",
+          "Behcet_Disease",
+          "Infection_Lyme",
+          "Leptomeningeal_Carcinomatosis",
+          "Syphilis",
+          "Listeria_Rhombencephalitis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Brain_Abscess_Brainstem"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "Listeria",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Beh\u00e7et's",
+          "Lyme",
+          "Leptomeningeal carcinomatosis",
+          "Lymphoma",
+          "Brainstem Abscess"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 19,
+        "lesion_ddx_matched_count": 7,
+        "lesion_ddx_missed_common_count": 6,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.3684210526315789
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ANCA, ESR, CRP, ANA.\n- Could also consider testing: anti-dsDNA, anti-MOG, TB, ENA, ACE, HIV, anti-AQP4, syphilis, lyme, CSF (flow cytometry, PCR for Listeria and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI brain with diffusion-weighted imaging and MR angiography of intracranial vessels",
+          "Non-contrast CT brain",
+          "CT angiogram of head and neck",
+          "MRI of cervical spine and craniocervical junction",
+          "ECG",
+          "Continuous cardiac telemetry",
+          "Transthoracic echocardiogram",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Blood glucose",
+          "Coagulation screen",
+          "Lipid profile",
+          "HbA1c",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Thyroid function tests",
+          "Antinuclear antibody",
+          "Antineutrophil cytoplasmic antibody",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands, and microbiology (after imaging excludes mass effect and acute haemorrhage)"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "CRP",
+          "TFT",
+          "Coagulation_Screen",
+          "LFT",
+          "Vitamin_B12",
+          "ECG",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "CSF_Oligoclonal_Bands",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "Cerebral_Angiography",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "ANCA",
+          "MRA_Head_Neck",
+          "MRI_Brain",
+          "ESR",
+          "Cardiac_Telemetry",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ANCA",
+          "ESR",
+          "CRP",
+          "ANA"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 4,
+        "ddx_tests_coverage_percentage": 0.25
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Timing of current symptoms not specified, so no indication whether this is a recent or older issue.\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Admission to hyperacute stroke unit with airway, breathing and circulation optimisation and frequent neurological observations",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem strokes carry high risk of rapid deterioration and respiratory compromise",
+              "Close monitoring allows prompt treatment of complications such as raised intracranial pressure, aspiration, and arrhythmias"
+            ]
+          },
+          {
+            "treatment": "Intravenous thrombolysis with alteplase for ischaemic stroke",
+            "timing": "Start Now",
+            "reasons": [
+              "Strong suspicion of acute ischaemic midbrain stroke within potential treatment window",
+              "Should be administered as soon as imaging confirms ischaemia and excludes haemorrhage and there are no contraindications",
+              "Timely reperfusion is critical to limit irreversible brainstem damage and disability"
+            ]
+          },
+          {
+            "treatment": "Mechanical thrombectomy for basilar or proximal posterior cerebral artery occlusion",
+            "timing": "Start Now",
+            "reasons": [
+              "Indicated if CT/MR angiography demonstrates a treatable large-vessel occlusion in the posterior circulation",
+              "Endovascular therapy improves outcome in appropriately selected patients even beyond the standard thrombolysis window"
+            ]
+          },
+          {
+            "treatment": "Aspirin 300 mg orally or via nasogastric tube followed by 75 mg daily",
+            "timing": "Delay",
+            "reasons": [
+              "Antiplatelet therapy is indicated for secondary prevention after ischaemic stroke",
+              "Must be delayed until brain imaging has excluded intracranial haemorrhage",
+              "If thrombolysis is given, aspirin should start 24 hours later after repeat imaging to reduce risk of haemorrhagic transformation"
+            ]
+          },
+          {
+            "treatment": "High-intensity statin therapy (e.g., atorvastatin 80 mg nightly)",
+            "timing": "Delay",
+            "reasons": [
+              "Reduces risk of recurrent ischaemic stroke and other vascular events",
+              "Typically initiated within the first 24 hours once swallowing is assessed and liver function is known"
+            ]
+          },
+          {
+            "treatment": "Early multidisciplinary neurorehabilitation (physiotherapy, occupational therapy, and speech and language therapy)",
+            "timing": "Delay",
+            "reasons": [
+              "Should begin as soon as the patient is haemodynamically stable and acute interventions are completed",
+              "Essential to maximise recovery from right-sided weakness and ataxia and to prevent complications of immobility"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for cases where imaging and CSF studies demonstrate a demyelinating brainstem lesion rather than vascular stroke",
+              "Steroids before diagnostic clarification could worsen outcomes in haemorrhagic or ischaemic stroke"
+            ]
+          },
+          {
+            "treatment": "Analgesia and antiemetics for headache and photophobia (e.g., paracetamol and ondansetron)",
+            "timing": "Start Now",
+            "reasons": [
+              "Provides symptomatic relief of severe headache and associated nausea",
+              "Agents chosen to avoid excessive sedation or blood pressure lowering that could compromise cerebral perfusion"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for cases where imaging and CSF studies demonstrate a demyelinating brainstem lesion rather than vascular stroke",
+              "Steroids before diagnostic clarification could worsen outcomes in haemorrhagic or ischaemic stroke"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a recent or older issue."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.",
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Timing of current symptoms not specified, so no indication whether this is a recent or older issue."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (Urine: Leucocytes ++, Blood +).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

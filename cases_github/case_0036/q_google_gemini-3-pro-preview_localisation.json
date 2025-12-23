@@ -1,0 +1,3 @@
+{
+    "response": "The clinical presentation is dominated by unilateral visual loss (Right visual acuity 6/24) combined with a Right Relative Afferent Pupillary Defect (RAPD). The presence of an RAPD confirms a lesion in the anterior visual pathway, specifically anterior to the optic chiasm on the right side. The normal fundoscopy (implied by lack of specific note, though not explicitly detailed, no other CNS signs) and intact extraocular movements exclude orbital fissure or cavernous sinus syndromes. The remaining examination (motor, sensory, coordination, cognition) is normal, isolating the pathology to the optic nerve itself.\n\nlesion_locations = [\"right optic nerve\"]"
+}

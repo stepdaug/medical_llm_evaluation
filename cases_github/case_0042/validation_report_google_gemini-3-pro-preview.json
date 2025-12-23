@@ -1,0 +1,341 @@
+{
+  "case_id": "case_0042",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 28.07,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nSome more precision is possible than: 'left Thoracic Spinal Cord'.  \nNamely, in the region of: left T2 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T2 myelopathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Thoracic Spinal Cord",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [
+          [
+            "left Thoracic Spinal Cord",
+            [
+              "left T2 myelopathy"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 1.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Disc Herniation and Spinal Tumour.\n\nOther possible differentials:\n- Neurosyphilis and Spinal Vascular Malformation.\n- Also feasible but of low probability: Spinal cord trauma, Epidural Haematoma, Spinal Abscess and Lymphoma.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Inflammatory Arthritis or Ankylosing Spondylitis, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis (Transverse Myelitis)",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "MOG-Antibody Associated Disease",
+          "Spinal Cord Tumor (e.g., Ependymoma, Meningioma)",
+          "Idiopathic Transverse Myelitis",
+          "Thoracic Disc Herniation",
+          "Sarcoidosis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Ankylosing Spondylitis": "incidental_cause",
+          "Inflammatory Arthritis": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Ankylosing Spondylitis",
+          "Inflammatory Arthritis"
+        ],
+        "matched_lesion_dx_keys": [
+          "Compressive_Myelopathy_Disc",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Compressive_Myelopathy_Tumour",
+          "MOGAD",
+          "Transverse_Myelitis_Idiopathic"
+        ],
+        "missing_lesion_dx_keys": [
+          "Syphilis",
+          "Traumatic_Spinal_Cord_Injury",
+          "Spinal_Vascular_Malformation",
+          "Compressive_Myelopathy_Haematoma",
+          "Compressive_Myelopathy_Abscess",
+          "CNS_Lymphoma"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "Spinal Vascular Malformation"
+        ],
+        "missing_low_prob_names": [
+          "Spinal cord trauma",
+          "Epidural Haematoma",
+          "Spinal Abscess",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 3,
+        "gt_matched_count": 1,
+        "gt_missed_count": 2,
+        "gt_coverage_percentage": 0.3333333333333333,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 2,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 7,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.5384615384615384
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: ACE, CSF (flow cytometry and cytology), spinal angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Whole Spine with contrast",
+          "MRI Brain with contrast",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Vitamin B12 and Folate",
+          "Serum Aquaporin-4 antibodies",
+          "Serum MOG antibodies",
+          "ANA and ENA screen",
+          "HIV serology",
+          "Syphilis serology",
+          "Lumbar Puncture (CSF analysis for oligoclonal bands, protein, glucose, cell count, culture)"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "Spinal_Angiography",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Serum_ACE",
+          "Spinal_Angiography",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 4,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 10,
+        "ddx_tests_found_count": 6,
+        "ddx_tests_coverage_percentage": 0.6
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Hospital Admission",
+            "timing": "Start Now",
+            "reasons": [
+              "Severe functional deficit",
+              "Risk of progression",
+              "Need for expedited workup"
+            ]
+          },
+          {
+            "treatment": "High-dose IV Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI to rule out infectious causes (e.g., epidural abscess) or lymphoma",
+              "Indicated once demyelinating/inflammatory etiology is confirmed"
+            ]
+          },
+          {
+            "treatment": "Prophylactic Low Molecular Weight Heparin",
+            "timing": "Start Now",
+            "reasons": [
+              "High risk of venous thromboembolism due to lower limb paralysis and immobility"
+            ]
+          },
+          {
+            "treatment": "Analgesia",
+            "timing": "Start Now",
+            "reasons": [
+              "Symptomatic relief for reported back pain"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose IV Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI to rule out infectious causes (e.g., epidural abscess) or lymphoma",
+              "Indicated once demyelinating/inflammatory etiology is confirmed"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.",
+                "Symptoms started more than 14 days ago."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 4,
+          "reasons_acknowledged": 2,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 4,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 4,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "response": "An acute exacerbation of the patient's known Multiple Sclerosis is the primary differential given the multifocal CNS signs. However, the significantly elevated CRP (112) and chronic cough with a history of renal stones raises strong suspicion for Neurosarcoidosis (which can mimic MS and cause cranial neuropathies, hypercalcaemia/stones, and pulmonary issues) or a systemic infection triggering a relapse.\n\ndifferential_diagnosis = [\"Multiple Sclerosis Relapse\", \"Neurosarcoidosis\", \"CNS Infection (e.g., Listeria Rhombencephalitis, Tuberculosis)\", \"Neuromyelitis Optica Spectrum Disorder (NMOSD)\", \"Neuro-Behcet's Disease\", \"CNS Vasculitis\"]"
+}

@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic Brown-S\u00e9quard syndrome: ipsilateral (right-sided) upper motor neuron weakness (spasticity, hyperreflexia, upgoing plantar) and dorsal column sensory loss (proprioception/vibration), combined with contralateral (left-sided) spinothalamic sensory loss (pain/temperature). The presence of severe respiratory difficulty implicates the phrenic nerve nuclei or descending respiratory pathways (C3-C5). The right upper limb hypotonia suggests lower motor neuron involvement at the level of the lesion, while the lower limb spasticity indicates descending tract involvement below the lesion.\n\nlesion_locations = [\"Right High Cervical Spinal Cord\"]"
+}

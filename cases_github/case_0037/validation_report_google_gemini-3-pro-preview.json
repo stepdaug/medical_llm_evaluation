@@ -1,0 +1,344 @@
+{
+  "case_id": "case_0037",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 41.32,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve and left midbrain.\n  \nThe suggested lesions right Brainstem and Cervicomedullary Junction not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Midbrain",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Brainstem",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Cervicomedullary Junction",
+            "side": null,
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)",
+          "left midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "right Brainstem",
+          "Cervicomedullary Junction"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 2,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 1.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nMissed Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), Neurosarcoid, TB, Vasculitis, Multiple Sclerosis and Beh\u00e7et's.\n\nOther possible differentials:\n- MOGAD, SLE and Neurosyphilis.\n- Also feasible but of low probability: Leptomeningeal carcinomatosis, Sjogren's, ADEM, Lymphoma and Lyme.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis Relapse",
+          "Neurosarcoidosis",
+          "CNS Infection (e.g., Listeria Rhombencephalitis, Tuberculosis)",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "Neuro-Behcet's Disease",
+          "CNS Vasculitis"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "CNS_Tuberculosis",
+          "CNS_Vasculitis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Behcet_Disease"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "Leptomeningeal_Carcinomatosis",
+          "Syphilis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "MOGAD",
+          "Neurosyphilis",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Leptomeningeal carcinomatosis",
+          "Sjogren's",
+          "ADEM",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 3,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.42857142857142855
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, ACE, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, ANA, TB, ENA, ANCA, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Spinal Cord with contrast",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Serum Calcium and Bone Profile",
+          "Serum ACE",
+          "Blood cultures",
+          "Lumbar Puncture (CSF microscopy, culture, oligoclonal bands, ACE)",
+          "AQP4 and MOG antibodies",
+          "CT Chest",
+          "HIV serology",
+          "Syphilis serology"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "LFT",
+          "Serum_ACE",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Blood_Cultures",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "MRI_Whole_Spine",
+          "Chest_CT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "MRI_Thoracic_Spine",
+          "Bone_Profile",
+          "HIV_Test",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "ANA",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "TB_Screen",
+          "ENA_Panel",
+          "ANCA",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.4666666666666667
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "First-line treatment for acute MS relapse to hasten recovery",
+              "Effective treatment for potential Neurosarcoidosis",
+              "Patient is afebrile with normal WCC, reducing likelihood of septic contraindication"
+            ]
+          },
+          {
+            "treatment": "Gastroprotection (PPI)",
+            "timing": "Start Now",
+            "reasons": [
+              "Prophylaxis against corticosteroid-induced gastric irritation"
+            ]
+          },
+          {
+            "treatment": "Antibiotics",
+            "timing": "Delay",
+            "reasons": [
+              "Withhold unless septic screen (blood/CSF) identifies a bacterial source",
+              "High CRP is likely inflammatory (Sarcoid/MS) given normal WCC and temperature"
+            ]
+          },
+          {
+            "treatment": "Disease Modifying Therapy Escalation",
+            "timing": "Delay",
+            "reasons": [
+              "Long-term prevention strategy to be assessed after acute stabilization and confirmation of aetiology"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "First-line treatment for acute MS relapse to hasten recovery",
+              "Effective treatment for potential Neurosarcoidosis",
+              "Patient is afebrile with normal WCC, reducing likelihood of septic contraindication"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 112)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease Modifying Therapy Escalation",
+            "timing": "Delay",
+            "reasons": [
+              "Long-term prevention strategy to be assessed after acute stabilization and confirmation of aetiology"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 112)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 112).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

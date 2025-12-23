@@ -1,0 +1,3 @@
+{
+    "response": "MRI is the gold standard to confirm demyelination and identify lesions. Lumbar puncture is required for oligoclonal bands (MS) and to rule out infection. Blood tests are necessary to exclude mimics (NMO, Sarcoidosis, Vasculitis) and assess the active respiratory issue.\n\ninvestigations = [\"MRI Brain and Spinal Cord with contrast\", \"Lumbar Puncture\", \"Visual Evoked Potentials\", \"Full blood count\", \"Urea and electrolytes\", \"C-reactive protein\", \"Liver function tests\", \"Serum ACE\", \"Anti-aquaporin-4 antibodies\", \"Anti-MOG antibodies\", \"Autoimmune screen (ANA, ENA, dsDNA)\", \"Syphilis serology\", \"Lyme serology\", \"Blood cultures\"]"
+}

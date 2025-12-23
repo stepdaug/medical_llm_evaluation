@@ -1,0 +1,371 @@
+{
+  "case_id": "case_0046",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 30.46,
+    "sex": "Male",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Neurosyphilis, Compressive Optic Neuropathy, TB and Retinal Detachment.\n\nOther possible differentials:\n- SLE and Bartonella.\n- Also feasible but of low probability: Beh\u00e7et's, Lyme, Lymphoma, Vasculitis, Sjogren's and Leber's Hereditary Optic Neuropathy.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Non-arteritic anterior ischaemic optic neuropathy (atypical for age, usually > 50)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Typical demyelinating optic neuritis associated with multiple sclerosis",
+          "Myelin oligodendrocyte glycoprotein antibody-associated optic neuritis",
+          "Aquaporin-4 antibody-positive neuromyelitis optica spectrum disorder presenting with optic neuritis",
+          "Compressive optic neuropathy (e.g., optic nerve sheath meningioma, pituitary or suprasellar mass)",
+          "Non-arteritic anterior ischaemic optic neuropathy",
+          "Infectious or systemic inflammatory optic neuropathy (e.g., sarcoidosis, syphilis, tuberculosis, HIV-associated)",
+          "Macular or retinal pathology causing unilateral visual loss"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Optic_Neuropathy",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "MOGAD",
+          "Retinal_Detachment"
+        ],
+        "missing_lesion_dx_keys": [
+          "Bartonella_Henselae",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Infection_Lyme",
+          "CNS_Lymphoma",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Optic_Neuropathy_Nonspecific",
+          "Leber_Hereditary_Optic_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Bartonella",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Beh\u00e7et's",
+          "Lyme",
+          "Lymphoma",
+          "Vasculitis",
+          "Sjogren's",
+          "Leber's Hereditary Optic Neuropathy"
+        ],
+        "additional_diagnoses": [
+          "Non-arteritic anterior ischaemic optic neuropathy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 18,
+        "lesion_ddx_matched_count": 8,
+        "lesion_ddx_missed_common_count": 2,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.4444444444444444
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ENA, ACE, HIV, ANCA, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, bartonella, TB, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain and orbits with gadolinium contrast and fat-suppressed sequences",
+          "Formal visual field testing (e.g., Humphrey perimetry)",
+          "Optical coherence tomography of retinal nerve fibre layer and macula",
+          "Colour vision testing (e.g., Ishihara plates)",
+          "Visual evoked potentials",
+          "Slit-lamp and dilated fundus examination by ophthalmology",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Antineutrophil cytoplasmic antibody",
+          "Serum angiotensin-converting enzyme level",
+          "Serum aquaporin-4 IgG antibody",
+          "Serum myelin oligodendrocyte glycoprotein IgG antibody",
+          "Serum syphilis serology (treponemal and non-treponemal tests)",
+          "HIV antigen/antibody test",
+          "Chest X-ray",
+          "Lumbar puncture for cerebrospinal fluid cell count, protein, glucose, oligoclonal bands, and IgG index"
+        ],
+        "all_identified_ft_keys": [
+          "MRI_Brain",
+          "MOG_Antibodies",
+          "CRP",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "OCT",
+          "Chest_XRay",
+          "Folate",
+          "Colour Vision",
+          "Ophthalmology Assessment",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "ANCA",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-dose intravenous methylprednisolone (e.g., 1 g daily for 3 days) followed by a short oral prednisolone taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Typical age and phenotype for inflammatory demyelinating optic neuritis with significant unilateral visual loss",
+              "High-dose corticosteroids accelerate visual recovery and reduce acute inflammation even when started within weeks of onset",
+              "Can be commenced promptly once urgent MRI excludes a compressive or abscess-like lesion and basic infection screening is reassuring"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor and gastric protection while on high-dose steroids",
+            "timing": "Start Now",
+            "reasons": [
+              "Reduces risk of steroid-induced gastritis or peptic ulcer disease",
+              "Standard prophylaxis for short courses of high-dose systemic corticosteroids in otherwise healthy adults"
+            ]
+          },
+          {
+            "treatment": "Disease-modifying therapy for multiple sclerosis according to local guidelines",
+            "timing": "Delay",
+            "reasons": [
+              "Initiation depends on MRI and cerebrospinal fluid findings demonstrating dissemination in space and/or time consistent with multiple sclerosis",
+              "Requires detailed counselling regarding risks, benefits, monitoring, and choice of specific agent"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for severe optic neuritis, particularly in aquaporin-4 or MOG antibody-associated disease, that fails to improve after high-dose corticosteroids",
+              "Invasive therapy with significant resource and risk implications, only justified once standard steroid therapy has been ineffective"
+            ]
+          },
+          {
+            "treatment": "Targeted treatment of alternative causes of optic neuropathy (e.g., intravenous penicillin for syphilis, corticosteroids or other immunosuppression for sarcoidosis, neurosurgical or ophthalmic decompression for compressive lesions)",
+            "timing": "Delay",
+            "reasons": [
+              "Specific therapy depends entirely on investigation results identifying a non-demyelinating aetiology",
+              "Avoids unnecessary or potentially harmful treatments until a definite alternative diagnosis is established"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone (e.g., 1 g daily for 3 days) followed by a short oral prednisolone taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Typical age and phenotype for inflammatory demyelinating optic neuritis with significant unilateral visual loss",
+              "High-dose corticosteroids accelerate visual recovery and reduce acute inflammation even when started within weeks of onset",
+              "Can be commenced promptly once urgent MRI excludes a compressive or abscess-like lesion and basic infection screening is reassuring"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nCorrectly identified the following:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease-modifying therapy for multiple sclerosis according to local guidelines",
+            "timing": "Delay",
+            "reasons": [
+              "Initiation depends on MRI and cerebrospinal fluid findings demonstrating dissemination in space and/or time consistent with multiple sclerosis",
+              "Requires detailed counselling regarding risks, benefits, monitoring, and choice of specific agent"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Safety screen for contraindications like active infection is required before immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        }
+      }
+    }
+  }
+}

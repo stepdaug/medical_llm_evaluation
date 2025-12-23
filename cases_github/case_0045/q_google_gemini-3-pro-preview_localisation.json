@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with left-sided blurred vision, reduced visual acuity, and a left relative afferent pupillary defect (RAPD), which definitively localises to the left optic nerve. The examination also reveals subtle, scattered motor signs including left biceps hyporeflexia, left elbow extension weakness, and right great toe weakness. These findings suggest additional patchy involvement of the spinal cord, indicating lesions disseminated in space. The combination is highly characteristic of a multifocal demyelinating process.\n\nlesion_locations = [\"Left Optic Nerve\", \"Bilateral Spinal Cord\"]"
+}

@@ -1,0 +1,406 @@
+{
+  "case_id": "case_0050",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 35.53,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Middle Eastern / North African"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left optic nerve.\n  \nThe suggested lesion right primary motor cortex not necessary to explain the signs.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "optic nerve",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "primary motor cortex",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": [
+          "right primary motor cortex"
+        ]
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 1,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 1.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Neurosyphilis, Compressive Optic Neuropathy, TB and Lyme.\n\nOther possible differentials:\n- SLE, Bartonella and Retinal Detachment.\n- Also feasible but of low probability: Beh\u00e7et's, Lymphoma, Vasculitis, Sjogren's and Leber's Hereditary Optic Neuropathy.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Non-arteritic anterior ischaemic optic neuropathy (atypical for age, usually > 50)\n- Toxic or nutritional optic neuropathy (atypical for strictly unilateral optic nerve involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Typical demyelinating optic neuritis associated with multiple sclerosis",
+          "Clinically isolated syndrome due to central nervous system demyelination",
+          "Myelin oligodendrocyte glycoprotein (MOG) antibody-associated optic neuritis",
+          "Aquaporin-4 antibody-positive neuromyelitis optica spectrum disorder",
+          "Sarcoid-related optic neuritis or optic neuropathy",
+          "Non-arteritic anterior ischaemic optic neuropathy",
+          "Compressive optic neuropathy (e.g., optic nerve sheath meningioma)",
+          "Infectious optic neuropathy (e.g., syphilis, Lyme disease, tuberculosis)",
+          "Toxic or nutritional optic neuropathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Compressive_Optic_Neuropathy",
+          "MOGAD",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "Infection_Lyme"
+        ],
+        "missing_lesion_dx_keys": [
+          "Bartonella_Henselae",
+          "Idiopathic_Optic_Neuritis",
+          "Behcet_Disease",
+          "Retinal_Detachment",
+          "CNS_Lymphoma",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Optic_Neuropathy_Nonspecific",
+          "Leber_Hereditary_Optic_Neuropathy"
+        ],
+        "missing_common_names": [
+          "Bartonella",
+          "Retinal Detachment",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Vasculitis",
+          "Sjogren's",
+          "Leber's Hereditary Optic Neuropathy"
+        ],
+        "additional_diagnoses": [
+          "Non-arteritic anterior ischaemic optic neuropathy",
+          "Toxic or nutritional optic neuropathy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 2,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 18,
+        "lesion_ddx_matched_count": 8,
+        "lesion_ddx_missed_common_count": 3,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.4444444444444444
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and Orbits and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, ENA, ACE, ANCA, HIV, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: anti-dsDNA, bartonella, TB, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of brain, orbits and cervical spine with gadolinium",
+          "Automated perimetry (visual field testing)",
+          "Optical coherence tomography of the retinal nerve fiber layer",
+          "Visual evoked potentials",
+          "Colour vision testing (Ishihara plates)",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Serum aquaporin-4 (AQP4) IgG antibody",
+          "Serum myelin oligodendrocyte glycoprotein (MOG) IgG antibody",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Antineutrophil cytoplasmic antibodies",
+          "Serum angiotensin-converting enzyme level",
+          "Syphilis serology",
+          "HIV antibody and antigen test",
+          "Lyme disease serology",
+          "Lumbar puncture for cerebrospinal fluid cell count, protein and glucose",
+          "Lumbar puncture for cerebrospinal fluid oligoclonal bands and IgG index",
+          "Repeat chest X-ray or CT chest with contrast to characterise lung consolidation and screen for sarcoidosis or infection",
+          "Electrocardiogram"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "ENA_Panel",
+          "MRI_Orbits",
+          "LFT",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ECG",
+          "Lyme_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "OCT",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "Colour Vision",
+          "ANCA",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "VEP",
+          "MRI_Brain",
+          "ESR",
+          "Automated_Visual_Fields"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Bartonella_Serology",
+          "TB_Screen",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 11,
+        "ddx_tests_coverage_percentage": 0.6875
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days followed by a short oral prednisolone taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Typical clinical picture of acute unilateral optic neuritis in a young adult",
+              "High-dose corticosteroids shorten time to visual recovery in demyelinating optic neuritis",
+              "No clinical evidence of uncontrolled systemic infection or contraindications to steroids"
+            ]
+          },
+          {
+            "treatment": "Proton pump inhibitor for gastric protection during corticosteroid therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "High-dose corticosteroids increase risk of gastrointestinal irritation and ulceration",
+              "Prophylaxis is recommended during several days of intravenous and oral steroid treatment"
+            ]
+          },
+          {
+            "treatment": "Empirical antibiotic therapy tailored to suspected bacterial pneumonia",
+            "timing": "Start Now",
+            "reasons": [
+              "Chest X-ray shows lung consolidation that may represent bacterial infection",
+              "Any active infection should be treated promptly, particularly before and during high-dose immunosuppression"
+            ]
+          },
+          {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis if diagnostic criteria are met",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis based on MRI and cerebrospinal fluid findings",
+              "Choice of agent depends on lesion burden, prognostic factors and patient preferences",
+              "Typically commenced after completion of acute relapse treatment"
+            ]
+          },
+          {
+            "treatment": "Plasma exchange",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for severe optic neuritis with poor response to high-dose steroids",
+              "Particularly indicated in aquaporin-4 antibody-positive neuromyelitis optica spectrum disorder or severe MOG-associated attacks",
+              "Consider if vision fails to improve within 1\u20132 weeks after steroid therapy"
+            ]
+          },
+          {
+            "treatment": "Vitamin D supplementation to maintain serum levels in the high-normal range",
+            "timing": "Delay",
+            "reasons": [
+              "Low vitamin D status is associated with increased risk and activity of multiple sclerosis",
+              "Can be safely instituted after baseline vitamin D measurement"
+            ]
+          },
+          {
+            "treatment": "Ophthalmology and neuro-ophthalmology follow-up with visual rehabilitation advice",
+            "timing": "Start Now",
+            "reasons": [
+              "Required to monitor visual acuity and field recovery and detect complications",
+              "Provides patient counselling regarding prognosis, driving, and occupational implications",
+              "Facilitates early detection of relapse or treatment failure"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone 1 g daily for 3\u20135 days followed by a short oral prednisolone taper",
+            "timing": "Start Now",
+            "reasons": [
+              "Typical clinical picture of acute unilateral optic neuritis in a young adult",
+              "High-dose corticosteroids shorten time to visual recovery in demyelinating optic neuritis",
+              "No clinical evidence of uncontrolled systemic infection or contraindications to steroids"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days",
+                "Evidence of potential active intercurrent infection (CXR: Consolidation)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Initiation of disease-modifying therapy for multiple sclerosis if diagnostic criteria are met",
+            "timing": "Delay",
+            "reasons": [
+              "Requires confirmation of multiple sclerosis based on MRI and cerebrospinal fluid findings",
+              "Choice of agent depends on lesion burden, prognostic factors and patient preferences",
+              "Typically commenced after completion of acute relapse treatment"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Consolidation)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation)."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        }
+      }
+    }
+  }
+}

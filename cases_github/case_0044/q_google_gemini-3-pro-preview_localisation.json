@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with two distinct clinical syndromes indicating dissemination in space. Firstly, left-sided reduced visual acuity and a Relative Afferent Pupillary Defect (RAPD) localise to the left optic nerve. Secondly, left-sided appendicular ataxia (dysmetria, dysdiadochokinesia), gait ataxia, and downbeat nystagmus localise to the left cerebellum and its brainstem connections (specifically the vestibulocerebellum).\n\nlesion_locations = [\"Left Optic Nerve\", \"Left Cerebellum\"]"
+}

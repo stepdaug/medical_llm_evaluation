@@ -1,0 +1,3 @@
+{
+    "response": "Immediate neuroimaging is required to differentiate between ischaemic and haemorrhagic stroke and to assess vessel patency (basilar artery). Blood tests are needed to screen for stroke risk factors and contraindications to thrombolysis. Cardiac investigations are essential to identify a cardioembolic source.\n\ninvestigations = [\"Non-contrast CT Brain\", \"CT Angiogram of Head and Neck\", \"MRI Brain with DWI sequences\", \"Full blood count\", \"Urea and electrolytes\", \"Coagulation screen\", \"Blood glucose\", \"Lipid profile\", \"ECG\", \"Echocardiogram\"]"
+}

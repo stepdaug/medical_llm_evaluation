@@ -1,0 +1,132 @@
+{
+  "case_id": "case_0043",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 23.35,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "Agree no evidence of lesion(s) causing neurological deficit.",
+      "structured_data": {
+        "gt_lesions_english": [],
+        "ft_lesions_parsed": [],
+        "exact_matches": [],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 0,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": null,
+        "proportion_imprecise": null,
+        "proportion_missed": null,
+        "proportion_additional": null
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "Correct to acknowledge the existing diagnosis of Migraine without aura and Migraine with aura.  Also correct to acknowledge the possibility of No identifiable neurological disease (normal examination) and Functional neurological disorder. \n\nHowever, there is not strong evidence in any of the information for diagnoses of: Multiple sclerosis and Focal epilepsy.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "No identifiable neurological disease (normal examination)",
+          "Functional neurological disorder",
+          "Migraine without aura",
+          "Migraine with aura",
+          "Multiple sclerosis",
+          "Focal epilepsy"
+        ],
+        "gt_diagnoses_with_source": {},
+        "correctly_mentioned_original_gt": [],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [],
+        "missing_lesion_dx_keys": [],
+        "additional_diagnoses": [
+          "No identifiable neurological disease (normal examination)",
+          "Functional neurological disorder",
+          "Migraine without aura",
+          "Migraine with aura",
+          "Multiple sclerosis",
+          "Focal epilepsy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": null,
+        "primary_diagnosis_name": null,
+        "gt_total_count": 0,
+        "gt_matched_count": 0,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": null,
+        "additional_inappropriate_count": 6,
+        "comorbidity_total_count": 0,
+        "comorbidity_missing_count": 0,
+        "comorbidity_missing_proportion": null
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\nThe suggested investigations are appropriate.",
+      "structured_data": {
+        "gt_required_tests_primary": [],
+        "ft_proposed_investigations": [
+          "MRI brain with and without contrast",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Thyroid function tests",
+          "Vitamin B12 level",
+          "Serum folate",
+          "Fasting blood glucose",
+          "Electroencephalogram",
+          "Lumbar puncture with cerebrospinal fluid analysis"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "CRP",
+          "TFT",
+          "Folate",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "MRI_Brain",
+          "ESR",
+          "CSF_General"
+        ],
+        "found_tests_primary": [],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [],
+        "found_inv_keys_ddx": [],
+        "missing_inv_keys_ddx": []
+      },
+      "scoring": {
+        "primary_tests_required_count": 0,
+        "primary_tests_found_count": 0,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": null,
+        "ddx_tests_expected_count": 0,
+        "ddx_tests_found_count": 0,
+        "ddx_tests_coverage_percentage": null
+      }
+    },
+    "Management": {
+      "report_string": "Nothing to add to management.",
+      "structured_data": {
+        "ft_full_plan_parsed": [],
+        "steroids_evaluation": {},
+        "dmt_evaluation": {}
+      },
+      "scoring": {
+        "steroids": {},
+        "dmt": {}
+      }
+    }
+  }
+}

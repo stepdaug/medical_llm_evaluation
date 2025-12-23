@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with unilateral visual impairment (smudge sensation, reduced acuity 6/18) and a Relative Afferent Pupillary Defect (RAPD) on the left. This classically localises to a lesion of the Left Optic Nerve (optic neuritis). The mild, patchy upper limb weakness (Right elbow flexion 4+/5, Left wrist extension 4+/5) is asymmetric and unaccompanied by reflex changes or sensory loss; while this could represent subtle multifocal CNS demyelination (dissemination in space), the definitive and localising lesion is the optic nerve.\n\nlesion_locations = [\"Left Optic Nerve\"]"
+}

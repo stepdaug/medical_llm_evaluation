@@ -1,0 +1,3 @@
+{
+    "response": "Urgent neuroimaging (MRI) is critical to differentiate between ischaemic infarction, haemorrhage, demyelination, and neoplasm, as CT is less sensitive for brainstem pathology. Vascular imaging is required to rule out dissection or aneurysm. Bloods are needed to assess stroke risk factors and exclude mimics.\n\ninvestigations = [\"MRI Brain with Diffusion Weighted Imaging\", \"CT Angiogram of Head and Neck\", \"Full blood count\", \"Urea and electrolytes\", \"Liver function tests\", \"Coagulation screen\", \"Random blood glucose\", \"HbA1c\", \"Fasting lipid profile\", \"Erythrocyte sedimentation rate\", \"ECG\", \"Echocardiogram\"]"
+}

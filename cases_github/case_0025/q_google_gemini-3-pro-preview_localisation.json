@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a 'crossed' brainstem syndrome characterised by an ipsilateral (left) oculomotor nerve palsy (ptosis, mydriasis, adduction plegia) and contralateral (right) upper motor neuron hemiparesis, hemisensory loss, and cerebellar signs (intention tremor, dysmetria). This combination of signs (features of Weber's, Benedikt's, and Claude's syndromes) clinically localises to the ventral and tegmental areas of the midbrain on the left side, affecting the CN III fascicles, corticospinal tract, medial lemniscus, and red nucleus/cerebellothalamic fibers.\n\nlesion_locations = [\"Left Midbrain\"]"
+}

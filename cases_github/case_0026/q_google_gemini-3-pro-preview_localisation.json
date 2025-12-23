@@ -1,0 +1,3 @@
+{
+    "response": "The clinical picture is one of an asymmetric, multifocal sensorimotor neuropathy (Mononeuritis Multiplex). Findings pinpoint discrete involvement of the Right Ulnar nerve (weakness of intrinsic hand muscles, sensory loss in 5th digit), Left Median nerve (isolated APB weakness), and Left Sciatic nerve (foot drop, weakness of dorsiflexion/eversion, and sensory loss on the sole). This pattern distinguishes it from a length-dependent polyneuropathy or single spinal lesion.\n\nlesion_locations = [\"Right Ulnar Nerve\", \"Left Median Nerve\", \"Left Sciatic Nerve\"]"
+}

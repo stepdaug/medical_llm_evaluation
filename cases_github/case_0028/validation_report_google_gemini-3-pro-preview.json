@@ -1,0 +1,322 @@
+{
+  "case_id": "case_0028",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 46.19,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right midbrain.\n  \nAdditional signs indicate lesion possibly also involving:\n- left C5 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left C5 myelopathy",
+          "right midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Midbrain",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left C5 myelopathy"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 1,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.5,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.5,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Lyme, TB, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Brainstem Ischaemic Stroke (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Brainstem Haemorrhage (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Brainstem Glioma (plausible for unilateral brainstem; but atypical for unilateral spinal cord involvement)\n- Intracranial Aneurysm (Posterior Communicating Artery) (atypical for unilateral brainstem and unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Ischaemic Stroke",
+          "Brainstem Haemorrhage",
+          "Multiple Sclerosis",
+          "Brainstem Glioma",
+          "Intracranial Aneurysm (Posterior Communicating Artery)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Brainstem Ischaemic Stroke",
+          "Brainstem Haemorrhage",
+          "Brainstem Glioma",
+          "Intracranial Aneurysm (Posterior Communicating Artery)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 4,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 1,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 7,
+        "lesion_ddx_coverage_percentage": 0.07692307692307693
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Cervical Spine and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ESR.\n- Could also consider testing: anti-dsDNA, anti-MOG, ANA, CRP, TB, ENA, ACE, HIV, ANCA, anti-AQP4, syphilis, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain with Diffusion Weighted Imaging",
+          "CT Angiogram of Head and Neck",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen",
+          "Random blood glucose",
+          "HbA1c",
+          "Fasting lipid profile",
+          "Erythrocyte sedimentation rate",
+          "ECG",
+          "Echocardiogram"
+        ],
+        "all_identified_ft_keys": [
+          "FBC",
+          "Lipid_Profile",
+          "Coagulation_Screen",
+          "LFT",
+          "MRA_Head_Neck",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "MRI_Brain",
+          "ECG",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 2,
+        "primary_tests_coverage_percentage": 0.3333333333333333,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 1,
+        "ddx_tests_coverage_percentage": 0.06666666666666667
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Thrombolysis (Alteplase)",
+            "timing": "Start Now",
+            "reasons": [
+              "Potential eligibility if ischaemic stroke confirmed and onset within 4.5 hours",
+              "Requires exclusion of haemorrhage via imaging first"
+            ]
+          },
+          {
+            "treatment": "Aspirin 300mg",
+            "timing": "Delay",
+            "reasons": [
+              "Withhold until haemorrhage is excluded by imaging",
+              "Delay 24 hours if thrombolysis is administered"
+            ]
+          },
+          {
+            "treatment": "Swallow Assessment (NBM status)",
+            "timing": "Start Now",
+            "reasons": [
+              "High risk of aspiration due to brainstem lesion and dysarthria"
+            ]
+          },
+          {
+            "treatment": "VTE Prophylaxis (Intermittent Pneumatic Compression)",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient is immobile with significant hemiparesis",
+              "Chemical prophylaxis may be contraindicated initially depending on stroke type"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 4,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 4,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

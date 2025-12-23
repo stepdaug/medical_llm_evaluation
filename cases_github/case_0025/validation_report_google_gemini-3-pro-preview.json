@@ -1,0 +1,341 @@
+{
+  "case_id": "case_0025",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 39.14,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "East Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- left midbrain.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Midbrain",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Neurosarcoid, Metastatic Disease, Brainstem Tumour (Primary or Metastatic), Brainstem Infarct / Vertebral Artery Dissection, Brainstem Abscess and Beh\u00e7et's.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, SLE, Neurosyphilis, Intracerebral Haemorrhage, Cavernous Malformation and Listeria.\n- Also feasible but of low probability: TB, Lyme, Leptomeningeal carcinomatosis, Vasculitis and Lymphoma.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Glioma",
+          "Demyelinating disease (Multiple Sclerosis/ADEM)",
+          "Metastatic Lesion",
+          "Brainstem Ischaemic Stroke",
+          "Neurosarcoidosis",
+          "Intracranial Abscess",
+          "Behcet's Disease"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "Metastatic_General",
+          "Behcet_Disease",
+          "Brainstem_Tumour",
+          "Neurosarcoidosis",
+          "MS",
+          "Brain_Infarct_Brainstem",
+          "Brain_Abscess_Brainstem"
+        ],
+        "missing_lesion_dx_keys": [
+          "Brain_Haemorrhage",
+          "CNS_Tuberculosis",
+          "Cavernous_Malformation",
+          "Infection_Lyme",
+          "Leptomeningeal_Carcinomatosis",
+          "Syphilis",
+          "Listeria_Rhombencephalitis",
+          "AQP4_NMOSD",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_SLE",
+          "CNS_Lymphoma",
+          "MOGAD"
+        ],
+        "missing_common_names": [
+          "Intracerebral Haemorrhage",
+          "Cavernous Malformation",
+          "Neurosyphilis",
+          "Listeria",
+          "NMOSD (AQP4+)",
+          "SLE",
+          "MOGAD"
+        ],
+        "missing_low_prob_names": [
+          "TB",
+          "Lyme",
+          "Leptomeningeal carcinomatosis",
+          "Vasculitis",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 19,
+        "lesion_ddx_matched_count": 7,
+        "lesion_ddx_missed_common_count": 7,
+        "lesion_ddx_missed_low_prob_count": 5,
+        "lesion_ddx_coverage_percentage": 0.3684210526315789
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ANA, CRP, ENA, HIV, ANCA, syphilis, ESR, CSF (cytology).\n- Could also consider testing: anti-dsDNA, anti-MOG, TB, ACE, anti-AQP4, lyme, CSF (flow cytometry and PCR for Listeria).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain with and without contrast",
+          "MRI Cervical and Thoracic Spine",
+          "CT Angiogram of Head and Neck",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Coagulation screen",
+          "Blood glucose",
+          "HbA1c",
+          "HIV serology",
+          "Syphilis serology",
+          "Autoimmune screen (ANA, ANCA)",
+          "Lumbar Puncture (CSF analysis for protein, glucose, cell count, oligoclonal bands, cytology)"
+        ],
+        "all_identified_ft_keys": [
+          "CRP",
+          "Autoimmune_Screen_General",
+          "Coagulation_Screen",
+          "ENA_Panel",
+          "LFT",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "Syphilis_Serology",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "MRI_Thoracic_Spine",
+          "HIV_Test",
+          "ANCA",
+          "MRA_Head_Neck",
+          "CSF_Cytology",
+          "MRI_Brain",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CRP",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "Serum_ACE",
+          "AQP4_Antibodies",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 2,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.5
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Inpatient Admission to Neurology",
+            "timing": "Start Now",
+            "reasons": [
+              "To facilitate urgent MRI and lumbar puncture",
+              "To monitor for neurological deterioration (e.g., reduced consciousness)"
+            ]
+          },
+          {
+            "treatment": "VTE Prophylaxis (LMWH and compression stockings)",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has reduced mobility due to right hemiparesis",
+              "High risk of deep vein thrombosis"
+            ]
+          },
+          {
+            "treatment": "High-dose Corticosteroids (Methylprednisolone)",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI and CSF results",
+              "Steroids can obscure diagnosis of CNS lymphoma",
+              "Steroids may be contraindicated if the cause is infectious (e.g., fungal/TB)"
+            ]
+          },
+          {
+            "treatment": "Antiplatelet Therapy (Aspirin)",
+            "timing": "Delay",
+            "reasons": [
+              "Must rule out haemorrhagic pathology (e.g., cavernoma bleed, haemorrhagic tumour) first"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and Occupational Therapy",
+            "timing": "Start Now",
+            "reasons": [
+              "To assess safety for transfers and prevent contractures",
+              "To begin rehabilitation for hemiparesis and ataxia"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose Corticosteroids (Methylprednisolone)",
+            "timing": "Delay",
+            "reasons": [
+              "Must await MRI and CSF results",
+              "Steroids can obscure diagnosis of CNS lymphoma",
+              "Steroids may be contraindicated if the cause is infectious (e.g., fungal/TB)"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS."
+              ],
+              "contraindications": [
+                "Symptoms started more than 14 days ago."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days ago.\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

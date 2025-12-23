@@ -1,0 +1,3 @@
+{
+    "response": "In a 39-year-old male with a subacute onset (3 weeks) of a focal brainstem syndrome, the differential is broad. Inflammatory/demyelinating causes (e.g., MS, Neurosarcoidosis) and space-occupying lesions (Glioma, Metastasis) are top priorities given the timeline and age. Vascular causes (stroke/vascular malformation) are possible if the onset was acute and stable, though the subacute nature favours non-vascular aetiologies. Infectious causes (e.g., Listeria, TB, HIV-related) must be excluded.\n\ndifferential_diagnosis = [\"Brainstem Glioma\", \"Demyelinating disease (Multiple Sclerosis/ADEM)\", \"Metastatic Lesion\", \"Brainstem Ischaemic Stroke\", \"Neurosarcoidosis\", \"Intracranial Abscess\", \"Behcet's Disease\"]"
+}

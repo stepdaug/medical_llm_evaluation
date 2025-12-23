@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic 'crossed' brainstem syndrome (Weber's Syndrome). The Right Oculomotor (CN III) palsy (indicated by right ptosis, mydriasis, and ophthalmoplegia) localizes the lesion to the Right Midbrain. The contralateral (Left) spastic hemiparesis and hemisensory loss confirm damage to the adjacent right corticospinal tract and medial lemniscus/spinothalamic tract within the midbrain. The ipsilateral (Right) cerebellar signs suggest involvement of the cerebellar connections (e.g., dentatorubrothalamic fibers or red nucleus).\n\nlesion_locations = [\"Right Midbrain\"]"
+}

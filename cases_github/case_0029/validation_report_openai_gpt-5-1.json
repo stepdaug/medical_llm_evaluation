@@ -1,0 +1,407 @@
+{
+  "case_id": "case_0029",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 19.62,
+    "sex": "Female",
+    "genderIdentity": "Transgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- right medulla.\n  \nAdditional signs indicate lesions possibly also involving:\n- left T9 spinal cord and left cerebellum.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left T9 myelopathy",
+          "right medulla",
+          "left cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "medulla oblongata",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right medulla"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [
+          "left T9 myelopathy",
+          "left cerebellum"
+        ],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 3,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 2,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.3333333333333333,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.6666666666666666,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+).\n\nOther possible differentials:\n- MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Vasculitis, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right hemimedullary ischaemic stroke (vertebral or anterior spinal artery infarction) (atypical for unilateral brainstem and strictly unilateral spinal cord and unilateral cerebellum involvement)\n- Right medullary brainstem glioma (plausible for unilateral brainstem; but atypical for unilateral spinal cord or unilateral cerebellum involvement)\n- Right medullary cavernous malformation with recent haemorrhage (plausible for unilateral brainstem and unilateral cerebellum; but atypical for unilateral spinal cord involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Right hemimedullary ischaemic stroke (vertebral or anterior spinal artery infarction)",
+          "Demyelinating brainstem lesion due to multiple sclerosis",
+          "Right medullary brainstem glioma",
+          "Right medullary cavernous malformation with recent haemorrhage",
+          "Neuromyelitis optica spectrum disorder involving the medulla"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS",
+          "AQP4_NMOSD"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "Syphilis",
+          "CNS_Vasculitis",
+          "Neurosarcoidosis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "MOGAD",
+          "Neurosyphilis",
+          "Neurosarcoid",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Right hemimedullary ischaemic stroke (vertebral or anterior spinal artery infarction)",
+          "Right medullary brainstem glioma",
+          "Right medullary cavernous malformation with recent haemorrhage"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 3,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 12,
+        "lesion_ddx_matched_count": 2,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.16666666666666666
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine and Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: more extensive MRI spinal imaging to include Thoracic Spine.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, ENA, ACE, ANCA, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "Non-contrast CT brain",
+          "CT angiogram of head and neck",
+          "MRI of brain and cervical spinal cord with and without gadolinium contrast, including diffusion-weighted imaging",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen (PT, APTT, INR)",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood glucose",
+          "Serum lipid profile",
+          "Antinuclear antibody",
+          "Antiphospholipid antibodies",
+          "Factor V Leiden mutation assay",
+          "Prothrombin G20210A mutation assay",
+          "Protein C level",
+          "Protein S level",
+          "Antithrombin III level",
+          "Serum homocysteine level",
+          "Serum aquaporin-4 IgG antibody",
+          "Serum myelin oligodendrocyte glycoprotein (MOG) antibody",
+          "HIV antibody/antigen test",
+          "Syphilis serology (VDRL or RPR with confirmatory treponemal test)",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands and viral PCR",
+          "12-lead ECG",
+          "Transthoracic echocardiogram",
+          "24-hour Holter cardiac monitor"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "Prothrombin_Gene_Mutation",
+          "MOG_Antibodies",
+          "CRP",
+          "Antithrombin_III",
+          "Coagulation_Screen",
+          "CSF_Viral_PCR",
+          "LFT",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Protein_S_Activity",
+          "Syphilis_Serology",
+          "Protein_C_Activity",
+          "CSF_General",
+          "ECG",
+          "FBC",
+          "ANA",
+          "Antiphospholipid_Screen",
+          "Homocysteine",
+          "MRI_Cervical_Spine",
+          "Factor_V_Leiden",
+          "HIV_Test",
+          "MRA_Head_Neck",
+          "Serum_Immunoglobulins",
+          "MRI_Brain",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "CSF_Cytology",
+          "ANCA",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 3,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.75,
+        "ddx_tests_expected_count": 14,
+        "ddx_tests_found_count": 7,
+        "ddx_tests_coverage_percentage": 0.5
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit.\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Acute reperfusion therapy for ischaemic stroke (intravenous alteplase with or without mechanical thrombectomy)",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem signs indicate a potentially devastating but treatable ischaemic stroke.",
+              "Reperfusion must be delivered as soon as possible once imaging confirms acute infarction without haemorrhage and the patient falls within established time windows.",
+              "Early treatment offers the best chance of reversing medullary deficits and preventing long-term disability."
+            ]
+          },
+          {
+            "treatment": "Admission to a stroke unit or high-dependency unit",
+            "timing": "Start Now",
+            "reasons": [
+              "Close monitoring of airway, breathing and circulation is essential in medullary lesions because of risk of respiratory and autonomic instability.",
+              "Frequent neurological observations are needed to detect deterioration and manage complications promptly."
+            ]
+          },
+          {
+            "treatment": "Nil by mouth with urgent swallow assessment by speech and language therapist",
+            "timing": "Start Now",
+            "reasons": [
+              "Palatal weakness from nucleus ambiguus involvement implies high aspiration risk.",
+              "Swallow function must be assessed before any oral intake to prevent aspiration pneumonia and ensure safe nutrition strategies."
+            ]
+          },
+          {
+            "treatment": "Physiological optimisation (blood pressure, oxygenation, glucose and temperature control according to acute stroke guidelines)",
+            "timing": "Start Now",
+            "reasons": [
+              "Avoiding hypotension and hypoxia maintains perfusion of the ischaemic penumbra.",
+              "Tight control of glucose and temperature reduces secondary brain injury and improves outcomes in acute stroke."
+            ]
+          },
+          {
+            "treatment": "Mechanical deep vein thrombosis prophylaxis with intermittent pneumatic compression",
+            "timing": "Start Now",
+            "reasons": [
+              "Left hemiparesis and reduced mobility substantially increase venous thromboembolism risk.",
+              "Mechanical prophylaxis is safe in both ischaemic and haemorrhagic stroke while decisions about pharmacological prophylaxis are pending."
+            ]
+          },
+          {
+            "treatment": "Antiplatelet therapy with aspirin followed by long-term secondary prevention regimen",
+            "timing": "Delay",
+            "reasons": [
+              "Aspirin should be started only after intracranial haemorrhage is excluded on imaging.",
+              "If intravenous thrombolysis is administered, antiplatelets are delayed for at least 24 hours and until repeat imaging confirms no significant haemorrhagic transformation.",
+              "The exact secondary prevention strategy may change if a cardioembolic or other non-atherothrombotic mechanism is identified."
+            ]
+          },
+          {
+            "treatment": "Anticoagulation for proven cardioembolic source or vertebral artery dissection",
+            "timing": "Delay",
+            "reasons": [
+              "Initiated only if investigations reveal atrial fibrillation, intracardiac thrombus or vertebral artery dissection.",
+              "Requires assessment of infarct size and haemorrhagic risk before starting therapeutic anticoagulation."
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone course",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for scenarios where MRI, CSF and serology support an acute demyelinating lesion (e.g. multiple sclerosis or NMOSD) rather than ischaemic stroke.",
+              "Steroids are not part of standard management for uncomplicated ischaemic stroke and may be harmful if used inappropriately."
+            ]
+          },
+          {
+            "treatment": "Multidisciplinary neurorehabilitation including physiotherapy and occupational therapy",
+            "timing": "Delay",
+            "reasons": [
+              "Commenced once the patient is medically stable after the hyperacute phase.",
+              "Essential to address left-sided weakness, spasticity and cerebellar ataxia, optimise functional recovery and prevent complications such as contractures and deconditioning."
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone course",
+            "timing": "Delay",
+            "reasons": [
+              "Reserved for scenarios where MRI, CSF and serology support an acute demyelinating lesion (e.g. multiple sclerosis or NMOSD) rather than ischaemic stroke.",
+              "Steroids are not part of standard management for uncomplicated ischaemic stroke and may be harmful if used inappropriately."
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Timing of current symptoms not specified, so no indication whether this is a new relapse or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

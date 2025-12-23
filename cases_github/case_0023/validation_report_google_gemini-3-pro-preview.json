@@ -1,0 +1,333 @@
+{
+  "case_id": "case_0023",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 53.89,
+    "sex": "Male",
+    "genderIdentity": "Transgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve and left cerebellum.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right optic nerve (cranial nerve II)",
+          "left cerebellum"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Optic Nerve",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "Cerebellar Hemisphere",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right optic nerve (cranial nerve II)",
+          "left cerebellum"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), Neurosarcoid, Vasculitis, Susac Syndrome and ADEM.\n\nOther possible differentials:\n- MOGAD, SLE, Neurosyphilis and Giant Cell Arteritis.\n- Also feasible but of low probability: Lyme, Sjogren's, Beh\u00e7et's and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Infective Endocarditis with Septic Emboli (plausible for unilateral cerebellum; but atypical for unilateral optic nerve involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Infective Endocarditis with Septic Emboli",
+          "Neurosarcoidosis",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "CNS Vasculitis",
+          "Acute Disseminated Encephalomyelitis (ADEM)",
+          "Paraneoplastic Neurological Syndrome"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "CNS_Vasculitis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Susac_Syndrome",
+          "MS",
+          "ADEM"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "Syphilis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "MOGAD",
+          "Giant_Cell_Arteritis"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis",
+          "SLE",
+          "MOGAD",
+          "Giant Cell Arteritis"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "Sjogren's",
+          "Beh\u00e7et's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Infective Endocarditis with Septic Emboli"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 4,
+        "lesion_ddx_missed_low_prob_count": 4,
+        "lesion_ddx_coverage_percentage": 0.42857142857142855
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, ANA, CRP, anti-AQP4, ENA, ACE, HIV, ANCA, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, lyme, CSF (flow cytometry and cytology), audiometry, fluorescein angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Spine with contrast",
+          "Full blood count",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Blood cultures",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Autoimmune screen (ANA, ANCA, ENA)",
+          "Serum ACE",
+          "Aquaporin-4 and MOG antibodies",
+          "HIV and Syphilis serology",
+          "Transthoracic Echocardiogram",
+          "Lumbar Puncture (CSF analysis, culture, oligoclonal bands)",
+          "Optical Coherence Tomography"
+        ],
+        "all_identified_ft_keys": [
+          "MRI_Brain",
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "ENA_Panel",
+          "LFT",
+          "Serum_ACE",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Blood_Cultures",
+          "CSF_General",
+          "FBC",
+          "ANA",
+          "OCT",
+          "HIV_Test",
+          "ANCA",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "ENA_Panel",
+          "Serum_ACE",
+          "ANCA",
+          "HIV_Test",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "AQP4_Antibodies",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "Audiometry",
+          "CSF_Cytology",
+          "Fluorescein_Angiography",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 16,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.625
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit.\n\nDMTs: Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Contraindicated until active infection is excluded given CRP of 154",
+              "Requires confirmation of inflammatory/demyelinating etiology via MRI"
+            ]
+          },
+          {
+            "treatment": "Broad-spectrum Antibiotics",
+            "timing": "Delay",
+            "reasons": [
+              "Patient is currently afebrile and hemodynamically stable",
+              "Wait for blood cultures and septic screen results to target therapy if infection is confirmed"
+            ]
+          },
+          {
+            "treatment": "Aspirin",
+            "timing": "Delay",
+            "reasons": [
+              "Requires brain imaging to rule out haemorrhage",
+              "Ischaemic etiology is less likely than inflammatory/infectious causes given the clinical picture"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Intravenous Methylprednisolone",
+            "timing": "Delay",
+            "reasons": [
+              "Contraindicated until active infection is excluded given CRP of 154",
+              "Requires confirmation of inflammatory/demyelinating etiology via MRI"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 154)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n  \nAdditional factors not mentioned:\n\n- Presenting complaint not specified, so no indication whether this is a new or an old deficit."
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CRP: 154)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to not recommend treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CRP: 154).\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.5
+        },
+        "dmt": {
+          "decision_category": "appropriate_omission",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

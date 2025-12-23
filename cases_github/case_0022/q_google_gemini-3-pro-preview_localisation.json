@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with 'crossed' neurological signs: ipsilateral (left) cranial nerve palsies (Left VI nerve abduction deficit and Left VII nerve lower motor neuron facial weakness) combined with contralateral (right) spastic hemiparesis and hemisensory loss. This specific pattern (Millard-Gubler syndrome) anatomically localizes to the Left Ventral Pons. Additionally, the reduced visual acuity and Relative Afferent Pupillary Defect (RAPD) in the left eye indicate a separate, distinct lesion of the Left Optic Nerve.\n\nlesion_locations = [\"Left Pons\", \"Left Optic Nerve\"]"
+}

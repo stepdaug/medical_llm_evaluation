@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with two distinct sites of pathology. Firstly, the Right Relative Afferent Pupillary Defect (RAPD) and severe reduction in visual acuity (Counting Fingers) localise to the Right Optic Nerve. Secondly, the constellation of a Right CN III palsy (ptosis, mydriasis, ophthalmoplegia) combined with contralateral (Left) spastic hemiparesis, hemisensory loss, and cerebellar signs (intention tremor, dysmetria) represents a crossed brainstem syndrome (overlap of Weber's and Benedikt's syndromes). This localises to the Right Midbrain (specifically affecting the cerebral peduncle, tegmentum, and CN III fascicles).\n\nlesion_locations = [\"Right Optic Nerve\", \"Right Midbrain\"]"
+}

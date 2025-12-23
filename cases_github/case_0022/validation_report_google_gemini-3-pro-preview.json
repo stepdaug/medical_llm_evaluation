@@ -1,0 +1,348 @@
+{
+  "case_id": "case_0022",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 27.83,
+    "sex": "Female",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- left optic nerve and left pons.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "left optic nerve (cranial nerve II)",
+          "left pons"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Pons",
+            "side": "left",
+            "qualifier": null
+          },
+          {
+            "location": "Optic Nerve",
+            "side": "left",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "left pons",
+          "left optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE, Beh\u00e7et's and ADEM.\n\nOther possible differentials:\n- Neurosyphilis.\n- Also feasible but of low probability: Lyme, TB, Leptomeningeal carcinomatosis, Vasculitis, Sjogren's and Lymphoma.\n\nOther considerations not mentioned:\n- The presenting complaint may be distinct from the neurological signs and due to something like Hypothyroidism, if the signs are chronic.",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Multiple Sclerosis",
+          "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+          "MOG Antibody Disease (MOGAD)",
+          "Acute Disseminated Encephalomyelitis (ADEM)",
+          "Neuro-Behcet's Disease",
+          "Neurosarcoidosis",
+          "Systemic Lupus Erythematosus (SLE) with CNS involvement"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Hypothyroidism": "incidental_cause"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Hypothyroidism"
+        ],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "MS",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Infection_Lyme",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "Leptomeningeal_Carcinomatosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "CNS_Lymphoma"
+        ],
+        "missing_common_names": [
+          "Neurosyphilis"
+        ],
+        "missing_low_prob_names": [
+          "Lyme",
+          "TB",
+          "Leptomeningeal carcinomatosis",
+          "Vasculitis",
+          "Sjogren's",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": []
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 0,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 7,
+        "lesion_ddx_missed_common_count": 1,
+        "lesion_ddx_missed_low_prob_count": 6,
+        "lesion_ddx_coverage_percentage": 0.5
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits and CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-dsDNA, anti-MOG, ANA, CRP, ENA, ANCA, anti-AQP4, syphilis, ESR, lyme.\n- Could also consider testing: TB, ACE, HIV, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain and Spinal Cord with Gadolinium",
+          "Visual Evoked Potentials",
+          "Lumbar Puncture for CSF analysis",
+          "Thyroid Function Tests (TSH, T4)",
+          "Serum Aquaporin-4 (AQP4) antibodies",
+          "Serum MOG antibodies",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Autoimmune screen (ANA, ENA, dsDNA)",
+          "Vitamin B12 and Folate",
+          "Syphilis serology",
+          "Lyme disease serology"
+        ],
+        "all_identified_ft_keys": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CRP",
+          "Autoimmune_Screen_General",
+          "TFT",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "CSF_General",
+          "Lyme_Serology",
+          "FBC",
+          "ANA",
+          "MRI_Whole_Spine",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "ANCA",
+          "VEP",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "ANA",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "ANCA",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "TB_Screen",
+          "Serum_ACE",
+          "HIV_Test",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 1,
+        "primary_tests_missed_count": 2,
+        "primary_tests_coverage_percentage": 0.3333333333333333,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 10,
+        "ddx_tests_coverage_percentage": 0.6666666666666666
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "IV Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To treat presumptive acute inflammatory demyelinating relapse",
+              "To accelerate recovery of motor and visual function"
+            ]
+          },
+          {
+            "treatment": "Levothyroxine",
+            "timing": "Delay",
+            "reasons": [
+              "Requires biochemical confirmation of hypothyroidism via thyroid function tests before initiation"
+            ]
+          },
+          {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Must confirm diagnosis (e.g., MS vs NMOSD) and await antibody results to select appropriate agent"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy",
+            "timing": "Start Now",
+            "reasons": [
+              "To manage spasticity and improve gait safety given right-sided hemiparesis"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "IV Methylprednisolone",
+            "timing": "Start Now",
+            "reasons": [
+              "To treat presumptive acute inflammatory demyelinating relapse",
+              "To accelerate recovery of motor and visual function"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Safety screen for contraindications like active infection is required before immunosuppression."
+              ],
+              "contraindications": [
+                "Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to start treatment immediately.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not necessarily a symptom of MS so indication for steroids is unclear.\n\n- Safety screen for contraindications like active infection is required before immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Disease Modifying Therapy (e.g., Ocrelizumab)",
+            "timing": "Delay",
+            "reasons": [
+              "Must confirm diagnosis (e.g., MS vs NMOSD) and await antibody results to select appropriate agent"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "Safety screen for contraindications like active infection is required before immunosuppression.",
+                "Need a pregnancy test result."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Safety screen for contraindications like active infection is required before immunosuppression.\n\n- Need a pregnancy test result."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 1,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.3333333333333333
+        }
+      }
+    }
+  }
+}

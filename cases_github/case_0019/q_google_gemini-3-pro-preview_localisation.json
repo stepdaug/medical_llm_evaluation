@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic Brown-S\u00e9quard syndrome, characterised by ipsilateral (right-sided) upper motor neuron weakness and loss of dorsal column sensations (vibration and proprioception), combined with contralateral (left-sided) loss of pain and temperature sensation. The sparing of the upper limbs localises the lesion to the spinal cord below the T1 level. The sensory level for pinprick on the left involves the trunk and lower limb, suggesting a lesion in the thoracic cord. By accounting for the ascension of the spinothalamic tract, the lesion is likely located in the mid-thoracic region on the right.\n\nlesion_locations = [\"Right Thoracic Spinal Cord\"]"
+}

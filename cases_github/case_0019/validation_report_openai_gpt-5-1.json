@@ -1,0 +1,412 @@
+{
+  "case_id": "case_0019",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 24.1,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "European"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\n  \nSome more precision is possible than: 'bilateral thoracic spinal cord'.  \nNamely, in the region of: right T9 spinal cord.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right T9 myelopathy"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "thoracic spinal cord",
+            "side": "bilateral",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [],
+        "imprecise_matches": [
+          [
+            "bilateral thoracic spinal cord",
+            [
+              "right T9 myelopathy"
+            ]
+          ]
+        ],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 0,
+        "imprecisely_identified_count": 1,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 0.0,
+        "proportion_imprecise": 1.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, Spinal Abscess and Spinal Tumour.\n\nOther possible differentials:\n- Neurosyphilis, Disc Herniation and Spinal Vascular Malformation.\n- Also feasible but of low probability: Spinal cord trauma, Epidural Haematoma and Lymphoma.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency (atypical for strictly unilateral spinal cord involvement)\n- Copper deficiency myelopathy (atypical for strictly unilateral spinal cord involvement)\n- Hereditary spastic paraplegia (atypical for strictly unilateral spinal cord involvement)\n- HIV-associated vacuolar myelopathy",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency",
+          "Nitrous oxide\u2013induced functional vitamin B12 deficiency",
+          "Copper deficiency myelopathy",
+          "HIV-associated vacuolar myelopathy",
+          "Inflammatory demyelinating myelitis (e.g., multiple sclerosis, neuromyelitis optica spectrum disorder, MOG antibody-associated disease)",
+          "Non-traumatic compressive dorsal spinal cord lesion (e.g., posterior cervical or thoracic meningioma, epidural abscess)",
+          "Hereditary spastic paraplegia",
+          "Spinal cord involvement secondary to systemic autoimmune disease (e.g., sarcoidosis, systemic lupus erythematosus, Sj\u00f6gren's syndrome)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "Compressive_Myelopathy_Abscess",
+          "MS",
+          "Compressive_Myelopathy_Tumour",
+          "MOGAD"
+        ],
+        "missing_lesion_dx_keys": [
+          "Compressive_Myelopathy_Disc",
+          "Syphilis",
+          "Traumatic_Spinal_Cord_Injury",
+          "Spinal_Vascular_Malformation",
+          "Compressive_Myelopathy_Haematoma",
+          "CNS_Lymphoma",
+          "Transverse_Myelitis_Idiopathic"
+        ],
+        "missing_common_names": [
+          "Disc Herniation",
+          "Neurosyphilis",
+          "Spinal Vascular Malformation"
+        ],
+        "missing_low_prob_names": [
+          "Spinal cord trauma",
+          "Epidural Haematoma",
+          "Lymphoma"
+        ],
+        "additional_diagnoses": [
+          "Subacute combined degeneration of the spinal cord due to vitamin B12 deficiency",
+          "Nitrous oxide\u2013induced functional vitamin B12 deficiency",
+          "Copper deficiency myelopathy",
+          "HIV-associated vacuolar myelopathy",
+          "Hereditary spastic paraplegia"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 5,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 13,
+        "lesion_ddx_matched_count": 6,
+        "lesion_ddx_missed_common_count": 3,
+        "lesion_ddx_missed_low_prob_count": 3,
+        "lesion_ddx_coverage_percentage": 0.46153846153846156
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Cervical Spine, Brain and Thoracic Spine and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, HIV, anti-AQP4, syphilis, ESR.\n- Could also consider testing: ACE, CSF (flow cytometry and cytology), spinal angiography.",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI of cervical and thoracic spine with gadolinium",
+          "MRI of brain with gadolinium",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Serum vitamin B12 level",
+          "Serum methylmalonic acid level",
+          "Serum homocysteine level",
+          "Serum folate level",
+          "Intrinsic factor antibody",
+          "Parietal cell antibody",
+          "Serum copper level",
+          "Serum ceruloplasmin level",
+          "HIV antigen/antibody test",
+          "Syphilis serology (treponemal and non-treponemal tests)",
+          "HTLV-1 antibody test",
+          "Thyroid-stimulating hormone",
+          "Vitamin E level",
+          "Serum protein electrophoresis and immunofixation",
+          "Antinuclear antibody",
+          "Extractable nuclear antigen panel",
+          "Aquaporin-4 IgG antibody",
+          "Myelin oligodendrocyte glycoprotein (MOG) IgG antibody",
+          "Lumbar puncture with cerebrospinal fluid analysis including cell count, protein, glucose, oligoclonal bands, and infectious PCR",
+          "Nerve conduction studies and electromyography",
+          "Repeat chest X-ray or CT chest with contrast to characterise the consolidation",
+          "Blood cultures"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_Ceruloplasmin",
+          "TFT",
+          "ENA_Panel",
+          "LFT",
+          "Vitamin_B12",
+          "Glucose_HbA1c",
+          "CSF_Oligoclonal_Bands",
+          "U_and_E",
+          "Methylmalonic_Acid",
+          "Syphilis_Serology",
+          "AQP4_Antibodies",
+          "CSF_General",
+          "NCS_EMG",
+          "Blood_Cultures",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "Serum_Copper",
+          "Serum_Protein_Electrophoresis",
+          "Homocysteine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "MRI_Thoracic_Spine",
+          "HTLV_Antibodies",
+          "Gastric_Parietal_Cell_Antibodies",
+          "Vitamin_E_Level",
+          "HIV_Test",
+          "Serum_Immunoglobulins",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [],
+        "expected_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "Spinal_Angiography",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "HIV_Test",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "CSF_Flow_Cytometry",
+          "Serum_ACE",
+          "Spinal_Angiography",
+          "CSF_Cytology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 4,
+        "primary_tests_found_count": 4,
+        "primary_tests_missed_count": 0,
+        "primary_tests_coverage_percentage": 1.0,
+        "ddx_tests_expected_count": 10,
+        "ddx_tests_found_count": 6,
+        "ddx_tests_coverage_percentage": 0.6
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Hospital admission under neurology with urgent spinal-cord workup and fall precautions",
+            "timing": "Start Now",
+            "reasons": [
+              "Objective upper motor neuron signs in the right leg indicate spinal cord involvement requiring close monitoring",
+              "Unsteady gait and positive Romberg sign confer high immediate fall risk",
+              "Inpatient care allows rapid MRI, timely investigations, and multidisciplinary assessment"
+            ]
+          },
+          {
+            "treatment": "Parenteral vitamin B12 replacement (intramuscular hydroxocobalamin)",
+            "timing": "Start Now",
+            "reasons": [
+              "Clinical picture is highly suggestive of subacute combined degeneration affecting dorsal and lateral spinal columns",
+              "Neurological injury from vitamin B12 deficiency can become irreversible; treatment should not be delayed once blood has been drawn for diagnostic levels",
+              "Hydroxocobalamin is safe and well tolerated even if vitamin B12 deficiency is not ultimately confirmed"
+            ]
+          },
+          {
+            "treatment": "Empiric antibiotic therapy for community-acquired pneumonia",
+            "timing": "Start Now",
+            "reasons": [
+              "Chest X-ray demonstrates consolidation consistent with pneumonia",
+              "Prompt antimicrobial therapy reduces risk of respiratory compromise and systemic sepsis",
+              "Treating systemic infection may also prevent worsening of neurological status and facilitate rehabilitation"
+            ]
+          },
+          {
+            "treatment": "Venous thromboembolism prophylaxis with low molecular weight heparin and mechanical measures",
+            "timing": "Start Now",
+            "reasons": [
+              "Lower-limb weakness and reduced mobility increase risk of deep vein thrombosis and pulmonary embolism",
+              "No obvious contraindications to pharmacologic thromboprophylaxis are currently apparent"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone for suspected inflammatory demyelinating myelitis",
+            "timing": "Delay",
+            "reasons": [
+              "Should be initiated only after MRI and CSF studies exclude compressive lesions and active infection such as epidural abscess or untreated pneumonia",
+              "Reserved for cases where imaging or CSF show features of multiple sclerosis, neuromyelitis optica spectrum disorder, MOG antibody-associated disease, or related inflammatory myelitis"
+            ]
+          },
+          {
+            "treatment": "Long-term cause-specific therapy (e.g., lifelong vitamin B12 replacement, copper supplementation, antiretroviral therapy, or disease-modifying therapy for multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis from metabolic, infectious, autoimmune, and imaging workup",
+              "Choice of regimen, dosing, and monitoring must be individualised once the underlying aetiology is established"
+            ]
+          },
+          {
+            "treatment": "Physiotherapy and occupational therapy for gait training, spasticity management, and falls prevention",
+            "timing": "Delay",
+            "reasons": [
+              "Best commenced once acute investigations are completed and the patient is medically stable",
+              "Rehabilitation is essential for functional recovery, optimisation of mobility, and safe discharge planning"
+            ]
+          },
+          {
+            "treatment": "Provision of mobility aids and home safety adaptations",
+            "timing": "Delay",
+            "reasons": [
+              "Specific aids should be selected after formal physiotherapy and occupational therapy assessment",
+              "Aims to reduce long-term fall risk and improve independence if residual neurological deficits persist"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone for suspected inflammatory demyelinating myelitis",
+            "timing": "Delay",
+            "reasons": [
+              "Should be initiated only after MRI and CSF studies exclude compressive lesions and active infection such as epidural abscess or untreated pneumonia",
+              "Reserved for cases where imaging or CSF show features of multiple sclerosis, neuromyelitis optica spectrum disorder, MOG antibody-associated disease, or related inflammatory myelitis"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Consolidation)."
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Long-term cause-specific therapy (e.g., lifelong vitamin B12 replacement, copper supplementation, antiretroviral therapy, or disease-modifying therapy for multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Requires definitive diagnosis from metabolic, infectious, autoimmune, and imaging workup",
+              "Choice of regimen, dosing, and monitoring must be individualised once the underlying aetiology is established"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": [
+                "Evidence of potential active intercurrent infection (CXR: Consolidation)."
+              ]
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nCorrectly identified the following:\n\n- Evidence of potential active intercurrent infection (CXR: Consolidation).\n\n- Need confirmation of MS diagnosis.\n  \nAdditional factors not mentioned:\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 4,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 4,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 2,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.6666666666666666
+        }
+      }
+    }
+  }
+}

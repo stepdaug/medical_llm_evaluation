@@ -1,0 +1,393 @@
+{
+  "case_id": "case_0016",
+  "provider": "google",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 53.71,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Female",
+    "ancestry": "South Asian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesion involving:\n- bilateral midbrain.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "bilateral midbrain"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "Midbrain",
+            "side": "bilateral",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "bilateral midbrain"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 1,
+        "correctly_identified_count": 1,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nAgree to also consider:\n- Neurosarcoid, Brainstem Tumour (Primary or Metastatic), Lymphoma and CLIPPERS.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, SLE, Neurosyphilis, Cavernous Malformation, Listeria, Intracerebral Haemorrhage, Bickerstaff Brainstem Encephalitis, Osmotic Demyelination and Brainstem Infarct / Vertebral Artery Dissection.\n- Also feasible but of low probability: Beh\u00e7et's, Brainstem Abscess, TB, Lyme, Leptomeningeal carcinomatosis, Vasculitis, Sjogren's and Hereditary Spastic Paraplegia.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Wernicke's (atypical for bilateral brainstem involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Brainstem Glioma",
+          "Primary CNS Lymphoma",
+          "Neurosarcoidosis",
+          "CLIPPERS syndrome",
+          "Brainstem Metastasis",
+          "Multiple Sclerosis",
+          "Wernicke's Encephalopathy"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation",
+          "Radiculopathy": "comorbidity"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [
+          "Radiculopathy"
+        ],
+        "matched_lesion_dx_keys": [
+          "Brainstem_Tumour",
+          "Neurosarcoidosis",
+          "MS",
+          "CNS_Lymphoma",
+          "CLIPPERS"
+        ],
+        "missing_lesion_dx_keys": [
+          "Cavernous_Malformation",
+          "Behcet_Disease",
+          "Syphilis",
+          "Listeria_Rhombencephalitis",
+          "AQP4_NMOSD",
+          "MOGAD",
+          "Brain_Abscess_Brainstem",
+          "Brain_Haemorrhage",
+          "CNS_Tuberculosis",
+          "Infection_Lyme",
+          "Bickerstaff_Encephalitis",
+          "Leptomeningeal_Carcinomatosis",
+          "Central_Pontine_Myelinolysis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "Autoimmune_Myelitis_SLE",
+          "Hereditary_Spastic_Paraplegia",
+          "Brain_Infarct_Brainstem"
+        ],
+        "missing_common_names": [
+          "Cavernous Malformation",
+          "Neurosyphilis",
+          "Listeria",
+          "NMOSD (AQP4+)",
+          "MOGAD",
+          "Intracerebral Haemorrhage",
+          "Bickerstaff Brainstem Encephalitis",
+          "Osmotic Demyelination",
+          "SLE",
+          "Brainstem Infarct / Vertebral Artery Dissection"
+        ],
+        "missing_low_prob_names": [
+          "Beh\u00e7et's",
+          "Brainstem Abscess",
+          "TB",
+          "Lyme",
+          "Leptomeningeal carcinomatosis",
+          "Vasculitis",
+          "Sjogren's",
+          "Hereditary Spastic Paraplegia"
+        ],
+        "additional_diagnoses": [
+          "Wernicke's Encephalopathy"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 2,
+        "gt_matched_count": 1,
+        "gt_missed_count": 1,
+        "gt_coverage_percentage": 0.5,
+        "additional_less_plausible_count": 1,
+        "comorbidity_missing_count": 1,
+        "other_considerations_missed_count": 1,
+        "lesion_ddx_total_count": 23,
+        "lesion_ddx_matched_count": 5,
+        "lesion_ddx_missed_common_count": 10,
+        "lesion_ddx_missed_low_prob_count": 8,
+        "lesion_ddx_coverage_percentage": 0.21739130434782608
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain, Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of multiple sclerosis.\n\n- Agree with the suggested MRI including the Lumbosacral Spine, Cervical Spine and Thoracic Spine - would potentially inform a diagnosis/details of their radiculopathy comorbidity.\n\nBut incomplete, should also consider: CSF test for Oligoclonal Bands.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: anti-MOG, CRP, ACE, HIV, U&E, anti-AQP4, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, ANA, TB, ENA, anti-GQ1b, ANCA, lyme, CSF (flow cytometry, PCR for Listeria and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Radiculopathy"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Radiculopathy"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Radiculopathy"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI Brain with and without contrast",
+          "MRI Whole Spine",
+          "CT Chest Abdomen Pelvis",
+          "Lumbar Puncture",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "C-reactive protein",
+          "Erythrocyte sedimentation rate",
+          "Serum ACE",
+          "Paraneoplastic antibody panel",
+          "Anti-aquaporin-4 and Anti-MOG antibodies",
+          "HIV serology",
+          "Syphilis serology",
+          "Vitamin B12 and Folate",
+          "Thiamine levels"
+        ],
+        "all_identified_ft_keys": [
+          "MOG_Antibodies",
+          "CRP",
+          "LFT",
+          "Serum_ACE",
+          "Vitamin_B12",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "Thiamine",
+          "CSF_General",
+          "FBC",
+          "MRI_Whole_Spine",
+          "Chest_CT",
+          "MRI_Lumbosacral_Spine",
+          "MRI_Cervical_Spine",
+          "Chest_XRay",
+          "Folate",
+          "Paraneoplastic_Antibodies",
+          "MRI_Thoracic_Spine",
+          "CT_Chest_Abdo_Pelvis",
+          "HIV_Test",
+          "MRI_Brain",
+          "ESR"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Lumbosacral Spine",
+            "condition": "Radiculopathy"
+          },
+          {
+            "type": "MRI",
+            "region": "Cervical Spine",
+            "condition": "Radiculopathy"
+          },
+          {
+            "type": "MRI",
+            "region": "Thoracic Spine",
+            "condition": "Radiculopathy"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "MOG_Antibodies",
+          "CSF_Flow_Cytometry",
+          "CRP",
+          "ANA",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Anti_GQ1b_Antibodies",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "MOG_Antibodies",
+          "CRP",
+          "Serum_ACE",
+          "HIV_Test",
+          "U_and_E",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "ANA",
+          "CSF_Listeria_PCR",
+          "TB_Screen",
+          "ENA_Panel",
+          "Anti_GQ1b_Antibodies",
+          "ANCA",
+          "CSF_Cytology",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 7,
+        "primary_tests_found_count": 6,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.8571428571428571,
+        "ddx_tests_expected_count": 18,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.4444444444444444
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days\n\nDMTs: Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Intravenous Thiamine (Pabrinex)",
+            "timing": "Start Now",
+            "reasons": [
+              "To treat potential Wernicke's Encephalopathy, a reversible cause of ophthalmoplegia and ataxia",
+              "Low risk intervention with high potential benefit"
+            ]
+          },
+          {
+            "treatment": "Dexamethasone",
+            "timing": "Delay",
+            "reasons": [
+              "Withhold until neuroimaging and potentially CSF/biopsy are completed",
+              "Premature administration can cause lysis of Primary CNS Lymphoma cells, obscuring diagnosis"
+            ]
+          },
+          {
+            "treatment": "Venous Thromboembolism Prophylaxis",
+            "timing": "Start Now",
+            "reasons": [
+              "Patient has reduced mobility and is being admitted, increasing thrombosis risk"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "Dexamethasone",
+            "timing": "Delay",
+            "reasons": [
+              "Withhold until neuroimaging and potentially CSF/biopsy are completed",
+              "Premature administration can cause lysis of Primary CNS Lymphoma cells, obscuring diagnosis"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [],
+              "contraindications": [
+                "Symptoms started more than 14 days"
+              ]
+            }
+          },
+          "evaluation_summary": "Not appropriate to suggest treatment at this time.\n  \nAdditional factors not mentioned:\n\n- Symptoms started more than 14 days"
+        },
+        "dmt_evaluation": {
+          "ft_plan": null,
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Inappropriate omission. The plan failed to consider this possible treatment option.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "inappropriate_commission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "inappropriate_omission",
+          "is_unsafe": 1,
+          "reasons_total": 1,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 1,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "response": "The patient demonstrates distinct clinical signs separated in anatomical space. The reduced visual acuity (6/18), Relative Afferent Pupillary Defect (RAPD), and anisocoria on the right indicate a lesion of the right optic nerve. The isolated dysmetria in the left upper limb, with preserved power, points to a lesion in the ipsilateral (left) cerebellar hemisphere. The scattered hyporeflexia (right ankle, left biceps) without sensory loss or weakness likely represents incidental or background radicular issues rather than the primary acute pathology.\n\nlesion_locations = [\"Right Optic Nerve\", \"Left Cerebellar Hemisphere\"]"
+}

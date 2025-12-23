@@ -1,0 +1,3 @@
+{
+    "response": "The patient presents with a classic 'crossed' brainstem syndrome: an ipsilateral (Right) lower motor neuron cranial nerve III palsy (indicated by ptosis, mydriasis, and ophthalmoplegia) combined with contralateral (Left) upper motor neuron signs (hemiparesis, hyperreflexia, upgoing plantar) and contralateral sensory loss. This localises to the right midbrain (Weber's syndrome components). The additional presence of left-sided cerebellar signs (intention tremor, dysmetria) and sensory involvement suggests extension into the midbrain tegmentum, involving the red nucleus and medial lemniscus (Benedikt's syndrome components).\n\nlesion_locations = [\"Right Midbrain\"]"
+}

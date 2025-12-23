@@ -1,0 +1,422 @@
+{
+  "case_id": "case_0021",
+  "provider": "openai",
+  "status": "processed",
+  "patient_demographics": {
+    "age": 49.35,
+    "sex": "Male",
+    "genderIdentity": "Cisgender Male",
+    "ancestry": "Oceanian"
+  },
+  "marking_output": {
+    "Localisation": {
+      "report_string": "--- Localisation ---\nAgree with lesions involving:\n- right optic nerve and right midbrain.",
+      "structured_data": {
+        "gt_lesions_english": [
+          "right midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "ft_lesions_parsed": [
+          {
+            "location": "midbrain",
+            "side": "right",
+            "qualifier": null
+          },
+          {
+            "location": "optic nerve",
+            "side": "right",
+            "qualifier": null
+          }
+        ],
+        "exact_matches": [
+          "right midbrain",
+          "right optic nerve (cranial nerve II)"
+        ],
+        "imprecise_matches": [],
+        "missing_lesions_from_ft": [],
+        "additional_lesions_in_ft": []
+      },
+      "scoring": {
+        "gt_lesion_count": 2,
+        "correctly_identified_count": 2,
+        "imprecisely_identified_count": 0,
+        "missed_lesion_count": 0,
+        "additional_lesion_count": 0,
+        "proportion_correct": 1.0,
+        "proportion_imprecise": 0.0,
+        "proportion_missed": 0.0,
+        "proportion_additional": 0.0
+      }
+    },
+    "Differential diagnosis": {
+      "report_string": "--- Differential diagnosis ---\nCorrectly included Multiple sclerosis.\n\nOther possible differentials:\n- NMOSD (AQP4+), MOGAD, Neurosarcoid, SLE and Neurosyphilis.\n- Also feasible but of low probability: Leptomeningeal carcinomatosis, TB, Vasculitis, Sjogren's, ADEM, Beh\u00e7et's, Lymphoma and Lyme.\n\nThe following suggested diagnoses have a low probability of providing a unifying explanation for the full clinical presentation:\n- Right posterior circulation ischaemic stroke involving the midbrain (posterior cerebral artery branch infarct) (plausible for unilateral brainstem; but atypical for unilateral optic nerve involvement)\n- Right posterior communicating artery aneurysm or parasellar/tentorial mass compressing the right optic nerve and midbrain (atypical for unilateral brainstem and unilateral optic nerve involvement)\n- Right midbrain haemorrhage (e.g. cavernous malformation or hypertensive bleed) (plausible for unilateral brainstem; but atypical for unilateral optic nerve involvement)\n- Intrinsic right midbrain tumour (e.g. glioma or metastasis) (plausible for unilateral brainstem; but atypical for unilateral optic nerve involvement)",
+      "structured_data": {
+        "ft_diagnoses_raw": [
+          "Right posterior circulation ischaemic stroke involving the midbrain (posterior cerebral artery branch infarct)",
+          "Right posterior communicating artery aneurysm or parasellar/tentorial mass compressing the right optic nerve and midbrain",
+          "Right midbrain haemorrhage (e.g. cavernous malformation or hypertensive bleed)",
+          "Multiple sclerosis with right optic neuritis and right midbrain plaque",
+          "Intrinsic right midbrain tumour (e.g. glioma or metastasis)"
+        ],
+        "gt_diagnoses_with_source": {
+          "Multiple sclerosis": "evaluation"
+        },
+        "correctly_mentioned_original_gt": [
+          "Multiple sclerosis"
+        ],
+        "missing_original_gt": [],
+        "matched_lesion_dx_keys": [
+          "MS"
+        ],
+        "missing_lesion_dx_keys": [
+          "MOGAD",
+          "Leptomeningeal_Carcinomatosis",
+          "CNS_Tuberculosis",
+          "Syphilis",
+          "AQP4_NMOSD",
+          "Neurosarcoidosis",
+          "CNS_Vasculitis",
+          "Autoimmune_Myelitis_Sjogren",
+          "ADEM",
+          "Autoimmune_Myelitis_SLE",
+          "Behcet_Disease",
+          "CNS_Lymphoma",
+          "Infection_Lyme"
+        ],
+        "missing_common_names": [
+          "MOGAD",
+          "Neurosyphilis",
+          "NMOSD (AQP4+)",
+          "Neurosarcoid",
+          "SLE"
+        ],
+        "missing_low_prob_names": [
+          "Leptomeningeal carcinomatosis",
+          "TB",
+          "Vasculitis",
+          "Sjogren's",
+          "ADEM",
+          "Beh\u00e7et's",
+          "Lymphoma",
+          "Lyme"
+        ],
+        "additional_diagnoses": [
+          "Right posterior circulation ischaemic stroke involving the midbrain (posterior cerebral artery branch infarct)",
+          "Right posterior communicating artery aneurysm or parasellar/tentorial mass compressing the right optic nerve and midbrain",
+          "Right midbrain haemorrhage (e.g. cavernous malformation or hypertensive bleed)",
+          "Intrinsic right midbrain tumour (e.g. glioma or metastasis)"
+        ]
+      },
+      "scoring": {
+        "primary_diagnosis_included": 1,
+        "primary_diagnosis_name": "Multiple sclerosis",
+        "gt_total_count": 1,
+        "gt_matched_count": 1,
+        "gt_missed_count": 0,
+        "gt_coverage_percentage": 1.0,
+        "additional_less_plausible_count": 4,
+        "comorbidity_missing_count": 0,
+        "other_considerations_missed_count": 0,
+        "lesion_ddx_total_count": 14,
+        "lesion_ddx_matched_count": 1,
+        "lesion_ddx_missed_common_count": 5,
+        "lesion_ddx_missed_low_prob_count": 8,
+        "lesion_ddx_coverage_percentage": 0.07142857142857142
+      }
+    },
+    "Investigations": {
+      "report_string": "--- Investigations ---\n\n- Agree with the suggested MRI including the Brain and CSF test for Oligoclonal Bands - would potentially inform a diagnosis/details of multiple sclerosis.\n\nBut incomplete, should also consider: MRI Orbits.\n\nTo evaluate other differential diagnoses:\n- Agree with considering: ANA, CRP, ENA, ACE, HIV, ANCA, syphilis, ESR.\n- Could also consider testing: anti-dsDNA, anti-MOG, TB, anti-AQP4, lyme, CSF (flow cytometry and cytology).",
+      "structured_data": {
+        "gt_required_tests_primary": [
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "ft_proposed_investigations": [
+          "MRI brain with and without contrast including diffusion-weighted imaging",
+          "MR angiography of intracranial and neck vessels",
+          "Non-contrast CT brain",
+          "CT angiogram of head and neck (if MR angiography not immediately available or to clarify aneurysm anatomy)",
+          "Formal ophthalmological assessment including visual acuity, colour vision and dilated fundus examination",
+          "Automated visual field testing (perimetry)",
+          "Optical coherence tomography of retinal nerve fibre layer",
+          "Visual evoked potentials",
+          "Electrocardiogram",
+          "Transthoracic echocardiogram",
+          "Full blood count",
+          "Urea and electrolytes",
+          "Liver function tests",
+          "Coagulation screen",
+          "Blood glucose",
+          "HbA1c",
+          "Lipid profile",
+          "Erythrocyte sedimentation rate",
+          "C-reactive protein",
+          "Serum vitamin B12",
+          "Serum folate",
+          "Thyroid function tests",
+          "Serum ANA",
+          "Serum ENA panel",
+          "Serum ANCA",
+          "Serum ACE level",
+          "Serum HIV test",
+          "Syphilis serology (RPR and treponemal-specific test)",
+          "Lumbar puncture with CSF cell count, protein, glucose, oligoclonal bands and IgG index (after mass lesion and raised intracranial pressure are excluded)",
+          "Chest CT or whole-body imaging for occult malignancy if tumour suspected"
+        ],
+        "all_identified_ft_keys": [
+          "Lipid_Profile",
+          "CRP",
+          "TFT",
+          "Coagulation_Screen",
+          "ENA_Panel",
+          "LFT",
+          "CSF_Opening_Pressure",
+          "Vitamin_B12",
+          "Serum_ACE",
+          "ECG",
+          "Glucose_HbA1c",
+          "U_and_E",
+          "Serum_Immunoglobulins",
+          "Syphilis_Serology",
+          "CSF_Oligoclonal_Bands",
+          "CSF_General",
+          "Visual Acuity",
+          "FBC",
+          "ANA",
+          "Chest_CT",
+          "OCT",
+          "Cerebral_Angiography",
+          "Chest_XRay",
+          "Folate",
+          "Colour Vision",
+          "Ophthalmology Assessment",
+          "ANCA",
+          "Automated_Visual_Fields",
+          "MRA_Head_Neck",
+          "HIV_Test",
+          "VEP",
+          "MRI_Brain",
+          "ESR",
+          "CT_Head"
+        ],
+        "found_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Brain",
+            "condition": "Multiple sclerosis"
+          },
+          {
+            "type": "CSF",
+            "detail": "Oligoclonal Bands",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "missing_tests_primary": [
+          {
+            "type": "MRI",
+            "region": "Orbits",
+            "condition": "Multiple sclerosis"
+          }
+        ],
+        "expected_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "CRP",
+          "ANA",
+          "TB_Screen",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Syphilis_Serology",
+          "ESR",
+          "Lyme_Serology"
+        ],
+        "found_inv_keys_ddx": [
+          "ANA",
+          "CRP",
+          "ENA_Panel",
+          "Serum_ACE",
+          "HIV_Test",
+          "ANCA",
+          "Syphilis_Serology",
+          "ESR"
+        ],
+        "missing_inv_keys_ddx": [
+          "Anti_dsDNA",
+          "CSF_Flow_Cytometry",
+          "MOG_Antibodies",
+          "TB_Screen",
+          "CSF_Cytology",
+          "AQP4_Antibodies",
+          "Lyme_Serology"
+        ]
+      },
+      "scoring": {
+        "primary_tests_required_count": 3,
+        "primary_tests_found_count": 2,
+        "primary_tests_missed_count": 1,
+        "primary_tests_coverage_percentage": 0.6666666666666666,
+        "ddx_tests_expected_count": 15,
+        "ddx_tests_found_count": 8,
+        "ddx_tests_coverage_percentage": 0.5333333333333333
+      }
+    },
+    "Management": {
+      "report_string": "--- Management ---\nSteroids: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.\n\nDMTs: Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression.",
+      "structured_data": {
+        "ft_full_plan_parsed": [
+          {
+            "treatment": "Admit to high-dependency or stroke unit with close neurological and cardiorespiratory monitoring",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem involvement risks sudden deterioration in consciousness, respiration and airway protection",
+              "Allows frequent neurological observations and rapid response to any worsening"
+            ]
+          },
+          {
+            "treatment": "Airway, breathing and circulation optimisation including supplemental oxygen if needed, blood pressure and glucose control, and temperature management",
+            "timing": "Start Now",
+            "reasons": [
+              "Physiological optimisation reduces secondary brain injury in acute CNS lesions",
+              "Posterior circulation strokes and brainstem masses are highly sensitive to alterations in perfusion and oxygenation"
+            ]
+          },
+          {
+            "treatment": "Nil by mouth until formal swallowing assessment and institution of aspiration precautions",
+            "timing": "Start Now",
+            "reasons": [
+              "Brainstem pathology and left hemiparesis increase risk of dysphagia and silent aspiration",
+              "Prevents aspiration pneumonia while definitive assessment is arranged"
+            ]
+          },
+          {
+            "treatment": "Mechanical venous thromboembolism prophylaxis (e.g. intermittent pneumatic compression) and, once haemorrhage is excluded, pharmacological prophylaxis with low-dose low-molecular-weight heparin if not contraindicated",
+            "timing": "Start Now",
+            "reasons": [
+              "Hemiparesis and reduced mobility substantially increase VTE risk",
+              "Early prophylaxis reduces risk of deep vein thrombosis and pulmonary embolism"
+            ]
+          },
+          {
+            "treatment": "Intravenous thrombolysis and/or endovascular thrombectomy as per acute ischaemic stroke protocol if imaging confirms an eligible posterior circulation infarct within treatment window",
+            "timing": "Delay",
+            "reasons": [
+              "Requires prior neuroimaging to confirm ischaemic stroke and exclude haemorrhage or mass",
+              "Eligibility depends on time of onset, infarct extent, and absence of contraindications"
+            ]
+          },
+          {
+            "treatment": "Endovascular coiling or surgical clipping of a posterior communicating or basilar tip aneurysm if demonstrated",
+            "timing": "Delay",
+            "reasons": [
+              "Definitive treatment for compressive aneurysm causing third nerve palsy and brainstem compromise",
+              "Requires angiographic confirmation and multidisciplinary neurosurgical/neurointerventional planning"
+            ]
+          },
+          {
+            "treatment": "High-dose intravenous methylprednisolone followed by an oral taper if MRI and CSF support an acute demyelinating relapse (e.g. multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids can shorten duration and severity of acute demyelinating attacks",
+              "Should not be started before excluding infection, mass lesion and vascular causes"
+            ]
+          },
+          {
+            "treatment": "Early multidisciplinary rehabilitation (physiotherapy, occupational therapy, speech and language therapy)",
+            "timing": "Delay",
+            "reasons": [
+              "Initiated once patient is medically stable to improve motor recovery, gait and coordination",
+              "Addresses functional deficits from left hemiparesis and cerebellar ataxia and reduces long-term disability"
+            ]
+          },
+          {
+            "treatment": "Long-term secondary prevention tailored to final diagnosis (antiplatelet or anticoagulation for stroke, management of vascular risk factors, or disease-modifying therapy for multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Reduces risk of recurrence or progression of the underlying disorder",
+              "Choice of agent depends on whether the final aetiology is vascular, demyelinating or neoplastic"
+            ]
+          }
+        ],
+        "steroids_evaluation": {
+          "ft_plan": {
+            "treatment": "High-dose intravenous methylprednisolone followed by an oral taper if MRI and CSF support an acute demyelinating relapse (e.g. multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Steroids can shorten duration and severity of acute demyelinating attacks",
+              "Should not be started before excluding infection, mass lesion and vascular causes"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Presenting complaint is not specified, so no indication whether this is related to MS.",
+                "Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Presenting complaint is not specified, so no indication what the current issue is and whether neurological signs are new or old.\n\n- Timing of current symptoms not specified, so no indication whether this is a recent issue or old deficit.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        },
+        "dmt_evaluation": {
+          "ft_plan": {
+            "treatment": "Long-term secondary prevention tailored to final diagnosis (antiplatelet or anticoagulation for stroke, management of vascular risk factors, or disease-modifying therapy for multiple sclerosis)",
+            "timing": "Delay",
+            "reasons": [
+              "Reduces risk of recurrence or progression of the underlying disorder",
+              "Choice of agent depends on whether the final aetiology is vascular, demyelinating or neoplastic"
+            ]
+          },
+          "gt_plan": {
+            "treatment_inappropriate": true,
+            "reasons": {
+              "missing_information": [
+                "Need confirmation of MS diagnosis.",
+                "A safety screen for patient-specific comorbidities is required to identify contraindications to immunosuppressive therapy."
+              ],
+              "contraindications": []
+            }
+          },
+          "evaluation_summary": "Appropriate to consider but delay treatment.\n  \nAdditional factors not mentioned:\n\n- Need confirmation of MS diagnosis.\n\n- Need to know comorbidities to ensure no contraindications to immunosuppression."
+        }
+      },
+      "scoring": {
+        "steroids": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 3,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 3,
+          "reasons_coverage_percentage": 0.0
+        },
+        "dmt": {
+          "decision_category": "appropriate_caution",
+          "is_unsafe": 0,
+          "reasons_total": 2,
+          "reasons_acknowledged": 0,
+          "reasons_missed": 2,
+          "reasons_coverage_percentage": 0.0
+        }
+      }
+    }
+  }
+}

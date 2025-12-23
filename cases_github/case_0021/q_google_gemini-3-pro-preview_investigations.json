@@ -1,0 +1,3 @@
+{
+    "response": "Urgent neuroimaging is required to visualise the lesions, confirm dissemination in space, and exclude mass effects or haemorrhage. Serology and CSF analysis are essential to differentiate between MS, NMO, and infectious/granulomatous mimics, which dictates long-term management.\n\ninvestigations = [\"MRI Brain and Orbits with contrast\", \"MRI Cervical and Thoracic Spine\", \"Full blood count\", \"Urea and electrolytes\", \"Liver function tests\", \"C-Reactive Protein (CRP)\", \"Erythrocyte Sedimentation Rate (ESR)\", \"Serum AQP4 antibodies\", \"Serum MOG antibodies\", \"Serum ACE\", \"Syphilis serology (VDRL/TPPA)\", \"HIV serology\", \"Lumbar Puncture (Cell count, Protein, Glucose, Oligoclonal bands, Culture/PCR)\"]"
+}
